@@ -3,7 +3,7 @@ extends SceneTree
 ## edit, sign off, launch) between a host and a guest over the in-memory transport. No browser needed; the real
 ## Firebase round trip is tested in a browser (see docs/guides/architecture.md, Room). Run:
 ##   tools/dev/godot.sh --headless --path . -s res://tests/ci/room.gd
-## check: ^ok room
+## check: ok room
 const GD := preload("res://scripts/core/game_data.gd")
 
 var fails := 0

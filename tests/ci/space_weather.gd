@@ -2,7 +2,7 @@ extends SceneTree
 ## Space weather (issue #90) on 400 random designs: every mission that reaches its orbit meets at least one storm
 ## alert; answering "keep" at a storm leaves every month before it exactly as it was (the operation simulates again from
 ## there); safe mode is never riskier than working through it; and how often each answer ends in damage.
-## check: ^ok space weather
+## check: ok space weather
 const GD := preload("res://scripts/core/game_data.gd")
 
 func _initialize():

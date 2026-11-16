@@ -1,7 +1,7 @@
 extends SceneTree
 ## Coming home (issue #67): the re-entry's rules, played through their own steps.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/reentry.gd
-## check: ^ok reentry
+## check: ok reentry
 
 const Reentry := preload("res://scripts/flight/reentry.gd")
 var fails := 0

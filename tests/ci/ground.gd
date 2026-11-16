@@ -1,7 +1,7 @@
 extends SceneTree
 ## Ground control (issue #9): the Deep Space Network's numbers and both mini-games, played through their own steps.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/ground.gd
-## check: ^ok ground
+## check: ok ground
 
 const Dsn := preload("res://scripts/minigames/dsn.gd")
 const Carrier := preload("res://scripts/minigames/carrier.gd")

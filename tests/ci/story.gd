@@ -4,7 +4,7 @@ extends SceneTree
 ## scene; every speaker is in the cast and has a portrait; every NASA fact names a source of docs/sources.md; every
 ## line and fact has its Spanish version in i18n/story.csv.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/story.gd
-## check: ^ok story
+## check: ok story
 
 var bad := 0
 

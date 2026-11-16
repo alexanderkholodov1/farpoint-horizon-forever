@@ -3,7 +3,7 @@ extends SceneTree
 ## docs/sources.md, and nothing that is not there, so the credits never drift from the bibliography. When it fails,
 ## run: python tools/content/credits.py
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/credits.gd
-## check: ^ok credits
+## check: ok credits
 
 
 func _initialize() -> void:
