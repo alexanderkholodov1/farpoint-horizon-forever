@@ -77,7 +77,7 @@ Content and balance live in `data/*.json`, never in code. `GameData` reads the f
 the language changes) and keeps them in static variables under the names in the table above, so
 `GameData.LAUNCHERS["light"].cost` works anywhere, including in a script started with `-s` (which compiles before the
 autoloads exist, so it reaches `GameData` through `const GD := preload("res://scripts/core/game_data.gd")`, see
-`tests/ci/fuzz.gd`). JSON numbers load as floats; the fields in `GameData.INT_FIELDS` become integers; `color` (three
+`tests/ci/space_weather.gd`). JSON numbers load as floats; the fields in `GameData.INT_FIELDS` become integers; `color` (three
 numbers 0 to 1) becomes a `Color` and `dims` a `Vector3`.
 
 Every file is an object `{"doc": "...", "entries": {id: entry}}` and every entry carries:
@@ -191,7 +191,7 @@ data, 10 % reserve), which are our own game choices.
 
 ## Tests
 
-- **Logic fuzz test.** `godot --headless -s res://tests/ci/fuzz.gd` builds 600 random designs with seed 42, calls `compute()` and `simulate(i)` on each, and prints `ok 600 launchable grades {...}`. It fails if any call errors. It asserts no values, only that nothing crashes.
+- **Checks.** `tools/dev/check.sh` and what each test in `tests/ci/` proves: `docs/guides/testing.md`.
 - **Autoshot walkthrough.** Run `tests/look/autoshot.tscn` with a window (not headless): `tools/dev/shots.sh`, or Godot with `--path . --position 4000,4000 --resolution 1600x900 res://tests/look/autoshot.tscn` to keep the window off screen. It drives the game as the buttons do (`GameState` for the choices, `go()` and `overlay()` for the flow) through menu, scenarios, design, review, launch, operation, report, Moon, L2 telescope, a forced launch failure, the team screen and how to play, and saves 16 PNG screenshots, `01_menu` to `16_howto`, to `shots/` in the project (created if missing; ignored by git and by the web export). It is for development only.
 
 ## Renderer notes
