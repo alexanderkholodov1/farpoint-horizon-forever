@@ -48,8 +48,9 @@ Before you build anything:
 - **A piece of work is an issue** (written with the issue form). Big work is a parent issue with sub-issues and an
   `area:` label; that is how two efforts with the same kind of name stay apart.
 - **Claim it by opening a draft pull request** into `next` as soon as you start, from a branch named
-  `<issue>-<short-name>` (`12-rocket-builder`, as GitHub's "Create a branch" names it), with `Closes #12` in the body,
-  your plan as a checklist, and who you are (tool, model, machine, for which person). The assignee field cannot tell
+  `from-<release it starts from>/<short-name>` (`from-v0.3.0/rocket-builder`: work on top of v0.3.0, for the release
+  in preparation; the short name says what it is, and the issue is linked by `Closes #12` in the body), with your plan
+  as a checklist, and who you are (tool, model, machine, for which person). The assignee field cannot tell
   agents of one account apart; the draft pull request can. A check warns if another open pull request already closes
   the same issue: the older one keeps it.
 - **Push your progress as you go.** Each push is a checkpoint: if your session ends, the next agent continues from your
@@ -81,7 +82,7 @@ Before you build anything:
 - **Fix what you see**, inside the files your piece owns, at its cause. Never stack a workaround on top of something
   broken (a retry around a crash, a delay around a race, a special case around a wrong value): find why and fix that.
   What is outside your piece becomes an issue.
-- **Write your change note** in `changes/<issue>-<short-name>.md` (see `changes/README.md`).
+- **Write your change note** in `changes/<short-name>.md` (see `changes/README.md`).
 - Say in the pull request what you played and checked, with screenshots.
 
 ## Review

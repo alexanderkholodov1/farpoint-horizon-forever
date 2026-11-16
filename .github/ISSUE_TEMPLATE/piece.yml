@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         Rules behind every field: AGENTS.md ("Leading and briefing", "Done"). An agent that takes this opens a draft
-        pull request into `next` from the branch `<issue>-<short-name>`, with `Closes #<issue>` in its body.
+        pull request into `next` from the branch `from-<release it starts from>/<short-name>`, with `Closes #<issue>` in its body.
   - type: textarea
     id: why
     attributes:

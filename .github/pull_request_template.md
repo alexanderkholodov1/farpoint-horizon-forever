@@ -7,7 +7,7 @@ Closes #
 - [ ]
 
 ## What a player gets
-<!-- In a player's words. The same as your note in changes/<issue>-<short-name>.md. -->
+<!-- In a player's words. The same as your note in changes/<short-name>.md. -->
 
 ## How it was checked
 <!-- What you played (speeds of time, languages, desktop and phone size, played wrong too), what you measured, the
