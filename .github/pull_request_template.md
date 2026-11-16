@@ -13,7 +13,7 @@ branch with tools/dev/integrate.sh, which gives the step number. -->
 <!-- Who reviewed it (agent and tool, or person), what they found, what was fixed. -->
 
 ## Challenge requirements touched
-<!-- IDs from spaceapps/challenge/requirements.md. -->
+<!-- IDs from kb/challenge/requirements.md. -->
 
 ## Sources and assets added
 <!-- Every new formula, value, model, sound, font or image, with its source ID in docs/sources.md and its license. -->

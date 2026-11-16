@@ -19,8 +19,6 @@ private/
 .env
 .env.*
 
-# Local event documents that name judges, mentors and staff stay on the team's machines, in spaceapps/rules/private/
-# (summarized in spaceapps/rules/local-event.md); the private/ line above keeps them out.
 
 # Python caches
 __pycache__/

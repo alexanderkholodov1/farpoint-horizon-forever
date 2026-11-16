@@ -1,15 +1,19 @@
-# Farpoint HORIZON
+# Farpoint HORIZON Forever
+
+*Working name until the team picks the final one. The game itself is Farpoint HORIZON.*
 
 **Six real NASA missions. Four guinea pigs who were there. And one mission that is all yours.**
 
-Farpoint HORIZON is a 3D space game made in Quito, Ecuador, by team SK-Horizons for the NASA Space Apps Challenge
-2026 ([Space Mission Design Game](https://www.spaceappschallenge.org/2026/challenges/space-mission-design-game/)).
+Farpoint HORIZON is a 3D space game made in Quito, Ecuador, by team SK-Horizons. It was born in 39 hours at the NASA
+Space Apps Challenge 2026 ([Space Mission Design Game](https://www.spaceappschallenge.org/2026/challenges/space-mission-design-game/));
+this repository continues it (see "Where it comes from" below).
 It lets anyone, alone or with up to three friends, live a space mission from the first idea to the moment the data
 comes home: build the spacecraft, launch it, fly it, land it and keep it working. On the way, a small crew of Andean
 guinea pigs, the *cuyes*, takes you through some of the most dramatic moments in NASA's history.
 
-**▶ Play it in your browser: https://farpoint-horizon.web.app**: nothing to install, in English or Spanish.
-**▶ See it in 30 seconds: https://youtu.be/3xZdPJr71bg**
+**▶ Play this repository's version: https://farpoint-horizon-forever.web.app** (published from v0.4.0 on): nothing to
+install, in English or Spanish.
+**▶ The hackathon version, as submitted: https://farpoint-horizon.web.app**, and its 30-second video: https://youtu.be/3xZdPJr71bg
 
 ---
 
@@ -118,18 +122,22 @@ Every number, fact, image and model that comes from outside is listed with its l
 
 ## Play it
 
-- **In your browser:** https://farpoint-horizon.web.app
+- **In your browser:** https://farpoint-horizon-forever.web.app
 - **On your own computer:** install [Godot 4.7](https://godotengine.org), open `project.godot` and press F5.
 
 The game is made with the free Godot engine. Our 3D models are built with Blender, and the sounds are created by the
 game itself. How it is put together is described in [`docs/guides/architecture.md`](docs/guides/architecture.md).
 
-## How it was made
+## Where it comes from
 
 We brought nothing to the event: no template, no code, no assets. The work began with a brainstorm at the local event
-in Sangolquí (Universidad de las Fuerzas Armadas ESPE) on Saturday 14 November 2026, and everything in this repository
-was made during the 48 hours of the hackathon, as the rules ask. The repository's history shows it: its first commit is
-of 14 November 2026 at 09:37 (Ecuador time), and every step after it is there, dated, in the order it was made.
+in Sangolquí (Universidad de las Fuerzas Armadas ESPE) on Saturday 14 November 2026 at 09:37 (Ecuador time), and the
+game as submitted, v0.3.0, was made in the 39 hours that followed. That submission lives, frozen and unchanged, at
+https://github.com/alexanderkholodov1/farpoint-horizon: its history shows every step, dated, in the order it was made, together with everything we delivered to
+the event (the decks presented in Sangolquí, the texts and deck sent to NASA, the 30-second video).
+
+This repository starts from that exact tree (its first commit is a byte-identical copy of v0.3.0) and keeps going:
+first a polished web game up to v1.0.0, then a far larger game for Steam and other platforms.
 
 ## Use of AI
 
@@ -165,12 +173,10 @@ Team SK-Horizons, Quito, Ecuador.
 - **Alexander Kholodov**: the first brainstorm and the plan by stages that let the work run in parallel, the real physics of the flight and the landing, ground control, testing, debugging and edge cases, design polish, and the care and order of the repository. [GitHub](https://github.com/alexanderkholodov1)
 - **Sebastian Amaguaya**: the story campaign and its cuy crew, nearly every mission and its mechanics, the 3D models, the rocket builder, the music and the look of the game. [GitHub](https://github.com/XebaxCode)
 
-## Delivered to the event
+## The repository
 
-Everything we delivered to the event is in [`spaceapps/`](spaceapps/): the decks presented in Sangolquí
-([`spaceapps/local-pitch/`](spaceapps/local-pitch/)), the texts and deck sent to NASA
-([`spaceapps/global-submission/`](spaceapps/global-submission/)) and the 30-second video. The map of the whole
-repository is [`docs/README.md`](docs/README.md).
+The map of the whole repository is [`docs/README.md`](docs/README.md). What we delivered to the event stays in the
+frozen hackathon repository: https://github.com/alexanderkholodov1/farpoint-horizon.
 
 ## License
 
@@ -182,10 +188,10 @@ MIT, see [LICENSE](LICENSE).
 
 **Seis misiones reales de la NASA. Cuatro cuyes que estuvieron ahí. Y una misión que es toda tuya.**
 
-Farpoint HORIZON es un juego espacial en 3D hecho en Quito por el equipo SK-Horizons para el NASA Space Apps Challenge
-2026. Permite a cualquiera, solo o con hasta tres amigos, vivir una misión espacial desde la primera idea hasta que
+Farpoint HORIZON es un juego espacial en 3D hecho en Quito por el equipo SK-Horizons, nacido en 39 horas en el NASA
+Space Apps Challenge 2026 (esa entrega queda congelada en https://github.com/alexanderkholodov1/farpoint-horizon). Permite a cualquiera, solo o con hasta tres amigos, vivir una misión espacial desde la primera idea hasta que
 los datos vuelven a casa: construir la nave, lanzarla, volarla, aterrizarla y mantenerla funcionando. En el camino,
 una tripulación de cuyes astronautas te lleva por seis momentos históricos de la NASA: Apollo 13, la primera
 reparación del Hubble, Mars Pathfinder, LCROSS, DART y Artemis I, contados tal como la NASA los cuenta. Todo se mueve
 como en la realidad, sobre datos de la NASA, y equivocarse nunca es perder: entiendes por qué, cambias algo y vuelves
-a intentarlo. Juega en https://farpoint-horizon.web.app.
+a intentarlo. Juega en https://farpoint-horizon-forever.web.app.

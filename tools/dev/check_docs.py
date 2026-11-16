@@ -1,7 +1,7 @@
 """The documentation stays true: run by tools/dev/check.sh (and CI) on every push.
 
-1. Every area of the repository (docs/, spaceapps/, tools/, kb/) and each folder directly inside docs/, spaceapps/ and
-   tools/ has a README.md that says what is in it.
+1. Every area of the repository (docs/, tools/, kb/) and each folder directly inside docs/ and tools/ has a
+   README.md that says what is in it.
 2. Every repository path a Markdown document names (in `code` or as a [link](path)) exists, so a document never points
    at a file that was moved or deleted. Patterns (`*`, `<name>`, `{a,b}`), URLs, res:// paths and folders that are
    made at run time (build/, shots/, .godot/) are not checked, nor records of a past moment (HISTORY below).
@@ -14,18 +14,18 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-TOP = ("docs/", "spaceapps/", "tools/", "kb/", "scripts/", "data/", "assets/", "tests/", "i18n/", "scenes/",
+TOP = ("docs/", "tools/", "kb/", "scripts/", "data/", "assets/", "tests/", "i18n/", "scenes/",
        "assets/textures/", "assets/audio/", "assets/fonts/", "assets/shaders/", "web/", ".github/")
 ROOT_FILES = ("README.md", "AGENTS.md", "CLAUDE.md", "LICENSE", "project.godot", "export_presets.cfg", "icon.svg",
               "firebase.json", "database.rules.json", ".gitignore", ".gitattributes")
 # Records of a past moment name what existed then: the plans of shipped versions, the decision log, dated research.
 HISTORY = ("docs/versions/v0.1.0.md", "docs/versions/v0.2.0.md", "kb/decisions.md", "kb/tech/")
-SKIP_PREFIX = ("build/", "shots/", ".godot/", "user://", "res://", "spaceapps/rules/private/")
+SKIP_PREFIX = ("build/", "shots/", ".godot/", "user://", "res://")
 problems = []
 
 # 1. READMEs
-need = [ROOT / a for a in ("docs", "spaceapps", "tools", "kb")]
-for area in ("docs", "spaceapps", "tools"):
+need = [ROOT / a for a in ("docs", "tools", "kb")]
+for area in ("docs", "tools"):
     need += [d for d in (ROOT / area).iterdir() if d.is_dir() and not d.name.startswith(".") and d.name != "__pycache__"]
 for d in need:
     if not (d / "README.md").exists():

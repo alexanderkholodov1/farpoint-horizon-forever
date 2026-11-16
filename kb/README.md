@@ -20,8 +20,8 @@ Read `AGENTS.md` first. Then read only what your task needs; the table says what
 | `decisions.md` | Decisions taken (with who decided and when) and decisions still open | Always; a decision here overrides anything older |
 
 ## Sources
-The challenge itself (its text, resources and requirement IDs) and the event's rules live in `spaceapps/challenge/`
-and `spaceapps/rules/`; the team's notes are in `spaceapps/team/`. Every fact in this folder cites its source;
+The challenge the game was born from (its text, resources and requirement IDs) lives in `kb/challenge/`; the event's
+rules and the team's notes stay in the frozen hackathon repository (https://github.com/alexanderkholodov1/farpoint-horizon, folder `spaceapps/`). Every fact in this folder cites its source;
 anything inferred is labeled "(inference)".
 
 ## Keeping it current

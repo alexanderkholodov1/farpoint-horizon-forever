@@ -38,6 +38,11 @@ agents bring evidence, alternatives and a recommendation.
 | 2026-11-14 | NASA data inside the game: the photos each mission returns, shown at the end; positions from JPL Horizons and constants from the NSSDC fact sheets; NASA imagery used only as decoration needs a good argument first | Lead |
 | 2026-11-14 | The look: the identity and the UI are futuristic space, of the present (not a 1960s-70s control center); the graphics (craft, rockets, places) are as real as a documentary and resemble real spacecraft; characters may be stylized 3D; no Telltale-like style. The two or three characteristic colors belong to the game's brand marks (logo and what identifies the game), not to every graphic | Lead |
 | 2026-11-15 | Repository layout: the game (`scripts/`, `data/`, `assets/`...), the team's work (`docs/`, `kb/`, `tools/`) and the event (`spaceapps/`), each area with a README; the map is `docs/README.md` | Team |
+| 2026-11-16 | The hackathon repository (`alexanderkholodov1/farpoint-horizon`, v0.3.0) is frozen exactly as submitted: no commit, branch, issue, comment or deploy by anyone, nor to its Firebase project `farpoint-horizon` | Alexander |
+| 2026-11-16 | The game continues in this repository, `farpoint-horizon-forever` (project name Farpoint HORIZON Forever until the final one), started from a byte-identical copy of v0.3.0 without its history; the two histories are never joined | Alexander |
+| 2026-11-16 | The long-term path: polish the web game up to v1.0.0; after that, a far larger game for Steam and other platforms as its own product; a mobile game is an idea to study | Alexander |
+| 2026-11-16 | Until the final name, the web build lives in the Firebase project `aklabs-dev`, hosting site `farpoint-horizon-forever`, with that project's Realtime Database for the online room | Alexander |
+| 2026-11-16 | Alexander and Sebastian share the game 50/50; the terms (ownership, name, license of new work, income) go in a written agreement between the two | Alexander (to agree with Sebastian) |
 
 ## Open
 | # | Question | Why it matters | Status |

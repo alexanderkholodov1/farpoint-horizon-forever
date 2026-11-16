@@ -82,4 +82,4 @@ three characteristic colors, one warm, for the game's brand marks; sound with ch
 The full mission from objective to operation (C7), resources that react to every decision (C3, C8, R1-R3), stations
 for up to four (C4, C9, T1-T4), simulation and a report that explains why (C5, C6, G4, E4), several missions and
 difficulties (F1, F3), random events (F2), real-time gauges (F6), a leaderboard and gallery (F7), and the real twin
-mission (NASA data at the core). IDs from `spaceapps/challenge/requirements.md`.
+mission (NASA data at the core). IDs from `kb/challenge/requirements.md`.
