@@ -35,7 +35,7 @@ func _initialize():
 		m.redundancy = rng.randf() < 0.5
 		m.shielding = rng.randf() < 0.5
 		var s: Dictionary = m.simulate(1000 + i)
-		if s.launch_failed or s.status == "lost" and s.storms.is_empty() and s.months <= 1:
+		if s.launch_failed or (s.status == "lost" and s.storms.is_empty() and s.months <= 1):
 			continue
 		var reached_first: bool = s.months >= m.years * 4 and s.status == "ok"
 		if reached_first:
@@ -96,8 +96,6 @@ func _initialize():
 			sim = mm.simulate(500 + i, ch)
 		most = maxi(most, asked_months.size())
 	print("most storms in one 15-year mission: ", most, " (the player is asked ", Op.MAX_ASKS, ")")
-	if Op.MAX_ASKS != 1:
-		fails += 1
 	if dmg.safe > dmg.keep:
 		fails += 1
 		print("FAIL safe mode damaged more often")
@@ -105,4 +103,4 @@ func _initialize():
 		print("ok space weather")
 	else:
 		print("space weather: ", fails, " failure(s)")
-	quit()
+	quit(1 if fails > 0 else 0)

@@ -22,10 +22,12 @@ func _initialize() -> void:
 				shown[e.id] = true
 	var missing: Array = listed.keys().filter(func(k): return not shown.has(k))
 	var extra: Array = shown.keys().filter(func(k): return not listed.has(k))
+	var ok := false
 	if not data is Dictionary or data.get("ai", []).is_empty() or data.get("built_with", []).is_empty():
-		print("credits: data/credits.json is missing or has no AI or built-with lines; run python tools/content/credits.py")
-	elif missing.is_empty() and extra.is_empty():
-		print("ok credits %d sources" % shown.size())
+		print("FAIL credits: data/credits.json is missing or has no AI or built-with lines; run python tools/content/credits.py")
+	elif listed.is_empty() or not missing.is_empty() or not extra.is_empty():
+		print("FAIL credits out of date (run python tools/content/credits.py). Missing: %s Extra: %s" % [missing, extra])
 	else:
-		print("credits out of date (run python tools/content/credits.py). Missing: %s Extra: %s" % [missing, extra])
-	quit()
+		ok = true
+		print("ok credits %d sources" % shown.size())
+	quit(0 if ok else 1)

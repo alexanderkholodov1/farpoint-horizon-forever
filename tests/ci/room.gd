@@ -90,8 +90,12 @@ func _initialize() -> void:
 	check(g.mine("scientist") and h.holder("scientist").pid == g.me, "guest took the scientist")
 	h.take("scientist")   # already held by the guest: refused
 	check(h.holder("scientist").pid == g.me, "a held station is not taken from its holder")
-	check(not g.can_edit("engineer") == false and g.can_edit("scientist") and not h.can_edit("scientist"), "edit rights")
+	# a bot's station can be edited by anyone; a person's station only by its holder
+	check(g.can_edit("engineer") and h.can_edit("engineer"), "anyone edits a station a bot holds")
+	check(g.can_edit("scientist") and not h.can_edit("scientist"), "only the holder edits the station a person holds")
 	h.take("engineer")
+	g.poll(true)
+	check(h.can_edit("engineer") and not g.can_edit("engineer"), "the guest cannot edit the station the host now holds")
 	hm = {"scenario": "volcanes", "difficulty": "normal", "orbit": "sso", "bus": "small", "instruments": ["ir_adv"], "panels": "dep_m", "battery": "b1k", "comms": "xband", "adcs": "rw", "propulsion": "cold", "launcher": "ride", "years": 2, "redundancy": false, "shielding": false}
 	h.start_design(hm)
 	g.poll(true)
