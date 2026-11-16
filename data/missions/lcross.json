@@ -1,0 +1,143 @@
+{
+ "doc": "Mission 4, LCROSS (October 9, 2009): 'The plan is to crash?' (issue #48). The crew fly it from mission control. (1) The aim, at separation (01:50 UT): on NASA's LROC mosaic of the south pole (S-lroc-wac) the Centaur's predicted impact point is nudged into Cabeus (its place and size: S-cabeus-gazetteer) with small burns; a change of speed v moves the impact point by v times the time left (9 h 41 min), the straight-line rule of a free fall seen this far out (our simplification of the trajectory). Inside Cabeus but on its sunlit floor, or outside it: lost, tried again. Time then runs fast to just before the impact (said on screen). (2) The four minutes: the Centaur hits at 11:31:19.5 UT, the shepherding craft follows 4 min 16.6 s behind at about 2.5 km/s and hits at 11:35:36.1 UT (S-lcross-nssdc); the four minutes are shown 4 times faster (said on screen; real time for the last 15 km); the player keeps the instruments on the plume, through the craft's wobbles, and catches the glints of ice in the crosshair (Space), one reading each, when a clump of ejecta crosses the view; a reading with no glint costs a pause. Too few readings at the end: lost. Climax: the four minutes, then NASA's announcement of water (S-lcross-nasa). Our simplifications, said here: the plume's ejecta speeds (no plume height found on a NASA page), the drift and wobbles of the pointing, the flashes (clumps of ejecta) and the reading rule, showing the four minutes 4 times faster, the trim budget, the spectrum drawn for the game.",
+ "aim": {
+  "map": "res://assets/photos/moon_south_pole/south_pole_wide_lroc_wac.jpg",
+  "map_px": 1000,
+  "map_half_deg": 11.0,
+  "moon_radius_km": 1737.4,
+  "cabeus_lat": -85.33,
+  "cabeus_lon": -42.13,
+  "cabeus_d_km": 100.58,
+  "seconds_left": 34879.5,
+  "nudge_ms": 0.25,
+  "budget_ms": 8.0,
+  "start_off_km": [
+   70.0,
+   120.0
+  ],
+  "dark_max": 0.16
+ },
+ "impact": {
+  "centaur_ut": "11:31:19.5",
+  "shepherd_ut": "11:35:36.1",
+  "gap_s": 256.6,
+  "speed_kms": 2.5,
+  "centaur_kg": 2000,
+  "g_moon": 0.00162,
+  "ejecta_up_kms": [
+   0.03,
+   0.2
+  ],
+  "ejecta_side_kms": 0.06,
+  "sunlit_km": 2.5,
+  "warp_to_s": -14.0,
+  "need": 8,
+  "stars": [
+   8,
+   12,
+   16
+  ],
+  "cool_s": 1.0,
+  "aim_deg": 1.4,
+  "drift": 0.9,
+  "show_fast": 4.0,
+  "real_km": 15.0,
+  "miss_cool_s": 14.0,
+  "pulse_first_s": 8.0,
+  "pulse_gap_s": [
+   4.0,
+   9.0
+  ],
+  "pulse_len_s": 6.0,
+  "pulse_end_s": 228.0,
+  "wobble_gap_s": [
+   14.0,
+   26.0
+  ],
+  "wobble_deg": 2.6,
+  "warp": 5000.0,
+  "frame_km": 46.0,
+  "hit_px": 85.0,
+  "glint_kms": [
+   0.12,
+   0.3
+  ]
+ },
+ "texts": {
+  "aim": "Move the impact point into the dark floor of Cabeus: WASD or the arrows, small burns. Enter: let the Centaur go.",
+  "warp": "Nine hours and forty minutes to the impact: time runs 5,000 times faster.",
+  "watch": "The Centaur is falling ahead of us. Real time.",
+  "read": "Ice glints fly out of the plume: chase them with the crosshair (mouse or WASD) and press SPACE.",
+  "missed": "The Centaur hit outside Cabeus.",
+  "missed_sub": "That is not how it went: the real Centaur hit inside Cabeus, near the Moon's south pole. Try again.",
+  "sunlit": "The Centaur hit Cabeus's sunlit floor.",
+  "sunlit_sub": "Ice hides in the dark. That is not how it went: the target was the shadowed floor. Try again.",
+  "few": "Not enough data.",
+  "few_sub": "The shepherding craft hit before enough data reached Earth. The real one sent four minutes of data home. Try again.",
+  "hit": "Centaur impact!",
+  "hit_sub": "11:31:19.5 UT. Now the four minutes.",
+  "end": "Signal lost. On purpose.",
+  "end_sub": "11:35:36.1 UT: the shepherding craft hit Cabeus too.",
+  "good": "Water mark! Reading %d saved.",
+  "dark": "Missed! Put the crosshair on the glint.",
+  "faint": "Too faint. Wait for the plume to rise into the sunlight.",
+  "early": "No glint yet! The instruments pause.",
+  "wobble": "Wobble! Bring the crosshair back.",
+  "fast": "Shown 4 times faster",
+  "final": "The last 15 km: real time.",
+  "arm": "Killa calls each instrument: press its number (1 to 6) while it lights up.",
+  "flash": "The photometer watches the flash: SPACE at its peak!",
+  "dive": "The last 25 km, in real time: steer onto the Centaur's fresh crater (WASD or mouse).",
+  "dust": "Dust! No water in that one."
+ },
+ "facts": [
+  {
+   "text": "The Centaur hit Cabeus at 11:31 UT; the shepherding craft flew through the plume and hit four minutes later, at 9,000 km/h.",
+   "source": "S-lcross-nasa"
+  },
+  {
+   "text": "On November 13, 2009, NASA announced that the data showed the mission had found water near the Moon's south pole.",
+   "source": "S-lcross-nasa"
+  }
+ ],
+ "stages": {
+  "doc": "The mission in five stages, each sending its part of the data home (our scoring). The instruments are the shepherding craft's own (S-lcross-nasa): a visible camera, two near-infrared cameras, two mid-infrared cameras, a visible spectrometer, two near-infrared spectrometers and a photometer (the Total Luminescence Photometer, which watched the flash). The crater the Centaur made: about 20 m across (S-lcross-nasa).",
+  "instruments": [
+   "Visible camera",
+   "Near-infrared cameras",
+   "Mid-infrared cameras",
+   "Visible spectrometer",
+   "Near-infrared spectrometers",
+   "Photometer"
+  ],
+  "arm_start_s": -13.0,
+  "arm_step_s": 1.7,
+  "arm_window_s": 1.5,
+  "flash_peak_s": 0.7,
+  "flash_tol_s": 0.55,
+  "flash_wait_s": 2.4,
+  "flash_slow": 0.25,
+  "ice_full": 14,
+  "dive_km": 25.0,
+  "dive_start_km": [
+   4.0,
+   6.0
+  ],
+  "dive_drift_kms": 0.6,
+  "dive_push_kms": 2.2,
+  "dive_good_km": 6.0,
+  "crater_m": 20,
+  "weights": {
+   "instruments": 15,
+   "flash": 10,
+   "ice": 55,
+   "dive": 20
+  },
+  "need": 60,
+  "stars": [
+   60,
+   78,
+   92
+  ]
+ }
+}

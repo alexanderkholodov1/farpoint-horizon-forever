@@ -1,0 +1,79 @@
+keys,es
+Engines,Motores
+Fuel tank,Tanque
+Upper stage,Etapa superior
+Its tank,Su tanque
+Boosters,Impulsores
+Fairing,Cofia
+Pick the engines,Elige los motores
+They lift everything off the ground. Bigger engines make a bigger rocket.,Levantan todo del suelo. Motores más grandes hacen un cohete más grande.
+Pick the fuel tank,Elige el tanque de combustible
+"More fuel is more speed, and more weight to lift.","Más combustible es más velocidad, y más peso que levantar."
+Add an upper stage?,¿Añadir una etapa superior?
+"A second, lighter stage lights up high and takes your craft to orbit. Almost every real rocket has one.","Una segunda etapa, más ligera, se enciende en lo alto y lleva tu nave a la órbita. Casi todos los cohetes reales tienen una."
+Pick the upper stage's tank,Elige el tanque de la etapa superior
+Up there every kilo counts: a small tank goes a long way.,Allá arriba cada kilo cuenta: un tanque pequeño rinde mucho.
+Strap on boosters?,¿Añadir impulsores?
+Two solid rockets on the sides: an enormous push for the first two minutes.,Dos cohetes sólidos a los lados: un empujón enorme durante los dos primeros minutos.
+Close it with the fairing,Ciérralo con la cofia
+The shell that protects your craft through the air. It opens above the atmosphere.,La cubierta que protege tu nave al cruzar el aire. Se abre por encima de la atmósfera.
+Finish the steps first: %s.,Termina los pasos primero: %s.
+Fly this rocket ▶,Volar este cohete ▶
+Your rocket,Tu cohete
+Ready on the pad,Listo en la plataforma
+"Drag to look at it from every side, then fly it. Click a part to change it.",Arrastra para verlo por todos lados y luego vuélalo. Haz clic en una pieza para cambiarla.
+Point at a part or an answer to know more.,Señala una pieza o una respuesta para saber más.
+Step %d of %d,Paso %d de %d
+Point at a part to know more. Click it to put it on the rocket.,Señala una pieza para saber más. Haz clic para ponerla en el cohete.
+Or take a ready rocket,O toma un cohete listo
+No upper stage,Sin etapa superior
+No boosters,Sin impulsores
+"Simpler and cheaper, but one stage alone rarely reaches orbit.","Más simple y barato, pero una sola etapa rara vez llega a la órbita."
+Nothing on the sides: lighter and cheaper.,Nada a los lados: más ligero y barato.
+%s kN of push,%s kN de empuje
+%s of fuel,%s de combustible
+Will it fly?,¿Volará?
+Lifts off,Despega
+Reaches %s,Llega a %s
+Carries your craft,Lleva tu nave
+Finish the rocket to know.,Termina el cohete para saberlo.
+pushes %.2f× its weight,empuja %.2f× su peso
+Thrust against weight at liftoff: above 1 it rises; real rockets leave the pad at 1.2 to 1.5.,"Empuje frente a peso al despegar: por encima de 1 sube; los cohetes reales salen de la plataforma con 1,2 a 1,5."
+%.1f of %.1f km/s,%.1f de %.1f km/s
+"The speed the rocket can gain with your craft on top, against the speed this orbit asks for (air and gravity losses included).","La velocidad que el cohete puede ganar con tu nave encima, frente a la que pide esta órbita (con las pérdidas por aire y gravedad)."
+up to %s · yours %s,hasta %s · la tuya %s
+"The heaviest craft this rocket can take to this orbit, against the craft you designed.","La nave más pesada que este cohete puede llevar a esta órbita, frente a la nave que diseñaste."
+%.0f m tall,%.0f m de alto
+ each, cada uno
+%s kN in vacuum,%s kN en vacío
+Sources: ,Fuentes: 
+Our estimate: ,Estimación nuestra: 
+Electron-type,Tipo Electron
+Falcon 9-type,Tipo Falcon 9
+With solid boosters,Con impulsores sólidos
+Nine kerosene engines,Nueve motores de queroseno
+"Nine Merlin-type engines under a thrust section, the way the Falcon 9 first stage carries them: strong at sea level.","Nueve motores tipo Merlin bajo una sección de empuje, como los lleva la primera etapa del Falcon 9: fuertes a nivel del mar."
+Vacuum kerosene engine,Motor de queroseno de vacío
+"A huge nozzle that only works in near vacuum: weak at liftoff, very efficient up high. For upper stages.","Una tobera enorme que solo funciona casi en el vacío: débil al despegar, muy eficiente en lo alto. Para etapas superiores."
+Large first-stage tank,Tanque grande de primera etapa
+"3.7 m across and 38 m long, full of kerosene and liquid oxygen: the body of a Falcon 9-type first stage.","3,7 m de ancho y 38 m de largo, lleno de queroseno y oxígeno líquido: el cuerpo de una primera etapa tipo Falcon 9."
+Large interstage,Interetapa grande
+Joins two stages and lets them go: everything below it falls away when the lower stage is empty. Grid fins included.,Une dos etapas y las suelta: todo lo que está debajo cae cuando la etapa inferior se vacía. Incluye aletas de rejilla.
+Large upper-stage tank,Tanque grande de etapa superior
+"The tank of a Falcon 9-type second stage: less fuel, but it burns where there is no air to push through.","El tanque de una segunda etapa tipo Falcon 9: menos combustible, pero arde donde no hay aire que empujar."
+Large fairing,Cofia grande
+A 5.2 m shell that protects the craft through the air; it opens and drops once the rocket is above the atmosphere.,"Una cubierta de 5,2 m que protege la nave al cruzar el aire; se abre y cae cuando el cohete está sobre la atmósfera."
+Nine small engines,Nueve motores pequeños
+"Nine Rutherford-type engines, the way the Electron first stage carries them.","Nueve motores tipo Rutherford, como los lleva la primera etapa del Electron."
+Small vacuum engine,Motor pequeño de vacío
+"One small engine with a longer nozzle, for the upper stage of a small rocket.","Un motor pequeño con una tobera más larga, para la etapa superior de un cohete pequeño."
+Small first-stage tank,Tanque pequeño de primera etapa
+"1.2 m across, carbon composite: the body of an Electron-type first stage.","1,2 m de ancho, de fibra de carbono: el cuerpo de una primera etapa tipo Electron."
+Small interstage,Interetapa pequeña
+Joins the two stages of a small rocket and lets the lower one go.,Une las dos etapas de un cohete pequeño y suelta la inferior.
+Small upper-stage tank,Tanque pequeño de etapa superior
+The 2.4 m tank of an Electron-type second stage.,"El tanque de 2,4 m de una segunda etapa tipo Electron."
+Small fairing,Cofia pequeña
+A 1.2 m carbon shell for small craft.,"Una cubierta de carbono de 1,2 m para naves pequeñas."
+Two solid boosters,Dos impulsores sólidos
+"A pair of Space Shuttle-type solid boosters strapped to the first stage. Enormous push for two minutes, then they fall away. Values per booster.","Un par de impulsores sólidos tipo transbordador espacial sujetos a la primera etapa. Un empujón enorme durante dos minutos, y luego caen. Valores por impulsor."

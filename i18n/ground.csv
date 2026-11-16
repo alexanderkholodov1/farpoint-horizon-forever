@@ -1,0 +1,36 @@
+keys,es
+Ground control · Deep Space Network,Control de tierra · Red de Espacio Profundo
+Find the carrier,Encuentra la portadora
+away from Earth,alejándose de la Tierra
+toward Earth,hacia la Tierra
+"%s (%s) sees your craft %d° up, %.2f light-seconds away. It moves %.1f km/s %s, so its tone is shifted %+.0f kHz (Doppler).","%s (%s) ve tu nave a %d° de altura, a %.2f segundos-luz. Va a %.1f km/s %s, así que su tono se corre %+.0f kHz (Doppler)."
+California,California
+Spain,España
+Australia,Australia
+"Click the faint line to tune to it, then narrow the filter.","Haz clic en la línea tenue para sintonizarla y luego estrecha el filtro."
+"Echo, take it","Echo, encárgate"
+Filter,Filtro
+Holding the tone... %d%%,Manteniendo el tono... %d%%
+"On it. Narrow the filter: less noise gets in, the line stands out.","Ahí está. Estrecha el filtro: entra menos ruido y la línea resalta."
+The line is in view. Click right on it.,La línea está a la vista. Haz clic justo sobre ella.
+Not in view. Widen the filter and look for the faint line.,No está a la vista. Ensancha el filtro y busca la línea tenue.
+CARRIER LOCK. %s hears your craft. +%d,PORTADORA ENGANCHADA. %s escucha tu nave. +%d
+%s has your craft's carrier. Telemetry is coming in.,%s tiene la portadora de tu nave. Ya llega la telemetría.
+Ground control · alarm %s,Control de tierra · alarma %s
+Too many jobs for the computer,Demasiadas tareas para la computadora
+"The lander's computer has only a few work slots. The rendezvous radar keeps sending jobs the landing does not need. Click the radar's jobs to shed them; keep the landing's. Then call go.","La computadora del módulo tiene pocos espacios de trabajo. El radar de encuentro sigue mandando tareas que el aterrizaje no necesita. Haz clic en las tareas del radar para quitarlas; deja las del aterrizaje. Luego da el go."
+GO on that alarm,GO con esa alarma
+Radar,Radar
+Guidance,Guiado
+Throttle,Acelerador
+Display,Pantalla
+free,libre
+Radar jobs shed: %d of %d · restarts: %d,Tareas del radar quitadas: %d de %d · reinicios: %d
+The landing's jobs have room. Call go!,Las tareas del aterrizaje tienen espacio. ¡Da el go!
+"1202! Restart: low jobs dropped, the landing goes on.","¡1202! Reinicio: se soltaron las tareas menores, el aterrizaje sigue."
+Keep that one: the landing needs it.,Esa no: el aterrizaje la necesita.
+"Ground here: radar jobs shed, the landing has its slots. We're go! +%d","Aquí tierra: tareas del radar fuera, el aterrizaje tiene sus espacios. ¡Estamos go! +%d"
+"Ground here. We're go, keep flying.","Aquí tierra. Estamos go, sigue volando."
+"%s: %s has the craft's carrier, %d° up. Light time %.2f s.","%s: %s tiene la portadora de la nave, a %d° de altura. Tiempo de luz %.2f s."
+Ground control · carrier locked,Control de tierra · portadora enganchada
+Ground control · go on the 1202,Control de tierra · go con el 1202

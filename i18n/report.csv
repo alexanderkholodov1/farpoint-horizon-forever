@@ -1,0 +1,25 @@
+keys,es
+Mission report,Informe de la misión
+%d / 1000 points,%d / 1000 puntos
++ %d bonus,+ %d de bonus
+Final cost %s of %s,Costo final %s de %s
+%d of %d months in operation,%d de %d meses en operación
+Photos your mission sent home,Fotos que tu misión envió a casa
+This mission's pictures are not in the game yet.,Las imágenes de esta misión aún no están en el juego.
+"%d of %d, real NASA images of your target. Click one to see it large.","%d de %d, imágenes reales de la NASA de tu objetivo. Haz clic en una para verla en grande."
+Extra objectives,Objetivos extra
+not this time,esta vez no
+Bonus: +%d points on top of your score.,Bonus: +%d puntos sobre tu puntaje.
+Meet “%s” to bring this one home.,Cumple «%s» para traer esta a casa.
+It comes home when the mission works.,Llega a casa cuando la misión funciona.
+A photo your mission sent home,Una foto que tu misión envió a casa
+Credit: %s,Crédito: %s
+"The Moon's south pole seen from above, a mosaic of the Lunar Reconnaissance Orbiter's wide-angle camera","El polo sur de la Luna visto desde arriba, un mosaico de la cámara gran angular del Lunar Reconnaissance Orbiter"
+"Shackleton crater rim in sunlight, its floor in permanent shadow","El borde del cráter Shackleton al sol, su fondo en sombra permanente"
+"Inside Shackleton, seen by ShadowCam (NASA instrument on the Korean KPLO orbiter)","El interior del Shackleton, visto por ShadowCam (instrumento de la NASA en el orbitador coreano KPLO)"
+"Sangay ash plume, Landsat 8 OLI natural colour, 5 Nov 2022 (30 m pixels)","Pluma de ceniza del Sangay, Landsat 8 OLI en color natural, 5 nov 2022 (píxeles de 30 m)"
+"Cotopaxi after its first eruption in 70 years, Landsat 8 OLI natural colour, 15 Sep 2015","El Cotopaxi tras su primera erupción en 70 años, Landsat 8 OLI en color natural, 15 sep 2015"
+"Tungurahua summit plume, EO-1 ALI natural colour, 1 Jan 2011 (30 m)","Pluma en la cumbre del Tungurahua, EO-1 ALI en color natural, 1 ene 2011 (30 m)"
+"Tungurahua, EO-1 ALI short-wave infrared false colour: the hot crater glows red, 1 Jan 2011 (30 m)","Tungurahua, EO-1 ALI en falso color de infrarrojo de onda corta: el cráter caliente brilla en rojo, 1 ene 2011 (30 m)"
+"Sangay night thermal infrared (ASTER on Terra), 11 Jun 2020: lava flows white, ash plume dark red-brown","Sangay de noche en infrarrojo térmico (ASTER en Terra), 11 jun 2020: coladas de lava en blanco, pluma de ceniza rojo oscuro"
+"Cotopaxi ash columns, ASTER on Terra false colour, 22 Aug 2015 (15 m)","Columnas de ceniza del Cotopaxi, ASTER en Terra en falso color, 22 ago 2015 (15 m)"

@@ -1,0 +1,147 @@
+{
+ "doc": "The first mission, guided (C9, issue #14): what the crew coach says on each screen and design step, and what it lights up. ctx is a screen id, or design:<step index>; who is the station whose bot speaks; targets are the visible texts of the options or buttons to light. The design they lead to (medium platform; multispectral camera, gamma-ray spectrometer, radar altimeter; large solar wings and the 1 kWh battery; Ka band; wheels and star tracker; chemical propulsion; medium launcher) was checked with Mission.compute(): no warning, 243 M$ of 380.",
+ "scenario": "moon_south_pole",
+ "tips": [
+  {
+   "ctx": "design:0",
+   "who": "pilot",
+   "title": "Welcome aboard",
+   "text": "Your first mission: land at the Moon's south pole, where the Sun never climbs high and ice may hide in the dark of the craters. First, the extra goals: keep the ones you want to go for and press Continue. Then the orbit, where your craft will fly: lunar orbit, 100 km up, is the one. Click it.",
+   "targets": [
+    "Continue ▶",
+    "Lunar orbit (100 km)"
+   ],
+   "sources": [
+    "S-svs-south-pole"
+   ]
+  },
+  {
+   "ctx": "design:1",
+   "who": "engineer",
+   "title": "The body of the craft",
+   "text": "The platform is the craft's body: structure, computer, room for instruments. A small one is cheap but fills up fast. Take the medium platform: room for three instruments, and strong enough to carry fuel to the Moon.",
+   "targets": [
+    "Medium platform (~1.5 t)"
+   ]
+  },
+  {
+   "ctx": "design:2",
+   "who": "scientist",
+   "title": "What we came to see",
+   "text": "The goal needs two things: look for ice in the shadows, and photograph the landing site. A gamma-ray spectrometer reads what the ground is made of; a multispectral camera sees the site in many colours; a radar altimeter measures the ground's height. Every instrument costs mass, power and data: watch the board on the right.",
+   "targets": [
+    "Gamma-ray spectrometer",
+    "Multispectral camera",
+    "Radar altimeter",
+    "Continue ▶"
+   ]
+  },
+  {
+   "ctx": "design:3",
+   "who": "engineer",
+   "title": "Power",
+   "text": "Instruments need watts. Large solar wings make enough, and the 1 kWh battery covers the hours in shadow. If the wings glow amber on the craft, power falls short: that is the craft telling you.",
+   "targets": [
+    "Large solar wings",
+    "1 kWh battery"
+   ]
+  },
+  {
+   "ctx": "design:4",
+   "who": "ground",
+   "title": "Bringing the data home",
+   "text": "Every photo has to come home. Ka band is the fastest antenna: it sends all of today's data, today. A slower radio loses science, and its antenna would glow amber.",
+   "targets": [
+    "Ka band high gain"
+   ]
+  },
+  {
+   "ctx": "design:5",
+   "who": "pilot",
+   "title": "Pointing and pushing",
+   "text": "Sharp photos need precise pointing: reaction wheels and a star tracker. To brake into lunar orbit and land you need delta-v, a change of speed. Chemical propulsion gives 1,500 m/s.",
+   "targets": [
+    "Wheels and star tracker",
+    "Chemical (bipropellant)"
+   ]
+  },
+  {
+   "ctx": "design:6",
+   "who": "engineer",
+   "title": "The ride up",
+   "text": "The farther the destination, the less a rocket can carry. The medium launcher lifts your craft toward the Moon: click it. Feeling brave? Build your own rocket instead, from the engines up.",
+   "targets": [
+    "Medium launcher (Falcon 9 type)",
+    "Build your own rocket"
+   ]
+  },
+  {
+   "ctx": "builder",
+   "who": "engineer",
+   "title": "Your own rocket",
+   "text": "We build it from the ground up, one choice at a time: engines, tank, an upper stage, the fairing. In a hurry? Take the ready Falcon 9-type. When the three answers on the right are ticked, fly it.",
+   "targets": [
+    "Falcon 9-type",
+    "Fly this rocket ▶"
+   ],
+   "sources": []
+  },
+  {
+   "ctx": "design:7",
+   "who": "pilot",
+   "title": "The review",
+   "text": "Real NASA teams check a design like this before it flies. Blue is fine, amber costs science, red stops the launch. Nothing red? Then it is yours to fly. Press LAUNCH!",
+   "targets": [
+    "LAUNCH!"
+   ],
+   "sources": [
+    "S3"
+   ]
+  },
+  {
+   "ctx": "launch",
+   "who": "pilot",
+   "title": "You fly it",
+   "text": "Keep the needle on the green marker with the arrow keys. When a stage runs dry, press Space to drop it: the rocket gets lighter and goes faster. Time runs for real; speed it up with the time controls.",
+   "targets": []
+  },
+  {
+   "ctx": "flight",
+   "who": "pilot",
+   "title": "Toward the Moon",
+   "text": "In orbit around the Earth. Mission control planned the departure: about 3,200 m/s burned at the right moment, then about three days of coasting, as Apollo 11 did. Look at the path, then give the GO: the flight computer fires the engine at the planned second.",
+   "targets": [
+    "GO for the burn ▶"
+   ],
+   "sources": [
+    "S-delta-v",
+    "S-apollo11"
+   ]
+  },
+  {
+   "ctx": "landing",
+   "who": "pilot",
+   "title": "Touchdown",
+   "text": "Shackleton's rim, near the south pole. More throttle slows the fall; touch down slower than 3 m/s. If alarm 1202 rings, keep calm: Apollo 11's computer raised it too, and they landed.",
+   "targets": [],
+   "sources": [
+    "S-alsj-1202",
+    "S-lola"
+   ]
+  },
+  {
+   "ctx": "operation",
+   "who": "ground",
+   "title": "Now it works",
+   "text": "You made it. Now the mission does its job: months go by, data comes home, surprises happen. A good design rides them out.",
+   "targets": []
+  },
+  {
+   "ctx": "report",
+   "who": "scientist",
+   "title": "What you found",
+   "text": "Your report: the science, the real NASA photos a mission like yours sends home, and the real missions like it. There is no perfect design. Try another, and beat your score.",
+   "targets": []
+  }
+ ]
+}

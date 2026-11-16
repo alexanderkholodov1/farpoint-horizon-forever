@@ -1,0 +1,85 @@
+keys,es
+Four hours out. DRACO is on. Find the little moon.,Faltan cuatro horas. DRACO está encendida. Encuentra la lunita.
+"Mission 5 · DART · September 26, 2022",Misión 5 · DART · 26 de septiembre de 2022
+Push an asteroid,Empujar un asteroide
+Find Dimorphos,Encontrar a Dimorphos
+Steer onto it,Guiar hacia él
+The last picture,La última foto
+Measure its orbit,Medir su órbita
+Time to impact,Tiempo al impacto
+Where DART will hit,Dónde chocará DART
+"When the dot splits in two, pick the small moon (A/D) and lock it (Enter).","Cuando el punto se parta en dos, elige la lunita (A/D) y fíjala (Enter)."
+"WASD fires small thrusters. Early pulses move the hit far; late ones, little.",WASD enciende pequeños propulsores. Corrige rápido cuando suene la alarma.
+"SPACE as late as you dare: the closer, the sharper.","ESPACIO lo más tarde que te atrevas: más cerca, más nítida."
+"Weeks later, mark the dips in the light to time Dimorphos's orbit.","Semanas después, marca al ritmo los valles de la luz para cronometrar la órbita."
+Still one dot. Wait for it to split.,Aún es un solo punto. Espera a que se parta.
+Dimorphos locked!,¡Dimorphos fijado!
+The little one! Locked. Now keep it in the middle.,¡La pequeña! Fijada. Ahora mantenla en el centro.
+Drift! Correct it!,¡Deriva! ¡Corrígela!
+We are sliding off! Thrusters!,¡Nos estamos desviando! ¡Propulsores!
+Target moved! Bring it back!,¡El blanco se movió! ¡Regrésalo!
+Fuel is out. That is where we hit.,Se acabó el combustible. Ahí vamos a chocar.
+OFF TARGET! WASD!,¡FUERA DEL BLANCO! ¡WASD!
+Fuel: %d%% · miss: %d m,Combustible: %d%% · desvío: %d m
+LAST PICTURE: SPACE!,¡ÚLTIMA FOTO: ESPACIO!
+Thirty seconds. Look at it grow!,Treinta segundos. ¡Mira cómo crece!
+Picture: %.1f cm per pixel,Foto: %.1f cm por píxel
+Missed by %d m.,Falló por %d m.
+SIGNAL LOST!,¡SEÑAL PERDIDA!
+"Impact! 23:14 UT, as Earth heard it, 11 million km away.","¡Impacto! 23:14 UT, como lo oyó la Tierra, a 11 millones de km."
+Signal lost. Right on target. Now we wait and watch.,Señal perdida. Justo en el blanco. Ahora a esperar y mirar.
+Telescopes on Earth! Each deep dip is Dimorphos passing Didymos. Hit them on the beat!,¡Telescopios en la Tierra! Cada valle hondo es Dimorphos pasando por Didymos. ¡Dales al ritmo!
+BEFORE the impact: SPACE when each deep dip crosses the line!,ANTES del impacto: ¡ESPACIO cuando cada valle hondo cruce la línea!
+AFTER the impact: SPACE when each deep dip crosses the line!,DESPUÉS del impacto: ¡ESPACIO cuando cada valle hondo cruce la línea!
+No dip there!,¡Ahí no hay valle!
+PERFECT!,¡PERFECTO!
+Good!,¡Bien!
+Close,Casi
+Too few dips marked,Muy pocos valles marcados
+%d h %d min,%d h y %d min
+"Before: %d h %d min. Now the same, after the impact.","Antes: %d h %d min. Ahora lo mismo, después del impacto."
+%d minutes shorter!,¡%d minutos más corta!
+"NASA measured 32 minutes, plus or minus about 2.","La NASA midió 32 minutos, con unos 2 de margen."
+We moved an asteroid! A real one!,¡Movimos un asteroide! ¡Uno de verdad!
+Try again  ·  Enter,Intentar otra vez  ·  Enter
+Result: %d%% of %d%% needed.,Resultado: %d%% de %d%% necesarios.
+Your last picture,Tu última foto
+%.1f cm per pixel (the real last one: about 3),%.1f cm por píxel (la última real: unos 3)
+No picture taken,Sin foto
+Mission 5 · done,Misión 5 · lista
+Hit,Impacto
+%d m from the center,a %d m del centro
+Your picture,Tu foto
+Orbit before,Órbita antes
+Orbit after,Órbita después
+Continue  ·  Enter,Continuar  ·  Enter
+Play again  ·  R,Jugar otra vez  ·  R
+Two dots! The big one is Didymos. The little one is ours.,¡Dos puntos! El grande es Didymos. El pequeño es el nuestro.
+Two dots: pick the small one!,Dos puntos: ¡elige el pequeño!
+No lock.,Sin blanco fijado.
+DART needs its target in time. Try again.,DART necesita su blanco a tiempo. Inténtalo otra vez.
+Real time,Tiempo real
+Shown %d times faster,Mostrado %d veces más rápido
+Distance: %s km,Distancia: %s km
+black and white,blanco y negro
+"Dimorphos, 160 m","Dimorphos, 160 m"
+NOW,AHORA
+"The pair's light, as telescopes saw it (drawn for the game)","La luz de la pareja, como la vieron los telescopios (dibujada para el juego)"
+"Through DRACO, DART's camera. Watch the dot: when it splits in two, pick the small moon (A/D) and lock it (Enter).","Por DRACO, la cámara de DART. Mira el punto: cuando se parta en dos, elige la lunita (A/D) y fíjala (Enter)."
+"Four hours from impact: shown 1,500 times faster.",A cuatro horas del impacto: mostrado 1.500 veces más rápido.
+"Keep the hit on Dimorphos: WASD fires thrusters. Alarms: the aim drifts, correct it fast!","Mantén el impacto sobre Dimorphos: WASD enciende propulsores. Alarmas: la puntería se desvía, ¡corrige rápido!"
+"Shown 300, then 6 times faster.",Mostrado 300 y luego 6 veces más rápido.
+The last 20 seconds: real time.,Los últimos 20 segundos: tiempo real.
+"Take the last picture (SPACE) as late as you dare: the closer, the sharper. After the impact there is no signal.","Toma la última foto (ESPACIO) lo más tarde que te atrevas: más cerca, más nítida. Tras el impacto no hay señal."
+"Weeks later, telescopes watch the pair's light (3 hours each second): SPACE when each deep dip crosses the line.","Semanas después, los telescopios miran la luz de la pareja (3 horas por segundo): ESPACIO cuando cada valle hondo cruce la línea."
+We locked on Didymos!,¡Fijamos a Didymos!
+"That is not how it went: DART's SMARTNav switched to the small moon, Dimorphos. Try again.","Así no fue: el SMARTNav de DART cambió a la lunita, Dimorphos. Inténtalo otra vez."
+DART flew past Dimorphos.,DART pasó de largo a Dimorphos.
+That is not how it went: DART hit Dimorphos almost dead center. Try again.,Así no fue: DART chocó con Dimorphos casi en el centro. Inténtalo otra vez.
+Not enough to prove it.,No alcanza para probarlo.
+The team needed a clear measurement. Try again.,El equipo necesitaba una medición clara. Inténtalo otra vez.
+"On September 26, 2022, DART hit Dimorphos on purpose. Its last images, about 2 seconds before impact, were about 3 cm per pixel.","El 26 de septiembre de 2022, DART chocó a propósito con Dimorphos. Sus últimas imágenes, unos 2 segundos antes, tenían unos 3 cm por píxel."
+"NASA confirmed the impact shortened Dimorphos's orbit around Didymos from 11 hours 55 minutes to 11 hours 23 minutes: 32 minutes, plus or minus about 2.","La NASA confirmó que el impacto acortó la órbita de Dimorphos alrededor de Didymos de 11 horas 55 minutos a 11 horas 23 minutos: 32 minutos, con unos 2 de margen."
+◀ ▶ SWITCH,◀ ▶ CAMBIAR
+LOCK,FIJAR
+MARK,MARCAR

@@ -1,0 +1,114 @@
+keys,es
+Craft,Nave
+Systems,Sistemas
+Rocket,Cohete
+Launch,Lanzamiento
+Where will it fly?,¿Dónde volará?
+"The orbit decides what your craft sees, how long it talks to Earth and how hard it is to get there.","La órbita decide qué ve tu nave, cuánto habla con la Tierra y qué tan difícil es llegar."
+How big is your craft?,¿Qué tan grande es tu nave?
+"The body holds everything. Bigger carries more instruments, and costs and weighs more.","El cuerpo lo sostiene todo. Más grande lleva más instrumentos, y cuesta y pesa más."
+What will it carry?,¿Qué llevará?
+"The instruments do the science. Pick the ones that meet the goals, then continue.",Los instrumentos hacen la ciencia. Elige los que cumplen los objetivos y continúa.
+Pick the solar panels,Elige los paneles solares
+They make the power for everything on board.,Dan la energía para todo lo que va a bordo.
+Pick the battery,Elige la batería
+"It keeps the craft alive in the shadow, where the panels make nothing.","Mantiene viva la nave en la sombra, donde los paneles no dan nada."
+Pick the antenna,Elige la antena
+Every picture has to come home. A faster antenna sends more data each day.,Cada foto tiene que llegar a casa. Una antena más rápida envía más datos cada día.
+How will it point?,¿Cómo apuntará?
+Sharp pictures need a steady aim.,Las fotos nítidas necesitan un pulso firme.
+Pick its engine,Elige su motor
+It moves the craft to its orbit and holds it there.,Lleva la nave a su órbita y la mantiene ahí.
+Pick the rocket,Elige el cohete
+"The farther the destination, the less a rocket can carry.","Cuanto más lejos el destino, menos puede cargar un cohete."
+Ready to launch?,¿Lista para lanzar?
+Fix what is red. Amber costs science but still flies.,"Arregla lo que esté en rojo. El ámbar cuesta ciencia, pero igual vuela."
+"Point at an option to know more. Drag to turn the craft, scroll to zoom.","Señala una opción para saber más. Arrastra para girar la nave, rueda para acercar."
+Best fit,La que mejor encaja
+science ×%.1f,ciencia ×%.1f
+%d m/s to get there,%d m/s para llegar
+%d instrument(s),%d instrumento(s)
+%d of %d places used,%d de %d lugares usados
+Key,Clave
+Needs a bigger body,Necesita un cuerpo más grande
+Show the useful ones only,Mostrar solo los útiles
+Show all %d instruments,Mostrar los %d instrumentos
+Your craft needs %s of panels.,Tu nave necesita %s de paneles.
+In the shadow it needs %.0f Wh.,En la sombra necesita %.0f Wh.
+"Only 60 % of a battery is used, so it lasts many cycles.","Solo se usa el 60 % de una batería, para que dure muchos ciclos."
+Your instruments make %s per day.,Tus instrumentos generan %s al día.
+sends %s a day,envía %s al día
++%s cost,+%s de costo
+It needs %d m/s for this orbit and %d years.,Necesita %d m/s para esta órbita y %d años.
++%s mass,+%s de masa
+Your craft weighs %s and goes to %s.,Tu nave pesa %s y va a %s.
+Build your own rocket,Construye tu propio cohete
+part by part,pieza a pieza
+"Put a rocket together from real parts, from the engines up, and see if it can lift your craft.","Arma un cohete con piezas reales, desde los motores hacia arriba, y mira si puede levantar tu nave."
+lifts %s,levanta %s
+All systems go,Todo listo
+%d other things are fine,%d cosas más están bien
+Years of work · at least %d,Años de trabajo · al menos %d
+Extras,Opcionales
+Backup parts,Piezas de respaldo
++20 % cost,+20 % de costo
++10 % mass,+10 % de masa
++5 % cost,+5 % de costo
++4 % mass,+4 % de masa
+"More years means more science, and more cost (%s per year) and fuel.","Más años es más ciencia, y más costo (%s al año) y combustible."
+%d to fix,%d por arreglar
+Ready to fly,Lista para volar
+%d warning(s),%d advertencia(s)
+costs %s · you have %s,cuesta %s · tienes %s
+weighs %s · limit %s,pesa %s · límite %s
+uses %s · makes %s,usa %s · genera %s
+needs %d Wh · holds %d Wh,necesita %d Wh · guarda %d Wh
+makes %s · sends %s a day,genera %s · envía %s al día
+needs %d m/s · has %d m/s,necesita %d m/s · tiene %d m/s
+%d points · goal %d,%d puntos · meta %d
+not chosen yet,aún sin elegir
+You have not chosen this yet: it comes in a later step.,Todavía no lo has elegido: viene en un paso posterior.
+Wait: mission control is planning your departure,Espera: el control de misión planea tu salida
+Press SPACE (or Ready) to take this plan,Pulsa ESPACIO (o Listo) para aceptar este plan
+Press SPACE at zero to light the engine,Pulsa ESPACIO en cero para encender el motor
+Wait: time runs by itself to the burn,Espera: el tiempo corre solo hasta el encendido
+Press SPACE to cut the engine when the bar reaches the mark,Pulsa ESPACIO para apagar el motor cuando la barra llegue a la marca
+Press SPACE to correct your path,Pulsa ESPACIO para corregir tu trayectoria
+Nothing to do: you coast toward the Moon and time runs by itself,Nada que hacer: viajas hacia la Luna y el tiempo corre solo
+Braking: the engine stops by itself,Frenando: el motor se apaga solo
+Press SPACE at zero to brake and stay at the Moon,Pulsa ESPACIO en cero para frenar y quedarte en la Luna
+You are in orbit around the Moon: the landing comes next,Estás en órbita alrededor de la Luna: sigue el alunizaje
+Press SPACE to try the departure again,Pulsa ESPACIO para intentar la salida otra vez
+Map · M for the big one,Mapa · M para el grande
+Which extra goals will you go for?,¿Qué objetivos extra vas a buscar?
+Each one you meet adds points and brings a photo home. Missing one never takes anything away.,Cada uno que cumplas suma puntos y trae una foto a casa. No cumplir uno nunca te quita nada.
+%d of %d chosen,%d de %d elegidos
++%d points,+%d puntos
+Going for it,Voy por él
+"A time-lapse of your mission at work: the months go by, the log tells what happens and the science adds up.","Un time-lapse de tu misión trabajando: pasan los meses, la bitácora cuenta lo que ocurre y la ciencia se acumula."
+"The Sun circles the pole's horizon once a lunar day: %s turns a second at this speed, a flicker, so it is held still.","El Sol rodea el horizonte del polo una vez por día lunar: %s vueltas por segundo a esta velocidad, un parpadeo, así que se deja quieto."
+AUTOPILOT,PILOTO AUTO
+"You circle the Moon. Look at your orbit, then press SPACE to go down and land",Das vueltas a la Luna. Mira tu órbita y pulsa ESPACIO para bajar y alunizar
+"You arrive too fast for the Moon to hold you: left alone you would swing past it and away. Braking now, against your motion, bends that fly-by into a circle around the Moon. The small map shows both: your path, and the orbit you are braking into.","Llegas demasiado rápido para que la Luna te retenga: sin hacer nada pasarías de largo y te alejarías. Frenar ahora, contra tu movimiento, convierte ese paso en un círculo alrededor de la Luna. El mapa pequeño muestra las dos cosas: tu trayectoria y la órbita en la que estás frenando."
+"The Moon holds you now: you go round it without burning any fuel, a lap about every two hours. The small map shows your orbit. When you are ready, press SPACE to go down to Shackleton's rim.","La Luna ya te retiene: das vueltas a su alrededor sin gastar combustible, una vuelta cada dos horas más o menos. El mapa pequeño muestra tu órbita. Cuando quieras, pulsa ESPACIO para bajar al borde de Shackleton."
+- - the orbit to stay in,- - la órbita donde quedarse
+"Point at an option to know more. Keys: 1 to 9 choose, Enter goes on, Backspace goes back.","Señala una opción para saber más. Teclas: 1 a 9 eligen, Enter continúa, Retroceso vuelve."
+"The flight computer cut the engine for you, a little past the planned speed. The correction on the way fixes the rest.","La computadora de vuelo apagó el motor por ti, un poco pasada la velocidad planeada. La corrección en el camino arregla el resto."
+%d of about %d m/s lost,%d de unos %d m/s perdidos
+Braking: watch your path close into a loop around the Moon,Frenando: mira cómo tu trayectoria se cierra en un lazo alrededor de la Luna
+your plan first,primero tu plan
+Speed lost,Velocidad perdida
+SPACE,ESPACIO
+IGNITE,ENCENDER
+PERFECT,PERFECTO
+GOOD,BIEN
+EARLY,PRONTO
+LATE,TARDE
+AUTO,AUTO
+Ignition,Encendido
+Cut,Corte
+%d × %d km over its surface.,%d × %d km sobre su superficie.
+Press SPACE when the ring closes on the circle: that cuts the engine,Pulsa ESPACIO cuando el anillo se cierre sobre el círculo: eso apaga el motor
+Press SPACE when the ring closes on the circle,Pulsa ESPACIO cuando el anillo se cierre sobre el círculo
+"Press SPACE when the ring closes: the rounder the orbit, the better","Pulsa ESPACIO cuando el anillo se cierre: cuanto más redonda la órbita, mejor"
+Press SPACE when the ring closes on the circle to brake,Pulsa ESPACIO cuando el anillo se cierre sobre el círculo para frenar

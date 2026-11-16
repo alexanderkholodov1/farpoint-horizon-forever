@@ -1,0 +1,93 @@
+{
+ "doc": "The design steps in order, each with its responsible role and the CML level it reaches.",
+ "entries": [
+  {
+   "id": "orbita",
+   "title": "Orbit",
+   "role": "pilot",
+   "cml": 2,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "plataforma",
+   "title": "Platform",
+   "role": "engineer",
+   "cml": 2,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "instrumentos",
+   "title": "Instruments",
+   "role": "scientist",
+   "cml": 3,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "energia",
+   "title": "Power",
+   "role": "engineer",
+   "cml": 3,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "comunicaciones",
+   "title": "Communications",
+   "role": "ground",
+   "cml": 3,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "control",
+   "title": "Control and propulsion",
+   "role": "pilot",
+   "cml": 3,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "lanzador",
+   "title": "Launcher and lifetime",
+   "role": "engineer",
+   "cml": 4,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  },
+  {
+   "id": "revision",
+   "title": "Review",
+   "role": "pilot",
+   "cml": 4,
+   "source": [
+    "S3",
+    "S5"
+   ],
+   "simplified": "The eight steps group the design the way the CML stages do, with our own split between the four stations."
+  }
+ ]
+}

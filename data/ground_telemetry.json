@@ -1,0 +1,74 @@
+{
+ "_about": "Ground control's 'Read the squiggles' (issue #63, scripts/minigames/telemetry.gd). Each case: the mission-log events that open it ('match', the English titles; a %s matches anything), the four telemetry channels on screen, the one that goes wrong and how ('pattern': garble, sag, step or spikes), three fixes with the right one first (the game shuffles them), and the real story it comes from with its source. 'fallback' opens when no event matched by mid-mission. The waveforms are drawn by the game, not real data; the stories and fixes are real.",
+ "channels": {
+  "battery": {"name": "Battery", "unit": "V", "base": 28.0, "wave": 0.4},
+  "temp": {"name": "Temperature", "unit": "°C", "base": 21.0, "wave": 2.0},
+  "wheel": {"name": "Reaction wheel", "unit": "rpm", "base": 2400.0, "wave": 60.0},
+  "computer": {"name": "Computer memory check", "unit": "", "base": 100.0, "wave": 0.0},
+  "solar": {"name": "Solar power", "unit": "W", "base": 64.0, "wave": 1.5},
+  "sce": {"name": "Sensor power (SCE)", "unit": "V", "base": 5.0, "wave": 0.05}
+ },
+ "cases": [
+  {
+   "id": "computer",
+   "match": ["The storm fried the computer", "The storm damaged an instrument", "Space weather alert · %s"],
+   "channels": ["battery", "temp", "wheel", "computer"],
+   "bad": "computer",
+   "pattern": "garble",
+   "why_bad": "The memory check repeats the same scrambled pattern: part of the computer's memory is corrupt.",
+   "fixes": [
+    "Read the memory back, then move the code off the bad chip",
+    "Turn the solar panels toward the Sun",
+    "Switch the radio to its backup antenna"
+   ],
+   "story": "Voyager 1, 2023: its data turned into a repeating pattern. One memory chip had failed, so in April 2024 engineers moved the code to other parts of the memory, and the data came back.",
+   "source": "S-jpl-voyager1-fds"
+  },
+  {
+   "id": "power",
+   "match": ["Power saving mode", "Blackouts in every eclipse", "The battery is aging", "Micrometeoroid hit"],
+   "channels": ["battery", "temp", "solar", "wheel"],
+   "bad": "battery",
+   "pattern": "sag",
+   "why_bad": "The battery voltage sinks lower every time the panels are in shadow and make nothing.",
+   "fixes": [
+    "Switch instruments off while the panels are in shadow",
+    "Restart the flight computer",
+    "Spin the reaction wheel faster"
+   ],
+   "story": "In shadow the solar panels make nothing and the battery runs the whole craft, so controllers switch off what is not needed until sunlight comes back.",
+   "source": ""
+  },
+  {
+   "id": "wheel",
+   "match": ["A reaction wheel failed", "Reaction wheel failed, backup switched on", "Blurry images"],
+   "channels": ["battery", "temp", "wheel", "solar"],
+   "bad": "wheel",
+   "pattern": "spikes",
+   "why_bad": "The wheel's speed jumps in spikes: friction is catching it, so the craft can't point steadily.",
+   "fixes": [
+    "Rest the wheel and point the craft with the others",
+    "Charge the battery fully",
+    "Cool the instruments down"
+   ],
+   "story": "Kepler, 2013: its second reaction wheel failed. Engineers balanced the craft on sunlight pressure with the two wheels left, and it kept finding planets as K2.",
+   "source": "S-kepler-k2"
+  },
+  {
+   "id": "sce",
+   "fallback": true,
+   "match": ["Ground station offline"],
+   "channels": ["battery", "temp", "wheel", "sce"],
+   "bad": "sce",
+   "pattern": "step",
+   "why_bad": "The sensor power dropped: the box that turns every sensor into telemetry lost its supply, so the other readings look scrambled too.",
+   "fixes": [
+    "SCE to AUX: give the sensor box its backup supply",
+    "Turn the craft around",
+    "Shut every instrument down"
+   ],
+   "story": "Apollo 12, 1969: lightning struck the rocket and the screens filled with nonsense. John Aaron recognised the pattern from a test on the launch pad and called \"SCE to AUX\"; on its backup supply the readings made sense again.",
+   "source": "S-afj12-launch"
+  }
+ ]
+}

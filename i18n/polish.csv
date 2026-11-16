@@ -1,0 +1,60 @@
+keys,es
+%d %% less science,%d %% menos ciencia
+%d points,%d puntos
+%s · fix it in %s (click it on the board),%s · arréglalo en %s (haz clic en el tablero)
+(orbital),(en órbita)
+A real part: its sources are in the Credits,Una pieza real: sus fuentes están en los Créditos
+"Arrive in orbit with at least 5 % of the last stage's fuel left: a clean climb wastes nothing.","Llega a órbita con al menos 5 % del combustible de la última etapa: un ascenso limpio no desperdicia nada."
+Best view of the target,La mejor vista del objetivo
+Budget %s,Presupuesto %s
+Change it in the %s step.,Cámbialo en el paso %s.
+Click or press any key for your report,Haz clic o pulsa una tecla para ver tu reporte
+"Engines, tanks, stages: your design","Motores, tanques, etapas: tu diseño"
+Finish “%s” first to open it,Termina “%s” primero para abrirla
+Fix in %s ▶,Arreglar en %s ▶
+"Gather all the science points the mission asks for: enough power, a fast enough antenna and the right instruments.","Reúne todos los puntos de ciencia que pide la misión: energía suficiente, una antena rápida y los instrumentos correctos."
+Holds %d instruments,Lleva %d instrumentos
+Holds 1 instrument,Lleva 1 instrumento
+Its own engine adds %d m/s,Su propio motor añade %d m/s
+Less than the goal mostly because: %s.,Menos que la meta sobre todo por: %s.
+MISSION COMPLETE!,¡MISIÓN CUMPLIDA!
+MISSION DONE!,¡MISIÓN TERMINADA!
+MISSION OVER,MISIÓN TERMINADA
+Must work %d+ years,Debe funcionar %d+ años
+OUT OF FUEL · STAGE!,SIN COMBUSTIBLE · ¡SEPARA LA ETAPA!
+Real pictures of your target taken by NASA satellites: the kind your craft sends home. %d of %d came home this time. Click one to see it large.,Fotos reales de tu objetivo tomadas por satélites de la NASA: las que tu nave envía a casa. Esta vez llegaron %d de %d. Haz clic en una para verla en grande.
+"Real rockets drop each empty stage: dead weight would only slow you down. If you wait, the flight computer does it for you.","Los cohetes reales sueltan cada etapa vacía: el peso muerto solo te frenaría. Si esperas, la computadora de vuelo lo hace por ti."
+Settings → All open unlocks every mission,Ajustes → Todo abierto desbloquea todas las misiones
+To do even better next time,Para hacerlo aún mejor la próxima vez
+"Take the stick for most of the climb and keep the needle within 6 degrees of the green marker on average, as a pilot does on a real launch.","Toma el control durante casi todo el ascenso y mantén la aguja a menos de 6 grados del marcador verde en promedio, como un piloto en un lanzamiento real."
+The fun one,La divertida
+The rocket takes it there,El cohete la deja allí
+This stage's tank is empty and its engines went quiet. Press SPACE (or STAGE) to drop it and light the next one.,El tanque de esta etapa se vació y sus motores se apagaron. Pulsa ESPACIO (o STAGE) para soltarla y encender la siguiente.
+Too heavy for this body,Muy pesado para este cuerpo
+Use this rocket ▶,Usar este cohete ▶
+• Month %d · %s,• Mes %d · %s
+Fly the climb yourself,Vuela el ascenso tú mismo
+Hit the science goal,Alcanza la meta de ciencia
+Reach orbit with fuel to spare,Llega a órbita con combustible de sobra
+Keep a quarter of the budget,Guarda un cuarto del presupuesto
+"Finish with at least 25 % of the budget left over, the reserve real agencies love to see.","Termina con al menos 25 % del presupuesto sin usar, la reserva que a las agencias reales les encanta ver."
+Coming soon,Muy pronto
+See what to fix,Ver qué arreglar
+From this low parking orbit it climbs on to its own: %s.,Desde esta órbita de espera baja sube hasta la suya: %s.
+End the guided mission,Terminar la misión guiada
+Got it,Entendido
+Your craft grew to %s so the %s fits.,Tu nave creció a %s para que quepa el %s.
+"Your choices changed what the craft needs, so its %s moved to the new best fit.","Tus elecciones cambiaron lo que necesita la nave, así que su %s pasó al nuevo mejor ajuste."
+"Your craft outgrew its body (%s), so it moved to %s.","Tu nave superó su cuerpo (%s), así que pasó a %s."
+Too small for your craft,Muy pequeño para tu nave
+Carries it,La lleva
+Your resources,Tus recursos
+Money,Dinero
+Weight,Peso
+Instrument places,Lugares para instrumentos
+Data link,Enlace de datos
+%s left of %s,quedan %s de %s
+%s of %s,%s de %s
+%d of %d used,%d de %d usados
+uses %s of %s,usa %s de %s
+%s of %s a day,%s de %s al día

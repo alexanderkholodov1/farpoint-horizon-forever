@@ -1,0 +1,144 @@
+keys,es
+"Separation at 01:50 UT. The Centaur is ours to aim, nine hours and forty minutes before it hits.","Separación a las 01:50 UT. El Centaur es nuestro para apuntarlo, nueve horas y cuarenta minutos antes del impacto."
+"Mission 4 · LCROSS · October 9, 2009",Misión 4 · LCROSS · 9 de octubre de 2009
+Aim at Cabeus,Apunta a Cabeus
+Mission time,Hora de la misión
+Mission control,Control de misión
+"The south pole from above: NASA/GSFC/Arizona State University, LRO","El polo sur visto desde arriba: NASA/GSFC/Arizona State University, LRO"
+"The instruments, live","Los instrumentos, en vivo"
+How to play,Cómo se juega
+"Two crashes, on purpose","Dos choques, a propósito"
+Aim the Centaur at Cabeus's dark floor,Apunta el Centaur al fondo oscuro de Cabeus
+WASD or the arrows: small burns. Ice hides in the shadow.,WASD o las flechas: pequeños encendidos. El hielo se esconde en la sombra.
+Four minutes: look into the plume,Cuatro minutos: mira dentro de la nube
+Mouse or WASD keeps the crosshair on it. SPACE takes a reading when the water mark shows.,El mouse o WASD mantienen la mira sobre ella. ESPACIO toma una lectura cuando aparece la marca del agua.
+At least %d readings before our craft hits too.,Al menos %d lecturas antes de que nuestra nave también choque.
+Start  ·  Enter,Empezar  ·  Enter
+Every quarter meter per second moves the impact about 9 km. Do not waste them.,Cada cuarto de metro por segundo mueve el impacto unos 9 km. No los desperdicies.
+No more trim. That is where it goes.,No queda combustible para corregir. Ahí va a caer.
+The four minutes,Los cuatro minutos
+Centaur released. See you at 11:31 UT.,Centaur liberado. Nos vemos a las 11:31 UT.
+"Plume! Keep it in the crosshair, Inti. I read.","¡La nube! Mantenla en la mira, Inti. Yo leo."
+Readings: %d of %d needed,Lecturas: %d de %d necesarias
+Signal lost at 11:35:36 UT. Just as planned. Data is home.,Señal perdida a las 11:35:36 UT. Tal como se planeó. Los datos están en casa.
+Mission 4 · done,Misión 4 · lista
+Readings: %d (of %d tries) · Trim used: %.2f of %.0f m/s,Lecturas: %d (de %d intentos) · Corrección usada: %.2f de %.0f m/s
+outside Cabeus,fuera de Cabeus
+on the dark floor,en el fondo oscuro
+on the sunlit floor,en el fondo iluminado
+"Impact point: %d km from Cabeus's center, %s · Trim: %.2f of %.0f m/s","Punto de impacto: a %d km del centro de Cabeus, %s · Corrección: %.2f de %.0f m/s"
+Separation,Separación
+"Thirty seconds. There it goes, ahead of us.","Treinta segundos. Ahí va, delante de nosotros."
+"Time x%d (keys , and .)","Tiempo x%d (teclas , y .)"
+Time x%d,Tiempo x%d
+Our craft: %d km above the Moon,Nuestra nave: a %d km sobre la Luna
+Plume,Nube
+Cabeus  ·  100 km,Cabeus  ·  100 km
+South pole,Polo sur
+Centaur's impact,Impacto del Centaur
+Spectrum (drawn for the game): the dips are the water mark,Espectro (dibujado para el juego): los valles son la marca del agua
+"Move the impact point into the dark floor of Cabeus: WASD or the arrows, small burns. Enter: let the Centaur go.","Lleva el punto de impacto al fondo oscuro de Cabeus: WASD o las flechas, pequeños encendidos. Enter: suelta el Centaur."
+"Nine hours and forty minutes to the impact: time runs 5,000 times faster.",Nueve horas y cuarenta minutos hasta el impacto: el tiempo corre 5.000 veces más rápido.
+The Centaur is falling ahead of us. Real time.,El Centaur cae delante de nosotros. Tiempo real.
+Keep the plume in the crosshair (mouse or WASD). Space: take a reading when the water mark shows.,Mantén la nube en la mira (mouse o WASD). Espacio: toma una lectura cuando aparezca la marca del agua.
+The Centaur hit outside Cabeus.,El Centaur cayó fuera de Cabeus.
+"That is not how it went: the real Centaur hit inside Cabeus, near the Moon's south pole. Try again.","Así no fue: el Centaur real cayó dentro de Cabeus, cerca del polo sur de la Luna. Inténtalo otra vez."
+The Centaur hit Cabeus's sunlit floor.,El Centaur cayó en el fondo iluminado de Cabeus.
+Ice hides in the dark. That is not how it went: the target was the shadowed floor. Try again.,El hielo se esconde en la oscuridad. Así no fue: el objetivo era el fondo en sombra. Inténtalo otra vez.
+Not enough readings.,No hay suficientes lecturas.
+The shepherding craft hit before the instruments saw enough. The real one sent four minutes of data home. Try again.,La nave pastora chocó antes de que los instrumentos vieran lo suficiente. La real envió cuatro minutos de datos a casa. Inténtalo otra vez.
+Centaur impact!,¡Impacto del Centaur!
+11:31:19.5 UT. Now the four minutes.,"11:31:19,5 UT. Ahora, los cuatro minutos."
+Signal lost. On purpose.,Señal perdida. A propósito.
+11:35:36.1 UT: the shepherding craft hit Cabeus too.,"11:35:36,1 UT: la nave pastora también chocó contra Cabeus."
+Water mark! Reading %d saved.,¡Marca del agua! Lectura %d guardada.
+Nothing in the crosshair.,Nada en la mira.
+Too faint. Wait for the plume to rise into the sunlight.,Muy débil. Espera a que la nube suba hasta la luz del Sol.
+"The Centaur hit Cabeus at 11:31 UT; the shepherding craft flew through the plume and hit four minutes later, at 9,000 km/h.","El Centaur chocó contra Cabeus a las 11:31 UT; la nave pastora atravesó la nube y chocó cuatro minutos después, a 9.000 km/h."
+Keep the plume in the crosshair (mouse or WASD). SPACE in each flash of the water mark.,Mantén la nube en la mira (mouse o WASD). ESPACIO en cada destello de la marca del agua.
+No flash yet! The instruments pause.,¡Todavía no hay destello! Los instrumentos se pausan.
+Wobble! Bring the crosshair back.,¡Sacudida! Regresa la mira.
+Shown 4 times faster,Mostrado 4 veces más rápido
+The last 15 km: real time.,Los últimos 15 km: tiempo real.
+WATER MARK: SPACE!,¡MARCA DEL AGUA: ESPACIO!
+Water mark! Crosshair on the plume!,¡Marca del agua! ¡La mira sobre la nube!
+Water! Again!,¡Agua! ¡Otra vez!
+That one sparkled!,¡Esa brilló!
+Ice in the sunlight. Beautiful.,Hielo a la luz del Sol. Precioso.
+Got it. Next one!,La tengo. ¡La siguiente!
+Patience. Wait for the flash.,Paciencia. Espera el destello.
+Already read. Wait for the next flash.,Ya leída. Espera el siguiente destello.
+"There it goes, ahead of us. Three, two, one...","Ahí va, delante de nosotros. Tres, dos, uno..."
+Ground coming up. Keep sending!,Se acerca el suelo. ¡Sigan enviando!
+Ice glints fly out of the plume: chase them with the crosshair (mouse or WASD) and press SPACE.,Destellos de hielo salen de la nube: persíguelos con la mira (mouse o WASD) y pulsa ESPACIO.
+Missed! Put the crosshair on the glint.,¡Fallaste! Pon la mira sobre el destello.
+No glint yet! The instruments pause.,¡Aún no hay destello! Los instrumentos se pausan.
+"Plume! Watch for the ice. I read, you catch.",¡La nube! Atentos al hielo. Yo leo y tú atrapas.
+Catch the ice in the plume,Atrapa el hielo en la nube
+Glints of ice fly out of the plume. Chase each one with the crosshair (mouse or WASD) and press SPACE.,Destellos de hielo salen volando de la nube. Persigue cada uno con la mira (mouse o WASD) y pulsa ESPACIO.
+ICE! SPACE!,¡HIELO! ¡ESPACIO!
+Ice glint! Chase it!,¡Destello de hielo! ¡Persíguelo!
+Combo x%d · best x%d,Combo x%d · mejor x%d
++1 ICE!,¡+1 HIELO!
+Patience. Wait for the glint.,Paciencia. Espera el destello.
+Ice caught: %d · Best combo: x%d · Trim used: %.2f of %.0f m/s,Hielo atrapado: %d · Mejor combo: x%d · Corrección usada: %.2f de %.0f m/s
+ICE,HIELO
+Centaur  %d km up,Centaur  a %d km
+Cabeus crater,Cráter Cabeus
+"On November 13, 2009, NASA announced that the data showed the mission had found water near the Moon's south pole.","El 13 de noviembre de 2009, la NASA anunció que los datos mostraban que la misión había encontrado agua cerca del polo sur de la Luna."
+The mission,La misión
+Aim the Centaur,Apuntar el Centaur
+Turn on the instruments,Encender los instrumentos
+Catch the flash,Atrapar el destello
+Catch the ice,Atrapar el hielo
+Dive onto the crater,Caer sobre el cráter
+Turn on the instruments: press the number when it lights up,Enciende los instrumentos: pulsa el número cuando se ilumine
+"Keys 1 to 6, each when it lights up, before the impact.","Teclas 1 a 6, cada una cuando se ilumine, antes del impacto."
+SPACE at the peak of the impact's light.,ESPACIO en el pico de la luz del impacto.
+"Chase the blue glints with the crosshair (mouse or WASD), SPACE. Grey ones are dust: leave them.","Persigue los destellos azules con la mira (mouse o WASD), ESPACIO. Los grises son polvo: déjalos."
+"Steer our craft onto the Centaur's fresh crater, 20 m wide.","Lleva nuestra nave al cráter recién hecho por el Centaur, de 20 m."
+Each stage sends data to Earth. At least %d%% before our craft hits too.,Cada etapa envía datos a la Tierra. Al menos %d%% antes de que nuestra nave también choque.
+Photometer: catch the peak of the flash!,Fotómetro: ¡atrapa el pico del destello!
+The photometer was off!,¡El fotómetro estaba apagado!
+Perfect flash!,¡Destello perfecto!
+Good flash,Buen destello
+Missed the flash,Se escapó el destello
+"%s, now!","¡%s, ahora!"
+%s on!,¡%s encendido!
+Not that one yet!,¡Ese todavía no!
+My turn! Steering us onto the Centaur's crater.,¡Mi turno! Nos llevo al cráter del Centaur.
+ON THE CRATER!,¡SOBRE EL CRÁTER!
+Steer to the crater!,¡Ve hacia el cráter!
+Dust: let it go,Polvo: déjalo
+Ice caught: %d,Hielo atrapado: %d
+That was dust! Blue ones only.,¡Eso era polvo! Solo los azules.
+Data sent: %d%% of %d%% needed.,Datos enviados: %d%% de %d%% necesarios.
+%d%% of the data home,%d%% de los datos en casa
+Instruments on,Instrumentos encendidos
+The flash,El destello
+Ice caught,Hielo atrapado
+%d · best combo x%d,%d · mejor combo x%d
+The dive onto the crater,La caída sobre el cráter
+"Instruments! I call them, you switch them on.","¡Instrumentos! Yo los nombro, tú los enciendes."
+The Centaur's crater · 20 m,El cráter del Centaur · 20 m
+dust,polvo
+Photometer: the flash's light,Fotómetro: la luz del destello
+peak,pico
+Data sent to Earth: %d%%,Datos enviados a la Tierra: %d%%
+Not enough data.,No hay suficientes datos.
+The shepherding craft hit before enough data reached Earth. The real one sent four minutes of data home. Try again.,La nave pastora chocó antes de que llegaran suficientes datos a la Tierra. La real envió cuatro minutos de datos a casa. Inténtalo otra vez.
+Killa calls each instrument: press its number (1 to 6) while it lights up.,Killa nombra cada instrumento: pulsa su número (1 a 6) mientras se ilumina.
+The photometer watches the flash: SPACE at its peak!,El fotómetro mira el destello: ¡ESPACIO en su pico!
+"The last 25 km, in real time: steer onto the Centaur's fresh crater (WASD or mouse).","Los últimos 25 km, en tiempo real: lleva la nave al cráter recién hecho por el Centaur (WASD o mouse)."
+Dust! No water in that one.,¡Polvo! En ese no hay agua.
+Visible camera,Cámara visible
+Near-infrared cameras,Cámaras de infrarrojo cercano
+Mid-infrared cameras,Cámaras de infrarrojo medio
+Visible spectrometer,Espectrómetro visible
+Near-infrared spectrometers,Espectrómetros de infrarrojo cercano
+Photometer,Fotómetro
+Impact in,Impacto en
+LET IT GO,SOLTAR
+ON: %d,ENCENDER: %d
+PEAK!,¡PICO!
+CATCH,ATRAPAR

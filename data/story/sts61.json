@@ -1,0 +1,29 @@
+{
+ "doc": "Chapter 2, STS-61, the first Hubble servicing mission (December 1993) (issue #46; story: docs/design/story-v0.3.0.md). Every fact from NASA pages (S-hubble-sm1, S-sts61-nasa, S-nasa-9408670, S-m100-pia22913). The cuyes never change history: Killa insists on cleaning the lens and nobody lets her (the story's line). Same format as apollo13.json.",
+ "order": ["intro", "mission", "outro"],
+ "intro": ["intro"],
+ "mission": "Between intro and outro the player plays the mission: five spacewalks, the right part in the right order within the time, then the first sharp image (scripts/screens/sts61.gd).",
+ "outro": ["outro"],
+ "scenes": {
+  "intro": [
+   {"set": "hubble", "title": "Mission 2: STS-61", "sub": "December 2, 1993 · Space Shuttle Endeavour", "shot": "earth", "wait": 5.0},
+   {"who": "narrator", "shot": "hubble_up", "text": "Twenty-three years after Apollo 13, the cuyes stowed away again. This time, to fix a telescope."},
+   {"set": "houston", "who": "wayra", "mood": "alert", "act": "talk", "shot": "close", "text": "Houston here. Hubble's mirror has a flaw: every picture comes out fuzzy.", "fact": "Two months after Hubble's launch in April 1990, scientists found a flaw in its main mirror: one-fiftieth of the width of a human hair.", "source": "S-nasa-9408670"},
+   {"set": "hubble", "who": "killa", "mood": "curious", "act": "point", "text": "A blurry telescope? Give me a cloth. I will clean it."},
+   {"who": "rumi", "mood": "flat", "act": "shrug", "text": "Nobody lets Killa clean the mirror."},
+   {"who": "inti", "mood": "proud", "act": "point", "shot": "low", "text": "Flight day three: the arm grabbed Hubble and stood it up in our bay.", "fact": "On flight day three, Claude Nicollier used the robot arm to stand the 13-meter Hubble upright in the payload bay.", "source": "S-sts61-nasa"},
+   {"set": "houston", "who": "wayra", "mood": "determined", "act": "talk", "text": "Five spacewalks. New parts, in the right order, and glasses for the telescope.", "fact": "It took five back-to-back spacewalks totaling 35 hours and 28 minutes to complete Hubble's first servicing mission.", "source": "S-hubble-sm1"}
+  ],
+  "mission": [
+   {"set": "hubble", "title": "Your turn", "shot": "wide", "wait": 2.5, "play": "sts61"}
+  ],
+  "outro": [
+   {"set": "hubble", "shot": "wide", "wait": 0.5},
+   {"who": "killa", "mood": "happy", "act": "cheer", "shot": "close", "text": "Sharp! And I did not clean anything."},
+   {"who": "rumi", "mood": "flat", "text": "Glasses. For a telescope. Classic."},
+   {"who": "inti", "mood": "calm", "act": "talk", "text": "Endeavour lands on December 13. Next time, somewhere with ground.", "fact": "Endeavour landed on December 13, 1993, after 10 days, 19 hours and 58 minutes in space.", "source": "S-sts61-nasa"},
+   {"set": "houston", "who": "wayra", "mood": "pleased", "act": "talk", "shot": "close", "text": "Next stop: Mars. I hear you land by bouncing."},
+   {"title": "To be continued", "sub": "Next: land by bouncing, 1997", "wait": 4.0}
+  ]
+ }
+}

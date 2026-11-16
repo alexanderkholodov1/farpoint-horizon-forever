@@ -1,0 +1,19 @@
+{
+ "doc": "Names of the size classes of instruments and of the concept maturity levels.",
+ "source": [
+  "S3"
+ ],
+ "size_names": {
+  "1": "CubeSat",
+  "2": "Small",
+  "3": "Medium",
+  "4": "Giant"
+ },
+ "cml_names": {
+  "1": "CML 1 · Idea",
+  "2": "CML 2 · Architecture",
+  "3": "CML 3 · Concept design",
+  "4": "CML 4 · Point design",
+  "5": "Operations"
+ }
+}

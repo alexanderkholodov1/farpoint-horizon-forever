@@ -1,0 +1,87 @@
+name: Release
+
+# When a version branch (vX.Y.Z) is merged into main, tag the merge with that version and publish a release with the
+# web build. Nobody types a version by hand.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+env:
+  GODOT_VERSION: "4.7.2"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Find the version this push delivers
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          branch=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" --jq '[.[] | select(.merged_at != null)][0].head.ref // ""')
+          if [[ "$branch" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            if gh api "repos/${{ github.repository }}/git/ref/tags/$branch" >/dev/null 2>&1; then
+              echo "Tag $branch already exists; nothing to release"; echo "version=" >> "$GITHUB_OUTPUT"
+            else
+              echo "version=$branch" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "This push is not the merge of a version branch ('$branch'); nothing to release"
+            echo "version=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Cache Godot and its web template
+        if: steps.version.outputs.version != ''
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: ~/godot
+          key: godot-${{ env.GODOT_VERSION }}-web-nothreads
+
+      - name: Download Godot and the web template
+        if: steps.version.outputs.version != '' && steps.cache.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          mkdir -p ~/godot && cd ~/godot
+          base="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable"
+          curl -sSLfo godot.zip "$base/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q godot.zip && mv "Godot_v${GODOT_VERSION}-stable_linux.x86_64" godot && rm godot.zip
+          curl -sSLfo templates.tpz "$base/Godot_v${GODOT_VERSION}-stable_export_templates.tpz"
+          unzip -q templates.tpz "templates/web_nothreads_release.zip" "templates/version.txt" && rm templates.tpz
+
+      - name: Build and check
+        if: steps.version.outputs.version != ''
+        env:
+          GODOT: /home/runner/godot/godot
+        run: |
+          dest="$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          mkdir -p "$dest" && cp ~/godot/templates/* "$dest/"
+          bash tools/dev/check.sh
+          (cd build/web && zip -qr "../../web-build-${{ steps.version.outputs.version }}.zip" .)
+
+      - name: Tag and publish the release
+        if: steps.version.outputs.version != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          v="${{ steps.version.outputs.version }}"
+          notes="docs/changelog/$v.md"
+          [ -f "$notes" ] || notes=/dev/null
+          gh release create "$v" --target "${{ github.sha }}" --title "$v" --notes-file "$notes" "web-build-$v.zip"
+
+      - name: Deploy to production on Firebase Hosting
+        if: steps.version.outputs.version != ''
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FARPOINT_HORIZON }}
+          projectId: farpoint-horizon
+          channelId: live

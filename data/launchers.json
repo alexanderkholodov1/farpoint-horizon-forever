@@ -1,0 +1,89 @@
+{
+ "doc": "Launchers.",
+ "entries": {
+  "ride": {
+   "name": "Shared ride (rideshare)",
+   "cap": {
+    "leo": 500.0,
+    "sso": 400.0,
+    "geo": 0.0,
+    "lunar": 0.0,
+    "l2": 0.0
+   },
+   "cost_per_kg": 0.0065,
+   "cost": 0.0,
+   "min_cost": 0.1,
+   "fail": 0.03,
+   "delay": 0.3,
+   "desc": "Your craft travels with dozens of others. Very cheap (~6,500 $/kg), but you go to the main customer's orbit on their date.",
+   "height": 1.0,
+   "source": [
+    "S-rideshare-price"
+   ],
+   "simplified": "The price is rounded from the published rideshare price [S-rideshare-price]; the capacity to each orbit is our own estimate for the game (that source gives prices, not capacities), and so are the failure and delay chances."
+  },
+  "light": {
+   "name": "Light launcher (Electron type)",
+   "cap": {
+    "leo": 300.0,
+    "sso": 200.0,
+    "geo": 0.0,
+    "lunar": 30.0,
+    "l2": 0.0
+   },
+   "cost_per_kg": 0.0,
+   "cost": 8.0,
+   "min_cost": 0.0,
+   "fail": 0.05,
+   "delay": 0.1,
+   "desc": "A small dedicated rocket. You pick the orbit and the date.",
+   "height": 0.8,
+   "source": [
+    "S13"
+   ],
+   "simplified": "Capacity to each orbit and the price are rounded from the published figures; the failure and delay chances are our own estimate of each class."
+  },
+  "medium": {
+   "name": "Medium launcher (Falcon 9 type)",
+   "cap": {
+    "leo": 17000.0,
+    "sso": 12000.0,
+    "geo": 5500.0,
+    "lunar": 4000.0,
+    "l2": 4000.0
+   },
+   "cost_per_kg": 0.0,
+   "cost": 70.0,
+   "min_cost": 0.0,
+   "fail": 0.02,
+   "delay": 0.08,
+   "desc": "Today's workhorse. Very reliable.",
+   "height": 1.3,
+   "source": [
+    "S14"
+   ],
+   "simplified": "Capacity to each orbit and the price are rounded from the published figures; the failure and delay chances are our own estimate of each class."
+  },
+  "heavy": {
+   "name": "Heavy launcher (Falcon Heavy type)",
+   "cap": {
+    "leo": 60000.0,
+    "sso": 40000.0,
+    "geo": 18000.0,
+    "lunar": 15000.0,
+    "l2": 12000.0
+   },
+   "cost_per_kg": 0.0,
+   "cost": 110.0,
+   "min_cost": 0.0,
+   "fail": 0.03,
+   "delay": 0.12,
+   "desc": "For giant payloads or faraway destinations.",
+   "height": 1.5,
+   "source": [
+    "S15"
+   ],
+   "simplified": "Capacity to each orbit and the price are rounded from the published figures; the failure and delay chances are our own estimate of each class."
+  }
+ }
+}

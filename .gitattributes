@@ -1,0 +1,28 @@
+# One line ending in the repository whatever each person's system uses, so Windows and Linux never show phantom changes.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.glb binary
+*.blend binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.pdf binary
+*.zip binary
+*.tpz binary
+*.mp4 binary
+*.ogv binary
+*.pptx binary
+*.docx binary
+*.xlsx binary
+
+# The bibliography only grows: when two branches add entries at the same place, keep both sides instead of a conflict.
+docs/sources.md merge=union
+# Translations only grow too (one i18n/<piece>.csv per piece, #26): when two branches add lines at the same place, keep both.
+i18n/*.csv merge=union

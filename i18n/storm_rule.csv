@@ -1,0 +1,8 @@
+keys,es
+A storm from the Sun!,¡Una tormenta del Sol!
+Choose your storm rule,Elige tu regla para las tormentas
+"Now and then the Sun throws out storms of fast particles that can damage a spacecraft. Choose once what your craft does when one hits: mission control will do the same at every storm for the rest of the mission.","De vez en cuando el Sol lanza tormentas de partículas rápidas que pueden dañar una nave. Elige una sola vez qué hace tu nave cuando llega una: control de misión hará lo mismo en cada tormenta durante el resto de la misión."
+"Coming now, in month %d: %s.","Llega ahora, en el mes %d: %s."
+"Hide: instruments off while each storm lasts. Safer, but half of that month's data is lost.","Protegerse: instrumentos apagados mientras dura cada tormenta. Más seguro, pero se pierde la mitad de los datos de ese mes."
+"Keep observing: every bit of data kept, with more risk of damage.","Seguir observando: se guardan todos los datos, con más riesgo de daño."
+"If you close this card, mission control picks safe mode.","Si cierras esta tarjeta, control de misión elige el modo seguro."

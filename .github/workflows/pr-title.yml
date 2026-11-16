@@ -1,0 +1,22 @@
+name: Version pull request
+
+# main takes only the version pull request: from a version branch, its title leading with that version
+# (`v0.2.0: <what it delivers>`). Pull requests into any other branch are free and not checked here.
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  title:
+    name: Into main only from a version branch, title led by its version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the branch and the title
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+          HEAD: ${{ github.event.pull_request.head.ref }}
+        run: |
+          [[ "$HEAD" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "Into main only from a version branch (vX.Y.Z); this comes from '$HEAD'"; exit 1; }
+          [[ "$TITLE" == "$HEAD: "?* ]] || { echo "The title must lead with '$HEAD: '. Got: $TITLE"; exit 1; }
+          echo "OK: $TITLE"

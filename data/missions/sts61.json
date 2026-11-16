@@ -1,0 +1,195 @@
+{
+ "doc": "Mission 2, STS-61, the first Hubble servicing mission (December 1993): 'Glasses for a telescope' (issue #46). (1) Five spacewalks, each a parts-in-order task against its own clock: the real parts of each outing and its real length [S-sts61-nasa], 35 h 28 min in all [S-hubble-sm1]. A spacewalk whose clock runs out is tried again. (2) The climax: the first sharp image, the player turns the correction until M100's stars snap to points, then NASA's real images of M100 before (WFPC1, 1993) and after (WFPC2) [S-m100-pia22913]. Our simplifications, said on screen: the order of the parts inside an outing, time run fast (each outing in about a minute), and the correction as a dial (in reality the optics of WFPC2 and COSTAR did it).",
+ "spacewalks": [
+  {
+   "crew": "Musgrave and Hoffman",
+   "minutes": 474,
+   "steps": [
+    {
+     "part": "rsu",
+     "houston": "Spacewalk one. Open the equipment bay and swap in the two new Rate Sensing Units: the gyroscopes Hubble steers by.",
+     "do": "screw",
+     "count": 4
+    },
+    {
+     "part": "ecu",
+     "houston": "Now the two electronic control units for the gyroscopes.",
+     "do": "drag",
+     "count": 2
+    },
+    {
+     "part": "fuses",
+     "houston": "Last: the eight new fuse plugs. Then close the doors.",
+     "do": "drag",
+     "count": 8
+    }
+   ]
+  },
+  {
+   "crew": "Thornton and Akers",
+   "minutes": 395,
+   "steps": [
+    {
+     "part": "arrays",
+     "houston": "Spacewalk two. The old solar arrays come off: put the new ones on.",
+     "do": "unroll",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "crew": "Hoffman and Musgrave",
+   "minutes": 408,
+   "steps": [
+    {
+     "part": "wfpc2",
+     "houston": "Spacewalk three. Slide out the old camera and slide in Wide Field and Planetary Camera 2: its optics carry the correction for the mirror.",
+     "do": "slide",
+     "count": 1
+    },
+    {
+     "part": "magnetometers",
+     "houston": "Now the two new magnetometers, at the top of the telescope.",
+     "do": "drag",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "crew": "Thornton and Akers",
+   "minutes": 410,
+   "steps": [
+    {
+     "part": "costar",
+     "houston": "Spacewalk four. Out with the High-Speed Photometer, in with COSTAR: glasses for the other instruments.",
+     "do": "aim",
+     "count": 2
+    },
+    {
+     "part": "coprocessor",
+     "houston": "And the co-processor for the flight computer: more memory, more speed.",
+     "do": "drag",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "crew": "Hoffman and Musgrave",
+   "minutes": 441,
+   "steps": [
+    {
+     "part": "sade",
+     "houston": "Spacewalk five. Replace the Solar Array Drive Electronics.",
+     "do": "screw",
+     "count": 4
+    },
+    {
+     "part": "ghrs",
+     "houston": "Then the Goddard High Resolution Spectrograph's redundancy kit.",
+     "do": "drag",
+     "count": 1
+    },
+    {
+     "part": "covers",
+     "houston": "Last job: protective covers over the old magnetometers. Then home.",
+     "do": "drag",
+     "count": 2
+    }
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "id": "rsu",
+   "name": "Rate Sensing Units",
+   "line": "Two units with the gyroscopes that tell Hubble how it turns."
+  },
+  {
+   "id": "ecu",
+   "name": "Gyro control units",
+   "line": "Two electronic control units for the gyroscopes."
+  },
+  {
+   "id": "fuses",
+   "name": "Fuse plugs",
+   "line": "Eight new electrical fuse plugs."
+  },
+  {
+   "id": "arrays",
+   "name": "Solar arrays",
+   "line": "New wings to turn sunlight into power."
+  },
+  {
+   "id": "wfpc2",
+   "name": "WFPC2 camera",
+   "line": "Wide Field and Planetary Camera 2, built to make up for the mirror's flaw."
+  },
+  {
+   "id": "magnetometers",
+   "name": "Magnetometers",
+   "line": "They feel the Earth's magnetic field, to know which way Hubble faces."
+  },
+  {
+   "id": "costar",
+   "name": "COSTAR",
+   "line": "Corrective optics for the other instruments: Hubble's glasses."
+  },
+  {
+   "id": "coprocessor",
+   "name": "Co-processor",
+   "line": "For the flight computer: more memory and speed."
+  },
+  {
+   "id": "sade",
+   "name": "Array drive electronics",
+   "line": "Solar Array Drive Electronics: they turn the wings toward the Sun."
+  },
+  {
+   "id": "ghrs",
+   "name": "Spectrograph kit",
+   "line": "A redundancy kit for the Goddard High Resolution Spectrograph."
+  },
+  {
+   "id": "covers",
+   "name": "Magnetometer covers",
+   "line": "Protective covers for the original magnetometers."
+  },
+  {
+   "id": "cloth",
+   "name": "Killa's lens cloth",
+   "line": "Killa wants to clean the lens. Nobody lets her."
+  }
+ ],
+ "seconds_per_walk": 80,
+ "wrong": "Negative, that is not this step's part.",
+ "cloth": "Killa, put the cloth away. Nobody is cleaning the mirror.",
+ "urgent": {
+  "20": "Twenty seconds left on this spacewalk. Keep going.",
+  "10": "Ten seconds! Finish and get back to the airlock!"
+ },
+ "lost": "Out of time.",
+ "lost_sub": "Back to the airlock. That is not how it went: the crew finished every spacewalk. Try this one again.",
+ "walk_done": "Spacewalk %d done",
+ "focus": {
+  "title": "The first image",
+  "houston": "Houston here. The first picture with the new camera is coming down. Turn the correction until the stars are points.",
+  "note": "Simplified: here you turn a dial; in space the optics of WFPC2 and COSTAR did it.",
+  "before": "res://assets/photos/sts61/m100_wfpc1_1993.jpg",
+  "after": "res://assets/photos/sts61/m100_wfpc2_1993.jpg",
+  "win": "Sharp!",
+  "win_sub": "The galaxy M100 snapped into focus.",
+  "caption": "The galaxy M100, as Hubble really saw it: with the old camera in 1993, blurry from the mirror's flaw, and with WFPC2 after this mission, sharp.",
+  "credit": "NASA, PIA22913 (WFPC1 and WFPC2)",
+  "source": "S-m100-pia22913"
+ },
+ "facts": [
+  {
+   "text": "It took five back-to-back spacewalks totaling 35 hours and 28 minutes to complete Hubble's first servicing mission.",
+   "source": "S-hubble-sm1"
+  },
+  {
+   "text": "Instead of focusing light to a single point, Hubble's flawed mirror had many foci: its first images looked fuzzy.",
+   "source": "S-hubble-sm1"
+  }
+ ]
+}

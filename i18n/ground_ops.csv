@@ -1,0 +1,69 @@
+keys,es
+Hand it over,Pásala
+"The Earth turns, so each dish sees %s for only part of the day. Before the dish that has it sets, hand it to one that has just risen. Here a whole turn of the Earth takes %d seconds.","La Tierra gira, así que cada antena ve %s solo parte del día. Antes de que se ponga la antena que la tiene, pásala a una que acaba de salir. Aquí una vuelta entera de la Tierra dura %d segundos."
+Hand over,Pasar
+Has it,La tiene
+below horizon,bajo el horizonte
+%s can't see %s yet: it is below its horizon.,%s aún no ve %s: está bajo su horizonte.
+%s still has it %d° up. Wait until it starts to set.,%s todavía la tiene a %d° de altura. Espera a que empiece a ponerse.
+%s has it. Handoff %d of %d.,%s la tiene. Relevo %d de %d.
+Contact lost! %s can see it: hand it over.,¡Contacto perdido! %s puede verla: pásasela.
+Contact lost. Wait for a dish to rise.,Contacto perdido. Espera a que salga una antena.
+%s is setting (%d°). Hand it to a dish that has risen.,%s se está poniendo (%d°). Pásala a una antena que ya salió.
+"%s has %s, %d° up. Watch it sink.","%s tiene %s, a %d° de altura. Mira cómo baja."
+Once round the world without dropping it. +%d,Una vuelta al mundo sin soltarla. +%d
+"Goldstone, Madrid, Canberra: the dishes passed %s from one to the next as the Earth turned.","Goldstone, Madrid, Canberra: las antenas se pasaron %s de una a otra mientras la Tierra giraba."
+Ground control · Telemetry,Control de tierra · Telemetría
+Read the squiggles,Lee las rayitas
+"After ""%s"", one of these readings from the craft looks wrong.","Después de ""%s"", una de estas lecturas de la nave se ve mal."
+Watch the lines: which one is not behaving? Click it.,Mira las líneas: ¿cuál no se porta bien? Haz clic en ella.
+%s looks normal: it wanders inside its usual range. Look again.,%s se ve normal: se mueve dentro de su rango de siempre. Mira otra vez.
+What do you send up?,¿Qué comando envías?
+"The command went up, and the line still looks wrong. Try another.",El comando subió y la línea sigue mal. Prueba otro.
+Fixed: the line settles. +%d,Arreglado: la línea se calma. +%d
+"%s: back to normal after ""%s"".","%s: vuelve a la normalidad tras ""%s""."
+the Moon,la Luna
+your craft,tu nave
+%s: the dishes are passing %s from one to the next as the Earth turns.,%s: las antenas se pasan %s de una a otra mientras la Tierra gira.
+%s read the telemetry and sent the fix: %s.,%s leyó la telemetría y envió el arreglo: %s.
+a burst of static on the screens,una ráfaga de estática en las pantallas
+Ground control · handed over without a gap,Control de tierra · relevo sin cortes
+Ground control · telemetry read and fixed,Control de tierra · telemetría leída y arreglada
+Battery,Batería
+Temperature,Temperatura
+Reaction wheel,Rueda de reacción
+Computer memory check,Prueba de memoria del computador
+Solar power,Energía solar
+Sensor power (SCE),Energía de sensores (SCE)
+The memory check repeats the same scrambled pattern: part of the computer's memory is corrupt.,La prueba de memoria repite el mismo patrón revuelto: parte de la memoria del computador está dañada.
+"Read the memory back, then move the code off the bad chip",Leer la memoria y mover el código fuera del chip dañado
+Turn the solar panels toward the Sun,Girar los paneles solares hacia el Sol
+Switch the radio to its backup antenna,Pasar la radio a su antena de reserva
+"Voyager 1, 2023: its data turned into a repeating pattern. One memory chip had failed, so in April 2024 engineers moved the code to other parts of the memory, and the data came back.","Voyager 1, 2023: sus datos se volvieron un patrón repetido. Había fallado un chip de memoria, así que en abril de 2024 los ingenieros movieron el código a otras partes de la memoria y los datos volvieron."
+"The battery voltage sinks lower every time the panels are in shadow and make nothing.","El voltaje de la batería baja más cada vez que los paneles quedan en sombra y no producen nada."
+Switch instruments off while the panels are in shadow,Apagar instrumentos mientras los paneles están en sombra
+Restart the flight computer,Reiniciar el computador de vuelo
+Spin the reaction wheel faster,Girar más rápido la rueda de reacción
+"In shadow the solar panels make nothing and the battery runs the whole craft, so controllers switch off what is not needed until sunlight comes back.","En sombra los paneles solares no producen nada y la batería mueve toda la nave, así que los controladores apagan lo que no hace falta hasta que vuelve la luz del Sol."
+"The wheel's speed jumps in spikes: friction is catching it, so the craft can't point steadily.","La velocidad de la rueda salta en picos: la fricción la frena, así que la nave no puede apuntar firme."
+Rest the wheel and point the craft with the others,Dejar descansar la rueda y apuntar la nave con las otras
+Charge the battery fully,Cargar la batería por completo
+Cool the instruments down,Enfriar los instrumentos
+"Kepler, 2013: its second reaction wheel failed. Engineers balanced the craft on sunlight pressure with the two wheels left, and it kept finding planets as K2.","Kepler, 2013: falló su segunda rueda de reacción. Los ingenieros equilibraron la nave con la presión de la luz del Sol y las dos ruedas que quedaban, y siguió encontrando planetas como K2."
+"The sensor power dropped: the box that turns every sensor into telemetry lost its supply, so the other readings look scrambled too.","Cayó la energía de los sensores: la caja que convierte cada sensor en telemetría perdió su alimentación, por eso las otras lecturas también se ven revueltas."
+SCE to AUX: give the sensor box its backup supply,SCE a AUX: dar a la caja de sensores su alimentación de reserva
+Turn the craft around,Dar la vuelta a la nave
+Shut every instrument down,Apagar todos los instrumentos
+"Apollo 12, 1969: lightning struck the rocket and the screens filled with nonsense. John Aaron recognised the pattern from a test on the launch pad and called ""SCE to AUX""; on its backup supply the readings made sense again.","Apolo 12, 1969: un rayo golpeó el cohete y las pantallas se llenaron de datos sin sentido. John Aaron reconoció el patrón de una prueba en la plataforma de lanzamiento y pidió ""SCE a AUX""; con su alimentación de reserva las lecturas volvieron a tener sentido."
+"Wayra, take it","Wayra, encárgate"
+Step 1 of 2 · find the line that is wrong,Paso 1 de 2 · encuentra la línea que está mal
+Step 2 of 2 · send the fix,Paso 2 de 2 · envía el arreglo
+Done,Listo
+Seen from above the North Pole. Green: the dish that has it · blue: can see it · grey: below its horizon.,Vista desde encima del Polo Norte. Verde: la antena que la tiene · azul: puede verla · gris: bajo su horizonte.
+Hand over ▶,Pasar ▶
+Can see it,Puede verla
+has it · ,la tiene · 
+%s is setting (%d°). The next dish hasn't risen yet: get ready.,%s se está poniendo (%d°). La siguiente antena aún no sale: prepárate.
+FAULT,FALLA
+GOOD,BIEN
+"Before the dish that has %s sets, hand it to one that has risen.","Antes de que se ponga la antena que tiene %s, pásala a una que ya salió."

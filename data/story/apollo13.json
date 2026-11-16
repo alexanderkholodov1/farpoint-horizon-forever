@@ -1,0 +1,59 @@
+{
+ "doc": "Chapter 1, Apollo 13 (April 1970), told from the beginning (issue #66; story: docs/design/story-v0.3.0.md). Every fact is from NASA's own page, its source id in docs/sources.md (S-apollo13-nasa). The cuyes never change history: they are stowaways who react; the outcome is NASA's. The prologue (data/story/prologue.json) tells who the cuyes are and why they go. Lines: who (a cuy or narrator), text, mood, fact + source; stage directions: set, cast, place, moves, act, acts, all, shot, cut, fx (scripts/screens/story.gd); a line with title (+ sub) and no who is a title card; a line with only wait lets the stage play.",
+ "order": ["pad", "problem", "lifeboat", "mission", "fixed", "home"],
+ "intro": ["pad", "problem", "lifeboat"],
+ "mission": "Between intro and outro the player plays the mission: build the CO2 adapter from the parts list before the CO2 climbs, then fly the return (docs/design/story-v0.3.0.md).",
+ "outro": ["fixed", "home"],
+ "scenes": {
+  "pad": [
+   {"set": "pad", "title": "Mission 1: Apollo 13", "sub": "April 11, 1970 · Launch Pad 39A, Florida", "shot": "pad_wide", "wait": 5.0},
+   {"wait": 5.0, "shot": "rocket_up", "cut": true},
+   {"who": "inti", "mood": "proud", "act": "point", "shot": "low", "text": "Three astronauts. One Saturn V. And a supply crate with our names on it.", "fact": "Apollo 13 lifted off on April 11, 1970, at 1:13 p.m. CST, from Launch Pad 39A.", "source": "S-apollo13-nasa"},
+   {"who": "killa", "mood": "curious", "act": "work", "text": "Thermometer, notebook, snacks. Mostly snacks. Wait, where is Rumi?"},
+   {"who": "rumi", "mood": "flat", "act": "hide", "shot": "close", "text": "In the tape roll. Somebody will need tape."},
+   {"who": "inti", "mood": "curious", "act": "shrug", "shot": "two", "text": "Who needs tape in space?"},
+   {"who": "rumi", "mood": "flat", "act": "hide", "text": "You will see."},
+   {"wait": 2.5, "shot": "launch", "cut": true, "fx": "liftoff"},
+   {"wait": 9.0, "shot": "launch"}
+  ],
+  "problem": [
+   {"set": "capsule", "title": "April 13, 1970", "sub": "Inside Odyssey, 200,000 miles from Earth", "shot": "window", "wait": 4.0},
+   {"who": "killa", "mood": "happy", "shot": "wide", "text": "Zero gravity! My snacks are orbiting me."},
+   {"who": "inti", "mood": "calm", "text": "Next stop, the Moon. Just a little more."},
+   {"who": "rumi", "mood": "pleased", "text": "I checked the tanks. Everything is fine."},
+   {"wait": 0.8, "shot": "wide", "fx": "shake", "all": "scared", "acts": {"rumi": "scared", "killa": "scared", "inti": "scared"}},
+   {"who": "inti", "mood": "scared", "act": "scared", "fx": "alarm", "text": "Houston... we've had a problem here.", "fact": "Swigert saw a warning light that accompanied the bang and said, \"Houston, we've had a problem here.\"", "source": "S-apollo13-nasa"},
+   {"set": "houston", "who": "wayra", "mood": "alert", "act": "talk", "shot": "close", "text": "Wayra here! What was that bang?!", "fact": "On April 13, 1970 (Houston time), oxygen tank no. 2 exploded, about 200,000 miles from Earth.", "source": "S-apollo13-nasa"},
+   {"set": "capsule", "who": "rumi", "mood": "flat", "act": "idle", "fx": "alarm", "acts": {"killa": "idle", "inti": "idle"}, "text": "I checked them. I did not check them enough."},
+   {"who": "killa", "mood": "worried", "act": "think", "text": "Then no Moon landing for anyone.", "fact": "An explosion on board forced Apollo 13 to circle the moon without landing.", "source": "S-apollo13-nasa"},
+   {"who": "inti", "mood": "determined", "act": "point", "shot": "low", "text": "Everyone into Aquarius, the lunar module. It is our lifeboat now.", "fact": "With the command module's power running out, the crew moved into the lunar module, their lifeboat.", "source": "S-apollo13-nasa"}
+  ],
+  "lifeboat": [
+   {"set": "lm", "title": "Inside Aquarius", "sub": "The lunar module, powered down", "shot": "window", "fx": "dim", "wait": 4.0},
+   {"who": "killa", "mood": "tired", "act": "hide", "shot": "wide", "text": "So... cold.", "fact": "With the power off, the spacecraft got cold: 38 degrees Fahrenheit, with water on the walls.", "source": "S-apollo13-nasa"},
+   {"who": "inti", "mood": "determined", "text": "Everything we do not need is off. We have to save power.", "fact": "All noncritical systems were turned off and energy consumption was reduced to 1/5.", "source": "S-apollo13-nasa"},
+   {"who": "killa", "mood": "worried", "act": "think", "text": "The air is filling with carbon dioxide. Odyssey's filters are square. Aquarius has round holes.", "fact": "The command module's square CO2 canisters did not fit the lunar module's round openings.", "source": "S-apollo13-nasa"},
+   {"set": "houston", "who": "wayra", "mood": "alert", "act": "work", "shot": "close", "text": "Mission Control sent a recipe: plastic bags, cardboard and tape.", "fact": "Mission Control worked out an adapter from plastic bags, cardboard and tape.", "source": "S-apollo13-nasa"},
+   {"set": "lm", "who": "rumi", "mood": "pleased", "act": "cheer", "fx": "dim", "text": "Did someone say tape?"},
+   {"who": "rumi", "mood": "determined", "act": "work", "shot": "close", "text": "Square peg, round hole. Classic."}
+  ],
+  "mission": [
+   {"set": "lm", "fx": "dim", "title": "Your turn", "shot": "window", "wait": 2.5, "play": "apollo13"}
+  ],
+  "fixed": [
+   {"set": "lm", "fx": "dim", "shot": "wide", "wait": 0.5},
+   {"who": "inti", "mood": "determined", "act": "point", "shot": "low", "text": "Around the Moon, and home.", "fact": "As they approached the Moon, a long five-minute burn sped up the return home.", "source": "S-apollo13-nasa"},
+   {"set": "lm", "fx": "dim", "title": "Your turn", "sub": "Bring Odyssey home through the air", "shot": "window", "wait": 2.5, "play": "reentry"}
+  ],
+  "home": [
+   {"set": "ocean", "title": "April 17, 1970", "sub": "The Pacific Ocean, near Samoa", "shot": "descent", "wait": 3.5, "fx": "splashdown"},
+   {"wait": 8.0, "shot": "descent"},
+   {"set": "houston", "who": "wayra", "mood": "relieved", "act": "cheer", "shot": "close", "text": "Splashdown! All three astronauts are home.", "fact": "Apollo 13 splashed down on April 17, 1970, in the Pacific Ocean near Samoa; the recovery ship was USS Iwo Jima.", "source": "S-apollo13-nasa"},
+   {"set": "ocean", "who": "killa", "mood": "thoughtful", "shot": "wide", "text": "We never landed on the Moon. But everybody came back. That counts."},
+   {"who": "inti", "mood": "tired", "act": "shrug", "text": "Next time, can we just land somewhere?"},
+   {"who": "rumi", "mood": "flat", "text": "Mars. On airbags. What could go wrong."},
+   {"who": "killa", "mood": "happy", "all": "happy", "act": "cheer", "acts": {"inti": "cheer", "rumi": "wave"}, "shot": "wide", "text": "Everything. Let's go!"},
+   {"title": "To be continued", "sub": "Next: glasses for a telescope, 1993", "shot": "wide", "wait": 4.0}
+  ]
+ }
+}

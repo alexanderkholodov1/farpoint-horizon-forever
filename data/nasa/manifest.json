@@ -1,0 +1,119 @@
+[
+ {
+  "file": "data/nasa/horizons_moon.json",
+  "mission": "moon_south_pole",
+  "source_id": "S-horizons",
+  "query": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='301'&OBJ_DATA='NO'&MAKE_EPHEM='YES'&EPHEM_TYPE='VECTORS'&CENTER='500@399'&START_TIME='2026-11-15'&STOP_TIME='2026-12-15'&STEP_SIZE='1d'&REF_SYSTEM='ICRF'&REF_PLANE='ECLIPTIC'&OUT_UNITS='KM-S'&CSV_FORMAT='YES'",
+  "date_checked": "2026-11-14",
+  "processing": "CSV rows parsed to JSON",
+  "bytes": 8366
+ },
+ {
+  "file": "data/nasa/nssdc_factsheets.json",
+  "mission": null,
+  "source_id": "S-nssdc-planets",
+  "query": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html; https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+  "date_checked": "2026-11-14",
+  "processing": "HTML table rows parsed to JSON",
+  "bytes": 8848
+ },
+ {
+  "file": "assets/photos/volcano_watch/sangay_landsat8_2022-11-05_truecolor.jpg",
+  "mission": "volcano_watch",
+  "source_id": "S-eo",
+  "query": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/150000/150650/sangay_oli_2022309_lrg.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "cropped to the volcano, resized to at most 1024 px; Sangay ash plume, Landsat 8 OLI natural colour, 5 Nov 2022 (30 m pixels), page: https://science.nasa.gov/earth/earth-observatory/a-line-of-ash-from-sangay-150650/; credit: NASA Earth Observatory images by Lauren Dauphin, using Landsat data from the U.S. Geological Survey",
+  "bytes": 188382
+ },
+ {
+  "file": "assets/photos/volcano_watch/cotopaxi_landsat8_2015-09-15_truecolor.jpg",
+  "mission": "volcano_watch",
+  "source_id": "S-eo",
+  "query": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/86000/86618/cotopaxi_oli_2015258_lrg.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "cropped to the volcano, resized to at most 1024 px; Cotopaxi after its first eruption in 70 years, Landsat 8 OLI natural colour, 15 Sep 2015, page: https://science.nasa.gov/earth/earth-observatory/cotopaxi-volcano-ecuador-86618/; credit: NASA Earth Observatory image by Jesse Allen, using Landsat data from the U.S. Geological Survey",
+  "bytes": 239214
+ },
+ {
+  "file": "assets/photos/volcano_watch/tungurahua_eo1_2011-01-01_truecolor.jpg",
+  "mission": "volcano_watch",
+  "source_id": "S-eo",
+  "query": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/48000/48337/tungurahua_ali_2011001_lrg.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "cropped to the volcano, resized to at most 1024 px; Tungurahua summit plume, EO-1 ALI natural colour, 1 Jan 2011 (30 m), page: https://science.nasa.gov/earth/earth-observatory/ongoing-eruption-of-tungurahua-ecuador-48337/; credit: NASA Earth Observatory image created by Jesse Allen, using EO-1 ALI data provided courtesy of the NASA EO-1 team and the U.S. Geological Survey",
+  "bytes": 168531
+ },
+ {
+  "file": "assets/photos/volcano_watch/tungurahua_eo1_2011-01-01_swir.jpg",
+  "mission": "volcano_watch",
+  "source_id": "S-eo",
+  "query": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/48000/48337/tungurahua_ali_2011001_swir_lrg.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "cropped to the volcano, resized to at most 1024 px; Tungurahua, EO-1 ALI short-wave infrared false colour: the hot crater glows red, 1 Jan 2011 (30 m); same page as above; credit: NASA Earth Observatory image created by Jesse Allen, using EO-1 ALI data provided courtesy of the NASA EO-1 team and the U.S. Geological Survey",
+  "bytes": 163930
+ },
+ {
+  "file": "assets/photos/volcano_watch/sangay_aster_2020-06-11_thermal.jpg",
+  "mission": "volcano_watch",
+  "source_id": "S-nasa-images",
+  "query": "https://images-assets.nasa.gov/image/PIA23914/PIA23914~orig.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "no crop, resized to at most 1024 px; Sangay night thermal infrared (ASTER on Terra), 11 Jun 2020: lava flows white, ash plume dark red-brown; library record PIA23914; credit: NASA/METI/AIST/Japan Space Systems, and U.S./Japan ASTER Science Team",
+  "bytes": 27471
+ },
+ {
+  "file": "assets/photos/volcano_watch/cotopaxi_aster_2015-08-22_falsecolor.jpg",
+  "mission": "volcano_watch",
+  "source_id": "S-nasa-images",
+  "query": "https://images-assets.nasa.gov/image/PIA15151/PIA15151~orig.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "no crop, resized to at most 1024 px; Cotopaxi ash columns, ASTER on Terra false colour, 22 Aug 2015 (15 m); library record PIA15151; credit: NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team",
+  "bytes": 193908
+ },
+ {
+  "file": "assets/photos/moon_south_pole/south_pole_wide_lroc_wac.jpg",
+  "mission": "moon_south_pole",
+  "source_id": "S-lroc-wac",
+  "query": "https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd_v02/1.0.0//default/default028mm/5/{row}/{col}.jpg for row 30..31, column 0..63",
+  "date_checked": "2026-11-14",
+  "processing": "tiles joined, re-projected to a view from above the south pole (azimuthal equidistant, 11.0 deg radius)",
+  "bytes": 295819
+ },
+ {
+  "file": "assets/photos/moon_south_pole/shackleton_rim_lroc.jpg",
+  "mission": "moon_south_pole",
+  "source_id": "S-nasa-science",
+  "query": "https://assets.science.nasa.gov/content/dam/science/psd/lunar-science/2023/08/shackleton-1.png",
+  "date_checked": "2026-11-14",
+  "processing": "no crop, resized to at most 1024 px; Shackleton crater rim in sunlight, its floor in permanent shadow; page: https://science.nasa.gov/resource/shackleton-craters-illuminated-rim-shadowed-interior/; credit: NASA/GSFC/Arizona State University",
+  "bytes": 28527
+ },
+ {
+  "file": "assets/photos/moon_south_pole/shackleton_floor_shadowcam.jpg",
+  "mission": "moon_south_pole",
+  "source_id": "S-nasa-science",
+  "query": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2023/may/shackleton_arrow.png",
+  "date_checked": "2026-11-14",
+  "processing": "no crop, resized to at most 1024 px; Inside Shackleton, seen by ShadowCam (NASA instrument on the Korean KPLO orbiter); the arrow marks a boulder track; page: https://science.nasa.gov/image-article/apod-2023-may-5-shackleton-from-shadowcam/; credit: NASA, ShadowCam, Korea Aerospace Research Institute, Arizona State University",
+  "bytes": 228528
+ },
+ {
+  "file": "assets/photos/telescope/neptune_voyager2_1989.jpg",
+  "mission": "telescopio",
+  "source_id": "S-nasa-images",
+  "query": "https://images-assets.nasa.gov/image/PIA00049/PIA00049~orig.jpg",
+  "date_checked": "2026-11-14",
+  "processing": "resized to at most 1024 px; Neptune and its Great Dark Spot, Voyager 2, 1989; library record PIA00049, credit NASA/JPL",
+  "bytes": 57209
+ },
+ {
+  "file": "data/nasa/lola_south_pole.json",
+  "mission": "moon_south_pole",
+  "source_id": "S-lola",
+  "query": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/polar/img/ldem_875s_20m.img (HTTP range of lines 3592-4191); label https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/polar/img/ldem_875s_20m.lbl",
+  "date_checked": "2026-11-14",
+  "processing": "12 km square around the south pole and the rim of Shackleton cut from the 20 m LOLA polar map, 3 x 3 pixels averaged to 60 m, numbers turned into metres with the label's scaling factor (0.5) and rounded to whole metres",
+  "bytes": 198976
+ }
+]

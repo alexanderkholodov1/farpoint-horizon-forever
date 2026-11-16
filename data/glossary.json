@@ -1,0 +1,128 @@
+{
+  "doc": "Words a newcomer may not know (issue #69): `aka` lists how the word appears on screen; the design screen adds a word's meaning when an option shows it, and How to play lists them all. Texts are English; Spanish in i18n/glossary.csv.",
+  "entries": {
+    "orbit": {
+      "term": "Orbit",
+      "aka": [
+        "orbit",
+        "orbits"
+      ],
+      "meaning": "The path a craft follows around a planet, falling all the time but moving sideways fast enough to keep missing the ground.",
+      "source": [
+        "S-eo-orbits"
+      ]
+    },
+    "LEO": {
+      "term": "LEO",
+      "aka": [
+        "LEO",
+        "low orbit"
+      ],
+      "meaning": "Low Earth orbit: a few hundred km up, a lap every hour and a half. Easy to reach, but the thin air slowly drags craft down.",
+      "source": [
+        "S-eo-orbits"
+      ]
+    },
+    "SSO": {
+      "term": "SSO",
+      "aka": [
+        "SSO",
+        "Sun-synchronous",
+        "polar orbit"
+      ],
+      "meaning": "Sun-synchronous orbit: passes near the poles and crosses each place at the same hour of sunlight every day, so pictures can be compared day after day.",
+      "source": [
+        "S-eo-orbits"
+      ]
+    },
+    "GEO": {
+      "term": "GEO",
+      "aka": [
+        "GEO",
+        "geostationary"
+      ],
+      "meaning": "Geostationary orbit: 35,786 km above the equator, where one lap takes a day, so the craft stays over the same spot.",
+      "source": [
+        "S-eo-orbits"
+      ]
+    },
+    "L2": {
+      "term": "L2",
+      "aka": [
+        "L2"
+      ],
+      "meaning": "A point 1.5 million km away on the far side of the Earth from the Sun, where a telescope can keep the Sun, Earth and Moon behind its shield.",
+      "source": [
+        "S-webb-orbit"
+      ]
+    },
+    "Δv": {
+      "term": "Δv",
+      "aka": [
+        "Δv",
+        "delta-v",
+        "speed change"
+      ],
+      "meaning": "Delta-v: how much a craft can change its speed with its fuel. Every move (climbing to an orbit, staying in it) costs some.",
+      "source": [
+        "S-delta-v"
+      ]
+    },
+    "band": {
+      "term": "Radio bands",
+      "aka": [
+        "S band",
+        "X band",
+        "Ka band",
+        "UHF"
+      ],
+      "meaning": "The higher the frequency (UHF, S, X, Ka), the more data per second, but the more exact the aim of the antenna must be.",
+      "source": [
+        "S-descanso-bands"
+      ]
+    },
+    "CubeSat": {
+      "term": "CubeSat",
+      "aka": [
+        "CubeSat"
+      ],
+      "meaning": "A small satellite built from 10 cm cubes: a 3U is three cubes in a row. Cheap and quick to build.",
+      "source": [
+        "S4"
+      ]
+    },
+    "eclipse": {
+      "term": "Shadow (eclipse)",
+      "aka": [
+        "shadow",
+        "eclipse"
+      ],
+      "meaning": "The part of each lap spent in the Earth's shadow, where solar panels make nothing and the battery keeps the craft alive.",
+      "source": [
+        "S-eo-orbits"
+      ]
+    },
+    "reaction wheels": {
+      "term": "Reaction wheels",
+      "aka": [
+        "reaction wheels",
+        "Spinning wheels"
+      ],
+      "meaning": "Wheels spun by motors inside the craft: speeding one up turns the craft the other way, so it can aim without fuel.",
+      "source": [
+        "S-nasa-soa"
+      ]
+    },
+    "star tracker": {
+      "term": "Star tracker",
+      "aka": [
+        "star tracker",
+        "star camera"
+      ],
+      "meaning": "A small camera that recognizes star patterns to know exactly where the craft points.",
+      "source": [
+        "S-nasa-soa"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+keys,es
+Choose your mission,Elige tu misión
+%d yr or more,%d años o más
+"Cotopaxi · Landsat 8, 2015","El Cotopaxi · Landsat 8, 2015"
+The Pacific off Ecuador · Blue Marble,El Pacífico frente a Ecuador · Blue Marble
+The Moon · Lunar Reconnaissance Orbiter,La Luna · Lunar Reconnaissance Orbiter
+"Neptune · Voyager 2, 1989","Neptuno · Voyager 2, 1989"
+The Americas at night · Black Marble,América de noche · Black Marble
+The Moon's south pole · LRO,El polo sur de la Luna · LRO
+"Design, launch and fly your own space mission.","Diseña, lanza y vuela tu propia misión espacial."
+Settings,Ajustes
+Quit,Salir
+Language,Idioma
+Ranking,Clasificación
+Pick where your craft will fly.,Elige dónde volará tu nave.
+Pick the body of your craft: bigger carries more and costs more.,Elige el cuerpo de tu nave: más grande lleva más y cuesta más.
+Pick the instruments that meet the science goals. Start with the ★ Key ones.,Elige los instrumentos que cumplen los objetivos científicos. Empieza por los ★ Clave.
+Pick panels and a battery until Power and Battery are blue on the board.,Elige paneles y batería hasta que Energía y Batería estén en azul en el tablero.
+Pick an antenna that can send all your data home.,Elige una antena que pueda enviar todos tus datos a casa.
+Pick how your craft points and how it moves.,Elige cómo apunta tu nave y cómo se mueve.
+"Pick the rocket that can lift it, and how long to operate.","Elige el cohete que pueda levantarla y cuánto tiempo operar."
+"Fix what is red, then launch.","Arregla lo que esté en rojo y lanza."
+"What your craft uses, against what it has. Blue is fine; red must be fixed.","Lo que tu nave usa, frente a lo que tiene. Azul está bien; rojo hay que arreglarlo."
+Nothing provides this yet: add the part that does,Nada lo da todavía: añade la pieza que lo da
+Too much: %s over what you have,Demasiado: %s por encima de lo que tienes
+Plan,Salida
+Burn,Encendido
+Coast,Travesía
+Brake,Frenado
+Moon orbit,Órbita lunar
+THROTTLE,POTENCIA
+First mission · guided,Primera misión · guiada
+"Team SK-Horizons · Quito, Ecuador","Equipo SK-Horizons · Quito, Ecuador"
+Missions,Misiones
+All open,Todas abiertas
+In order,En orden
+LOCKED,BLOQUEADA
+Coming soon,Próximamente
+Finish “%s” first,Termina «%s» primero
+Done,Hecha

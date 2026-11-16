@@ -1,0 +1,35 @@
+keys,es
+Coming home,De vuelta a casa
+Bring them home through the air,Tráelos a casa a través del aire
+▲ Shallower,▲ Menos inclinado
+▼ Steeper,▼ Más inclinado
+"Keep the arrow inside the bright band: W or ▲ makes it shallower, S or ▼ steeper.","Mantén la flecha dentro de la banda clara: W o ▲ la hace menos inclinada, S o ▼ más inclinada."
+Angle %.1f°.,Ángulo %.1f°.
+Too steep: the heat shield is overheating!,Demasiado inclinado: ¡el escudo térmico se recalienta!
+Too shallow: the capsule could skip off the air!,Muy plano: ¡la cápsula podría rebotar en el aire!
+In the corridor. Good.,En el corredor. Bien.
+Next mark: %s ft.,Próxima marca: %s pies.
+Under three main parachutes. Splashdown coming.,Bajo tres paracaídas principales. Llega el amerizaje.
+Drogues · 1,Frenado · 1
+Mains · 2,Principales · 2
+Drogues out!,¡Paracaídas de frenado!
+Mains out!,¡Paracaídas principales!
+Right on the mark.,Justo en la marca.
+%s ft off the mark.,a %s pies de la marca.
+In the corridor %d %% of the time · drogues %s ft off · mains %s ft off.,En el corredor el %d %% del tiempo · frenado a %s pies · principales a %s pies.
+"The corridor's edges, the drift and the pace are our game values; the plasma lasts 24 s here, the real blackout 3 min 19 s.","Los bordes del corredor, la deriva y el ritmo son valores del juego; el plasma dura aquí 24 s, el apagón real 3 min 19 s."
+"Sources: Apollo Flight Journal, NASA.","Fuentes: Apollo Flight Journal, NASA."
+shallow: skips off,plano: rebota
+steep: too hot,inclinado: muy caliente
+Fly it again,Volver a intentarlo
+Continue · Enter,Continuar · Enter
+corridor,corredor
+RADIO BLACKOUT · the glowing air blocks the radio.,APAGÓN DE RADIO · el aire incandescente bloquea la radio.
+Houston can only wait (3 min 19 s for real).,Houston solo puede esperar (3 min 19 s en la realidad).
+Mission control can only wait.,Control de misión solo puede esperar.
+"Open the parachutes on their marks: 1 for the drogues at %s ft, 2 for the mains at %s ft.","Abre los paracaídas en sus marcas: 1 para los de frenado a %s pies, 2 para los principales a %s pies."
+"%s is down in the Pacific Ocean, %s. The recovery ship USS Iwo Jima was about four miles away.","%s está en el océano Pacífico, %s. El barco de rescate USS Iwo Jima estaba a unas cuatro millas."
+"%s is down in the Pacific off San Diego, %s, at 12:40 p.m. EST, after 25 days, 10 hours and 53 minutes.","%s está en el Pacífico frente a San Diego, %s, a las 12:40 p. m. EST, tras 25 días, 10 horas y 53 minutos."
+"Sources: NASA, Artemis I.","Fuentes: NASA, Artemis I."
+"The corridor's edges, the drift, the pace and the parachute heights are our game values; the speed and the splashdown are NASA's.","Los bordes del corredor, la deriva, el ritmo y las alturas de los paracaídas son valores del juego; la velocidad y el amerizaje son de la NASA."
+"December 11, 2022",11 de diciembre de 2022

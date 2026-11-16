@@ -1,0 +1,12 @@
+keys,es
+On the Moon · Shackleton's rim,En la Luna · borde del Shackleton
+A month every %.1f s: time runs %s times faster than real.,Un mes cada %.1f s: el tiempo corre %s veces más rápido que el real.
+"At the pole the Sun circles the horizon once a lunar day (29.5 days), so its light sweeps round the ground; the crater's floor never sees it.","En el polo el Sol da la vuelta al horizonte una vez por día lunar (29,5 días), así que su luz recorre el suelo; el fondo del cráter nunca la ve."
+"Your craft laps its orbit every %s. At this speed that is %s laps each second, a blur, so the orbit is drawn as a ring.","Tu nave da una vuelta a su órbita cada %s. A esta velocidad son %s vueltas por segundo, un borrón, así que la órbita se dibuja como un anillo."
+Your craft laps its orbit every %s: one lap every %.1f s at this speed.,Tu nave da una vuelta a su órbita cada %s: una vuelta cada %.1f s a esta velocidad.
+%.1f million,%.1f millones
+%d days,%d días
+%d months,%d meses
+Operations,Operación
+Landed at Shackleton's rim,Alunizaje en el borde del Shackleton
+"Touchdown at %.1f m/s, %d m from the target. The lander is working.","Contacto a %.1f m/s, a %d m del objetivo. El módulo funciona."

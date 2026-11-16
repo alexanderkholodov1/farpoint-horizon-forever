@@ -1,0 +1,24 @@
+{
+  "doc": "The engines of the trip to the Moon (scripts/flight/transfer.gd). Each burn follows the rocket equation [S10]: the push is thrust / mass, and the mass falls by thrust / (Isp x g0) every second, so a burn starts gentle and ends hard. g0 = 9.80665 m/s2 (standard gravity, the same as data/parts.json).",
+  "g0": 9.80665,
+  "entries": {
+    "departure": {
+      "name": "Departure stage",
+      "desc": "The rocket's last stage, still attached in the parking orbit: it fires the burn that sends the craft to the Moon, then is left behind.",
+      "thrust_n": 858000,
+      "isp_s": 421,
+      "mass_kg": 135130,
+      "source": ["S-afj11-tli", "S-j2"],
+      "simplified": "Apollo 11's S-IVB with its spacecraft. The mass is the combined vehicles in the parking orbit (297,914 lb) [S-afj11-tli]; the Isp is the J-2's in vacuum, 421 s [S-j2]. The thrust is ours, derived: the steady thrust that gives the game's 3,150 m/s in Apollo 11's 5 min 47 s with that mass and Isp (858 kN; the J-2 is rated 1,033 kN, and ran leaner for this burn). Real: 6.4 m/s2 at ignition, 13.6 m/s2 at cutoff."
+    },
+    "craft": {
+      "name": "The craft's own engine",
+      "desc": "The spacecraft's main engine: the mid-course correction and the braking into lunar orbit.",
+      "thrust_n": 91190,
+      "isp_s": 314.5,
+      "mass_kg": 43550,
+      "source": ["S-apollo-csm", "S-afj11-loi"],
+      "simplified": "Apollo's Service Propulsion System, 91.19 kN and Isp 314.5 s [S-apollo-csm], on Apollo 11's 43,550 kg before the braking burn [S-afj11-loi]. With these, 889 m/s takes 369 s; Apollo 11's LOI-1 took 6 min 2 s (362 s). Real: 2.1 m/s2 at ignition."
+    }
+  }
+}

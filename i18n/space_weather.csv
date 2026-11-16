@@ -1,0 +1,44 @@
+keys,es
+Space weather alert · %s,Alerta de clima espacial · %s
+"You put the craft in safe mode: instruments off until the storm passed, half of this month's data lost.","Pusiste la nave en modo seguro: instrumentos apagados hasta que pasó la tormenta, se perdió la mitad de los datos de este mes."
+"You kept the craft working through the storm, every observation kept.","Mantuviste la nave trabajando durante la tormenta, sin perder ninguna observación."
+The storm swelled the upper air,La tormenta infló la alta atmósfera
+"The heated air dragged the orbit down, and the engine climbed back (8 m/s of fuel).","El aire calentado frenó la órbita y la hizo bajar, y el motor la subió de nuevo (8 m/s de combustible)."
+"The heated air dragged the orbit down, and with no engine to climb back about 6 months of life were lost.","El aire calentado frenó la órbita y la hizo bajar, y sin motor para subir de nuevo se perdieron unos 6 meses de vida."
+Computer damaged by the storm,Computadora dañada por la tormenta
+The storm fried the computer,La tormenta quemó la computadora
+"The storm upset the onboard computer and there is no backup. The craft went silent. Shielding, redundancy and safe mode reduce this risk.","La tormenta alteró la computadora de a bordo y no hay respaldo. La nave quedó en silencio. El blindaje, la redundancia y el modo seguro reducen este riesgo."
+The storm damaged an instrument,La tormenta dañó un instrumento
+The storm damaged the %s. %s,La tormenta dañó el %s. %s
+Storm weathered,Tormenta superada
+The craft rode the storm out in safe mode.,La nave aguantó la tormenta en modo seguro.
+The craft rode the storm out%s.,La nave aguantó la tormenta%s.
+"G5, extreme geomagnetic storm","G5, tormenta geomagnética extrema"
+"G4, severe geomagnetic storm","G4, tormenta geomagnética severa"
+"S4, severe solar radiation storm","S4, tormenta de radiación solar severa"
+"S3, strong solar radiation storm","S3, tormenta de radiación solar fuerte"
+Space weather alert,Alerta de clima espacial
+"A cloud of solar gas thrown out by the Sun (a coronal mass ejection) is on its way to the Earth. The fastest arrive in 15 to 18 hours, slower ones take several days, so NOAA's forecasters give a warning.","Una nube de gas que lanzó el Sol (una eyección de masa coronal) viene hacia la Tierra. Las más rápidas llegan en 15 a 18 horas y las más lentas tardan varios días, así que los pronosticadores de NOAA alcanzan a avisar."
+For your craft: electric charge builds up on its surface and it can lose its orientation.,"Para tu nave: se acumula carga eléctrica en su superficie y puede perder su orientación."
+In a low orbit the heated upper air also drags it down.,"En una órbita baja, además, la alta atmósfera calentada la frena y la hace bajar."
+"An eruption on the Sun is sending out protons so fast they cross to the Earth in tens of minutes. A radiation storm lasts from hours to days.","Una erupción en el Sol lanza protones tan rápidos que cruzan hasta la Tierra en decenas de minutos. Una tormenta de radiación dura de horas a días."
+"For your craft: protons can flip bits in its memory, add noise to its images and wear its solar panels.","Para tu nave: los protones pueden cambiar bits en su memoria, meter ruido en sus imágenes y desgastar sus paneles solares."
+Out here the Earth's magnetic field does not shield it.,Aquí afuera el campo magnético de la Tierra no la protege.
+In a low orbit the Earth's magnetic field shields it from most of them.,"En una órbita baja, el campo magnético de la Tierra la protege de la mayoría."
+About 100 storms this strong come in an 11-year solar cycle.,Llegan unas 100 tormentas así de fuertes en un ciclo solar de 11 años.
+Only about 4 storms this strong come in an 11-year solar cycle.,Solo llegan unas 4 tormentas así de fuertes en un ciclo solar de 11 años.
+About 10 storms this strong come in an 11-year solar cycle.,Llegan unas 10 tormentas así de fuertes en un ciclo solar de 11 años.
+Only about 3 storms this strong come in an 11-year solar cycle.,Solo llegan unas 3 tormentas así de fuertes en un ciclo solar de 11 años.
+Source: NOAA's space weather scales.,Fuente: las escalas de clima espacial de NOAA.
+You lose half of this month's data.,Pierdes la mitad de los datos de este mes.
+Safe mode · 1,Modo seguro · 1
+Keep working · 2,Seguir trabajando · 2
+Instruments off until it passes.,Instrumentos apagados hasta que pase.
+Every observation kept.,No se pierde ninguna observación.
+"If you close this card, mission control follows its flight rule: safe mode.","Si cierras esta tarjeta, el control de misión sigue su regla de vuelo: modo seguro."
+Chance of damage: %s,Probabilidad de daño: %s
+Chemical rocket engine (bipropellant),Motor cohete químico (bipropelente)
+Chemical (bipropellant),Química (bipropelente)
+"Shadow up to %s a day, only near the equinoxes","Sombra de hasta %s al día, solo cerca de los equinoccios"
+Shadow %s per lap,Sombra de %s por vuelta
+"Contact %s per day · speed change to get there %d m/s","Contacto %s al día · cambio de velocidad para llegar %d m/s"

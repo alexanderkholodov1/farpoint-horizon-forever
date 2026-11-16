@@ -1,0 +1,140 @@
+{
+ "doc": "Spacecraft platforms (buses).",
+ "entries": {
+  "cube3": {
+   "name": "CubeSat 3U",
+   "desc": "About the size of a shoebox (10 × 10 × 34 cm). Very cheap, with little room and little power.",
+   "dry": 2.0,
+   "max": 5.0,
+   "cost": 0.4,
+   "base_power": 2.0,
+   "slots": 1,
+   "max_size": 1,
+   "ep_power": 15.0,
+   "ops_mult": 0.3,
+   "cots": true,
+   "dims": [
+    0.349999994039536,
+    0.349999994039536,
+    1.0
+   ],
+   "source": [
+    "S4",
+    "S7"
+   ],
+   "simplified": "Mass, power and cost are rounded to the class of real buses of that size; the number of slots and the bus cost are our own game balance."
+  },
+  "cube6": {
+   "name": "CubeSat 6U",
+   "desc": "Two 3U CubeSats side by side. Room for a couple of small instruments.",
+   "dry": 4.0,
+   "max": 12.0,
+   "cost": 0.9,
+   "base_power": 3.0,
+   "slots": 2,
+   "max_size": 1,
+   "ep_power": 20.0,
+   "ops_mult": 0.35,
+   "cots": true,
+   "dims": [
+    0.699999988079071,
+    0.349999994039536,
+    1.0
+   ],
+   "source": [
+    "S4",
+    "S7"
+   ],
+   "simplified": "Mass, power and cost are rounded to the class of real buses of that size; the number of slots and the bus cost are our own game balance."
+  },
+  "cube12": {
+   "name": "CubeSat 12U",
+   "desc": "The largest common CubeSat. Up to 3 small instruments.",
+   "dry": 8.0,
+   "max": 24.0,
+   "cost": 1.8,
+   "base_power": 5.0,
+   "slots": 3,
+   "max_size": 1,
+   "ep_power": 30.0,
+   "ops_mult": 0.4,
+   "cots": true,
+   "dims": [
+    0.699999988079071,
+    0.699999988079071,
+    1.0
+   ],
+   "source": [
+    "S4",
+    "S7"
+   ],
+   "simplified": "Mass, power and cost are rounded to the class of real buses of that size; the number of slots and the bus cost are our own game balance."
+  },
+  "small": {
+   "name": "SmallSat (~200 kg)",
+   "desc": "About the size of a small fridge. Takes medium instruments.",
+   "dry": 60.0,
+   "max": 200.0,
+   "cost": 15.0,
+   "base_power": 40.0,
+   "slots": 4,
+   "max_size": 2,
+   "ep_power": 300.0,
+   "ops_mult": 1.0,
+   "cots": false,
+   "dims": [
+    1.0,
+    1.0,
+    1.20000004768372
+   ],
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Mass, power and cost are rounded to the class of real buses of that size; the number of slots and the bus cost are our own game balance."
+  },
+  "medium": {
+   "name": "Medium platform (~1.5 t)",
+   "desc": "Like a small car. Carries large instruments and plenty of power.",
+   "dry": 400.0,
+   "max": 1500.0,
+   "cost": 70.0,
+   "base_power": 150.0,
+   "slots": 6,
+   "max_size": 3,
+   "ep_power": 1500.0,
+   "ops_mult": 2.0,
+   "cots": false,
+   "dims": [
+    1.39999997615814,
+    1.39999997615814,
+    1.79999995231628
+   ],
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Mass, power and cost are rounded to the class of real buses of that size; the number of slots and the bus cost are our own game balance."
+  },
+  "large": {
+   "name": "Large observatory (~7 t)",
+   "desc": "The size of a school bus, for the most ambitious instruments.",
+   "dry": 2000.0,
+   "max": 7000.0,
+   "cost": 250.0,
+   "base_power": 500.0,
+   "slots": 8,
+   "max_size": 4,
+   "ep_power": 4000.0,
+   "ops_mult": 4.0,
+   "cots": false,
+   "dims": [
+    1.79999995231628,
+    1.79999995231628,
+    2.59999990463257
+   ],
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Mass, power and cost are rounded to the class of real buses of that size; the number of slots and the bus cost are our own game balance."
+  }
+ }
+}

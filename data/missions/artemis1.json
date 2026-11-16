@@ -1,0 +1,60 @@
+{
+ "doc": "Mission 6, Artemis I (November 16 to December 11, 2022): 'Everything we learned' (issue #50). The crew ride hidden in Commander Moonikin Campos's seat. Three stages, each part of the result. (1) Launch from Pad 39B at 1:47 a.m. EST (S-artemis-nasa): ignite on the zero; through Max Q keep the throttle in the band; the boosters separate at 2 min 12 s and the core stage at 8 min 03 s (S-artemis-timeline): press each on its call. Shown faster, said on screen. (2) The outbound powered flyby, about 81 miles above the Moon, the burn taking Orion from 2,128 to 5,102 mph (S-artemis-timeline): hold SPACE to burn and let go in the band; then catch the Earth beside the Moon, as Orion did at its farthest, 268,563 miles from Earth (S-artemis-nasa; the real picture: S-artemis-art672). (3) Re-entry at 24,581 mph, Mach 32 (S-artemis-timeline): keep the capsule's angle in the corridor (too steep: too hot; too shallow: it skips away), then the drogues and the mains on their calls, and splashdown off San Diego at 12:40 p.m. EST on Dec 11, 2022, after 25 days, 10 hours, 53 minutes (S-artemis-nasa). Our simplifications, said here: the Max Q gauge, the burn's rate, the corridor's width and its drift, the heat and g readings, and the parachute heights (no figure found on a NASA page: ours, about 7.6 km for the drogues, 2.9 km for the mains).",
+ "launch": {
+  "srb_sep_s": 132.0,
+  "core_sep_s": 483.0,
+  "maxq_s": [55.0, 85.0],
+  "fast": 12.0,
+  "call_window_s": 6.0
+ },
+ "flyby": {
+  "miles_up": 81.0,
+  "before_mph": 2128.0,
+  "after_mph": 5102.0,
+  "burn_rate_mph_s": 900.0,
+  "band_mph": 160.0
+ },
+ "reentry": {
+  "speed_mph": 24581.0,
+  "mach": 32,
+  "corridor_deg": [-7.5, -4.5],
+  "drift_deg_s": 1.6,
+  "push_deg_s": 4.5,
+  "time_s": 26.0,
+  "drogue_km": 7.6,
+  "main_km": 2.9,
+  "call_window_km": 0.9
+ },
+ "far": {
+  "miles": 268563,
+  "beyond_moon_miles": 43471,
+  "photo": "res://assets/photos/artemis1/art001e000672_earth_moon.jpg",
+  "credit": "NASA, art001e000672 (cropped)",
+  "source": "S-artemis-art672"
+ },
+ "score": {
+  "weights": {"launch": 30, "flyby": 30, "reentry": 40},
+  "need": 55,
+  "stars": [55, 75, 90]
+ },
+ "texts": {
+  "ignite": "SPACE on the zero: light the four engines and the two boosters.",
+  "maxq": "Max Q: the air pushes hardest. Hold the throttle in the green band (W up, S down).",
+  "srb": "Boosters burned out: B to separate them!",
+  "core": "Core stage empty: C to separate it!",
+  "burn": "The powered flyby: hold SPACE to burn, let go in the gold band.",
+  "earth": "The Earth comes out beside the Moon: SPACE when it is in the frame!",
+  "corridor": "Mach 32! Keep the capsule's angle in the corridor: W up, S down.",
+  "drogue": "Drogues: 1!",
+  "main": "Mains: 2!",
+  "lost_corridor": "Out of the corridor.",
+  "lost_corridor_sub": "That is not how it went: Orion came home through the corridor at Mach 32. Try again.",
+  "few": "Not quite home.",
+  "few_sub": "The flight needed a cleaner run. Try again."
+ },
+ "facts": [
+  {"text": "Artemis I launched from Launch Pad 39B at 1:47 a.m. EST on November 16, 2022.", "source": "S-artemis-nasa"},
+  {"text": "Orion traveled 268,563 miles from Earth, and came back at 24,581 mph: Mach 32.", "source": "S-artemis-timeline"},
+  {"text": "It splashed down off San Diego on December 11, 2022, after 25 days, 10 hours and 53 minutes.", "source": "S-artemis-nasa"}
+ ]
+}

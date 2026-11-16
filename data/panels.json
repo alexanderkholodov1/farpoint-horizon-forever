@@ -1,0 +1,65 @@
+{
+ "doc": "Solar panels.",
+ "entries": {
+  "body": {
+   "name": "Body-mounted panels",
+   "power": 7.0,
+   "mass": 0.2,
+   "cost": 0.05,
+   "desc": "Cells glued to the craft's faces. Simple, no moving parts, little power.",
+   "span": 0.0,
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from the typical power of solar arrays of each size class; mass and cost are rough orders of magnitude."
+  },
+  "dep_s": {
+   "name": "Small deployable panels",
+   "power": 40.0,
+   "mass": 1.2,
+   "cost": 0.4,
+   "desc": "They open like wings once in space.",
+   "span": 0.8,
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from the typical power of solar arrays of each size class; mass and cost are rough orders of magnitude."
+  },
+  "dep_m": {
+   "name": "Medium deployable panels",
+   "power": 450.0,
+   "mass": 18.0,
+   "cost": 4.0,
+   "desc": "The usual choice on a SmallSat.",
+   "span": 1.6,
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from the typical power of solar arrays of each size class; mass and cost are rough orders of magnitude."
+  },
+  "wing_l": {
+   "name": "Large solar wings",
+   "power": 2500.0,
+   "mass": 110.0,
+   "cost": 18.0,
+   "desc": "Several meters across.",
+   "span": 2.6,
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from the typical power of solar arrays of each size class; mass and cost are rough orders of magnitude."
+  },
+  "wing_xl": {
+   "name": "Giant solar wings",
+   "power": 9000.0,
+   "mass": 380.0,
+   "cost": 50.0,
+   "desc": "Like the Space Station's, only smaller.",
+   "span": 3.8,
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from the typical power of solar arrays of each size class; mass and cost are rough orders of magnitude."
+  }
+ }
+}

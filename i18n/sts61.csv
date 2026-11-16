@@ -1,0 +1,84 @@
+keys,es
+Mission 2 · STS-61 · December 1993,Misión 2 · STS-61 · diciembre de 1993
+Glasses for a telescope,Lentes para un telescopio
+Spacewalk %d of 5,Caminata espacial %d de 5
+"Its real length, %s, run %d times faster","Su duración real, %s, %d veces más rápido"
+"Mission Control, on the radio","Control de Misión, por radio"
+The toolbox · press 1 to 6 or click,La caja de herramientas · pulsa 1 a 6 o haz clic
+In hand. Press Space when the ring meets the circle to fit it.,En la mano. Pulsa Espacio cuando el anillo toque el círculo para encajarla.
+Fit it,Encájala
+PERFECT,PERFECTO
+GOOD,BIEN
+LATE,TARDE
+All five: Hubble is fixed. Now the first image.,"Las cinco: Hubble está arreglado. Ahora, la primera imagen."
+Back to the airlock. Next: spacewalk %d.,De vuelta a la escotilla. Siguiente: caminata %d.
+Press Enter to try this spacewalk again.,Pulsa Enter para intentar esta caminata otra vez.
+The first image,La primera imagen
+Correction,Corrección
+← → or the wheel turn the correction; stop when the stars are points.,← → o la rueda giran la corrección; detente cuando las estrellas sean puntos.
+"Before: WFPC1, 1993","Antes: WFPC1, 1993"
+"After: WFPC2, this mission","Después: WFPC2, esta misión"
+Mission 2 · done,Misión 2 · lograda
+Wrong parts: %d · Retries: %d · Perfect fits: %d of %d,Piezas equivocadas: %d · Reintentos: %d · Encajes perfectos: %d de %d
+Continue  ·  Enter,Continuar  ·  Enter
+Play again  ·  R,Jugar otra vez  ·  R
+"Negative, that is not this step's part.","Negativo, esa no es la pieza de este paso."
+"Killa, put the cloth away. Nobody is cleaning the mirror.","Killa, guarda el trapito. Nadie va a limpiar el espejo."
+Twenty seconds left on this spacewalk. Keep going.,Quedan veinte segundos en esta caminata. Sigan.
+Ten seconds! Finish and get back to the airlock!,¡Diez segundos! ¡Terminen y vuelvan a la escotilla!
+Out of time.,Se acabó el tiempo.
+Back to the airlock. That is not how it went: the crew finished every spacewalk. Try this one again.,De vuelta a la escotilla. Así no fue: la tripulación terminó todas las caminatas. Intenta esta otra vez.
+Spacewalk %d done,Caminata %d lista
+Houston here. The first picture with the new camera is coming down. Turn the correction until the stars are points.,Aquí Houston. Está llegando la primera foto con la cámara nueva. Giren la corrección hasta que las estrellas sean puntos.
+Simplified: here you turn a dial; in space the optics of WFPC2 and COSTAR did it.,Simplificado: aquí giras un dial; en el espacio lo hicieron las ópticas de WFPC2 y COSTAR.
+Sharp!,¡Nítido!
+The galaxy M100 snapped into focus.,La galaxia M100 quedó en foco.
+"The galaxy M100, as Hubble really saw it: with the old camera in 1993, blurry from the mirror's flaw, and with WFPC2 after this mission, sharp.","La galaxia M100, tal como Hubble la vio: con la cámara vieja en 1993, borrosa por el defecto del espejo, y con WFPC2 después de esta misión, nítida."
+Spacewalk one. Open the equipment bay and swap in the two new Rate Sensing Units: the gyroscopes Hubble steers by.,Caminata uno. Abran la bahía de equipos y pongan las dos Unidades Sensoras de Giro nuevas: los giroscopios con los que Hubble se orienta.
+Now the two electronic control units for the gyroscopes.,Ahora las dos unidades de control electrónico de los giroscopios.
+Last: the eight new fuse plugs. Then close the doors.,Por último: los ocho fusibles nuevos. Luego cierren las puertas.
+Spacewalk two. The old solar arrays come off: put the new ones on.,Caminata dos. Los paneles solares viejos salen: pongan los nuevos.
+Spacewalk three. Slide out the old camera and slide in Wide Field and Planetary Camera 2: its optics carry the correction for the mirror.,Caminata tres. Saquen la cámara vieja y metan la Cámara Planetaria y de Campo Amplio 2: su óptica corrige el defecto del espejo.
+"Now the two new magnetometers, at the top of the telescope.","Ahora los dos magnetómetros nuevos, en la punta del telescopio."
+"Spacewalk four. Out with the High-Speed Photometer, in with COSTAR: glasses for the other instruments.","Caminata cuatro. Fuera el Fotómetro de Alta Velocidad, adentro COSTAR: lentes para los demás instrumentos."
+"And the co-processor for the flight computer: more memory, more speed.","Y el coprocesador de la computadora de vuelo: más memoria, más velocidad."
+Spacewalk five. Replace the Solar Array Drive Electronics.,Caminata cinco. Cambien la electrónica que mueve los paneles solares.
+Then the Goddard High Resolution Spectrograph's redundancy kit.,Luego el kit de respaldo del Espectrógrafo de Alta Resolución Goddard.
+Last job: protective covers over the old magnetometers. Then home.,Último trabajo: tapas protectoras sobre los magnetómetros viejos. Y a casa.
+Rate Sensing Units,Unidades sensoras de giro
+Two units with the gyroscopes that tell Hubble how it turns.,Dos unidades con los giroscopios que le dicen a Hubble cómo gira.
+Gyro control units,Control de giroscopios
+Two electronic control units for the gyroscopes.,Dos unidades de control electrónico para los giroscopios.
+Fuse plugs,Fusibles
+Eight new electrical fuse plugs.,Ocho fusibles eléctricos nuevos.
+Solar arrays,Paneles solares
+New wings to turn sunlight into power.,Alas nuevas para convertir la luz del Sol en energía.
+WFPC2 camera,Cámara WFPC2
+"Wide Field and Planetary Camera 2, built to make up for the mirror's flaw.","La Cámara Planetaria y de Campo Amplio 2, hecha para compensar el defecto del espejo."
+Magnetometers,Magnetómetros
+"They feel the Earth's magnetic field, to know which way Hubble faces.","Sienten el campo magnético de la Tierra, para saber hacia dónde apunta Hubble."
+COSTAR,COSTAR
+Corrective optics for the other instruments: Hubble's glasses.,Óptica correctora para los demás instrumentos: los lentes de Hubble.
+Co-processor,Coprocesador
+For the flight computer: more memory and speed.,Para la computadora de vuelo: más memoria y velocidad.
+Array drive electronics,Electrónica de paneles
+Solar Array Drive Electronics: they turn the wings toward the Sun.,La electrónica que orienta las alas hacia el Sol.
+Spectrograph kit,Kit del espectrógrafo
+A redundancy kit for the Goddard High Resolution Spectrograph.,Un kit de respaldo para el Espectrógrafo de Alta Resolución Goddard.
+Magnetometer covers,Tapas de magnetómetros
+Protective covers for the original magnetometers.,Tapas protectoras para los magnetómetros originales.
+Killa's lens cloth,Trapito de Killa
+Killa wants to clean the lens. Nobody lets her.,Killa quiere limpiar el lente. Nadie la deja.
+It took five back-to-back spacewalks totaling 35 hours and 28 minutes to complete Hubble's first servicing mission.,"Hicieron falta cinco caminatas espaciales seguidas, 35 horas y 28 minutos en total, para completar la primera misión de servicio a Hubble."
+"Instead of focusing light to a single point, Hubble's flawed mirror had many foci: its first images looked fuzzy.","En vez de enfocar la luz en un solo punto, el espejo defectuoso de Hubble tenía muchos focos: sus primeras imágenes se veían borrosas."
+In hand. Now do the job: the panel shows how.,En la mano. Ahora haz el trabajo: el panel te muestra cómo.
+Drag each piece into a slot. Let go away from a slot and it floats off. (Space places one),"Arrastra cada pieza a una ranura. Si la sueltas lejos de una ranura, se va flotando. (Espacio coloca una)"
+Circle the mouse around the lit bolt to turn it out. (or hold Space),Haz círculos con el mouse alrededor del perno iluminado para sacarlo. (o mantén Espacio)
+"Hold the edge and pull it right, steady: too fast and the blanket snags. (or hold →)","Agarra el borde y jala hacia la derecha, parejo: muy rápido y la manta se traba. (o mantén →)"
+Keep the camera between the rails while it slides in: move the mouse left and right. (or A/D),Mantén la cámara entre los rieles mientras entra: mueve el mouse a izquierda y derecha. (o A/D)
+"Turn the lit mirror (drag up and down, the wheel or ↑↓) until its beam hits the instrument.","Gira el espejo iluminado (arrastra arriba y abajo, la rueda o ↑↓) hasta que su haz dé en el instrumento."
+Snagged! Slower.,¡Se trabó! Más despacio.
+Tension,Tensión
+In,Dentro
+Instrument,Instrumento
+Try again  ·  Enter,Intentar otra vez  ·  Enter

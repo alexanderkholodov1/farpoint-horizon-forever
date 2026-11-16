@@ -1,0 +1,34 @@
+{
+ "doc": "Chapter 6, Artemis I (November 16 to December 11, 2022), the final chapter (issue #50; story: docs/design/story-v0.3.0.md). Every fact from NASA pages (S-artemis-nasa, S-artemis-timeline, S-artemis-campos, S-apollo13-nasa). The whole crew ride hidden in Commander Moonikin Campos's seat; Rumi tells Campos's story; every earlier mission comes back; it ends in the Andes, under the Moon, where the prologue began. Same format as dart.json.",
+ "order": ["intro", "mission", "outro"],
+ "intro": ["intro"],
+ "mission": "Between intro and outro the player plays the mission: launch, around the Moon, home at Mach 32 (scripts/screens/artemis1.gd).",
+ "outro": ["outro"],
+ "scenes": {
+  "intro": [
+   {"set": "orion_cabin", "title": "Mission 6: Artemis I", "sub": "November 16, 2022 · Launch Pad 39B, Florida", "shot": "window", "wait": 5.0},
+   {"who": "narrator", "shot": "campos", "text": "Fifty-two years after Apollo 13, a new capsule for people to the Moon. On its first flight, no people. In the commander's seat: a manikin.", "fact": "Artemis I launched from Launch Pad 39B at 1:47 a.m. EST on November 16, 2022.", "source": "S-artemis-nasa"},
+   {"who": "killa", "mood": "happy", "act": "point", "shot": "wide", "all": "happy", "text": "His name is Commander Moonikin Campos. The public chose it.", "fact": "'Commander Moonikin Campos' is the official name of the manikin launching on Artemis I.", "source": "S-artemis-campos"},
+   {"who": "rumi", "mood": "pleased", "act": "talk", "shot": "close", "text": "Named after Arturo Campos. The engineer who helped bring Apollo 13 home. Our very first mission.", "fact": "The name honors Arturo Campos, a key player in bringing Apollo 13 safely back to Earth.", "source": "S-artemis-campos"},
+   {"who": "inti", "mood": "determined", "act": "point", "shot": "close", "text": "So we ride in his seat. Hidden. Commander Campos does not mind."},
+   {"set": "houston", "who": "wayra", "mood": "determined", "act": "talk", "shot": "close", "text": "Apollo 13 taught you to stay alive. Hubble, to fix things far away. Mars, to trust a hard landing. The Moon's water. DART's aim. Today you need all of it."},
+   {"who": "wayra", "mood": "pleased", "act": "talk", "shot": "close", "text": "Launch, the far side of the Moon, and home at Mach 32. Strap in, little ones.", "fact": "Orion came back at 24,581 mph: Mach 32.", "source": "S-artemis-timeline"}
+  ],
+  "mission": [
+   {"set": "orion_cabin", "title": "Your turn", "shot": "campos", "wait": 2.5, "play": "artemis1"}
+  ],
+  "outro": [
+   {"set": "ocean", "who": "narrator", "shot": "wide", "text": "December 11, 2022. Orion splashed down off San Diego, after 25 days, 10 hours and 53 minutes.", "fact": "Orion splashed down off the coast of San Diego at 12:40 p.m. EST on December 11, 2022.", "source": "S-artemis-nasa"},
+   {"who": "killa", "mood": "happy", "act": "cheer", "all": "happy", "acts": {"inti": "cheer", "rumi": "wave"}, "shot": "wide", "text": "Farther than any craft built for people. And we came back!", "fact": "Orion traveled 268,563 miles from Earth and 43,471 miles beyond the far side of the Moon.", "source": "S-artemis-nasa"},
+   {"who": "rumi", "mood": "pleased", "act": "talk", "shot": "close", "text": "Apollo 13 came down in the Pacific too. Fifty-two years apart. Same ocean.", "fact": "Apollo 13 splashed down on April 17, 1970, in the Pacific Ocean near Samoa.", "source": "S-apollo13-nasa"},
+   {"who": "inti", "mood": "happy", "act": "wave", "shot": "close", "text": "Thank you, Commander Campos. Best seat I ever had."},
+   {"set": "houston", "who": "wayra", "mood": "pleased", "act": "talk", "shot": "close", "text": "Six missions. Every one of them real. The next ones will carry people. Maybe they will make room for four cuyes."},
+   {"set": "andes", "shot": "moon", "wait": 3.0},
+   {"who": "killa", "mood": "happy", "act": "point", "shot": "wide", "all": "happy", "text": "Every time we look up now, we know how it is done."},
+   {"who": "rumi", "mood": "pleased", "act": "shrug", "shot": "wide", "text": "And what goes wrong. And how to fix it."},
+   {"who": "inti", "mood": "happy", "act": "cheer", "shot": "wide", "text": "Next time I drive."},
+   {"who": "wayra", "mood": "happy", "act": "wave", "shot": "moon", "all": "happy", "text": "Next time, we all go."},
+   {"title": "The End", "sub": "Six real NASA missions, 1970 to 2022 · thank you for playing", "shot": "behind", "wait": 6.0}
+  ]
+ }
+}

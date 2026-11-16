@@ -1,0 +1,30 @@
+{
+ "doc": "Chapter 5, DART (September 2022) (issue #49; story: docs/design/story-v0.3.0.md). Every fact from NASA pages (S-dart-nasa, S-dart-nasa-period, S-dart-nssdc). The crew fly it from mission control; this time they crash with confidence (the story's line). Same format as lcross.json.",
+ "order": ["intro", "mission", "outro"],
+ "intro": ["intro"],
+ "mission": "Between intro and outro the player plays the mission: find Dimorphos, steer, the last picture, the measurement weeks later (scripts/screens/dart.gd).",
+ "outro": ["outro"],
+ "scenes": {
+  "intro": [
+   {"set": "dart_space", "title": "Mission 5: DART", "sub": "September 26, 2022 · Dimorphos, 11 million km from Earth", "shot": "pair", "wait": 5.0},
+   {"who": "narrator", "shot": "craft", "text": "Thirteen years after the Moon, a new plan: push an asteroid, and see if it moves.", "fact": "DART launched on November 24, 2021, on a Falcon 9 from Vandenberg, in California.", "source": "S-dart-nasa"},
+   {"set": "houston", "cast": ["wayra", "killa", "rumi", "inti"], "who": "wayra", "mood": "alert", "act": "talk", "shot": "two", "other": "killa", "text": "It is a test. We hit the small moon of an asteroid and see if its orbit changes.", "fact": "Dimorphos, 160 meters across, orbits Didymos, 780 meters across.", "source": "S-dart-nasa"},
+   {"who": "rumi", "mood": "pleased", "act": "talk", "shot": "close", "text": "We have crashed into the Moon already. This time we crash with confidence."},
+   {"who": "killa", "mood": "curious", "act": "point", "shot": "close", "text": "Its orbit takes 11 hours and 55 minutes. After us, it should take less.", "fact": "Before DART's impact, Dimorphos took 11 hours and 55 minutes to orbit Didymos.", "source": "S-dart-nasa-period"},
+   {"who": "inti", "mood": "determined", "act": "point", "shot": "close", "text": "And I aim at the little one. Not the big one. The little one."},
+   {"set": "dart_space", "who": "narrator", "shot": "craft", "text": "Two weeks before, a tiny Italian satellite let go of DART, to follow it and watch.", "fact": "LICIACube, from the Italian Space Agency, was released on September 11 and followed about 3 minutes behind DART.", "source": "S-dart-nssdc"},
+   {"set": "houston", "cast": ["wayra", "killa", "rumi", "inti"], "who": "wayra", "mood": "determined", "act": "talk", "shot": "two", "other": "inti", "text": "Four hours out. The camera is on. Find the little moon.", "fact": "In the last 4 hours, DART's camera, DRACO, and its autonomous navigation, SMARTNav, found and targeted the asteroid.", "source": "S-dart-nssdc"}
+  ],
+  "mission": [
+   {"set": "dart_space", "title": "Your turn", "shot": "approach", "wait": 2.5, "play": "dart"}
+  ],
+  "outro": [
+   {"set": "dart_space", "shot": "licia", "fx": "moonflash", "who": "narrator", "text": "23:14 UT, as Earth heard it. DART is gone. Three minutes later, LICIACube flies past the cloud of rock it threw out.", "fact": "The impact was received on Earth at 23:14 UT; LICIACube flew by about 3 minutes after, imaging the plume.", "source": "S-dart-nssdc"},
+   {"set": "houston", "cast": ["wayra", "killa", "rumi", "inti"], "who": "killa", "mood": "happy", "act": "cheer", "all": "happy", "acts": {"inti": "cheer", "rumi": "wave", "wayra": "cheer"}, "shot": "two", "other": "rumi", "text": "Thirty-two minutes! Its orbit is thirty-two minutes shorter!", "fact": "NASA confirmed the impact shortened Dimorphos's orbit to 11 hours 23 minutes: 32 minutes, plus or minus about 2.", "source": "S-dart-nasa-period"},
+   {"who": "rumi", "mood": "pleased", "act": "shrug", "shot": "close", "text": "They hoped for seventy-three seconds. We gave them thirty-two minutes.", "fact": "NASA had set a change of 73 seconds or more as the minimum for success.", "source": "S-dart-nasa-period"},
+   {"who": "inti", "mood": "happy", "act": "point", "shot": "close", "text": "I told you. The little one."},
+   {"who": "wayra", "mood": "curious", "act": "talk", "shot": "close", "text": "One mission left. The biggest one. And this time, somebody sits in the seat."},
+   {"title": "To be continued", "sub": "Next: everything we learned, 2022", "wait": 4.0}
+  ]
+ }
+}

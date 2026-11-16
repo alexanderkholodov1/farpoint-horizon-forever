@@ -1,0 +1,310 @@
+{
+ "doc": "Science instruments.",
+ "entries": {
+  "cam_basic": {
+   "name": "Compact optical camera",
+   "tags": [
+    "optico"
+   ],
+   "size": 1,
+   "mass": 0.4,
+   "power": 3.0,
+   "cost": 0.2,
+   "data": 2.0,
+   "sci": 10.0,
+   "pointing": 1,
+   "desc": "Visible-light photos, like a very good phone pointed at Earth.",
+   "shape": "box",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "cam_ms": {
+   "name": "Multispectral camera",
+   "tags": [
+    "optico",
+    "multiespectral"
+   ],
+   "size": 2,
+   "mass": 20.0,
+   "power": 35.0,
+   "cost": 6.0,
+   "data": 40.0,
+   "sci": 30.0,
+   "pointing": 2,
+   "desc": "Sees in several colors, some invisible ones too, and tells vegetation, ash, water and rock apart.",
+   "shape": "cyl",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "cam_hr": {
+   "name": "High-resolution camera",
+   "tags": [
+    "optico"
+   ],
+   "size": 3,
+   "mass": 150.0,
+   "power": 180.0,
+   "cost": 45.0,
+   "data": 250.0,
+   "sci": 60.0,
+   "pointing": 3,
+   "desc": "Tells objects under 1 meter apart. Makes a flood of data and needs very precise pointing.",
+   "shape": "cyl",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "ir_mini": {
+   "name": "Miniature thermal camera",
+   "tags": [
+    "termico"
+   ],
+   "size": 1,
+   "mass": 1.0,
+   "power": 6.0,
+   "cost": 0.6,
+   "data": 4.0,
+   "sci": 16.0,
+   "pointing": 1,
+   "desc": "Measures surface heat. Spots areas that warm up before an eruption.",
+   "shape": "box",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "ir_adv": {
+   "name": "Advanced thermal radiometer",
+   "tags": [
+    "termico"
+   ],
+   "size": 2,
+   "mass": 35.0,
+   "power": 60.0,
+   "cost": 14.0,
+   "data": 30.0,
+   "sci": 42.0,
+   "pointing": 2,
+   "desc": "Measures temperatures to a tenth of a degree.",
+   "shape": "box",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "sar": {
+   "name": "Synthetic aperture radar (SAR)",
+   "tags": [
+    "radar"
+   ],
+   "size": 3,
+   "mass": 350.0,
+   "power": 1500.0,
+   "cost": 70.0,
+   "data": 400.0,
+   "sci": 70.0,
+   "pointing": 2,
+   "desc": "Sends microwaves and listens for the echo. Sees through clouds and at night, and tells when the ground swells. Very hungry for power.",
+   "shape": "panel",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "gas_mini": {
+   "name": "Miniature gas spectrometer",
+   "tags": [
+    "gases"
+   ],
+   "size": 1,
+   "mass": 1.2,
+   "power": 5.0,
+   "cost": 0.8,
+   "data": 1.0,
+   "sci": 14.0,
+   "pointing": 1,
+   "desc": "Splits light into colors to identify gases such as sulfur dioxide (SO2).",
+   "shape": "box",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "gas_adv": {
+   "name": "UV gas spectrometer",
+   "tags": [
+    "gases"
+   ],
+   "size": 2,
+   "mass": 30.0,
+   "power": 45.0,
+   "cost": 12.0,
+   "data": 15.0,
+   "sci": 40.0,
+   "pointing": 2,
+   "desc": "Maps columns of volcanic gas and pollution across the planet.",
+   "shape": "cyl",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "mw": {
+   "name": "Microwave radiometer",
+   "tags": [
+    "microondas"
+   ],
+   "size": 3,
+   "mass": 90.0,
+   "power": 120.0,
+   "cost": 30.0,
+   "data": 10.0,
+   "sci": 45.0,
+   "pointing": 1,
+   "desc": "Measures sea temperature and soil moisture even through clouds.",
+   "shape": "dish",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "alt": {
+   "name": "Radar altimeter",
+   "tags": [
+    "altimetro"
+   ],
+   "size": 2,
+   "mass": 60.0,
+   "power": 90.0,
+   "cost": 18.0,
+   "data": 5.0,
+   "sci": 38.0,
+   "pointing": 1,
+   "desc": "Measures sea height to the centimeter, which is how El Niño gets spotted.",
+   "shape": "dish",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "gamma": {
+   "name": "Gamma-ray spectrometer",
+   "tags": [
+    "composicion"
+   ],
+   "size": 2,
+   "mass": 25.0,
+   "power": 25.0,
+   "cost": 10.0,
+   "data": 2.0,
+   "sci": 35.0,
+   "pointing": 1,
+   "desc": "Detects which elements (iron, titanium, hydrogen…) are in the Moon's soil.",
+   "shape": "cyl",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "tel_small": {
+   "name": "30 cm telescope",
+   "tags": [
+    "telescopio"
+   ],
+   "size": 2,
+   "mass": 40.0,
+   "power": 60.0,
+   "cost": 25.0,
+   "data": 15.0,
+   "sci": 40.0,
+   "pointing": 3,
+   "desc": "A small telescope, but with no atmosphere in the way.",
+   "shape": "tube",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "tel_med": {
+   "name": "1 m telescope",
+   "tags": [
+    "telescopio"
+   ],
+   "size": 3,
+   "mass": 400.0,
+   "power": 250.0,
+   "cost": 120.0,
+   "data": 40.0,
+   "sci": 85.0,
+   "pointing": 3,
+   "desc": "A one-meter mirror that watches faint galaxies and stars.",
+   "shape": "tube",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "tel_ir": {
+   "name": "Large infrared telescope (4 m)",
+   "tags": [
+    "telescopio"
+   ],
+   "size": 4,
+   "mass": 2200.0,
+   "power": 700.0,
+   "cost": 400.0,
+   "data": 50.0,
+   "sci": 160.0,
+   "pointing": 3,
+   "desc": "Sees the heat of the first galaxies. It has to be very cold and far from Earth.",
+   "shape": "bigtube",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "mag": {
+   "name": "Magnetometer",
+   "tags": [
+    "campos"
+   ],
+   "size": 1,
+   "mass": 0.3,
+   "power": 1.0,
+   "cost": 0.15,
+   "data": 0.1,
+   "sci": 6.0,
+   "pointing": 0,
+   "desc": "Measures magnetic fields. Cheap and light, a science sidekick.",
+   "shape": "boom",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  },
+  "part": {
+   "name": "Particle detector",
+   "tags": [
+    "particulas"
+   ],
+   "size": 1,
+   "mass": 0.8,
+   "power": 2.0,
+   "cost": 0.3,
+   "data": 0.5,
+   "sci": 8.0,
+   "pointing": 0,
+   "desc": "Counts radiation particles from the Sun and from space.",
+   "shape": "box",
+   "source": [
+    "S-eoportal"
+   ],
+   "simplified": "An archetype rounded from real instruments of the same kind (kb/data/reference.json, category instrument), not the datasheet of one of them. The science points per month are our own game balance."
+  }
+ }
+}

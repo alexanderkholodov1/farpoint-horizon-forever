@@ -1,0 +1,41 @@
+{
+ "doc": "Attitude determination and control systems (pointing).",
+ "entries": {
+  "mag": {
+   "name": "Magnets and sun sensors: rough aim",
+   "level": 1,
+   "mass_pct": 0.03,
+   "power_pct": 0.2,
+   "cost_pct": 0.05,
+   "desc": "Uses Earth's magnetic field to turn. Coarse pointing (~5°).",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The levels and the percentages of the platform are our own simplification of three real attitude control families; pointing accuracy is the typical value of each."
+  },
+  "rw": {
+   "name": "Spinning wheels: steady aim",
+   "level": 2,
+   "mass_pct": 0.08,
+   "power_pct": 0.5,
+   "cost_pct": 0.15,
+   "desc": "Flywheels that spin to aim the craft. Fine pointing (~0.1°).",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The levels and the percentages of the platform are our own simplification of three real attitude control families; pointing accuracy is the typical value of each."
+  },
+  "st": {
+   "name": "Wheels and a star camera: precise aim",
+   "level": 3,
+   "mass_pct": 0.12,
+   "power_pct": 0.7,
+   "cost_pct": 0.3,
+   "desc": "A camera recognizes constellations for precision pointing (~0.001°).",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The levels and the percentages of the platform are our own simplification of three real attitude control families; pointing accuracy is the typical value of each."
+  }
+ }
+}

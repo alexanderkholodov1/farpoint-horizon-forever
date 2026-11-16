@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": ["**/*.import", "**/.*"],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      }
+    ]
+  },
+  "database": {"rules": "database.rules.json"}
+}

@@ -1,0 +1,32 @@
+{
+ "doc": "Difficulty levels.",
+ "entries": {
+  "facil": {
+   "name": "Easy",
+   "budget": 1.4,
+   "events": 0.4,
+   "launch_fail": 0.0,
+   "desc": "More budget and few surprises.",
+   "source": [],
+   "simplified": "Multipliers are our own game balance."
+  },
+  "normal": {
+   "name": "Normal",
+   "budget": 1.0,
+   "events": 1.0,
+   "launch_fail": 1.0,
+   "desc": "Like a real mission, only simplified.",
+   "source": [],
+   "simplified": "Multipliers are our own game balance."
+  },
+  "dificil": {
+   "name": "Hard",
+   "budget": 0.8,
+   "events": 1.7,
+   "launch_fail": 1.5,
+   "desc": "A tight budget and a hostile space.",
+   "source": [],
+   "simplified": "Multipliers are our own game balance."
+  }
+ }
+}

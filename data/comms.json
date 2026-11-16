@@ -1,0 +1,57 @@
+{
+ "doc": "Communication systems.",
+ "entries": {
+  "uhf": {
+   "name": "Simple radio (UHF)",
+   "rate": 0.0096,
+   "mass": 0.1,
+   "power": 2.0,
+   "cost": 0.05,
+   "dish": 0.0,
+   "desc": "9.6 kbps, like a modem from the 90s. A simple rod antenna.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded data rates of real radios of each band. Power, mass and cost are typical values, and the dish size only draws the craft."
+  },
+  "sband": {
+   "name": "Standard radio (S band)",
+   "rate": 2.0,
+   "mass": 0.6,
+   "power": 6.0,
+   "cost": 0.4,
+   "dish": 0.15,
+   "desc": "2 Mbps. Reliable and common on small missions.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded data rates of real radios of each band. Power, mass and cost are typical values, and the dish size only draws the craft."
+  },
+  "xband": {
+   "name": "Fast radio (X band)",
+   "rate": 150.0,
+   "mass": 6.0,
+   "power": 35.0,
+   "cost": 3.0,
+   "dish": 0.45,
+   "desc": "150 Mbps with a dish antenna. The NASA standard in deep space.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded data rates of real radios of each band. Power, mass and cost are typical values, and the dish size only draws the craft."
+  },
+  "ka": {
+   "name": "Fastest radio, with a dish (Ka band)",
+   "rate": 1200.0,
+   "mass": 25.0,
+   "power": 90.0,
+   "cost": 10.0,
+   "dish": 0.9,
+   "desc": "1.2 Gbps, for instruments that make mountains of data.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded data rates of real radios of each band. Power, mass and cost are typical values, and the dish size only draws the craft."
+  }
+ }
+}

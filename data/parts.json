@@ -1,0 +1,112 @@
+{
+  "_about": "Rocket parts for the builder (issue #6). One entry per part: its model in assets/parts/ (built by assets/source/parts.py), its real values and their sources (IDs of docs/sources.md). 'estimate' lists the fields that are our estimates (a stage mass split among its parts, or a price no one publishes); every other value is published. Masses in kg, thrust in kN, specific impulse in s, cost in millions of US dollars, lengths in m.",
+  "g0": 9.80665,
+  "targets": {
+    "_about": "Delta-v a launcher must give to put its payload on the way to each orbit, including gravity and drag losses. Earth to LEO is 9.3-10 km/s [S-delta-v]; we take 9.4. SSO adds 0.2 km/s for flying against the Earth's spin (our simplification). GEO means reaching the transfer orbit, LEO plus 2.3 km/s [S-delta-v]; the craft circularizes with its own engine. The Moon and L2 mean a translunar injection, LEO plus 3.2 km/s [S-delta-v].",
+    "leo": 9400.0,
+    "sso": 9600.0,
+    "geo": 11700.0,
+    "lunar": 12600.0,
+    "l2": 12600.0
+  },
+  "failure_chance": {"value": 0.03, "_about": "Chance that a launch fails, for any rocket the player builds: our simplification, near the 2-5 % of the game's catalog launchers."},
+  "parts": {
+    "engine_merlin_x9": {
+      "name": "Nine kerosene engines", "category": "engine", "family": 3.7, "count": 9,
+      "model": "res://assets/parts/engine_merlin_x9.glb",
+      "dry_kg": 4230.0, "thrust_sl_kn": 7605.0, "isp_sl_s": 282.0, "isp_vac_s": 311.0, "cost_musd": 27.0,
+      "desc": "Nine Merlin-type engines under a thrust section, the way the Falcon 9 first stage carries them: strong at sea level.",
+      "sources": ["S-merlin", "S-merlin-model"], "estimate": ["cost_musd"]
+    },
+    "engine_merlin_vac": {
+      "name": "Vacuum kerosene engine", "category": "engine", "family": 3.7, "count": 1, "vacuum_only": true,
+      "model": "res://assets/parts/engine_merlin_vac.glb",
+      "dry_kg": 500.0, "thrust_vac_kn": 981.0, "isp_vac_s": 348.0, "cost_musd": 5.0,
+      "desc": "A huge nozzle that only works in near vacuum: weak at liftoff, very efficient up high. For upper stages.",
+      "sources": ["S-merlin", "S-mvac-model"], "estimate": ["dry_kg", "cost_musd"]
+    },
+    "tank_37_long": {
+      "name": "Large first-stage tank", "category": "tank", "family": 3.7,
+      "model": "res://assets/parts/tank_37_long.glb",
+      "dry_kg": 19370.0, "propellant_kg": 395700.0, "cost_musd": 20.0,
+      "desc": "3.7 m across and 38 m long, full of kerosene and liquid oxygen: the body of a Falcon 9-type first stage.",
+      "sources": ["S14"], "estimate": ["dry_kg", "cost_musd"]
+    },
+    "interstage_37": {
+      "name": "Large interstage", "category": "decoupler", "family": 3.7,
+      "model": "res://assets/parts/interstage_37.glb",
+      "dry_kg": 2000.0, "cost_musd": 2.0,
+      "desc": "Joins two stages and lets them go: everything below it falls away when the lower stage is empty. Grid fins included.",
+      "sources": ["S14"], "estimate": ["dry_kg", "cost_musd"]
+    },
+    "tank_37_short": {
+      "name": "Large upper-stage tank", "category": "tank", "family": 3.7,
+      "model": "res://assets/parts/tank_37_short.glb",
+      "dry_kg": 3400.0, "propellant_kg": 92670.0, "cost_musd": 8.0,
+      "desc": "The tank of a Falcon 9-type second stage: less fuel, but it burns where there is no air to push through.",
+      "sources": ["S14"], "estimate": ["dry_kg", "cost_musd"]
+    },
+    "fairing_52": {
+      "name": "Large fairing", "category": "fairing", "family": 3.7,
+      "model": "res://assets/parts/fairing_52.glb",
+      "dry_kg": 1900.0, "cost_musd": 6.0,
+      "desc": "A 5.2 m shell that protects the craft through the air; it opens and drops once the rocket is above the atmosphere.",
+      "sources": ["S14"], "estimate": ["cost_musd"]
+    },
+    "engine_small_x9": {
+      "name": "Nine small engines", "category": "engine", "family": 1.2, "count": 9,
+      "model": "res://assets/parts/engine_small_x9.glb",
+      "dry_kg": 315.0, "thrust_sl_kn": 225.0, "isp_sl_s": 311.0, "isp_vac_s": 343.0, "cost_musd": 2.0,
+      "desc": "Nine Rutherford-type engines, the way the Electron first stage carries them.",
+      "sources": ["S-rutherford", "S-nozzle-model"], "estimate": ["cost_musd"]
+    },
+    "engine_small_vac": {
+      "name": "Small vacuum engine", "category": "engine", "family": 1.2, "count": 1, "vacuum_only": true,
+      "model": "res://assets/parts/engine_small_vac.glb",
+      "dry_kg": 35.0, "thrust_vac_kn": 26.0, "isp_vac_s": 343.0, "cost_musd": 0.5,
+      "desc": "One small engine with a longer nozzle, for the upper stage of a small rocket.",
+      "sources": ["S-rutherford", "S-nozzle-model"], "estimate": ["cost_musd"]
+    },
+    "tank_12_long": {
+      "name": "Small first-stage tank", "category": "tank", "family": 1.2,
+      "model": "res://assets/parts/tank_12_long.glb",
+      "dry_kg": 585.0, "propellant_kg": 9800.0, "cost_musd": 2.5,
+      "desc": "1.2 m across, carbon composite: the body of an Electron-type first stage.",
+      "sources": ["S13"], "estimate": ["dry_kg", "propellant_kg", "cost_musd"]
+    },
+    "interstage_12": {
+      "name": "Small interstage", "category": "decoupler", "family": 1.2,
+      "model": "res://assets/parts/interstage_12.glb",
+      "dry_kg": 50.0, "cost_musd": 0.3,
+      "desc": "Joins the two stages of a small rocket and lets the lower one go.",
+      "sources": ["S13"], "estimate": ["dry_kg", "cost_musd"]
+    },
+    "tank_12_short": {
+      "name": "Small upper-stage tank", "category": "tank", "family": 1.2,
+      "model": "res://assets/parts/tank_12_short.glb",
+      "dry_kg": 165.0, "propellant_kg": 2000.0, "cost_musd": 1.2,
+      "desc": "The 2.4 m tank of an Electron-type second stage.",
+      "sources": ["S13"], "estimate": ["dry_kg", "propellant_kg", "cost_musd"]
+    },
+    "fairing_12": {
+      "name": "Small fairing", "category": "fairing", "family": 1.2,
+      "model": "res://assets/parts/fairing_12.glb",
+      "dry_kg": 44.0, "cost_musd": 0.5,
+      "desc": "A 1.2 m carbon shell for small craft.",
+      "sources": ["S13"], "estimate": ["cost_musd"]
+    },
+    "booster_srb": {
+      "name": "Two solid boosters", "category": "booster", "family": 3.7, "count": 2,
+      "model": "res://assets/parts/booster_srb.glb",
+      "dry_kg": 91000.0, "propellant_kg": 500000.0, "thrust_sl_kn": 12000.0, "isp_sl_s": 242.0, "isp_vac_s": 268.0, "cost_musd": 40.0,
+      "desc": "A pair of Space Shuttle-type solid boosters strapped to the first stage. Enormous push for two minutes, then they fall away. Values per booster.",
+      "sources": ["S-srb", "S-srb-model"], "estimate": ["cost_musd"]
+    }
+  },
+  "presets": {
+    "_about": "Ready rockets the player can start from, bottom to top.",
+    "medium": {"name": "Falcon 9-type", "stack": ["engine_merlin_x9", "tank_37_long", "interstage_37", "engine_merlin_vac", "tank_37_short", "fairing_52"], "boosters": ""},
+    "light": {"name": "Electron-type", "stack": ["engine_small_x9", "tank_12_long", "interstage_12", "engine_small_vac", "tank_12_short", "fairing_12"], "boosters": ""},
+    "heavy": {"name": "With solid boosters", "stack": ["engine_merlin_x9", "tank_37_long", "interstage_37", "engine_merlin_vac", "tank_37_short", "fairing_52"], "boosters": "booster_srb"}
+  }
+}

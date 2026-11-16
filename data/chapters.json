@@ -1,0 +1,55 @@
+{
+ "doc": "The story's chapter select (scripts/screens/chapters.gd, issue #43): the six NASA missions in the order they happened. Each chapter plays its story scenes (data/story/<id>.json: intro, mission, outro); its mission alone is the screen with the same id. Dates and names from each chapter's NASA page (docs/sources.md: S-apollo13-nasa, S-sts61-nasa, S-mpf-nasa, S-lcross-nasa, S-dart-nasa, and Artemis I's). The pictures are NASA images already in the game; DART's is the last full frame of its own camera (S-dart-penultimate).",
+ "prologue": "prologue",
+ "chapters": [
+  {
+   "id": "apollo13",
+   "year": "April 1970",
+   "name": "Apollo 13",
+   "line": "Square peg, round hole: build the air filter before the air runs out.",
+   "picture": "res://assets/photos/apollo13/as13-62-9004.jpg",
+   "caption": "The real mail box · Apollo 13, 1970"
+  },
+  {
+   "id": "sts61",
+   "year": "December 1993",
+   "name": "Hubble's first repair",
+   "line": "Five spacewalks against the clock to give the telescope its glasses.",
+   "picture": "res://assets/photos/sts61/m100_wfpc2_1993.jpg",
+   "caption": "Galaxy M100 after the repair · Hubble, 1993"
+  },
+  {
+   "id": "pathfinder",
+   "year": "July 1997",
+   "name": "Mars Pathfinder",
+   "line": "Land on Mars by bouncing, then roll Sojourner onto the ground.",
+   "picture": "res://assets/photos/pathfinder/PIA00621.jpg",
+   "caption": "Sojourner on Mars · Pathfinder, 1997"
+  },
+  {
+   "id": "lcross",
+   "year": "October 2009",
+   "name": "LCROSS",
+   "line": "The plan is to crash? Yes. Hit Cabeus and catch the ice.",
+   "picture": "res://assets/photos/moon_south_pole/south_pole_wide_lroc_wac.jpg",
+   "caption": "The Moon's south pole · LRO"
+  },
+  {
+   "id": "dart",
+   "year": "September 2022",
+   "name": "DART",
+   "line": "Push an asteroid off its path: the first test of planetary defense.",
+   "picture": "res://assets/photos/dart/dart_penultimate.jpg",
+   "caption": "DART's camera · Dimorphos 2 s before impact, 2022",
+   "source": "S-dart-penultimate"
+  },
+  {
+   "id": "artemis1",
+   "year": "November 2022",
+   "name": "Artemis I",
+   "line": "The finale: around the Moon and home, with everything you learned.",
+   "picture": "res://assets/photos/artemis1/art001e000672_earth_moon.jpg",
+   "caption": "The Earth and the Moon · Orion, 2022"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "doc": "Batteries.",
+ "entries": {
+  "b20": {
+   "name": "20 Wh battery",
+   "wh": 20.0,
+   "mass": 0.15,
+   "cost": 0.03,
+   "desc": "About a power bank.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from typical lithium-ion pack sizes; mass and cost are rough orders of magnitude."
+  },
+  "b120": {
+   "name": "120 Wh battery",
+   "wh": 120.0,
+   "mass": 0.9,
+   "cost": 0.15,
+   "desc": "About a big laptop battery.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from typical lithium-ion pack sizes; mass and cost are rough orders of magnitude."
+  },
+  "b1k": {
+   "name": "1 kWh battery",
+   "wh": 1000.0,
+   "mass": 7.0,
+   "cost": 1.2,
+   "desc": "A lithium-ion pack for a SmallSat.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from typical lithium-ion pack sizes; mass and cost are rough orders of magnitude."
+  },
+  "b6k": {
+   "name": "6 kWh battery",
+   "wh": 6000.0,
+   "mass": 40.0,
+   "cost": 5.0,
+   "desc": "For medium craft.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from typical lithium-ion pack sizes; mass and cost are rough orders of magnitude."
+  },
+  "b25k": {
+   "name": "25 kWh battery",
+   "wh": 25000.0,
+   "mass": 160.0,
+   "cost": 15.0,
+   "desc": "For craft that burn kilowatts.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "Rounded from typical lithium-ion pack sizes; mass and cost are rough orders of magnitude."
+  }
+ }
+}

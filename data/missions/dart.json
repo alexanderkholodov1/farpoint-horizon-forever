@@ -1,0 +1,74 @@
+{
+ "doc": "Mission 5, DART (September 26, 2022): 'Push an asteroid' (issue #49). The crew fly it from mission control. (1) Find Dimorphos: through DRACO, DART's camera (a 0.29-degree view, about 0.5 arcsec per pixel, S-dart-nssdc), Didymos (780 m) is one dot; as DART closes in at about 6.58 km/s (S-dart-nssdc) the dot splits in two and the player locks on the small moon, Dimorphos (160 m, S-dart-nasa), as DART's SMARTNav did in the last 4 hours (S-dart-nssdc). (2) Steer: small thruster pulses keep Dimorphos in the crosshair; the miss at impact follows from the sideways speed left; past Dimorphos's edge: lost, tried again. (3) The last picture: the player takes it as late as possible; its sharpness follows from the distance and DRACO's 0.5 arcsec pixel (the real last images, about 2 s before impact, were about 3 cm per pixel, S-dart-nssdc). Time runs fast through the last hours (said on screen: 1,500, 300, then 6 times), real time for the last 20 s; drift alarms now and then (our simplification) make the player correct the aim fast. (4) Weeks later: telescopes watch the pair's light dip each time Dimorphos passes Didymos; the light scrolls by, 3 hours each second (said on screen), and the player taps SPACE on each deep dip, before the impact and after; Dimorphos's orbit went from 11 h 55 min to 11 h 23 min, 32 minutes shorter, plus or minus about 2 (S-dart-nasa-period). Our simplifications, said here: the distance between the two asteroids (no figure found on a NASA page; ours: 1.2 km), the drift of the aim, the thruster pulses (each moves the hit about 6 m) and their number, the light curve's shape and noise, the shapes of the asteroids.",
+ "approach": {
+  "speed_kms": 6.58,
+  "start_s": -14400.0,
+  "fast": 1500.0,
+  "steer_fast": 300.0,
+  "real_s": -20.0,
+  "fov_deg": 0.29,
+  "arcsec_px": 0.5,
+  "didymos_m": 780.0,
+  "dimorphos_m": 160.0,
+  "separation_km": 1.2,
+  "resolve_px": 6.0,
+  "screen_px": 900.0,
+  "drift_ms": 0.005,
+  "start_miss_m": [
+   150.0,
+   260.0
+  ],
+  "photo_window_s": 12.0,
+  "pulse_m": 6.0,
+  "budget_pulses": 150
+ },
+ "measure": {
+  "before_min": 715.0,
+  "after_min": 683.0,
+  "uncertainty_min": 2.0,
+  "window_h": 30.0,
+  "dip_width_min": 70.0,
+  "dip_depth": 0.08,
+  "noise": 0.006,
+  "good_min": 6.0
+ },
+ "score": {
+  "weights": {
+   "lock": 15,
+   "aim": 35,
+   "photo": 20,
+   "measure": 30
+  },
+  "need": 60,
+  "stars": [
+   60,
+   78,
+   92
+  ]
+ },
+ "texts": {
+  "find": "Through DRACO, DART's camera. Watch the dot: when it splits in two, pick the small moon (A/D) and lock it (Enter).",
+  "fast": "Four hours from impact: shown 1,500 times faster.",
+  "steer": "Keep the hit on Dimorphos: WASD fires thrusters. Alarms: the aim drifts, correct it fast!",
+  "steer_fast": "Shown 300, then 6 times faster.",
+  "real": "The last 20 seconds: real time.",
+  "photo": "Take the last picture (SPACE) as late as you dare: the closer, the sharper. After the impact there is no signal.",
+  "measure": "Weeks later, telescopes watch the pair's light (3 hours each second): SPACE when each deep dip crosses the line.",
+  "big": "We locked on Didymos!",
+  "big_sub": "That is not how it went: DART's SMARTNav switched to the small moon, Dimorphos. Try again.",
+  "miss": "DART flew past Dimorphos.",
+  "miss_sub": "That is not how it went: DART hit Dimorphos almost dead center. Try again.",
+  "few": "Not enough to prove it.",
+  "few_sub": "The team needed a clear measurement. Try again."
+ },
+ "facts": [
+  {
+   "text": "On September 26, 2022, DART hit Dimorphos on purpose. Its last images, about 2 seconds before impact, were about 3 cm per pixel.",
+   "source": "S-dart-nssdc"
+  },
+  {
+   "text": "NASA confirmed the impact shortened Dimorphos's orbit around Didymos from 11 hours 55 minutes to 11 hours 23 minutes: 32 minutes, plus or minus about 2.",
+   "source": "S-dart-nasa-period"
+  }
+ ]
+}

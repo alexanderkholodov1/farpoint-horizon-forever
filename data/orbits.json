@@ -1,0 +1,141 @@
+{
+ "doc": "Orbits and destinations.",
+ "entries": {
+  "leo": {
+   "name": "Low orbit, 400 km (LEO)",
+   "short": "low orbit",
+   "period_min": 92.0,
+   "eclipse_min": 36.0,
+   "eclipse_frac": 0.38,
+   "contact_min": 40.0,
+   "comm_factor": 1.0,
+   "insert_dv": 0.0,
+   "maint_dv": 25.0,
+   "drag_life": 2.0,
+   "radiation": 1,
+   "body": "tierra",
+   "radius": 1.0628,
+   "incl": 51.6,
+   "ops": 0.5,
+   "desc": "Like the Space Station. Close means sharp images and a cheap launch, but leftover air drags the craft down, and without propulsion it falls in about 2 years.",
+   "source": [
+    "S8",
+    "S9",
+    "S-wiki-iss"
+   ],
+   "simplified": "Period, eclipse and contact times are rounded from the circular orbit of that altitude; the delta-v to arrive and to hold the orbit are simplified, and the operations cost is our own game balance.",
+   "value_notes": {
+    "drag_life": "Two years without propulsion at 400 km, rounded from the lifetime tables in [S9].",
+    "radius": "Drawn at true scale: (6371 km Earth mean radius + 400 km) / 6371 km = 1.0628 body radii, from the Earth's radius in [S8]."
+   }
+  },
+  "sso": {
+   "name": "Over the poles, same sunlight daily (SSO, 700 km)",
+   "short": "polar orbit (SSO)",
+   "period_min": 99.0,
+   "eclipse_min": 33.0,
+   "eclipse_frac": 0.34,
+   "contact_min": 60.0,
+   "comm_factor": 1.0,
+   "insert_dv": 0.0,
+   "maint_dv": 3.0,
+   "drag_life": 25.0,
+   "radiation": 1,
+   "body": "tierra",
+   "radius": 1.1099,
+   "incl": 98.0,
+   "ops": 0.5,
+   "desc": "Passes over each place at the same solar time, so light stays constant and images compare day after day. The favorite for watching Earth.",
+   "source": [
+    "S11",
+    "S12",
+    "S-wiki-sso",
+    "S8"
+   ],
+   "simplified": "Period, eclipse and contact times are rounded from the circular orbit of that altitude; the delta-v to arrive and to hold the orbit are simplified, and the operations cost is our own game balance.",
+   "value_notes": {
+    "radius": "Drawn at true scale: (6371 km Earth mean radius + 700 km) / 6371 km = 1.1099 body radii, from the Earth's radius in [S8]."
+   }
+  },
+  "geo": {
+   "name": "Fixed over one spot, 35,786 km (GEO)",
+   "short": "geostationary orbit",
+   "period_min": 1436.0,
+   "eclipse_min": 72.0,
+   "eclipse_frac": 0.01,
+   "contact_min": 1440.0,
+   "comm_factor": 0.25,
+   "insert_dv": 1500.0,
+   "maint_dv": 50.0,
+   "drag_life": 999.0,
+   "radiation": 3,
+   "body": "tierra",
+   "radius": 6.617,
+   "incl": 0.0,
+   "ops": 1.0,
+   "desc": "Turns with the Earth, so it always watches the same hemisphere (Ecuador included) with continuous contact. But it is 90 times farther than the ISS, and the rocket leaves you in a transfer orbit, so you need propulsion.",
+   "source": [
+    "S-wiki-geo",
+    "S-wiki-dv",
+    "S8"
+   ],
+   "simplified": "Period, eclipse and contact times are rounded from the circular orbit of that altitude; the delta-v to arrive and to hold the orbit are simplified, and the operations cost is our own game balance.",
+   "value_notes": {
+    "insert_dv": "The rocket leaves the craft in a transfer orbit, and 1,500 m/s is the burn that makes it circular, simplified from the full trip in [S-wiki-dv].",
+    "radius": "Drawn at true scale: (6371 km Earth mean radius + 35,786 km) / 6371 km = 6.617 body radii, from the Earth's radius in [S8]."
+   }
+  },
+  "lunar": {
+   "name": "Around the Moon, 100 km",
+   "short": "orbit around the Moon",
+   "period_min": 118.0,
+   "eclipse_min": 47.0,
+   "eclipse_frac": 0.4,
+   "contact_min": 480.0,
+   "comm_factor": 0.04,
+   "insert_dv": 900.0,
+   "maint_dv": 40.0,
+   "drag_life": 999.0,
+   "radiation": 3,
+   "body": "luna",
+   "radius": 1.0576,
+   "incl": 90.0,
+   "ops": 4.0,
+   "desc": "384,000 km away. You must brake about 900 m/s to stay in orbit, and the Moon's lumpy gravity calls for corrections. You talk to Earth through the Deep Space Network.",
+   "source": [
+    "S-wiki-dv",
+    "S-nssdc-planets"
+   ],
+   "simplified": "Period, eclipse and contact times are rounded from the circular orbit of that altitude; the delta-v to arrive and to hold the orbit are simplified, and the operations cost is our own game balance.",
+   "value_notes": {
+    "insert_dv": "About 900 m/s to be captured into a 100 km lunar orbit, simplified from [S-wiki-dv].",
+    "radius": "Drawn at true scale: (1737.4 km Moon mean radius + 100 km) / 1737.4 km = 1.0576 body radii, from the Moon's radius in [S-nssdc-planets]."
+   }
+  },
+  "l2": {
+   "name": "Far side of the Earth from the Sun, 1.5 million km (L2)",
+   "short": "the L2 point",
+   "period_min": 259200.0,
+   "eclipse_min": 0.0,
+   "eclipse_frac": 0.0,
+   "contact_min": 240.0,
+   "comm_factor": 0.03,
+   "insert_dv": 60.0,
+   "maint_dv": 3.0,
+   "drag_life": 999.0,
+   "radiation": 2,
+   "body": "tierra",
+   "radius": 5.5,
+   "incl": 0.0,
+   "ops": 5.0,
+   "desc": "1.5 million km away, with Earth and Sun always on the same side. Cold, steady and eclipse free, ideal for infrared telescopes.",
+   "source": [
+    "S-webb-orbit"
+   ],
+   "simplified": "Period, eclipse and contact times are rounded from the circular orbit of that altitude; the delta-v to arrive and to hold the orbit are simplified, and the operations cost is our own game balance.",
+   "value_notes": {
+    "insert_dv": "Our simplification of the small corrections needed to reach and hold a halo orbit at L2 [S-webb-orbit]."
+   }
+  }
+ }
+}

@@ -1,0 +1,722 @@
+keys,es
+Ecuador Volcano Watch,Vigía de Volcanes del Ecuador
+Earth observation,Observación de la Tierra
+"Ecuador has dozens of active volcanoes, Cotopaxi and Tungurahua among them. Your mission is to spot heat and gases (SO2) before an eruption, so people get warned in time. Heads up, Andean clouds cover the area most of the year.","Ecuador tiene decenas de volcanes activos, como el Cotopaxi y el Tungurahua. Tu misión: detectar calor y gases (SO2) antes de una erupción para alertar a tiempo a la población. Ojo: las nubes andinas cubren la zona gran parte del año."
+Detect volcanic heat or gases,Detectar calor o gases volcánicos
+Take images of the surface,Tomar imágenes de la superficie
+"Landsat 9 and Sentinel-2 (images), Sentinel-5P (measures gases such as SO2) and ASTER (thermal).","Landsat 9 y Sentinel-2 (imágenes), Sentinel-5P (mide gases como el SO2) y ASTER (térmico)."
+Ocean Guardians and El Niño,Guardianes del Océano y El Niño
+Climate and oceans,Clima y océanos
+El Niño warms the Pacific and brings rain and floods to the Ecuadorian coast. Measure the height and temperature of the ocean to see it coming months ahead.,El fenómeno de El Niño calienta el Pacífico y trae lluvias e inundaciones a la Costa ecuatoriana. Mide la altura y la temperatura del océano para anticiparlo meses antes.
+Measure ocean height or temperature,Medir altura o temperatura del océano
+"Watch sea color, heat or wind","Observar color, calor o viento del mar"
+"Sentinel-6 Michael Freilich (sea level), SMAP (microwaves) and the Jason series.","Sentinel-6 Michael Freilich (altura del mar), SMAP (microondas) y la serie Jason."
+Lunar Cartographer,Cartógrafo Lunar
+Moon exploration,Exploración de la Luna
+"Map the Moon and find out what its surface is made of, so future crewed missions know where to land. Getting there takes propulsion and deep space communications.",Haz un mapa de la Luna y descubre de qué está hecha su superficie para elegir dónde aterrizarán futuras misiones tripuladas. Llegar allá exige propulsión y comunicaciones de espacio profundo.
+Map the surface,Cartografiar la superficie
+Analyze composition or relief,Analizar composición o relieve
+"Lunar Reconnaissance Orbiter (NASA, 2009) and Chandrayaan-2 (India, 2019).","Lunar Reconnaissance Orbiter (NASA, 2009) y Chandrayaan-2 (India, 2019)."
+Eye on the Universe,Ojo al Universo
+Astronomy,Astronomía
+Build a space telescope to study distant galaxies and planets around other stars. To see in infrared it has to sit far from Earth's heat.,Construye un telescopio espacial para estudiar galaxias lejanas y planetas de otras estrellas. Para observar en infrarrojo necesita estar lejos del calor de la Tierra.
+Carry a telescope,Llevar un telescopio
+"Hubble (low orbit, 1990) and James Webb (point L2, 2021).","Hubble (órbita baja, 1990) y James Webb (punto L2, 2021)."
+Free mode (sandbox),Modo libre (sandbox)
+Experiment without limits,Experimenta sin límites
+A huge budget and any orbit. Try wild combinations and see what happens. No required goals.,Presupuesto enorme y cualquier órbita. Prueba combinaciones locas y mira qué pasa. No hay objetivos obligatorios.
+"Every real mission is a different compromise, and no design is perfect.",Cada misión real es un compromiso distinto: no existe un diseño perfecto.
+"About the size of a shoebox (10 × 10 × 34 cm). Very cheap, with little room and little power.","Del tamaño de una caja de zapatos (10×10×34 cm). Muy barato, pero con poco espacio y energía."
+Two 3U CubeSats side by side. Room for a couple of small instruments.,Dos CubeSats 3U lado a lado. Cabe un par de instrumentos pequeños.
+The largest common CubeSat. Up to 3 small instruments.,El CubeSat más grande común. Hasta 3 instrumentos pequeños.
+About the size of a small fridge. Takes medium instruments.,Del tamaño de una refrigeradora pequeña. Acepta instrumentos medianos.
+Medium platform (~1.5 t),"Plataforma mediana (~1,5 t)"
+Like a small car. Carries large instruments and plenty of power.,Como un auto pequeño. Lleva instrumentos grandes y mucha energía.
+Large observatory (~7 t),Gran observatorio (~7 t)
+"The size of a school bus, for the most ambitious instruments.",Del tamaño de un bus escolar. Para los instrumentos más ambiciosos.
+Compact optical camera,Cámara óptica compacta
+"Visible-light photos, like a very good phone pointed at Earth.","Fotos en color visible, como un celular muy bueno apuntando a la Tierra."
+Multispectral camera,Cámara multiespectral
+"Sees in several colors, some invisible ones too, and tells vegetation, ash, water and rock apart.","Ve en varios colores, incluso invisibles: distingue vegetación, ceniza, agua y roca."
+High-resolution camera,Cámara de alta resolución
+Tells objects under 1 meter apart. Makes a flood of data and needs very precise pointing.,Distingue objetos de menos de 1 metro. Genera muchísimos datos y necesita apuntar con gran precisión.
+Miniature thermal camera,Cámara térmica miniatura
+Measures surface heat. Spots areas that warm up before an eruption.,Mide el calor de la superficie. Detecta zonas que se calientan antes de una erupción.
+Advanced thermal radiometer,Radiómetro térmico avanzado
+Measures temperatures to a tenth of a degree.,Mide temperaturas con precisión de décimas de grado.
+Synthetic aperture radar (SAR),Radar de apertura sintética (SAR)
+"Sends microwaves and listens for the echo. Sees through clouds and at night, and tells when the ground swells. Very hungry for power.","Envía microondas y escucha el eco: ve a través de nubes y de noche, y mide si el suelo se hincha. Consume muchísima energía."
+Miniature gas spectrometer,Espectrómetro de gases miniatura
+Splits light into colors to identify gases such as sulfur dioxide (SO2).,Separa la luz en colores para identificar gases como el dióxido de azufre (SO2).
+UV gas spectrometer,Espectrómetro UV de gases
+Maps columns of volcanic gas and pollution across the planet.,Mapea columnas de gas volcánico y contaminación en todo el planeta.
+Microwave radiometer,Radiómetro de microondas
+Measures sea temperature and soil moisture even through clouds.,Mide la temperatura del mar y la humedad del suelo incluso con nubes.
+Radar altimeter,Altímetro radar
+"Measures sea height to the centimeter, which is how El Niño gets spotted.",Mide la altura del mar con precisión de centímetros: así se ve llegar El Niño.
+Gamma-ray spectrometer,Espectrómetro de rayos gamma
+"Detects which elements (iron, titanium, hydrogen…) are in the Moon's soil.","Detecta qué elementos (hierro, titanio, hidrógeno…) hay en el suelo de la Luna."
+30 cm telescope,Telescopio de 30 cm
+"A small telescope, but with no atmosphere in the way.",Un telescopio pequeño pero sin atmósfera que lo moleste.
+1 m telescope,Telescopio de 1 m
+A one-meter mirror that watches faint galaxies and stars.,Espejo de un metro: observa galaxias y estrellas débiles.
+Large infrared telescope (4 m),Gran telescopio infrarrojo (4 m)
+Sees the heat of the first galaxies. It has to be very cold and far from Earth.,Ve el calor de las primeras galaxias. Necesita estar muy frío y lejos de la Tierra.
+Magnetometer,Magnetómetro
+"Measures magnetic fields. Cheap and light, a science sidekick.","Mide campos magnéticos. Barato y liviano, ciencia de apoyo."
+Particle detector,Detector de partículas
+Counts radiation particles from the Sun and from space.,Cuenta partículas de radiación del Sol y del espacio.
+Body-mounted panels,Paneles fijos al cuerpo
+"Cells glued to the craft's faces. Simple, no moving parts, little power.","Celdas pegadas a las caras de la nave. Simples, sin piezas móviles, poca energía."
+Small deployable panels,Paneles desplegables pequeños
+They open like wings once in space.,Se abren como alas al llegar al espacio.
+Medium deployable panels,Paneles desplegables medianos
+The usual choice on a SmallSat.,Lo típico en un SmallSat.
+Large solar wings,Alas solares grandes
+Several meters across.,Varios metros de envergadura.
+Giant solar wings,Alas solares gigantes
+"Like the Space Station's, only smaller.","Como las de la Estación Espacial, en pequeño."
+20 Wh battery,Batería 20 Wh
+About a power bank.,Como una batería de power bank.
+120 Wh battery,Batería 120 Wh
+About a big laptop battery.,Como la batería de una laptop grande.
+1 kWh battery,Batería 1 kWh
+A lithium-ion pack for a SmallSat.,Paquete de ion-litio para un SmallSat.
+6 kWh battery,Batería 6 kWh
+For medium craft.,Para naves medianas.
+25 kWh battery,Batería 25 kWh
+For craft that burn kilowatts.,Para naves que consumen kilovatios.
+UHF radio,Radio UHF
+"9.6 kbps, like a modem from the 90s. A simple rod antenna.","9,6 kbps: como un módem de los años 90. Antena de varilla."
+S band,Banda S
+2 Mbps. Reliable and common on small missions.,2 Mbps. Fiable y común en misiones pequeñas.
+X band,Banda X
+150 Mbps with a dish antenna. The NASA standard in deep space.,150 Mbps con antena parabólica. Estándar de la NASA en espacio profundo.
+Ka band high gain,Banda Ka alta ganancia
+"1.2 Gbps, for instruments that make mountains of data.","1,2 Gbps. Para instrumentos que generan montañas de datos."
+Magnetorquers and sun sensors,Magnetorquers + sensores solares
+Uses Earth's magnetic field to turn. Coarse pointing (~5°).,Usa el campo magnético de la Tierra para girar. Apuntado grueso (~5°).
+Reaction wheels,Ruedas de reacción
+Flywheels that spin to aim the craft. Fine pointing (~0.1°).,"Volantes que giran para orientar la nave. Apuntado fino (~0,1°)."
+Wheels and star tracker,Ruedas + seguidor de estrellas
+A camera recognizes constellations for precision pointing (~0.001°).,"Una cámara reconoce constelaciones: apuntado de precisión (~0,001°)."
+No propulsion,Sin propulsión
+"Lighter and cheaper, but the craft can't change orbit or dodge debris.","Más liviano y barato, pero la nave no puede cambiar de órbita ni esquivar basura."
+Cold gas,Gas frío
+Lets out pressurized gas. Good for small tweaks and dodging debris.,Suelta gas a presión. Sirve para pequeños ajustes y esquivar basura.
+Chemical (hydrazine),Química (hidracina)
+"Lots of thrust, ideal for entering lunar orbit or climbing to GEO. The fuel is heavy.",Mucho empuje: ideal para entrar en órbita lunar o subir a GEO. El combustible pesa mucho.
+Electric (ion),Eléctrica (iónica)
+"Speeds up ions with electricity. Very efficient and light on fuel, but power hungry.","Acelera iones con electricidad: muy eficiente, poco combustible, pero consume mucha energía."
+Low orbit (400 km),Órbita baja (400 km)
+"Like the Space Station. Close means sharp images and a cheap launch, but leftover air drags the craft down, and without propulsion it falls in about 2 years.","Como la Estación Espacial. Cerca = imágenes nítidas y lanzamiento barato, pero el aire residual frena la nave: sin propulsión cae en unos 2 años."
+Sun-synchronous (700 km),Heliosíncrona (700 km)
+"Passes over each place at the same solar time, so light stays constant and images compare day after day. The favorite for watching Earth.",Pasa por cada lugar a la misma hora solar: luz constante para comparar imágenes día tras día. La favorita para observar la Tierra.
+"Geostationary (35,786 km)",Geoestacionaria (35 786 km)
+"Turns with the Earth, so it always watches the same hemisphere (Ecuador included) with continuous contact. But it is 90 times farther than the ISS, and the rocket leaves you in a transfer orbit, so you need propulsion.",Gira al ritmo de la Tierra: vigila siempre el mismo hemisferio (¡incluido Ecuador!) con contacto continuo. Pero está 90 veces más lejos que la ISS y el cohete te deja en una órbita de transferencia: necesitas propulsión.
+Lunar orbit (100 km),Órbita lunar (100 km)
+MOON,LUNA
+"384,000 km away. You must brake about 900 m/s to stay in orbit, and the Moon's lumpy gravity calls for corrections. You talk to Earth through the Deep Space Network.",A 384 000 km. Necesitas frenar ~900 m/s para quedarte en órbita y la gravedad irregular de la Luna exige correcciones. Hablas con la Tierra por la Red de Espacio Profundo.
+Sun-Earth L2 point,Punto L2 Sol-Tierra
+"1.5 million km away, with Earth and Sun always on the same side. Cold, steady and eclipse free, ideal for infrared telescopes.","A 1,5 millones de km: la Tierra y el Sol quedan siempre del mismo lado. Frío, estable y sin eclipses: ideal para telescopios infrarrojos."
+Shared ride (rideshare),Viaje compartido (rideshare)
+"Your craft travels with dozens of others. Very cheap (~6,500 $/kg), but you go to the main customer's orbit on their date.","Tu nave viaja junto a decenas de otras. Muy barato (~6 500 $/kg), pero vas a la órbita y en la fecha del cliente principal."
+Light launcher (Electron type),Lanzador ligero (tipo Electron)
+A small dedicated rocket. You pick the orbit and the date.,Cohete pequeño dedicado: tú eliges órbita y fecha.
+Medium launcher (Falcon 9 type),Lanzador medio (tipo Falcon 9)
+Today's workhorse. Very reliable.,El caballo de batalla actual. Muy confiable.
+Heavy launcher (Falcon Heavy type),Lanzador pesado (tipo Falcon Heavy)
+For giant payloads or faraway destinations.,Para cargas gigantes o destinos lejanos.
+Mission Director,Director/a de Misión
+Keep at least 10 % of the budget as reserve,Dejar al menos 10 % del presupuesto como reserva
+"Real missions almost always cost more than planned, and the reserve keeps them from being canceled.",Las misiones reales casi siempre cuestan más de lo previsto; la reserva evita que la cancelen.
+Principal Scientist,Científico/a Principal
+Cover every science objective and reach ≥ 80 % of the science target,Cubrir todos los objetivos científicos y lograr ≥ 80 % de la ciencia meta
+"Without useful science, a mission can't justify its cost.","Sin ciencia útil, la misión no justifica su costo."
+Systems Engineer,Ingeniero/a de Sistemas
+Mass margin ≥ 10 % and power margin ≥ 15 %,Margen de masa ≥ 10 % y margen de energía ≥ 15 %
+"Designs grow as they get built, and margins soak up the surprises.",Los diseños crecen al construirse; los márgenes absorben las sorpresas.
+Operations and Communications,Operaciones y Comunicaciones
+Download 100 % of the data and keep the craft alive for its whole design life,Bajar el 100 % de los datos y que la nave dure toda la vida de diseño
+Data that never reaches Earth is data lost.,Un dato que no llega a la Tierra es un dato perdido.
+Easy,Fácil
+More budget and few surprises.,Más presupuesto y pocos imprevistos.
+"Like a real mission, only simplified.",Como una misión real… simplificada.
+Hard,Difícil
+A tight budget and a hostile space.,Presupuesto ajustado y el espacio es hostil.
+Orbit,Órbita
+Platform,Plataforma
+Instruments,Instrumentos
+Power,Energía
+Communications,Comunicaciones
+Control and propulsion,Control y propulsión
+Launcher and lifetime,Lanzador y vida útil
+Review,Revisión
+Small,Pequeño
+Medium,Mediano
+Giant,Gigante
+CML 2 · Architecture,CML 2 · Arquitectura
+CML 3 · Concept design,CML 3 · Diseño del concepto
+CML 4 · Point design,CML 4 · Diseño puntual
+Operations,Operación
+A craft with no instruments makes no science. Head to the Instruments step.,Una nave sin instrumentos no produce ciencia. Ve al paso Instrumentos.
+Your craft needs an instrument,Sin instrumentos
+Too many instruments for this platform,No caben tantos instrumentos
+%s has room for %d instrument(s) and you picked %d. Use a bigger platform or drop some instruments.,%s tiene espacio para %d instrumento(s) y elegiste %d. Usa una plataforma más grande o quita instrumentos.
+%s is too big,%s es demasiado grande
+It needs a platform of size “%s” or larger.,Necesita una plataforma de tamaño «%s» o mayor.
+The craft outweighs its platform,La nave pesa más de lo que soporta la plataforma
+"%.1f kg against %.1f kg allowed. The structure won't hold, so pick lighter parts or a bigger platform.",%.1f kg de %.1f kg permitidos. La estructura no aguanta: elige piezas más livianas o una plataforma mayor.
+This launcher can't reach that orbit,Este lanzador no llega a esa órbita
+%s can't carry cargo to %s. Every rocket has its own destinations and capacity.,%s no puede llevar carga a %s. Cada cohete tiene destinos y capacidades distintas.
+Too heavy for the rocket,Demasiado pesada para el cohete
+"The launcher carries at most %.0f kg to %s and your craft weighs %.1f kg. The farther or higher the orbit, the less it can carry.","El lanzador lleva máximo %.0f kg a %s y tu nave pesa %.1f kg. Cuanto más lejos o alta la órbita, menos carga puede llevar."
+Over budget,Presupuesto excedido
+The mission costs %.1f M$ and only %.1f M$ is available. The agency won't sign off on it.,La misión cuesta %.1f M$ y solo hay %.1f M$. La agencia no aprobará la misión.
+This orbit can't serve the goal,Desde esta órbita no se cumple el objetivo
+The goal of “%s” can't be observed from %s.,El objetivo de «%s» no se puede observar desde %s.
+None of the chosen instruments serves this science goal.,Ningún instrumento elegido cumple este objetivo científico.
+Power falls short (%d %%),Energía insuficiente (%d %%)
+"The panels average %.0f W and the craft draws %.0f W. Instruments will have to take turns, which means less science.",Los paneles generan %.0f W en promedio y la nave consume %.0f W. Los instrumentos tendrán que turnarse: menos ciencia.
+Power margin is thin (%d %%),Margen de energía bajo (%d %%)
+Panels wear out over the years. A margin of at least 15 % is recommended.,Los paneles se degradan con los años. Se recomienda al menos 15 % de margen.
+The battery can't cover the eclipses,La batería no aguanta los eclipses
+In Earth's shadow (%.0f min) you need ~%.0f Wh and have %.0f Wh. Instruments will switch off in every eclipse.,En la sombra de la Tierra (%.0f min) necesitas ~%.0f Wh y tienes %.0f Wh. Los instrumentos se apagarán en cada eclipse.
+Not all the data fits down the link,No se pueden bajar todos los datos
+You make %.1f GB per day and can send only %.2f GB per day. %d %% of the science will be lost.,Generas %.1f GB/día y solo puedes enviar %.2f GB/día. Se perderá el %d %% de la ciencia.
+Pointing is too coarse,Apuntado insuficiente
+%s need(s) finer attitude control. Images will come out blurred.,%s necesita(n) un control de actitud más preciso. Las imágenes saldrán movidas.
+Not enough delta-v to reach the final orbit,No hay delta-v para llegar a la órbita final
+You need %.0f m/s to enter %s and the propulsion gives %.0f m/s. The craft won't reach its destination.,Se necesitan %.0f m/s para entrar en %s y la propulsión da %.0f m/s. La nave no llegará a su destino.
+The craft won't last %d years,La nave no durará %d años
+With this orbit and propulsion it lasts ~%.1f years (fuel or air drag).,Con esta órbita y propulsión dura ~%.1f años (combustible o frenado atmosférico).
+Design life is short,Vida de diseño corta
+The goal asks for at least %d years of operation.,El objetivo pide al menos %d años de operación.
+Unshielded CubeSat in a radiation zone,CubeSat sin blindaje en zona de radiación
+"CubeSats use off-the-shelf electronics, and far from Earth radiation can damage them.",Los CubeSats usan electrónica comercial; lejos de la Tierra la radiación puede dañarla.
+Budget reserve is low,Reserva de presupuesto baja
+%.0f %% of the budget is left. Real missions keep 10 to 30 %% for surprises.,Queda %.0f %% del presupuesto. Las misiones reales guardan 10-30 %% para imprevistos.
+Power in balance,Energía equilibrada
+A margin of %d %% and enough battery for the eclipses.,Margen de %d %% y batería suficiente para los eclipses.
+Data link is enough,Enlace de datos suficiente
+You can send %.1f GB per day and make %.1f GB per day.,Puedes bajar %.1f GB/día; generas %.1f GB/día.
+Mass within limits,Masa dentro de límites
+A mass margin of %d %%.,Margen de masa de %d %%.
+Budget with a reserve,Presupuesto con reserva
+%.0f %% is left for surprises.,Queda %.0f %% para imprevistos.
+Launch delayed %d months,Lanzamiento retrasado %d meses
+"The rocket slipped (weather, technical checks or the main customer). Keeping the team ready cost %.2f M$ extra.","El cohete se demoró (clima, revisiones técnicas o el cliente principal). Mantener al equipo listo costó %.2f M$ extra."
+Launcher failure,Falla del lanzador
+Rocket failure!,¡Falla del cohete!
+"The launcher failed during ascent (about %d %% chance). It happens in real life, which is why agencies buy insurance and choose reliable rockets.",El lanzador falló durante el ascenso (probabilidad ~%d %%). Ocurre en la vida real: por eso las agencias contratan seguros y eligen cohetes confiables.
+Liftoff,Despegue exitoso
+%s put the craft in space.,%s colocó la nave en el espacio.
+Couldn't brake at the Moon,No pudo frenar en la Luna
+The craft flew past the Moon,La nave pasó de largo de la Luna
+It took %.0f m/s of braking to stay in lunar orbit and only %.0f m/s was there. The craft sailed on into space.,Hacía falta frenar %.0f m/s para quedar en órbita lunar y solo había %.0f m/s. La nave siguió de largo hacia el espacio.
+Stuck in the transfer orbit,Atrapada en la órbita de transferencia
+The rocket left it in an elliptical orbit and without propulsion it couldn't climb to GEO. It sees Earth only part of the time and crosses the radiation belts.,El cohete la dejó en una órbita elíptica y sin propulsión no pudo subir a GEO. Solo ve la Tierra a ratos y cruza los cinturones de radiación.
+Wrong orbit,Órbita incorrecta
+There wasn't enough delta-v for the final insertion.,Faltó delta-v para la inserción final.
+In orbit at %s,En órbita: %s
+Panels deployed and first contact with the ground station.,Paneles desplegados y primer contacto con la estación terrena.
+Power saving mode,Modo ahorro de energía
+The panels can't power everything. Instruments take turns and science drops to %d %%.,Los paneles no alcanzan para todo. Los instrumentos se turnan y la ciencia baja al %d %%.
+Blackouts in every eclipse,Apagones en cada eclipse
+"The battery can't cover the %.0f minute shadow, so instruments switch off every lap.",La batería no aguanta la sombra de %.0f minutos; los instrumentos se apagan en cada vuelta.
+Memory full,Memoria llena
+More data is made than the antenna can send. %d %% of the observations are lost.,Se generan más datos de los que la antena puede enviar. Se pierde el %d %% de las observaciones.
+Blurry images,Imágenes movidas
+Attitude control isn't precise enough for %s.,El control de actitud no es suficientemente preciso para: %s.
+The fuel to hold the orbit ran out.,Se acabó el combustible para mantener la órbita.
+Drag from the thin upper air slowed it until it reentered and burned up. With propulsion it could have made up for it.,El roce con la atmósfera residual la frenó hasta reingresar y quemarse. Con propulsión habría podido compensar.
+"With no fuel to correct the orbit, the Moon's lumpy gravity brought it down onto the surface.","Sin combustible para corregir la órbita, la gravedad irregular de la Luna la hizo chocar contra la superficie."
+Early end of life,Fin de vida anticipado
+Mission ended early,Fin de la misión antes de tiempo
+Computer damaged by radiation,Computadora dañada por radiación
+Solar storm fries the computer,Tormenta solar: computadora dañada
+A high-energy particle damaged the onboard computer and there is no backup. The craft went silent. Shielding and redundancy reduce this risk.,Una partícula de alta energía dañó la computadora de a bordo y no hay respaldo. La nave quedó en silencio. El blindaje y la redundancia reducen este riesgo.
+Solar storm damages an instrument,Tormenta solar: instrumento dañado
+Radiation damaged the %s. %s,La radiación dañó el %s. %s
+Without shielding the electronics are more vulnerable.,Sin blindaje la electrónica es más vulnerable.
+Even the shielding wasn't enough this time.,Ni el blindaje alcanzó esta vez.
+Solar storm weathered,Tormenta solar superada
+A solar storm hit and the craft rode it out%s.,Hubo una tormenta solar y la nave la resistió%s.
+ thanks to the shielding, gracias al blindaje
+", with a bit of luck",", con suerte"
+"Reaction wheel failed, backup switched on",Rueda de reacción falló… respaldo activado
+Redundancy saved the fine pointing.,La redundancia salvó el apuntado preciso.
+A reaction wheel failed,Falla de una rueda de reacción
+"With no spare wheel, pointing stays less precise for the rest of the mission.","Sin rueda de respaldo, el apuntado pierde precisión el resto de la misión."
+Dodging space debris,Maniobra para esquivar basura espacial
+A fragment was on a collision course and the propulsion let the craft dodge it.,Un fragmento venía en curso de colisión; la propulsión permitió esquivarlo.
+Micrometeoroid hit,Impacto de micrometeorito
+"With no propulsion there was no dodging it, and a solar panel lost 30 % of its power.",Sin propulsión no se pudo esquivar: un panel solar perdió 30 % de potencia.
+Space debris flew by,Basura espacial pasó cerca
+With no propulsion there was no way to dodge… luckily it passed 200 m away.,Sin propulsión no había cómo esquivar… por suerte pasó a 200 m.
+Ground station offline,Estación terrena fuera de servicio
+A week without contact cost half of this month's data.,Una semana sin contacto: se perdió la mitad de los datos de este mes.
+The battery is aging,La batería envejece
+Thousands of charge cycles cut its capacity. With more margin nobody would have noticed.,Miles de ciclos de carga y descarga redujeron su capacidad. Con más margen no se habría notado.
+Mission complete,Misión completada
+The craft served its full %d years of design life.,La nave cumplió sus %d años de diseño.
+Early warning at Cotopaxi!,¡Alerta temprana en el Cotopaxi!
+You detected a rise in temperature and SO2. The Geophysical Institute got the alert days before the activity peaked.,Detectaste un aumento de temperatura y de SO2. El Instituto Geofísico recibió la alerta días antes del pico de actividad.
+Sangay ash plume,Columna de ceniza del Sangay
+You tracked the ash cloud and airports and Chimborazo farmers were warned in time.,Seguiste la nube de ceniza y se avisó a tiempo a los aeropuertos y a los agricultores de Chimborazo.
+El Niño is coming!,¡Se acerca El Niño!
+"The sea rose and warmed off the South American coast. The alert came months ahead, in time to prepare the Coast.",El mar subió y se calentó frente a las costas de Sudamérica. La alerta llegó con meses de anticipación para preparar la Costa.
+Galápagos currents,Corrientes de Galápagos
+"You measured how the Humboldt current shifts around Galápagos, key data to protect its marine life.",Mediste cómo cambia la corriente de Humboldt alrededor de Galápagos: datos clave para proteger su vida marina.
+Possible ice in a polar crater,Posible hielo en un cráter polar
+"The data show hydrogen in a crater that never sees the Sun, a key resource for future lunar bases.",Los datos muestran hidrógeno en un cráter siempre en sombra: un recurso clave para futuras bases lunares.
+New crater photographed,Nuevo cráter fotografiado
+"Comparing images, you found a recent impact.",Comparando imágenes encontraste un impacto reciente.
+New exoplanet!,¡Nuevo exoplaneta!
+A planet crossed in front of its star and your telescope measured the shadow.,Un planeta pasó frente a su estrella y tu telescopio midió la sombra.
+A very distant galaxy,Galaxia muy lejana
+You caught light from a galaxy that traveled billions of years to reach your mirror.,Captaste la luz de una galaxia que viajó miles de millones de años hasta tu espejo.
+Unexpected discovery,Descubrimiento inesperado
+Your instruments recorded something nobody expected. That's how science moves forward!,Tus instrumentos registraron algo que nadie esperaba. ¡Así avanza la ciencia!
+"Mission lost, and a lot learned!",Misión fallida: ¡hay mucho que aprender!
+Legendary mission!,¡Misión legendaria!
+Successful mission,Misión exitosa
+"Mission done, with limits",Misión cumplida con limitaciones
+Partial success,Éxito parcial
+"Ecuador did it too. NEE-01 Pegaso (2013), the first Ecuadorian satellite, was a 1U CubeSat.","Ecuador también lo hizo: NEE-01 Pegaso (2013), el primer satélite ecuatoriano, fue un CubeSat 1U."
+"CAPSTONE (NASA, 2022) was a 12U CubeSat that reached lunar orbit.","CAPSTONE (NASA, 2022) fue un CubeSat 12U que llegó a la órbita lunar."
+Still to cover · %s,Pendiente de cubrir · %s
+"Design, launch and operate your own space mission. Every decision has consequences, in mass, power, data, budget and time.","Diseña, lanza y opera tu propia misión espacial. Cada decisión tiene consecuencias: masa, energía, datos, presupuesto y tiempo."
+▶  One player,▶  Un jugador
+Team (2 to 4 players),Equipo (2 a 4 jugadores)
+Difficulty,Dificultad
+How to play,Cómo se juega
+"Space Mission Design Game challenge · Team SK-Horizons · Quito, Ecuador","Reto: Space Mission Design Game · Equipo SK-Horizons · Quito, Ecuador"
+Every mission starts with a science question,Toda misión empieza con una pregunta científica
+Choose your mission's goal,Elige el objetivo de tu misión
+Budget %s   ·   Operate at least %d yr,Presupuesto %s   ·   Operar ≥ %d año(s)
+◀ Menu,◀ Menú
+"[b]1. Choose a goal[/b] (CML 1). Every mission starts with a science question. When will a volcano erupt? Is El Niño coming?
+
+[b]2. Design the mission step by step[/b] (CML 2 to 4), like NASA's Mission Design Lab: orbit, platform, instruments, power, communications, control, propulsion and launcher. Every decision changes the others, and the board on the right shows it live.
+
+[b]3. Review and launch.[/b] Red blocks the launch (it doesn't fit, or the money isn't there). Yellow can launch… but will have consequences in operations.
+
+[b]4. Operate the mission.[/b] Watch the months go by with solar storms, space debris, failures… and discoveries. A good design rides out the surprises.
+
+[b]5. Learn from the report[/b] and redesign. There is no single right answer.
+
+[b]Key resources[/b]
+• [b]Mass.[/b] Everything weighs. The platform and the rocket both have a limit.
+• [b]Power.[/b] Panels make nothing in Earth's shadow, and the battery must cover that time.
+• [b]Data.[/b] An instrument that makes more data than the antenna can send wastes science.
+• [b]Delta-v.[/b] The “change of speed” propulsion gives you. Going to the Moon or GEO takes a lot.
+• [b]Budget and time.[/b] More years in operation means more science and more cost.
+
+[b]Team mode.[/b] Up to 4 players with roles (Direction, Science, Engineering and Operations). Each role has its goal, and everyone must approve the design before launch.
+
+[b]Controls.[/b] Drag with the mouse to turn the camera, scroll to zoom.
+
+Based on NASA resources, “Design and Develop Science Missions”, “CubeSat 101”, and JPL's Concept Maturity Levels (CML).","[b]1. Elige un objetivo[/b] (CML 1). Cada misión nace de una pregunta científica: ¿cuándo va a erupcionar un volcán? ¿Llega El Niño?
+
+[b]2. Diseña la misión paso a paso[/b] (CML 2 a 4), como en el Mission Design Lab de la NASA: órbita, plataforma, instrumentos, energía, comunicaciones, control, propulsión y lanzador. Cada decisión cambia las demás: el tablero de la derecha lo muestra en vivo.
+
+[b]3. Revisa y lanza.[/b] Lo rojo impide lanzar (no cabe, no alcanza el dinero). Lo amarillo se puede lanzar… pero tendrá consecuencias en la operación.
+
+[b]4. Opera la misión.[/b] Mira los meses pasar: tormentas solares, basura espacial, fallas… y descubrimientos. Un buen diseño resiste los imprevistos.
+
+[b]5. Aprende del informe[/b] y rediseña. No hay una única respuesta correcta.
+
+[b]Recursos clave[/b]
+• [b]Masa:[/b] todo pesa. La plataforma y el cohete tienen un límite.
+• [b]Energía:[/b] los paneles no producen en la sombra de la Tierra; la batería debe cubrir ese tiempo.
+• [b]Datos:[/b] un instrumento que genera más datos de los que la antena puede enviar desperdicia ciencia.
+• [b]Delta-v:[/b] el «cambio de velocidad» que da la propulsión. Ir a la Luna o a GEO exige mucho.
+• [b]Presupuesto y tiempo:[/b] más años de operación = más ciencia y más costo.
+
+[b]Modo equipo:[/b] hasta 4 jugadores con roles (Dirección, Ciencia, Ingeniería y Operaciones). Cada rol tiene su meta; todos deben aprobar el diseño antes de lanzar.
+
+[b]Controles:[/b] arrastra con el mouse para girar la cámara, rueda para acercar.
+
+Basado en recursos de la NASA: «Design and Develop Science Missions», «CubeSat 101» y los Concept Maturity Levels (CML) del JPL."
+Mission ranking,Ranking de misiones
+The board is waiting for its first mission. Be the one.,Todavía no hay misiones guardadas. ¡Sé el primero!
+Team,Equipo
+Points,Puntos
+Mission,Misión
+Team mode,Modo equipo
+"As in NASA's Mission Design Lab, each member is responsible for a part of the mission. You will have to negotiate, because what one gains another gives up.","Como en el Mission Design Lab de la NASA, cada integrante es responsable de una parte de la misión. Tendrán que negociar: lo que uno gana, otro lo pierde."
+How many players?,¿Cuántos jugadores?
+%d players,%d jugadores
+◀ Back,◀ Volver
+Your mission team,Su equipo de misión
+"Type your names. Each role has its own goal, and if everyone meets theirs the team earns bonus points.","Escriban sus nombres. Cada rol tiene una meta propia: si todos la cumplen, el equipo gana puntos extra."
+Player %d,Jugador %d
+Continue ▶,Continuar ▶
+Goal,Meta
+Player,Jugador
+Fix the red items first,Todavía no se puede lanzar
+Close ×,Cerrar ×
+YOUR CRAFT,TU NAVE
+L2 point · 1.5 million km,"Punto L2 · 1,5 millones de km"
+LAUNCH,LANZAMIENTO
+Destination,Destino
+Skip ▶▶,Saltar ▶▶
+LIFTOFF!,¡DESPEGUE!
+LAUNCHER FAILURE!,¡FALLA DEL LANZADOR!
+OPERATIONS,OPERACIÓN
+Month 0 of %d,Mes 0 de %d
+Month %d of %d,Mes %d de %d
+Science,Ciencia
+Mission log,Bitácora de la misión
+See report ▶▶,Ver informe ▶▶
+Month %d · %s,Mes %d · %s
+MISSION REPORT,INFORME DE MISIÓN
+%d / 1000 points   ·   Final cost %s of %s   ·   %d of %d months in operation,%d / 1000 puntos   ·   Costo final %s de %s   ·   %d de %d meses en operación
+Score,Puntaje
+Goals met,Objetivos cumplidos
+Science goals covered and time in operation.,Objetivos científicos cubiertos y tiempo en operación.
+Science gathered,Ciencia obtenida
+%d of %d science points.,%d de %d puntos de ciencia.
+Efficient use of resources,Uso eficiente de recursos
+Budget reserve and mass and power margins.,Reserva de presupuesto y márgenes de masa y energía.
+Teamwork,Trabajo en equipo
+Each role's goals met.,Metas de cada rol cumplidas.
+Goals by role,Metas por rol
+Why it went the way it did,¿Por qué pasó lo que pasó?
+✗ Month %d · %s,✗ Mes %d: %s
+✓ Month %d · %s,✓ Mes %d: %s
+"✓ The design was balanced, with margin in power, data, mass and fuel. That's how a mission gets designed!","✓ El diseño estaba equilibrado: energía, datos, masa y combustible con margen. ¡Así se diseña una misión!"
+What went well,Lo que salió bien
+Similar real missions,Misiones reales parecidas
+"There is no perfect design. Another mix of platform, orbit and instruments could meet the same goal. Try another!","No existe un diseño perfecto: otra combinación de plataforma, órbita e instrumentos podría cumplir el mismo objetivo. ¡Prueba otra!"
+Redesign mission,Rediseñar misión
+↻ Fly again (new luck),↻ Volver a volar (otra suerte)
+New mission,Nueva misión
+Save to ranking,Guardar en ranking
+Saved ✓,Guardado ✓
+Menu,Menú
+◀ Previous,◀ Anterior
+LAUNCH!,¡LANZAR!
+Next ▶,Siguiente ▶
+Why it matters,¿Por qué importa?
+"Hover an option to see what it is and how it affects the mission. Drag to turn the craft, scroll to zoom.","Pasa el mouse sobre una opción para ver qué es y cómo afecta a la misión. Arrastra para girar la nave, rueda para acercar."
+"The orbit decides what you see, how long you talk to Earth, how much shadow you get and how much energy it takes to get there.","La órbita decide qué ves, cuánto tiempo hablas con la Tierra, cuánta sombra hay y cuánta energía necesitas para llegar."
+×%.1f science,×%.1f ciencia
+Not for this goal,No sirve
+Shadow %s per lap · Contact %s per day · Δv to get there %d m/s,Sombra %s/vuelta · Contacto %s/día · Δv para llegar: %d m/s
+"The platform (bus) is the chassis, with the structure, computer and room for instruments. Bigger means more capacity, but also pricier and heavier.","La plataforma (bus) es el «chasis»: estructura, computadora y espacio para instrumentos. Más grande = más capacidad, pero más caro y pesado."
+Max load %s · %d slot(s) · instruments up to “%s” · %s,Carga máx. %s · %d espacio(s) · instrumentos hasta «%s» · %s
+"
+
+Empty mass %s · base power draw %s.","
+
+Masa vacía: %s · consumo base: %s."
+Slots used %d of %d on %s,Espacios usados: %d de %d en %s
+★ Key,★ Clave
+Useful,Útil
+Minor use,Poco útil
+%s · %s · %s per day · %s · %s pointing,%s · %s · %s/día · %s · apuntado %s
+free,libre
+coarse,grueso
+fine,fino
+precise,preciso
+"Needs a “%s” platform
+","No cabe: requiere plataforma «%s»
+"
+%s doesn't fit on %s,%s no cabe en %s
+"
+
+Base science %d points per month · Relevance for your goal %d %%.","
+
+Ciencia base: %d puntos/mes · Relevancia para tu objetivo: %d %%."
+"Total draw %s · Average generation %s (panels make nothing in shadow, %d %% of the time).",Consumo total: %s · Generación promedio: %s (los paneles no producen en la sombra: %d %% del tiempo).
+Solar panels,Paneles solares
+You need at least %s of panels (with a 15 %% margin).,Necesitas al menos %s de paneles (con margen de 15 %%).
+%s in sunlight · %s · %s,%s en sol · %s · %s
+Battery,Batería
+In shadow you need ~%.0f Wh (using only 60 %% of the battery so it lasts many cycles).,En la sombra necesitas ~%.0f Wh (usando solo el 60 %% de la batería para que dure muchos ciclos).
+Covers it,Alcanza
+Falls short,Corta
+"Your instruments make %s per day. From %s there is %s of contact per day, and distance cuts the signal to %s of the nominal rate.",Tus instrumentos generan %s/día. Desde %s hay %s de contacto al día y la distancia reduce la señal a %s de la velocidad nominal.
+Sends %s per day · %s · %s · %s,Bajarías %s/día · %s · %s · %s
+Enough,Suficiente
+Too slow,Insuficiente
+Attitude control (pointing),Control de actitud (apuntado)
+Your instruments need pointing level %d.,Tus instrumentos necesitan apuntado nivel %d.
+Level %d · %s of the platform's cost,Nivel %d · %s de la plataforma en costo
+Too coarse,Impreciso
+Propulsion,Propulsión
+For %s you need %d m/s to get there plus %d m/s per year to hold the orbit (%d years = %d m/s).,Para %s necesitas %d m/s para llegar + %d m/s por año para mantener la órbita (%d años = %d m/s).
+Δv %d m/s · fuel ≈ %s of the mass,Δv %d m/s · combustible ≈ %s de la masa
+Too little,Corto
+Protection,Protección
+"They cost mass and money, but cut the risks during operations.","Cuestan masa y dinero, pero reducen los riesgos durante la operación."
+Redundancy (backup parts),Redundancia (piezas de respaldo)
++10 % mass · +20 % hardware cost,+10 % masa · +20 % costo de hardware
+"Doubles critical components (computer, wheels). If something fails, the backup takes over.","Duplica componentes críticos (computadora, ruedas). Si algo falla, el respaldo toma el control."
+Radiation shielding,Blindaje contra radiación
++4 % mass · +5 % hardware cost,+4 % masa · +5 % costo de hardware
+Plates that shield the electronics from particles from the Sun and the radiation belts. Key far from Earth.,Placas que protegen la electrónica de partículas del Sol y de los cinturones de radiación. Clave lejos de la Tierra.
+"Your craft weighs %s and is headed to %s. The farther the destination, the less a rocket can carry.","Tu nave pesa %s y va a %s. Cuanto más lejos el destino, menos carga puede llevar un cohete."
+Can't reach,No llega
+Fits,Cabe
+Too heavy,Muy pesada
+Up to %s to %s · %s · reliability %s,Hasta %s a %s · %s · confiabilidad %s
+Design life,Vida útil de diseño
+"More years means more science, but also more operating cost (%s per year) and more fuel.","Más años = más ciencia, pero más costo de operación (%s por año) y más combustible."
+The goal asks for at least %d year(s) of operation.,El objetivo pide operar al menos %d año(s).
+"Design review (CML 4) is how NASA engineers check that a mission is ready. Red blocks the launch, yellow will have consequences.",Revisión de diseño (CML 4): así revisan los ingenieros de la NASA si una misión está lista. Lo rojo impide lanzar; lo amarillo tendrá consecuencias.
+Team approval,Aprobación del equipo
+"Each role checks its goal and approves. If anyone changes the design, approval starts over.","Cada rol revisa su meta y aprueba. Si alguien cambia el diseño, hay que volver a aprobar."
+"Check each role's goal, because meeting them adds team points.",Revisa las metas de cada rol: cumplirlas suma puntos de equipo.
+Approved ✓,Aprobado ✓
+Approve anyway,Aprobar con riesgo
+Approve,Aprobar
+Fix the red items to launch.,Corrige los puntos en rojo para poder lanzar.
+The whole team still has to approve.,Falta la aprobación de todo el equipo.
+Mission board,Tablero de la misión
+Budget,Presupuesto
+%s of %s,%s de %s
+Over budget!,¡Excedido!
+"Covers building, launch (%s) and operations for %d years (%s).","Incluye fabricación, lanzamiento (%s) y operación por %d años (%s)."
+platform %s · rocket %s,plataforma %s · cohete %s
+can't reach,no llega
+Mass,Masa
+Instruments %s · power %s · fuel %s · platform %s.,Instrumentos %s · energía %s · combustible %s · plataforma %s.
+Draw against the panels' average generation (counting shadow).,Consumo vs. generación promedio de los paneles (contando la sombra).
+Battery (eclipse),Batería (eclipse)
+%.0f of %.0f Wh,%.0f de %.0f Wh
+Energy needed to cross the shadow.,Energía necesaria para cruzar la sombra.
+Data,Datos
+%s of %s per day,%s de %s por día
+Data made against what the antenna can send down.,Datos generados vs. lo que la antena puede bajar.
+Delta-v (propulsion),Delta-v (propulsión)
+%d of %d m/s,%d de %d m/s
+Change of speed needed to get there and hold the orbit.,Cambio de velocidad necesario para llegar y mantener la órbita.
+Lifetime,Vida útil
+%.1f years,%.1f años
+> 100 years,> 100 años
+%s (design %d),%s (diseño: %d)
+How long it can last with this orbit and fuel.,Cuánto puede durar con esta órbita y combustible.
+Expected science,Ciencia esperada
+%d of %d pts,%d de %d pts
+An estimate with no surprises.,Estimación sin imprevistos.
+Science goals,Objetivos científicos
+"Free mode, with no required goals.",Modo libre: sin objetivos obligatorios.
+Team goals,Metas del equipo
+✗ %d problem(s) block the launch,✗ %d problema(s) impiden lanzar
+⚠ %d warning(s),⚠ %d advertencia(s)
+%s decides · %s,Decide: %s · %s
+Role,Rol
+This orbit can't serve your goal.,Desde esta órbita no se puede cumplir tu objetivo.
+"For your goal, science ×%.1f.","Para tu objetivo, ciencia ×%.1f."
+Reserve %s,Reserva %s
+Limit,Límite
+Margin %s,Margen %s
+%d year,%d año
+%d years,%d años
+STAGE,SEPARAR
+← → lean · W S throttle · Space stage,← → inclinar · W S potencia · Espacio separar
+Height,Altura
+Speed,Velocidad
+Speed toward orbit,Velocidad para la órbita
+Fuel in this stage,Combustible en esta etapa
+Stress on the structure,Esfuerzo en la estructura
+The bot pilot is flying. Touch the arrows or the throttle to take the controls.,El piloto bot está volando. Toca las flechas o la potencia para tomar los mandos.
+"Your rocket, your stick. Lean with ← → to keep the needle on the green marker, W and S move the throttle, Space drops what is empty.","Tu cohete, tus mandos. Inclina con ← → para mantener la aguja en la marca verde; W y S mueven la potencia; Espacio suelta lo que está vacío."
+Launching east from the equator: the Earth's spin gives you %d m/s for free.,Lanzando hacia el este desde el ecuador: el giro de la Tierra te regala %d m/s.
+The boosters are empty. Press STAGE to drop them and fly lighter.,Los propulsores laterales están vacíos. Pulsa SEPARAR para soltarlos y volar más ligero.
+This stage is empty! Press STAGE (Space) to drop it and light the next engine.,¡Esta etapa está vacía! Pulsa SEPARAR (Espacio) para soltarla y encender el siguiente motor.
+STAGE SEPARATION,SEPARACIÓN DE ETAPA
+The flight computer staged for you.,La computadora de vuelo separó la etapa por ti.
+LAUNCHER FAILURE,FALLA DEL LANZADOR
+"Not your flying. Rockets fail now and then, which is why their reliability matters.","No fue tu pilotaje. Los cohetes fallan de vez en cuando, por eso importa su fiabilidad."
+RAPID UNPLANNED DISASSEMBLY,DESARME RÁPIDO NO PLANIFICADO
+"Steer hard across the airflow at full speed and a rocket comes apart. Impressive, if that was the plan!","Gira fuerte contra el aire a toda velocidad y un cohete se desarma. ¡Impresionante, si ese era el plan!"
+The rocket came apart in flight,El cohete se desarmó en vuelo
+"The pilot swung the rocket hard across the airflow while the air pushed hardest, and it broke up. Spectacular, and the craft went with it.","El piloto giró el cohete con fuerza contra el aire justo cuando el aire empujaba más, y se partió. Espectacular, y la nave se fue con él."
+The flight computer is holding the marker for you. Steer any time to take over.,La computadora de vuelo sigue la marca por ti. Dirige cuando quieras para tomar el control.
+"Max-Q, the moment the air pushes hardest. Stay on the green marker or the stress climbs.","Max-Q, el momento en que el aire empuja más fuerte. Quédate en la marca verde o el esfuerzo sube."
+The air is thin now. Lean over flat: reaching orbit means flying sideways at about %.1f km/s.,El aire ya es muy delgado. Inclínate hasta quedar horizontal: llegar a órbita es volar de lado a unos %.1f km/s.
+STRESS!,¡ESFUERZO!
+Ease back toward the green marker.,Vuelve con suavidad hacia la marca verde.
+high,alto
+rising,subiendo
+calm,tranquilo
+BOOSTERS AWAY,PROPULSORES FUERA
+"Staging drops an empty tank and its engines, so the rest of the rocket is lighter and goes faster on the fuel it has left.","Separar una etapa suelta un tanque vacío y sus motores, así el resto del cohete es más ligero y acelera más con el combustible que le queda."
+"You are falling around the Earth, fast enough to keep missing it.","Estás cayendo alrededor de la Tierra, tan rápido que nunca llegas a tocarla."
+"The craft's own engine added the last %d m/s. You are falling around the Earth, fast enough to keep missing it.","El motor de la propia nave puso los últimos %d m/s. Estás cayendo alrededor de la Tierra, tan rápido que nunca llegas a tocarla."
+ORBIT!,¡ÓRBITA!
+Average distance from the marker %.1f degrees. Fuel left in the last stage %d %%.,Distancia media a la marca %.1f grados. Combustible restante en la última etapa %d %%.
+CRAFT AWAY,NAVE LIBERADA
+Your craft is on its own now.,Tu nave ya vuela por su cuenta.
+Autopilot on. It flies a clean climb; touch any control to fly it yourself.,Piloto automático activado. Hace un ascenso limpio; toca cualquier mando para volar tú.
+You have the controls.,Tienes los mandos.
+Needle on the green,Aguja en el verde
+Autopilot,Piloto automático
+Sound off,Sonido apagado
+Sound on,Sonido activado
+Autopilot on,Piloto automático activado
+UP,ARRIBA
+FLAT,HORIZONTAL
+"Ground here. We're go on that alarm, keep flying.","Aquí control de tierra. Seguimos adelante con esa alarma, sigue volando."
+Extra objective · %s,Objetivo extra · %s
+Ice at the Moon's South Pole,Hielo en el polo sur de la Luna
+Moon landing,Alunizaje
+"Lunar scientists and the crews planning the first Moon base ask you to land beside Shackleton crater. At the south pole the Sun never climbs more than 1.5 degrees above the horizon, so the crater's rim stays lit almost all the time while its floor has stayed dark for billions of years. Ice may hide in that dark, and ice means water to drink and fuel for rockets. Land on the sunlit rim, look into the shadow and tell Earth what is there.","Científicos lunares y las tripulaciones que planean la primera base en la Luna te piden alunizar junto al cráter Shackleton. En el polo sur el Sol nunca sube más de 1,5 grados sobre el horizonte, así que el borde del cráter está iluminado casi siempre mientras su fondo lleva miles de millones de años a oscuras. En esa oscuridad puede esconderse hielo, y el hielo es agua para beber y combustible para cohetes. Aluniza en el borde soleado, mira hacia la sombra y cuéntale a la Tierra qué hay allí."
+Look for ice in the shadows,Buscar hielo en las sombras
+Photograph the landing site,Fotografiar el sitio de alunizaje
+"Chandrayaan-3 (India, 2023) landed near the south pole, at 69 degrees south. IM-1 Odysseus (Intuitive Machines, 2024) landed at Malapert A, tipped onto its side and kept sending data. LRO's laser altimeter LOLA measured the ground you fly over, and ShadowCam photographed Shackleton's dark floor.","Chandrayaan-3 (India, 2023) alunizó cerca del polo sur, a 69 grados sur. IM-1 Odysseus (Intuitive Machines, 2024) alunizó en Malapert A, se volcó de lado y siguió enviando datos. El altímetro láser LOLA de LRO midió el terreno sobre el que vuelas, y ShadowCam fotografió el fondo oscuro de Shackleton."
+Program alarm 1202,Alarma de programa 1202
+"The guidance computer has more jobs than room to run them. On Apollo 11 it dropped the unimportant ones and kept steering, and Houston called go.","La computadora de guiado tiene más tareas que espacio para ejecutarlas. En el Apolo 11 dejó de lado las que no importaban y siguió guiando, y Houston dio luz verde."
+Look into the dark,Mirar en la oscuridad
+"Land within 300 m of the edge of the permanent shadow and photograph the crater floor that has not seen the Sun for billions of years, the way ShadowCam does from orbit.","Aluniza a menos de 300 m del borde de la sombra permanente y fotografía el fondo del cráter que no ha visto el Sol en miles de millones de años, como hace ShadowCam desde la órbita."
+Bullseye on the rim,"En el blanco, sobre el borde"
+"Touch down within 60 m of the target on Shackleton's sunlit rim, where the Sun shines almost all month long.","Toca suelo a menos de 60 m del objetivo en el borde soleado de Shackleton, donde el Sol brilla casi todo el mes."
+Never lose Earth,Nunca pierdas la Tierra
+"Keep Earth in view of the antenna through the whole descent. From the pole Earth hangs low on the horizon, so a hill or the crater wall can hide it.","Mantén la Tierra a la vista de la antena durante todo el descenso. Desde el polo la Tierra cuelga baja sobre el horizonte, así que una colina o la pared del cráter pueden taparla."
+Feather touch,Toque de pluma
+"Touch down slower than 1.5 m/s, gently enough not to spill a cup of coffee.","Toca suelo a menos de 1,5 m/s, tan suave que no se derrame una taza de café."
+Fuel for a hop,Combustible para un salto
+Land with a third of the lander's fuel left. Chandrayaan-3's lander used its spare fuel to rise 40 cm and land again a little farther on.,Aluniza con un tercio del combustible del módulo. El módulo de Chandrayaan-3 usó su combustible sobrante para elevarse 40 cm y volver a posarse un poco más allá.
+The bottom of the world,El fondo del mundo
+"Touch down within 250 m of the geographic south pole, 90 degrees south, the spot every line of longitude meets.","Toca suelo a menos de 250 m del polo sur geográfico, a 90 grados sur, el punto donde se juntan todas las líneas de longitud."
+Bullseye burn,Encendido perfecto
+"End the burn toward the Moon within 1 % of the speed it needs, so no correction is needed on the way.","Termina el encendido hacia la Luna a menos del 1 % de la velocidad que necesita, para no tener que corregir en el camino."
+Ride the marker,Sigue la marca
+"Fly the climb yourself and keep the rocket within 5 degrees of the guidance marker, on average, all the way to orbit.","Vuela tú el ascenso y mantén el cohete a menos de 5 grados de la marca de guiado, en promedio, hasta la órbita."
+Engineer,Ingeniero/a
+Scientist,Científico/a
+Pilot,Piloto
+Ground control,Control de tierra
+"Mass margin ≥ 10 %, power margin ≥ 15 % and a budget reserve ≥ 10 %","Margen de masa ≥ 10 %, margen de energía ≥ 15 % y reserva de presupuesto ≥ 10 %"
+"Designs grow as they get built, and margins soak up the surprises; real missions almost always cost more than planned.",Los diseños crecen al construirse y los márgenes absorben las sorpresas; las misiones reales casi siempre cuestan más de lo planeado.
+"Reach the orbit with the fuel on board, on a rocket that can carry the craft","Llegar a la órbita con el combustible a bordo, en un cohete que pueda cargar la nave"
+A route that does not close on paper will not close in flight: the burns and the rocket have to add up.,Una ruta que no cierra en el papel no cerrará en vuelo: los encendidos y el cohete tienen que sumar.
+Your crew,Tu tripulación
+"A mission is a team effort. You have four stations: engineer, scientist, pilot and ground control. Friends take the stations they like, and bots take the rest, so you never fly alone.","Una misión es trabajo en equipo. Tienes cuatro estaciones: ingeniería, ciencia, piloto y control de tierra. Tus amigos toman las que quieran y los bots toman el resto, así que nunca vuelas solo."
+Solo,Solo
+Same screen,Misma pantalla
+Online,En línea
+You take one station. Three bots take the others and work with you.,Tomas una estación. Tres bots toman las otras y trabajan contigo.
+"Two to four people on one computer, passing the screen. Free stations get a bot.","De dos a cuatro personas en un computador, pasándose la pantalla. Las estaciones libres reciben un bot."
+"Create a room, share its code, and up to four friends join from their own browsers.","Crea una sala, comparte su código y hasta cuatro amigos se unen desde sus navegadores."
+Pick your station,Elige tu estación
+"You run one station. The bots take the other three, and you can open any station and change what a bot chose.",Manejas una estación. Los bots toman las otras tres y puedes abrir cualquier estación y cambiar lo que eligió un bot.
+Take this station,Tomar esta estación
+Decides,Decide
+Type your names and choose who takes each station. Pass the screen when it is your station's turn. Stations nobody takes are held by a bot.,Escribe tus nombres y elige quién toma cada estación. Pasen la pantalla cuando sea el turno de su estación. Las estaciones que nadie toma las ocupa un bot.
+Bot,Bot
+Someone has to take at least one station.,Alguien tiene que tomar al menos una estación.
+Online room,Sala en línea
+One of you creates a room and shares its code. The others type it and join. Everybody picks a station; bots take the free ones.,Uno de ustedes crea una sala y comparte su código. Los demás lo escriben y se unen. Cada quien elige una estación; los bots toman las libres.
+Online rooms work in the web version of the game. This build can play solo or on one screen.,Las salas en línea funcionan en la versión web del juego. Esta versión puede jugar solo o en una misma pantalla.
+Your name,Tu nombre
+Create a room,Crear una sala
+or join a friend's room,o únete a la sala de un amigo
+Room code,Código de sala
+Join,Unirse
+Type the room code first.,Escribe primero el código de la sala.
+Room,Sala
+Share this code with your friends. Each one takes a station; the free ones stay with their bot.,Comparte este código con tus amigos. Cada uno toma una estación; las libres se quedan con su bot.
+In the room,En la sala
+connecting...,conectando...
+You,Tú
+Give it to the bot,Dárselo al bot
+◀ Leave,◀ Salir
+Pick the mission ▶,Elegir la misión ▶
+Waiting for the host to pick the mission...,Esperando a que el anfitrión elija la misión...
+Could not create a room. Try again.,No se pudo crear la sala. Inténtalo de nuevo.
+No room with that code.,No hay ninguna sala con ese código.
+The room is not reachable right now: ,No se puede llegar a la sala ahora mismo: 
+▶  Play,▶  Jugar
+%s (bot) · %s,%s (bot) · %s
+"A bot holds this station. Change anything you like, it will not mind.","Un bot ocupa esta estación. Cambia lo que quieras, no se molestará."
+This is %s's station. You can watch their choices here.,Esta es la estación de %s. Aquí puedes ver sus decisiones.
+Crew sign-off,Firma de la tripulación
+"Every station checks its goal and signs off. If anyone changes the design, the sign-offs start over.","Cada estación revisa su meta y firma. Si alguien cambia el diseño, las firmas empiezan de nuevo."
+The bots sign off by themselves. Your own sign-off is the launch button.,Los bots firman solos. Tu firma es el botón de lanzamiento.
+The whole crew still has to sign off.,Toda la tripulación todavía tiene que firmar.
+Search,Buscar
+"Build your own rocket, part by part ▶","Construye tu propio cohete, pieza por pieza ▶"
+Something in the review is still red. Fix it and I will sign right away.,Algo en la revisión sigue en rojo. Arréglalo y firmo de inmediato.
+"My goal is met. Signed, and I am already humming the countdown.","Mi meta está cumplida. Firmado, y ya estoy tarareando la cuenta regresiva."
+All my numbers are green. Signed. Let it fly.,Todos mis números están en verde. Firmado. Que vuele.
+"My goal is not fully met, but nothing blocks the launch, and flying teaches more than waiting. Signed.","Mi meta no está del todo cumplida, pero nada bloquea el lanzamiento y volar enseña más que esperar. Firmado."
+"Not perfect, and that is fine: there is no perfect design. Signed.",No es perfecto y está bien: no existe el diseño perfecto. Firmado.
+"I chose %s: for this goal it multiplies the science by %.1f. Fewer burns, fewer prayers.","Elegí %s: para esta meta multiplica la ciencia por %.1f. Menos encendidos, menos plegarias."
+"%s it is, with science at x%.1f. The best seat in the house for this goal.","Será %s, con la ciencia a x%.1f. El mejor asiento de la casa para esta meta."
+"I picked %s: the smallest platform where everything fits and the budget still sleeps. Bigger is not better, just heavier.","Escogí %s: la plataforma más pequeña donde todo cabe y el presupuesto aún duerme tranquilo. Más grande no es mejor, solo más pesado."
+%s. It carries what the mission needs and not a gram of ego.,%s. Lleva lo que la misión necesita y ni un gramo de ego.
+"No instrument is needed for this goal, so I left the shelf alone.","Esta meta no pide instrumentos, así que dejé el estante en paz."
+"I put on board: %s. They cover what the goal asks for, and nothing else wants a ride.",Subí a bordo: %s. Cubren lo que pide la meta y nadie más quiere viajar.
+On the list: %s. Each one earns its slot.,En la lista: %s. Cada uno se gana su espacio.
+"%s with %s: enough power for the whole mission, shadow included. Nobody likes working in the dark.","%s con %s: energía suficiente para toda la misión, sombra incluida. A nadie le gusta trabajar a oscuras."
+"Panels %s and battery %s. We keep the lights on, even behind the Earth.","Paneles %s y batería %s. Mantenemos las luces encendidas, incluso detrás de la Tierra."
+I chose %s: it sends down everything the instruments make. Data that never reaches Earth is data lost.,Elegí %s: envía todo lo que producen los instrumentos. Los datos que nunca llegan a la Tierra son datos perdidos.
+"%s, because the science only counts once Earth has heard it.","%s, porque la ciencia solo cuenta cuando la Tierra la ha escuchado."
+"I set %s for pointing and %s for the burns. Enough to arrive and stay, with a little to spare.","Puse %s para apuntar y %s para los encendidos. Suficiente para llegar y quedarnos, con un poco de sobra."
+"%s keeps us aimed and %s gets us there. Simple, and it fits.","%s nos mantiene apuntando y %s nos lleva. Simple, y cabe."
+"%s: the cheapest rocket that can lift us to this orbit, for %d year(s) of mission. We do not hire more rocket than we need.","%s: el cohete más barato que nos sube a esta órbita, para %d año(s) de misión. No contratamos más cohete del necesario."
+"%s is the one. It lifts the craft, it fits the wallet, and %d year(s) of work are ahead.","%s es el indicado. Sube la nave, cabe en el bolsillo y hay %d año(s) de trabajo por delante."
+Done.,Listo.
+TO THE MOON,RUMBO A LA LUNA
+BURN,ENCENDER
+Space burn and cut · W S throttle,Espacio enciende y corta · W S potencia
+Speed added,Velocidad sumada
+The burn needs,El encendido necesita
+Burn toward the Moon,Encendido hacia la Luna
+Earth orbit,Órbita terrestre
+You are circling the Earth. Press BURN to fire the engine and head for the Moon; press CUT when the gauge reaches %d m/s.,Estás dando vueltas a la Tierra. Pulsa ENCENDER para prender el motor y salir hacia la Luna; pulsa CORTAR cuando el indicador llegue a %d m/s.
+The flight computer starts the burn for you.,La computadora de vuelo enciende el motor por ti.
+Engine on. Watch the gauge.,Motor encendido. Mira el indicador.
+"Ease the throttle down (S) as you near the mark, then press CUT (Space). Within 1 % is a perfect burn.","Baja la potencia (S) al acercarte a la marca y pulsa CORTAR (Espacio). Con menos de 1 % de error, el encendido es perfecto."
+"Hands off: the flight computer will cut the engine. It cuts a little late, to be safe.","Manos libres: la computadora de vuelo cortará el motor. Corta un poco tarde, por seguridad."
+PERFECT BURN,ENCENDIDO PERFECTO
+Off by %.1f %%. Straight to the Moon.,Error de %.1f %%. Directo a la Luna.
+A LITTLE SHORT,UN POCO CORTO
+Off by %.1f %%. A correction on the way spends some of the lander's fuel.,Error de %.1f %%. Una corrección en el camino gasta parte del combustible del módulo de alunizaje.
+A LITTLE LONG,UN POCO LARGO
+"Now the long coast: no engine, just falling toward the Moon. Apollo 11 took about %d hours.","Ahora el largo crucero: sin motor, solo cayendo hacia la Luna. El Apolo 11 tardó unas %d horas."
+%d h of %d,%d h de %d
+Halfway there. The Earth's pull has been slowing you down; soon the Moon's pull takes over.,Mitad del camino. La gravedad de la Tierra te ha ido frenando; pronto manda la de la Luna.
+ARRIVING,LLEGANDO
+A short burn behind the Moon slows you into orbit. Get ready to land.,Un encendido corto detrás de la Luna te frena hasta quedar en órbita. Prepárate para alunizar.
+LANDING,ALUNIZAJE
+Shackleton's rim,Borde del Shackleton
+HOVER,FLOTAR
+W S throttle · arrows push across · Space hover,W S potencia · flechas desplazan · Espacio flotar
+Falling at,Cayendo a
+Drifting at,Deriva
+To the target,Al objetivo
+Fuel,Combustible
+Autopilot on. It sets you down on the target; touch any control to fly it yourself.,Piloto automático activado. Te posa en el objetivo; toca cualquier control para pilotar tú.
+The bot pilot is landing. Touch the throttle or the arrows to take the controls.,El piloto bot está alunizando. Toca la potencia o las flechas para tomar los mandos.
+Fly down to the green ring. More throttle slows your fall; the arrows push you across the ground. Touch down slower than 3 m/s.,Baja hasta el anillo verde. Más potencia frena tu caída; las flechas te desplazan sobre el suelo. Toca el suelo a menos de 3 m/s.
+Landing site,Sitio de alunizaje
+Hands off: the flight computer is holding the descent. Touch any control to fly it again.,Manos libres: la computadora de vuelo sostiene el descenso. Toca cualquier control para volver a pilotar.
+Engine set to hold you still in the air.,Motor ajustado para mantenerte quieto en el aire.
+NO FUEL,SIN COMBUSTIBLE
+The engine is dry. Brace for touchdown.,El motor está seco. Prepárate para el impacto.
+Fuel is low. Set down soon: anywhere flat will do.,Queda poco combustible. Posa pronto: cualquier sitio plano sirve.
+TOO FAST,DEMASIADO RÁPIDO
+"More throttle, now!","¡Más potencia, ya!"
+ALARM %s,ALARMA %s
+GO!,¡ADELANTE!
+TOUCHDOWN!,¡CONTACTO!
+"Touchdown at %.1f m/s, as soft as a feather.","Contacto a %.1f m/s, suave como una pluma."
+LANDED!,¡ALUNIZAJE!
+Touchdown at %.1f m/s. A clean landing.,Contacto a %.1f m/s. Un alunizaje limpio.
+"LANDED, FIRMLY",ALUNIZAJE FIRME
+Touchdown at %.1f m/s. The legs took it.,Contacto a %.1f m/s. Las patas lo aguantaron.
+"DOWN, A LITTLE BENT","EN EL SUELO, UN POCO TORCIDO"
+"Touchdown at %.1f m/s. It leans, but it works.","Contacto a %.1f m/s. Está inclinado, pero funciona."
+%d m from the target.,A %d m del objetivo.
+Extra objectives met: %d. Their photos will come home with the report.,Objetivos extra cumplidos: %d. Sus fotos llegarán con el informe.
+NEW CRATER,CRÁTER NUEVO
+"Touchdown at %d m/s. Shackleton has one more crater, and it is yours.","Contacto a %d m/s. El Shackleton tiene un cráter más, y es tuyo."
+Lost at touchdown,Perdido al alunizar
+The lander reached the ground too fast and broke. Next time: more throttle as the ground comes up.,El módulo llegó al suelo demasiado rápido y se rompió. La próxima vez: más potencia cuando se acerque el suelo.
+CUT,CORTAR

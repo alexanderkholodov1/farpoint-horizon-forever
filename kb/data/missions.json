@@ -1,0 +1,1603 @@
+{
+ "meta": {
+  "generated": "2026-11-14",
+  "schema": "see kb/research/missions.md",
+  "note": "Most values read on Wikipedia mission pages (secondary); verify against agency pages before showing players. Equatorial spaceport facts: https://en.wikipedia.org/wiki/Guiana_Space_Centre"
+ },
+ "missions": [
+  {
+   "id": "volcano_watch",
+   "name": "Volcano Watch",
+   "destination": "Earth, sun-synchronous orbit ~700 km",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "Landsat 9",
+     "agency": "NASA/USGS",
+     "year": 2021,
+     "url": "https://en.wikipedia.org/wiki/Landsat_9"
+    },
+    {
+     "name": "Suomi NPP",
+     "agency": "NASA/NOAA",
+     "year": 2011,
+     "url": "https://en.wikipedia.org/wiki/Suomi_NPP"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Landsat 9 launch mass",
+     "value": 2711,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9",
+     "confidence": "documented"
+    },
+    {
+     "name": "Landsat 9 power",
+     "value": 4300,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9",
+     "confidence": "documented"
+    },
+    {
+     "name": "Landsat 9 altitude",
+     "value": 705,
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9",
+     "confidence": "documented"
+    },
+    {
+     "name": "Landsat 9 revisit",
+     "value": 16,
+     "units": "days",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9",
+     "confidence": "documented"
+    },
+    {
+     "name": "Landsat 9 build contract",
+     "value": 129.9,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9",
+     "confidence": "documented"
+    },
+    {
+     "name": "Pinatubo SO2 into stratosphere",
+     "value": 15,
+     "units": "million tons (other NASA pages: 17-20)",
+     "source": "https://earthobservatory.nasa.gov/IOTD/view.php?id=1510",
+     "confidence": "typical range"
+    },
+    {
+     "name": "Pinatubo global cooling over 15 months",
+     "value": 0.6,
+     "units": "deg C",
+     "source": "https://earthobservatory.nasa.gov/IOTD/view.php?id=1510",
+     "confidence": "typical range"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "sulfur_cloud",
+     "text": "Track the SO2 plume that cooled the planet after Pinatubo",
+     "instrument": "UV/IR gas sensor",
+     "source": "https://earthobservatory.nasa.gov/IOTD/view.php?id=1510"
+    },
+    {
+     "id": "hot_spot",
+     "text": "Spot lava glow with a thermal infrared sensor (instrument documented; use is inference)",
+     "instrument": "TIRS-2 class thermal sensor",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9"
+    },
+    {
+     "id": "sharp_flow",
+     "text": "Resolve a new lava flow with a 15 m panchromatic band",
+     "instrument": "OLI-2 class imager",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9"
+    }
+   ],
+   "difficulty": "easy"
+  },
+  {
+   "id": "el_nino_watch",
+   "name": "El Nino Watch",
+   "destination": "Earth, 1,336 km, 66 deg inclination",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "TOPEX/Poseidon",
+     "agency": "NASA/CNES",
+     "year": 1992,
+     "url": "https://en.wikipedia.org/wiki/TOPEX/Poseidon"
+    },
+    {
+     "name": "Sentinel-6 Michael Freilich",
+     "agency": "NASA/ESA/EUMETSAT/NOAA",
+     "year": 2020,
+     "url": "https://en.wikipedia.org/wiki/Sentinel-6_Michael_Freilich"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "TOPEX/Poseidon launch mass",
+     "value": 2400,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/TOPEX/Poseidon",
+     "confidence": "documented"
+    },
+    {
+     "name": "TOPEX/Poseidon altitude",
+     "value": 1340,
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/TOPEX/Poseidon",
+     "confidence": "documented"
+    },
+    {
+     "name": "TOPEX/Poseidon sea height accuracy (95% of ice-free ocean)",
+     "value": 3.3,
+     "units": "cm",
+     "source": "https://en.wikipedia.org/wiki/TOPEX/Poseidon",
+     "confidence": "documented"
+    },
+    {
+     "name": "Sentinel-6 launch mass",
+     "value": 1192,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Sentinel-6_Michael_Freilich",
+     "confidence": "documented"
+    },
+    {
+     "name": "Sentinel-6 power",
+     "value": 891,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Sentinel-6_Michael_Freilich",
+     "confidence": "documented"
+    },
+    {
+     "name": "Sentinel-6 altitude",
+     "value": 1336,
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/Sentinel-6_Michael_Freilich",
+     "confidence": "documented"
+    },
+    {
+     "name": "Sentinel-6 repeat cycle",
+     "value": 10,
+     "units": "days",
+     "source": "https://en.wikipedia.org/wiki/Sentinel-6_Michael_Freilich",
+     "confidence": "documented"
+    },
+    {
+     "name": "1997 El Nino warm pool area vs continental US",
+     "value": 1.5,
+     "units": "times",
+     "source": "https://eospso.gsfc.nasa.gov/sites/default/files/publications/1998_El_Nino.pdf",
+     "confidence": "documented"
+    },
+    {
+     "name": "Eastern Pacific sea level rise 1997",
+     "value": 16,
+     "units": "inches (max)",
+     "source": "https://eospso.gsfc.nasa.gov/sites/default/files/publications/1998_El_Nino.pdf",
+     "confidence": "typical range"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "warm_pool",
+     "text": "Watch the warm pool cross the Pacific as sea height rises",
+     "instrument": "radar altimeter",
+     "source": "https://eospso.gsfc.nasa.gov/sites/default/files/publications/1998_El_Nino.pdf"
+    },
+    {
+     "id": "centimeter_club",
+     "text": "Reach ~3 cm height accuracy by correcting atmospheric delay",
+     "instrument": "microwave radiometer",
+     "source": "https://en.wikipedia.org/wiki/TOPEX/Poseidon"
+    },
+    {
+     "id": "exact_orbit",
+     "text": "Pin the satellite position with GPS/DORIS",
+     "instrument": "GPS or DORIS receiver",
+     "source": "https://en.wikipedia.org/wiki/TOPEX/Poseidon"
+    }
+   ],
+   "difficulty": "easy"
+  },
+  {
+   "id": "wildfire_watch",
+   "name": "Wildfire Watch",
+   "destination": "Earth, sun-synchronous orbit 700-830 km",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "Suomi NPP (VIIRS)",
+     "agency": "NASA/NOAA",
+     "year": 2011,
+     "url": "https://en.wikipedia.org/wiki/Suomi_NPP"
+    },
+    {
+     "name": "Landsat 9 (TIRS-2)",
+     "agency": "NASA/USGS",
+     "year": 2021,
+     "url": "https://en.wikipedia.org/wiki/Landsat_9"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Suomi NPP launch mass",
+     "value": 2128,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Suomi_NPP",
+     "confidence": "documented"
+    },
+    {
+     "name": "Suomi NPP power (avg, end of life)",
+     "value": 2000,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Suomi_NPP",
+     "confidence": "documented"
+    },
+    {
+     "name": "Suomi NPP altitude",
+     "value": 833,
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/Suomi_NPP",
+     "confidence": "documented"
+    },
+    {
+     "name": "Fire alert latency (FIRMS)",
+     "value": 3,
+     "units": "hours (secondary source)",
+     "source": "https://africa-knowledge-platform.ec.europa.eu/dataset/fires-last-72-hours (blocks automated checks; open in a browser)",
+     "confidence": "typical range"
+    },
+    {
+     "name": "Fire product spatial resolution",
+     "value": 375,
+     "units": "m (product name)",
+     "source": "https://catalog.data.gov/dataset/viirs-s-npp-i-band-375-m-active-fire-product-nrt-vector-data-6f751 (404 on 2026-11-16)",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "under_smoke",
+     "text": "See fire through smoke with thermal infrared (instrument documented; use is inference)",
+     "instrument": "thermal IR sensor",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9"
+    },
+    {
+     "id": "three_hour_alert",
+     "text": "Get the fire map to the ground within about 3 hours",
+     "instrument": "fast downlink",
+     "source": "https://africa-knowledge-platform.ec.europa.eu/dataset/fires-last-72-hours (blocks automated checks; open in a browser)"
+    },
+    {
+     "id": "burn_scar",
+     "text": "Map the burned area afterwards at 30 m",
+     "instrument": "OLI-2 class imager",
+     "source": "https://en.wikipedia.org/wiki/Landsat_9"
+    }
+   ],
+   "difficulty": "easy"
+  },
+  {
+   "id": "hurricane_hunter",
+   "name": "Hurricane Hunter",
+   "destination": "Earth LEO, 35 deg inclination, ~500 km, 8 satellites",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "CYGNSS",
+     "agency": "NASA",
+     "year": 2016,
+     "url": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Satellites",
+     "value": 8,
+     "units": "count",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "Mass per satellite",
+     "value": 28.9,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "Power per satellite",
+     "value": 34.7,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "Inclination",
+     "value": 35,
+     "units": "deg",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "Mean revisit",
+     "value": 7,
+     "units": "hours",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "Wind uncertainty, low-moderate winds",
+     "value": 1.4,
+     "units": "m/s",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "Wind uncertainty in cyclones",
+     "value": 11,
+     "units": "percent",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    },
+    {
+     "name": "NASA sponsorship (2012)",
+     "value": 152,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "eye_of_storm",
+     "text": "Measure inner-core winds through heavy rain using reflected GPS",
+     "instrument": "delay Doppler mapper",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System"
+    },
+    {
+     "id": "flood_map",
+     "text": "Map flooded land, even under forest",
+     "instrument": "delay Doppler mapper",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System"
+    },
+    {
+     "id": "free_steering",
+     "text": "Space the satellites with drag only, no fuel",
+     "instrument": "differential drag",
+     "source": "https://en.wikipedia.org/wiki/Cyclone_Global_Navigation_Satellite_System"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "ice_sentinel",
+   "name": "Ice Sentinel",
+   "destination": "Earth polar orbit ~490 km, 92 deg",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "ICESat-2",
+     "agency": "NASA",
+     "year": 2018,
+     "url": "https://en.wikipedia.org/wiki/ICESat-2"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Launch mass",
+     "value": 1514,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Power",
+     "value": 1200,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Inclination",
+     "value": 92.0002,
+     "units": "deg",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Laser wavelength",
+     "value": 532,
+     "units": "nm",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Pulse rate",
+     "value": 10,
+     "units": "kHz",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Beams",
+     "value": 6,
+     "units": "count",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Along-track spacing",
+     "value": 0.7,
+     "units": "m",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "tree_top",
+     "text": "Measure forest canopy height with the ice laser",
+     "instrument": "ATLAS-class laser altimeter",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2"
+    },
+    {
+     "id": "sea_ice",
+     "text": "Measure sea ice thickness",
+     "instrument": "ATLAS-class laser altimeter",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2"
+    },
+    {
+     "id": "inland_water",
+     "text": "Measure river and lake heights",
+     "instrument": "ATLAS-class laser altimeter",
+     "source": "https://en.wikipedia.org/wiki/ICESat-2"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "air_quality_stare",
+   "name": "Air Quality Stare",
+   "destination": "Earth geostationary orbit, 91 deg W",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "TEMPO",
+     "agency": "NASA",
+     "year": 2023,
+     "url": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Spectral range",
+     "value": "290-740",
+     "units": "nm",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution",
+     "confidence": "documented"
+    },
+    {
+     "name": "Spectral resolution",
+     "value": 0.6,
+     "units": "nm",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution",
+     "confidence": "documented"
+    },
+    {
+     "name": "Orbit longitude",
+     "value": -91,
+     "units": "deg E",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution",
+     "confidence": "documented"
+    },
+    {
+     "name": "Measurement cadence",
+     "value": 1,
+     "units": "hour",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "rush_hour",
+     "text": "See nitrogen dioxide rise hour by hour over cities",
+     "instrument": "UV-visible spectrometer",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution"
+    },
+    {
+     "id": "ozone_watch",
+     "text": "Add the ozone product",
+     "instrument": "UV-visible spectrometer",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution"
+    },
+    {
+     "id": "formaldehyde",
+     "text": "Map formaldehyde from fires and plants",
+     "instrument": "UV-visible spectrometer",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution"
+    },
+    {
+     "id": "hosted_ride",
+     "text": "Share a commercial satellite as a hosted payload",
+     "instrument": "hosted payload",
+     "source": "https://en.wikipedia.org/wiki/Tropospheric_Emissions:_Monitoring_of_Pollution"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "moon_south_pole",
+   "name": "Moon South Pole Lander",
+   "destination": "Moon, south polar region ~69 S",
+   "returns": false,
+   "lands": true,
+   "twins": [
+    {
+     "name": "Chandrayaan-3",
+     "agency": "ISRO",
+     "year": 2023,
+     "url": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+    },
+    {
+     "name": "LRO and LCROSS",
+     "agency": "NASA",
+     "year": 2009,
+     "url": "https://en.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Chandrayaan-3 launch mass",
+     "value": 3900,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "documented"
+    },
+    {
+     "name": "Lander mass",
+     "value": 1726,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "documented"
+    },
+    {
+     "name": "Rover mass",
+     "value": 26,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "documented"
+    },
+    {
+     "name": "Launch to landing",
+     "value": 40,
+     "units": "days",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "estimate"
+    },
+    {
+     "name": "Landing latitude",
+     "value": -69.373,
+     "units": "deg",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "documented"
+    },
+    {
+     "name": "Cost (initial request)",
+     "value": 80,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "documented"
+    },
+    {
+     "name": "Rover distance driven",
+     "value": 101.4,
+     "units": "m",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+     "confidence": "documented"
+    },
+    {
+     "name": "LRO launch mass",
+     "value": 1916,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    },
+    {
+     "name": "LRO power",
+     "value": 1850,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    },
+    {
+     "name": "LRO+LCROSS cost",
+     "value": 583,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    },
+    {
+     "name": "LCROSS water ice at Cabeus",
+     "value": 5.6,
+     "units": "percent by mass (+/-2.9)",
+     "source": "https://pubmed.ncbi.nlm.nih.gov/20966242/",
+     "confidence": "documented"
+    },
+    {
+     "name": "LCROSS water in view",
+     "value": 155,
+     "units": "kg (+/-12)",
+     "source": "https://pubmed.ncbi.nlm.nih.gov/20966242/",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "dig_for_ice",
+     "text": "Map hydrogen under the surface",
+     "instrument": "neutron detector (LEND)",
+     "source": "https://en.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter"
+    },
+    {
+     "id": "look_in_dark",
+     "text": "Map permanently shadowed craters in ultraviolet",
+     "instrument": "UV mapper (LAMP)",
+     "source": "https://en.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter"
+    },
+    {
+     "id": "hot_ground",
+     "text": "Measure temperature in the top 10 cm",
+     "instrument": "thermal probe (ChaSTE)",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+    },
+    {
+     "id": "moonquakes",
+     "text": "Listen for moonquakes",
+     "instrument": "seismometer (ILSA)",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+    },
+    {
+     "id": "sulfur",
+     "text": "Detect sulfur in the soil",
+     "instrument": "LIBS spectrometer",
+     "source": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+    }
+   ],
+   "difficulty": "hard"
+  },
+  {
+   "id": "mars_rover",
+   "name": "Mars Rover and Scout Helicopter",
+   "destination": "Mars surface (Jezero Crater)",
+   "returns": false,
+   "lands": true,
+   "twins": [
+    {
+     "name": "Perseverance",
+     "agency": "NASA",
+     "year": 2020,
+     "url": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+    },
+    {
+     "name": "Ingenuity",
+     "agency": "NASA",
+     "year": 2021,
+     "url": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Launch mass",
+     "value": 4060.5,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Mars_2020",
+     "confidence": "documented"
+    },
+    {
+     "name": "Rover mass",
+     "value": 1025,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Power (MMRTG)",
+     "value": 110,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Cruise time",
+     "value": 29,
+     "units": "weeks",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "UHF relay rate",
+     "value": 2,
+     "units": "Mbit/s",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "X-band direct rate",
+     "value": 800,
+     "units": "bit/s",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Mission cost",
+     "value": 2.75,
+     "units": "USD billion",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Landing ellipse",
+     "value": "7.7 x 6.6",
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/Mars_2020",
+     "confidence": "documented"
+    },
+    {
+     "name": "MOXIE oxygen total",
+     "value": 122,
+     "units": "g",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Helicopter mass",
+     "value": 1.8,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Helicopter flights",
+     "value": 72,
+     "units": "count",
+     "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Helicopter rotor speed",
+     "value": "2400-2900",
+     "units": "rpm",
+     "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Mars air density vs Earth",
+     "value": 0.01,
+     "units": "ratio",
+     "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "make_air",
+     "text": "Make oxygen from Mars air",
+     "instrument": "MOXIE-class",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+    },
+    {
+     "id": "hear_mars",
+     "text": "Record sound on Mars",
+     "instrument": "microphones",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+    },
+    {
+     "id": "scout_flight",
+     "text": "Fly a helicopter ahead of the rover",
+     "instrument": "helicopter",
+     "source": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
+    },
+    {
+     "id": "rock_radar",
+     "text": "Map layers under the wheels",
+     "instrument": "ground-penetrating radar (RIMFAX)",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+    },
+    {
+     "id": "ancient_lake",
+     "text": "Drill a core from the old lake delta",
+     "instrument": "drill and sample cache",
+     "source": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+    }
+   ],
+   "difficulty": "hard"
+  },
+  {
+   "id": "mars_orbiter",
+   "name": "Mars Orbiter and Relay",
+   "destination": "Mars orbit",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "MAVEN",
+     "agency": "NASA",
+     "year": 2013,
+     "url": "https://en.wikipedia.org/wiki/MAVEN"
+    },
+    {
+     "name": "Mars Reconnaissance Orbiter",
+     "agency": "NASA",
+     "year": 2005,
+     "url": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "MAVEN launch mass",
+     "value": 2454,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/MAVEN",
+     "confidence": "documented"
+    },
+    {
+     "name": "MAVEN power",
+     "value": 1135,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/MAVEN",
+     "confidence": "documented"
+    },
+    {
+     "name": "MAVEN cost (prime mission)",
+     "value": 582.5,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/MAVEN",
+     "confidence": "documented"
+    },
+    {
+     "name": "MAVEN relay rate",
+     "value": 2048,
+     "units": "kbit/s",
+     "source": "https://en.wikipedia.org/wiki/MAVEN",
+     "confidence": "documented"
+    },
+    {
+     "name": "MRO launch mass",
+     "value": 2180,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    },
+    {
+     "name": "MRO HiRISE resolution",
+     "value": 0.3,
+     "units": "m",
+     "source": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    },
+    {
+     "name": "MRO max downlink",
+     "value": 6,
+     "units": "Mbit/s",
+     "source": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    },
+    {
+     "name": "MRO cost (prime mission)",
+     "value": 716.6,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "solar_wind_check",
+     "text": "Measure the solar wind that strips the atmosphere",
+     "instrument": "particle and field instruments",
+     "source": "https://en.wikipedia.org/wiki/MAVEN"
+    },
+    {
+     "id": "storm_day",
+     "text": "Catch the loss surge during a solar storm",
+     "instrument": "ion mass spectrometer",
+     "source": "https://en.wikipedia.org/wiki/MAVEN"
+    },
+    {
+     "id": "relay_duty",
+     "text": "Relay another team's rover",
+     "instrument": "UHF relay radio",
+     "source": "https://en.wikipedia.org/wiki/MAVEN"
+    },
+    {
+     "id": "sharp_eye",
+     "text": "Find rover tracks at 0.3 m",
+     "instrument": "high-resolution camera",
+     "source": "https://en.wikipedia.org/wiki/Mars_Reconnaissance_Orbiter"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "venus_explorer",
+   "name": "Venus Radar Mapper and Cloud Balloon",
+   "destination": "Venus orbit and atmosphere",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "Magellan",
+     "agency": "NASA",
+     "year": 1989,
+     "url": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)"
+    },
+    {
+     "name": "Vega 1 and 2 balloons",
+     "agency": "USSR/France",
+     "year": 1985,
+     "url": "https://en.wikipedia.org/wiki/Vega_program"
+    },
+    {
+     "name": "DAVINCI (planned)",
+     "agency": "NASA",
+     "year": 2030,
+     "url": "https://en.wikipedia.org/wiki/DAVINCI"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Magellan launch mass",
+     "value": 3445,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Magellan power",
+     "value": 1030,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Magellan surface mapped",
+     "value": 98,
+     "units": "percent",
+     "source": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Magellan downlink",
+     "value": 268.8,
+     "units": "kbps",
+     "source": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)",
+     "confidence": "documented"
+    },
+    {
+     "name": "Balloon float altitude",
+     "value": 54,
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/Vega_program",
+     "confidence": "documented"
+    },
+    {
+     "name": "Balloon assembly mass",
+     "value": 21,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Vega_program",
+     "confidence": "documented"
+    },
+    {
+     "name": "Balloon lifetime",
+     "value": 46,
+     "units": "hours (min)",
+     "source": "https://en.wikipedia.org/wiki/Vega_program",
+     "confidence": "documented"
+    },
+    {
+     "name": "DAVINCI descent",
+     "value": 63,
+     "units": "minutes",
+     "source": "https://en.wikipedia.org/wiki/DAVINCI",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "volcanoes_today",
+     "text": "Look for active volcanism with radar",
+     "instrument": "synthetic aperture radar",
+     "source": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)"
+    },
+    {
+     "id": "brake_with_air",
+     "text": "Aerobrake to save fuel as Magellan did in 1993",
+     "instrument": "aerobraking",
+     "source": "https://en.wikipedia.org/wiki/Magellan_(spacecraft)"
+    },
+    {
+     "id": "float_with_clouds",
+     "text": "Float a balloon at 54 km",
+     "instrument": "balloon gondola",
+     "source": "https://en.wikipedia.org/wiki/Vega_program"
+    },
+    {
+     "id": "taste_the_air",
+     "text": "Sample the atmosphere during a 63-minute descent",
+     "instrument": "mass spectrometer",
+     "source": "https://en.wikipedia.org/wiki/DAVINCI"
+    },
+    {
+     "id": "comet_rendezvous",
+     "text": "Continue to a comet flyby",
+     "instrument": "cameras",
+     "source": "https://en.wikipedia.org/wiki/Vega_program"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "grand_tour",
+   "name": "Grand Tour",
+   "destination": "Outer planets then interstellar space",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "Voyager 1",
+     "agency": "NASA",
+     "year": 1977,
+     "url": "https://en.wikipedia.org/wiki/Voyager_1"
+    },
+    {
+     "name": "New Horizons",
+     "agency": "NASA",
+     "year": 2006,
+     "url": "https://en.wikipedia.org/wiki/New_Horizons"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Voyager 1 launch mass",
+     "value": 815,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1",
+     "confidence": "documented"
+    },
+    {
+     "name": "Voyager 1 RTG power at launch",
+     "value": 470,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1",
+     "confidence": "documented"
+    },
+    {
+     "name": "Voyager 1 speed (interstellar)",
+     "value": 16.9,
+     "units": "km/s",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1",
+     "confidence": "documented"
+    },
+    {
+     "name": "Voyager 1 distance Nov 2026",
+     "value": 173.02,
+     "units": "AU",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1",
+     "confidence": "documented"
+    },
+    {
+     "name": "Voyager 1 heliopause crossing",
+     "value": 121,
+     "units": "AU",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1",
+     "confidence": "documented"
+    },
+    {
+     "name": "Alignment recurrence",
+     "value": 175,
+     "units": "years",
+     "source": "https://en.wikipedia.org/wiki/Voyager_program",
+     "confidence": "typical range"
+    },
+    {
+     "name": "Voyager data rate at Jupiter",
+     "value": 115000,
+     "units": "bit/s",
+     "source": "https://en.wikipedia.org/wiki/Voyager_program",
+     "confidence": "documented"
+    },
+    {
+     "name": "New Horizons launch mass",
+     "value": 478,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/New_Horizons",
+     "confidence": "documented"
+    },
+    {
+     "name": "New Horizons Jupiter assist gain",
+     "value": 4,
+     "units": "km/s",
+     "source": "https://en.wikipedia.org/wiki/New_Horizons",
+     "confidence": "documented"
+    },
+    {
+     "name": "New Horizons Pluto data rate",
+     "value": 1,
+     "units": "kbit/s",
+     "source": "https://en.wikipedia.org/wiki/New_Horizons",
+     "confidence": "typical range"
+    },
+    {
+     "name": "New Horizons cost",
+     "value": 700,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/New_Horizons",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "io_volcanoes",
+     "text": "See active volcanoes on Io",
+     "instrument": "camera",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1"
+    },
+    {
+     "id": "edge_of_sun",
+     "text": "Detect the heliopause",
+     "instrument": "plasma and magnetometer",
+     "source": "https://en.wikipedia.org/wiki/Voyager_1"
+    },
+    {
+     "id": "slingshot",
+     "text": "Use Jupiter for +4 km/s",
+     "instrument": "gravity assist",
+     "source": "https://en.wikipedia.org/wiki/New_Horizons"
+    },
+    {
+     "id": "golden_record",
+     "text": "Carry a message to the stars",
+     "instrument": "golden record",
+     "source": "https://en.wikipedia.org/wiki/Voyager_program"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "sample_return",
+   "name": "Asteroid Sample Return",
+   "destination": "Near-Earth asteroid and back",
+   "returns": true,
+   "lands": false,
+   "twins": [
+    {
+     "name": "OSIRIS-REx",
+     "agency": "NASA",
+     "year": 2016,
+     "url": "https://en.wikipedia.org/wiki/OSIRIS-REx"
+    },
+    {
+     "name": "Hayabusa2",
+     "agency": "JAXA",
+     "year": 2014,
+     "url": "https://en.wikipedia.org/wiki/Hayabusa2"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "OSIRIS-REx launch mass",
+     "value": 2110,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/OSIRIS-REx",
+     "confidence": "documented"
+    },
+    {
+     "name": "OSIRIS-REx sample",
+     "value": 121.6,
+     "units": "g",
+     "source": "https://en.wikipedia.org/wiki/OSIRIS-REx",
+     "confidence": "documented"
+    },
+    {
+     "name": "OSIRIS-REx cost",
+     "value": 800,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/OSIRIS-REx",
+     "confidence": "documented"
+    },
+    {
+     "name": "Hayabusa2 launch mass",
+     "value": 600,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Hayabusa2 sample",
+     "value": 5.4,
+     "units": "g",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Hayabusa2 ion thrust",
+     "value": 28,
+     "units": "mN",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Hayabusa2 impactor projectile",
+     "value": 2.5,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2",
+     "confidence": "documented"
+    },
+    {
+     "name": "Hayabusa2 cost (2010 estimate)",
+     "value": 104,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "crater_maker",
+     "text": "Fire an impactor to expose fresh rock",
+     "instrument": "small carry-on impactor",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2"
+    },
+    {
+     "id": "hopper",
+     "text": "Drop a small hopping lander",
+     "instrument": "MASCOT-class lander",
+     "source": "https://en.wikipedia.org/wiki/Hayabusa2"
+    },
+    {
+     "id": "laser_map",
+     "text": "Map the surface with a laser",
+     "instrument": "laser altimeter",
+     "source": "https://en.wikipedia.org/wiki/OSIRIS-REx"
+    },
+    {
+     "id": "amino_acid_hunt",
+     "text": "Bring back enough sample to find amino acids",
+     "instrument": "sample return capsule",
+     "source": "https://en.wikipedia.org/wiki/OSIRIS-REx"
+    }
+   ],
+   "difficulty": "hard"
+  },
+  {
+   "id": "telescope_l2",
+   "name": "Space Telescope at L2",
+   "destination": "Sun-Earth L2, ~1.5 million km",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "James Webb Space Telescope",
+     "agency": "NASA/ESA/CSA",
+     "year": 2021,
+     "url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Launch mass",
+     "value": 6500,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+     "confidence": "documented"
+    },
+    {
+     "name": "Power",
+     "value": 2000,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+     "confidence": "documented"
+    },
+    {
+     "name": "Ka science downlink",
+     "value": 28,
+     "units": "Mbit/s",
+     "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+     "confidence": "documented"
+    },
+    {
+     "name": "L2 distance",
+     "value": 1.5,
+     "units": "million km",
+     "source": "https://science.nasa.gov/mission/webb/",
+     "confidence": "documented"
+    },
+    {
+     "name": "Cost",
+     "value": 9.7,
+     "units": "USD billion",
+     "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "deep_field",
+     "text": "Take a long-exposure deep field",
+     "instrument": "NIRCam-class camera",
+     "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+    },
+    {
+     "id": "hidden_planet",
+     "text": "Find a hidden giant exoplanet",
+     "instrument": "infrared camera",
+     "source": "https://science.nasa.gov/mission/webb/"
+    },
+    {
+     "id": "far_flash",
+     "text": "Measure the farthest fast radio burst",
+     "instrument": "infrared instrument",
+     "source": "https://science.nasa.gov/mission/webb/"
+    },
+    {
+     "id": "cold_eyes",
+     "text": "Add a cooled mid-infrared instrument",
+     "instrument": "MIRI-class",
+     "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "asteroid_bowling",
+   "name": "Asteroid Bowling",
+   "destination": "Didymos pair (kinetic impact)",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "DART",
+     "agency": "NASA",
+     "year": 2021,
+     "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Launch mass",
+     "value": 610,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+     "confidence": "documented"
+    },
+    {
+     "name": "Impact speed",
+     "value": 6.6,
+     "units": "km/s",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+     "confidence": "documented"
+    },
+    {
+     "name": "Orbit change",
+     "value": 33,
+     "units": "minutes (+/-1)",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+     "confidence": "documented"
+    },
+    {
+     "name": "Momentum boost factor",
+     "value": 3.6,
+     "units": "ratio",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+     "confidence": "documented"
+    },
+    {
+     "name": "Cost",
+     "value": 330,
+     "units": "USD million",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "witness",
+     "text": "Release a CubeSat to watch the impact",
+     "instrument": "CubeSat",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+    },
+    {
+     "id": "autopilot",
+     "text": "Guide the last hours by camera",
+     "instrument": "DRACO-class camera",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+    },
+    {
+     "id": "ground_watch",
+     "text": "Coordinate telescopes on Earth",
+     "instrument": "ground telescopes",
+     "source": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+    }
+   ],
+   "difficulty": "medium"
+  },
+  {
+   "id": "ocean_moon_clipper",
+   "name": "Ocean Moon Clipper",
+   "destination": "Jupiter system, Europa flybys",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "Europa Clipper",
+     "agency": "NASA",
+     "year": 2024,
+     "url": "https://en.wikipedia.org/wiki/Europa_Clipper"
+    },
+    {
+     "name": "Galileo",
+     "agency": "NASA",
+     "year": 1989,
+     "url": "https://en.wikipedia.org/wiki/Galileo_(spacecraft)"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Launch mass",
+     "value": 6065,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper",
+     "confidence": "documented"
+    },
+    {
+     "name": "Power",
+     "value": 600,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper",
+     "confidence": "documented"
+    },
+    {
+     "name": "Instruments mass",
+     "value": 82,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper",
+     "confidence": "documented"
+    },
+    {
+     "name": "Close flybys",
+     "value": 49,
+     "units": "count (article inconsistent: 45)",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper",
+     "confidence": "typical range"
+    },
+    {
+     "name": "Flyby altitude",
+     "value": "25-2700",
+     "units": "km",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper",
+     "confidence": "documented"
+    },
+    {
+     "name": "Cost (2020 estimate)",
+     "value": 4.25,
+     "units": "USD billion",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "magnetic_echo",
+     "text": "Detect an induced magnetic field (indirect evidence for an ocean)",
+     "instrument": "magnetometer",
+     "source": "https://pubmed.ncbi.nlm.nih.gov/9796812/"
+    },
+    {
+     "id": "ice_radar",
+     "text": "Probe the ice shell to about 30 km",
+     "instrument": "ice-penetrating radar",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper"
+    },
+    {
+     "id": "taste_plume",
+     "text": "Sample dust and gas",
+     "instrument": "dust and mass spectrometers",
+     "source": "https://en.wikipedia.org/wiki/Europa_Clipper"
+    }
+   ],
+   "difficulty": "hard"
+  },
+  {
+   "id": "touch_the_sun",
+   "name": "Touch the Sun",
+   "destination": "Solar corona",
+   "returns": false,
+   "lands": false,
+   "twins": [
+    {
+     "name": "Parker Solar Probe",
+     "agency": "NASA",
+     "year": 2018,
+     "url": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+    }
+   ],
+   "key_numbers": [
+    {
+     "name": "Launch mass",
+     "value": 685,
+     "units": "kg",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+     "confidence": "documented"
+    },
+    {
+     "name": "Power at perihelion",
+     "value": 343,
+     "units": "W",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+     "confidence": "documented"
+    },
+    {
+     "name": "Closest approach",
+     "value": 6.16,
+     "units": "million km",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+     "confidence": "documented"
+    },
+    {
+     "name": "Speed at closest approach",
+     "value": 191,
+     "units": "km/s",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+     "confidence": "documented"
+    },
+    {
+     "name": "Cost",
+     "value": 1.5,
+     "units": "USD billion",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+     "confidence": "documented"
+    },
+    {
+     "name": "Venus flybys",
+     "value": 7,
+     "units": "count",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+     "confidence": "documented"
+    }
+   ],
+   "extra_objectives": [
+    {
+     "id": "switchbacks",
+     "text": "Catch magnetic switchbacks",
+     "instrument": "FIELDS-class magnetometer",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+    },
+    {
+     "id": "dust_free_zone",
+     "text": "Confirm a dust-free zone",
+     "instrument": "imager",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+    },
+    {
+     "id": "sungrazers",
+     "text": "Find sungrazing comets",
+     "instrument": "wide-field imager",
+     "source": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+    }
+   ],
+   "difficulty": "hard"
+  }
+ ]
+}

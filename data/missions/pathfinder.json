@@ -1,0 +1,76 @@
+{
+ "doc": "Mission 3, Mars Pathfinder (July 4, 1997): 'Land by bouncing' (issue #47). (1) The descent, in real time from the radar's first echo: the lander hangs on its 20 m bridle under the parachute and swings in the wind; the player steadies it, fires the three solid rockets at 98 m and cuts the bridle at 21.5 m, as the real sequence did (S-mpf-nssdc). Too fast at the ground and the airbags burst: lost, tried again. (2) The bounces: about 12 m up first, at least another 15 times, rolling to rest about 2.5 minutes and 1 km from the first impact (S-mpf-nssdc, S-mpf-nasa), shown faster (said on screen); the player steers the ball away from the big rocks while Inti counts. (3) The ramp: the airbags pulled in, the petals open, Sojourner rolls down the rear ramp, tilted 20 degrees (S-mpf-nasa), kept on it by the player; off the edge is lost. Climax: the first wheel on Mars, then NASA's pictures PIA00621 and PIA00633. Our simplifications, said on screen or here: the airbags' limit (26 m/s), the rockets' push (constant, about 2.2 s: enough to stop 70 m/s between 98 m and 21.5 m), slow motion near the two marks (said on screen), the wind, the rocks, Sojourner's speed on the ramp.",
+ "descent": {
+  "start_alt": 1600.0,
+  "chute_speed": 70.0,
+  "g": 3.71,
+  "rocket_alt": 98.0,
+  "cut_alt": 21.5,
+  "rocket_accel": 32.0,
+  "rocket_time": 2.2,
+  "airbag_lead_s": 10.0,
+  "bridle_m": 20.0,
+  "real_impact": 18.0,
+  "burst_speed": 26.0,
+  "roll_base": 12.0,
+  "roll_per_rad": 25.0,
+  "slow_band": 30.0,
+  "slow_scale": 0.35
+ },
+ "bounces": {
+  "first_height": 12.0,
+  "count": 15,
+  "keep": 0.82,
+  "real_seconds": 150,
+  "play_seconds": 38
+ },
+ "ramp": {
+  "tilt_deg": 20.0,
+  "length": 3.0,
+  "speed": 0.35
+ },
+ "texts": {
+  "steady": "Steady the lander on its bridle: move the mouse left and right (or A/D) against the swing.",
+  "fire": "Press Space to fire the rockets",
+  "cut": "Press C to cut the bridle",
+  "burst": "The airbags burst.",
+  "burst_sub": "Too fast at the ground. That is not how it went: the real lander hit at 18 m/s and bounced. Try again.",
+  "bounce": "Bounce %d!",
+  "steer": "Steer the ball away from the big rocks: mouse or A/D. Inti is counting.",
+  "rest": "At rest.",
+  "deflate": "The airbags pull in. The petals open.",
+  "drive": "Drive Sojourner down the ramp: hold W (or the mouse button) to roll, mouse or A/D to stay in the middle.",
+  "off": "Sojourner slipped off the ramp.",
+  "off_sub": "That is not how it went: the real rover rolled down the rear ramp onto Mars. Try again.",
+  "wheel": "First wheel on Mars!",
+  "wheel_sub": "The first wheeled vehicle on another planet.",
+  "time_note": "Real time while it falls. The bounces took about 2.5 minutes: shown 4 times faster.",
+  "slow": "Slow motion",
+  "tangled": "Still on the bridle at the ground.",
+  "tangled_sub": "That is not how it went: the bridle was cut 21.5 m up. Try again."
+ },
+ "photos": [
+  {
+   "file": "res://assets/photos/pathfinder/PIA00621.jpg",
+   "caption": "July 4, 1997: Sojourner still latched to its petal, the airbags pulled in, and Ares Vallis around it.",
+   "credit": "NASA/JPL, PIA00621",
+   "source": "S-mpf-pia00621"
+  },
+  {
+   "file": "res://assets/photos/pathfinder/PIA00633.jpg",
+   "caption": "Sol 3: Sojourner's own camera sees its tracks in the Martian soil.",
+   "credit": "NASA/JPL, PIA00633",
+   "source": "S-mpf-pia00633"
+  }
+ ],
+ "facts": [
+  {
+   "text": "The lander bounced about 12 meters into the air, then at least another 15 times, coming to rest about 2.5 minutes later and 1 km away.",
+   "source": "S-mpf-nssdc"
+  },
+  {
+   "text": "Sojourner spent 83 days of a planned seven-day mission, the first wheeled vehicle on another planet.",
+   "source": "S-mpf-jpl"
+  }
+ ]
+}

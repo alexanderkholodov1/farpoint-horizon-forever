@@ -1,0 +1,345 @@
+{
+ "doc": "Mission scenarios the player can choose (CML 1). Ids are stable keys, not shown to players.",
+ "entries": {
+  "volcanes": {
+   "name": "Ecuador Volcano Watch",
+   "type": "Earth observation",
+   "desc": "Ecuador has dozens of active volcanoes, Cotopaxi and Tungurahua among them. Your mission is to spot heat and gases (SO2) before an eruption, so people get warned in time. Heads up, Andean clouds cover the area most of the year.",
+   "budget": 90.0,
+   "min_years": 2,
+   "science_target": 2600.0,
+   "body": "tierra",
+   "needs": [
+    {
+     "any": [
+      "termico",
+      "gases"
+     ],
+     "label": "Detect volcanic heat or gases"
+    },
+    {
+     "any": [
+      "optico",
+      "radar"
+     ],
+     "label": "Take images of the surface"
+    }
+   ],
+   "relevance": {
+    "termico": 1.0,
+    "gases": 1.0,
+    "radar": 1.1,
+    "multiespectral": 0.9,
+    "optico": 0.7
+   },
+   "orbit_mult": {
+    "leo": 0.9,
+    "sso": 1.2,
+    "geo": 0.9,
+    "lunar": 0.0,
+    "l2": 0.0
+   },
+   "real": "Landsat 9 and Sentinel-2 (images), Sentinel-5P (measures gases such as SO2) and ASTER (thermal).",
+   "color": [
+    1.0,
+    0.449999988079071,
+    0.200000002980232
+   ],
+   "source": [
+    "S11",
+    "S12",
+    "S-sentinel5p",
+    "S-aster"
+   ],
+   "simplified": "Budget, science target, instrument relevance and orbit multipliers are our own game balance. The mission idea follows the real missions named in the entry. That Andean clouds cover the area most of the year is our assumption from the cloudy satellite passes the data pipeline had to skip (tools/content/data/README.md), not a climatology figure."
+  },
+  "clima": {
+   "name": "Ocean Guardians and El Niño",
+   "type": "Climate and oceans",
+   "desc": "El Niño warms the Pacific and brings rain and floods to the Ecuadorian coast. Measure the height and temperature of the ocean to see it coming months ahead.",
+   "budget": 220.0,
+   "min_years": 3,
+   "science_target": 3200.0,
+   "body": "tierra",
+   "needs": [
+    {
+     "any": [
+      "altimetro",
+      "microondas"
+     ],
+     "label": "Measure ocean height or temperature"
+    },
+    {
+     "any": [
+      "multiespectral",
+      "termico",
+      "radar"
+     ],
+     "label": "Watch sea color, heat or wind"
+    }
+   ],
+   "relevance": {
+    "altimetro": 1.0,
+    "microondas": 1.0,
+    "radar": 0.8,
+    "multiespectral": 0.8,
+    "termico": 0.7,
+    "optico": 0.3,
+    "gases": 0.4
+   },
+   "orbit_mult": {
+    "leo": 0.8,
+    "sso": 1.2,
+    "geo": 0.7,
+    "lunar": 0.0,
+    "l2": 0.0
+   },
+   "real": "Sentinel-6 Michael Freilich (sea level), SMAP (microwaves) and the Jason series.",
+   "color": [
+    0.200000002980232,
+    0.600000023841858,
+    1.0
+   ],
+   "source": [
+    "S-sentinel6",
+    "S-smap"
+   ],
+   "simplified": "Budget, science target, instrument relevance and orbit multipliers are our own game balance. The mission idea follows the real missions named in the entry."
+  },
+  "luna": {
+   "name": "Lunar Cartographer",
+   "type": "Moon exploration",
+   "desc": "Map the Moon and find out what its surface is made of, so future crewed missions know where to land. Getting there takes propulsion and deep space communications.",
+   "budget": 320.0,
+   "min_years": 1,
+   "science_target": 2200.0,
+   "body": "luna",
+   "needs": [
+    {
+     "any": [
+      "optico",
+      "multiespectral"
+     ],
+     "label": "Map the surface"
+    },
+    {
+     "any": [
+      "composicion",
+      "termico",
+      "altimetro"
+     ],
+     "label": "Analyze composition or relief"
+    }
+   ],
+   "relevance": {
+    "optico": 1.0,
+    "multiespectral": 1.0,
+    "composicion": 1.1,
+    "termico": 0.7,
+    "altimetro": 0.9,
+    "radar": 0.7,
+    "campos": 0.4,
+    "particulas": 0.4
+   },
+   "orbit_mult": {
+    "leo": 0.0,
+    "sso": 0.0,
+    "geo": 0.0,
+    "lunar": 1.0,
+    "l2": 0.0
+   },
+   "real": "Lunar Reconnaissance Orbiter (NASA, 2009) and Chandrayaan-2 (India, 2019).",
+   "color": [
+    0.800000011920929,
+    0.800000011920929,
+    0.850000023841858
+   ],
+   "source": [
+    "S-lro",
+    "S-chandrayaan2"
+   ],
+   "simplified": "Budget, science target, instrument relevance and orbit multipliers are our own game balance. The mission idea follows the real missions named in the entry."
+  },
+  "telescopio": {
+   "name": "Eye on the Universe",
+   "type": "Astronomy",
+   "desc": "Build a space telescope to study distant galaxies and planets around other stars. To see in infrared it has to sit far from Earth's heat.",
+   "budget": 1000.0,
+   "min_years": 3,
+   "science_target": 7000.0,
+   "body": "tierra",
+   "needs": [
+    {
+     "any": [
+      "telescopio"
+     ],
+     "label": "Carry a telescope"
+    }
+   ],
+   "relevance": {
+    "telescopio": 1.0,
+    "particulas": 0.2,
+    "campos": 0.2
+   },
+   "orbit_mult": {
+    "leo": 0.6,
+    "sso": 0.65,
+    "geo": 0.8,
+    "lunar": 0.4,
+    "l2": 1.5
+   },
+   "real": "Hubble (low orbit, 1990) and James Webb (point L2, 2021).",
+   "color": [
+    0.699999988079071,
+    0.449999988079071,
+    1.0
+   ],
+   "source": [
+    "S-hubble",
+    "S-webb-orbit"
+   ],
+   "simplified": "Budget, science target, instrument relevance and orbit multipliers are our own game balance. The mission idea follows the real missions named in the entry."
+  },
+  "libre": {
+   "name": "Free mode (sandbox)",
+   "type": "Experiment without limits",
+   "desc": "A huge budget and any orbit. Try wild combinations and see what happens. No required goals.",
+   "budget": 5000.0,
+   "min_years": 1,
+   "science_target": 4000.0,
+   "body": "tierra",
+   "needs": [],
+   "relevance": {},
+   "default_relevance": 0.7,
+   "orbit_mult": {
+    "leo": 1.0,
+    "sso": 1.0,
+    "geo": 1.0,
+    "lunar": 1.0,
+    "l2": 1.0
+   },
+   "real": "Every real mission is a different compromise, and no design is perfect.",
+   "color": [
+    0.300000011920929,
+    1.0,
+    0.600000023841858
+   ],
+   "source": [
+    "S2"
+   ],
+   "simplified": "Budget, science target, instrument relevance and orbit multipliers are our own game balance. The mission idea follows the real missions named in the entry."
+  },
+  "moon_south_pole": {
+   "name": "Ice at the Moon's South Pole",
+   "type": "Moon landing",
+   "desc": "Lunar scientists and the crews planning the first Moon base ask you to land beside Shackleton crater. At the south pole the Sun never climbs more than 1.5 degrees above the horizon, so the crater's rim stays lit almost all the time while its floor has stayed dark for billions of years. Ice may hide in that dark, and ice means water to drink and fuel for rockets. Land on the sunlit rim, look into the shadow and tell Earth what is there.",
+   "budget": 380.0,
+   "min_years": 1,
+   "science_target": 2000.0,
+   "body": "luna",
+   "orbit": "lunar",
+   "needs": [
+    {
+     "any": [
+      "composicion",
+      "termico"
+     ],
+     "label": "Look for ice in the shadows"
+    },
+    {
+     "any": [
+      "optico",
+      "multiespectral"
+     ],
+     "label": "Photograph the landing site"
+    }
+   ],
+   "relevance": {
+    "composicion": 1.1,
+    "termico": 1.0,
+    "optico": 0.9,
+    "multiespectral": 0.9,
+    "radar": 0.8,
+    "altimetro": 0.6,
+    "particulas": 0.4,
+    "campos": 0.3
+   },
+   "orbit_mult": {
+    "leo": 0.0,
+    "sso": 0.0,
+    "geo": 0.0,
+    "lunar": 1.0,
+    "l2": 0.0
+   },
+   "real": "Chandrayaan-3 (India, 2023) landed near the south pole, at 69 degrees south. IM-1 Odysseus (Intuitive Machines, 2024) landed at Malapert A, tipped onto its side and kept sending data. LRO's laser altimeter LOLA measured the ground you fly over, and ShadowCam photographed Shackleton's dark floor.",
+   "color": [
+    0.96,
+    0.74,
+    0.38
+   ],
+   "source": [
+    "S-svs-south-pole",
+    "S-nasa-science",
+    "S-chandrayaan3",
+    "S-im1",
+    "S-lro",
+    "S-lola",
+    "S-delta-v",
+    "S-apollo11"
+   ],
+   "simplified": "Budget, science target, instrument relevance and orbit multipliers are our own game balance. A year of operation stands for the time a lander works on the surface; real south pole landers so far worked for days (IM-1 for about a week [S-im1]). The flight numbers under `flight` are game values unless value_notes cites them.",
+   "value_notes": {
+    "flight.tli_dv": "About 3,200 m/s from low Earth orbit toward the Moon, the trans-lunar injection of [S-delta-v].",
+    "flight.trip_hours": "Apollo 11 entered lunar orbit about 76 hours after launch [S-apollo11].",
+    "flight.landing.sun_elevation_deg": "At the poles the Sun is never more than 1.5 degrees above or below the horizon [S-svs-south-pole].",
+    "flight.landing.terrain": "The ground is the LOLA elevation map around the south pole and Shackleton's rim [S-lola], 60 m between heights; the small craters and rocks closer than that are ours.",
+    "flight.landing.target": "Row and column of the LOLA tile: a flat, sunlit spot on Shackleton's rim about 400 m from the geographic south pole, found in the tile by slope and by tracing the Sun's light.",
+    "flight.landing.tip_slope_deg": "IM-1 landed faster than planned on a 12-degree slope, broke a leg and tipped onto its side, and still worked [S-im1].",
+    "flight.landing.alarm": "Apollo 11's computer raised program alarms 1202 and 1201 during the landing; it dropped low-priority jobs and kept steering, so Mission Control called go [S-alsj-1202].",
+    "flight.landing.gravity": "Read at run time from the Moon's fact sheet, 1.62 m/s2 [S-nssdc-planets]."
+   },
+   "flight": {
+    "tli_dv": 3200.0,
+    "trip_hours": 76.0,
+    "landing": {
+     "terrain": "data/nasa/lola_south_pole.json",
+     "target": [
+      71,
+      61
+     ],
+     "start_offset_m": [
+      0.0,
+      430.0,
+      620.0
+     ],
+     "start_velocity": [
+      0.0,
+      -9.0,
+      -13.0
+     ],
+     "engine_accel": 4.0,
+     "side_accel": 1.2,
+     "fuel_s": 60.0,
+     "soft_mps": 1.5,
+     "good_mps": 3.0,
+     "hard_mps": 6.0,
+     "crater_mps": 12.0,
+     "tip_hspeed": 2.5,
+     "tip_slope_deg": 12.0,
+     "sun_elevation_deg": 1.5,
+     "sun_azimuth": [
+      -1.0,
+      -1.0
+     ],
+     "earth_elevation_deg": 3.0,
+     "alarm": {
+      "at_height_m": 260.0,
+      "code": "1202",
+      "title": "Program alarm 1202",
+      "desc": "The guidance computer has more jobs than room to run them. On Apollo 11 it dropped the unimportant ones and kept steering, and Houston called go."
+     }
+    }
+   }
+  }
+ }
+}

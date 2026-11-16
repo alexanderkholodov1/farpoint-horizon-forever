@@ -1,0 +1,358 @@
+{
+ "meta": {
+  "source_id": "S-nssdc-planets",
+  "date_checked": "2026-11-14",
+  "note": "values as printed on the fact sheets, each with its row label; the first column after the label is the body itself",
+  "urls": {
+   "mercury": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html",
+   "venus": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+   "earth": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+   "mars": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+   "jupiter": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+   "saturn": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html",
+   "uranus": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html",
+   "neptune": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html",
+   "moon": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+  }
+ },
+ "bodies": {
+  "mercury": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 0.3301
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (km)",
+    "value": 2440.5
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 2439.7
+   },
+   "gravity_m_s2": {
+    "label": "Surface gravity (mean) (m/s 2 )",
+    "value": 3.7
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 4.3
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 0.022032
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 57.909
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 1407.6
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 4222.6
+   }
+  },
+  "venus": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 4.8673
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (km)",
+    "value": 6051.8
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 6051.8
+   },
+   "gravity_m_s2": {
+    "label": "Surface gravity (mean) (m/s 2 )",
+    "value": 8.87
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 10.36
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 0.32486
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 108.21
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": -5832.6
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 2802.0
+   }
+  },
+  "earth": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24",
+    "value": 5.9722
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (km)",
+    "value": 6378.137
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 6371.0
+   },
+   "gravity_m_s2": {
+    "label": "Surface gravity (mean) (m/s 2 )",
+    "value": 9.82
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 11.186
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6",
+    "value": 0.3986
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6",
+    "value": 149.598
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 23.9345
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 24.0
+   }
+  },
+  "mars": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 0.64169
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (km)",
+    "value": 3396.2
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 3389.5
+   },
+   "gravity_m_s2": {
+    "label": "Surface gravity (mean) (m/s 2 )",
+    "value": 3.73
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 5.03
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 0.042828
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 227.956
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 24.6229
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 24.6597
+   }
+  },
+  "jupiter": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 1898.13
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (1 bar level) (km)",
+    "value": 71492.0
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 69911.0
+   },
+   "gravity_m_s2": {
+    "label": "Gravity (mean, 1 bar) (m/s 2 )",
+    "value": 25.92
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 59.5
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 126.687
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 778.479
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 9.925
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 9.9259
+   }
+  },
+  "saturn": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 568.32
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (1 bar level) (km)",
+    "value": 60268.0
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 58232.0
+   },
+   "gravity_m_s2": {
+    "label": "Gravity (mean, 1 bar) (m/s 2 )",
+    "value": 11.19
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 35.5
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 37.931
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 1432.041
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 10.656
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 10.656
+   }
+  },
+  "uranus": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 86.811
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (1 bar level) (km)",
+    "value": 25559.0
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 25362.0
+   },
+   "gravity_m_s2": {
+    "label": "Gravity (mean, 1 bar) (m/s 2 )",
+    "value": 9.01
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 21.3
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 5.794
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 2867.043
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": -17.24
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 17.24
+   }
+  },
+  "neptune": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 102.409
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (1 bar level) (km)",
+    "value": 24764.0
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 24622.0
+   },
+   "gravity_m_s2": {
+    "label": "Gravity (mean, 1 bar) (m/s 2 )",
+    "value": 11.27
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 23.5
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 6.8351
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 4514.953
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 16.11
+   },
+   "length_of_day_h": {
+    "label": "Length of day (hrs)",
+    "value": 16.11
+   }
+  },
+  "moon": {
+   "mass_1e24_kg": {
+    "label": "Mass (10 24 kg)",
+    "value": 0.07346
+   },
+   "equatorial_radius_km": {
+    "label": "Equatorial radius (km)",
+    "value": 1738.1
+   },
+   "mean_radius_km": {
+    "label": "Volumetric mean radius (km)",
+    "value": 1737.4
+   },
+   "gravity_m_s2": {
+    "label": "Surface gravity (m/s 2 )",
+    "value": 1.62
+   },
+   "escape_velocity_km_s": {
+    "label": "Escape velocity (km/s)",
+    "value": 2.38
+   },
+   "gm_1e6_km3_s2": {
+    "label": "GM (x 10 6 km 3 /s 2 )",
+    "value": 0.0049
+   },
+   "semi_major_axis_1e6_km": {
+    "label": "Semimajor axis (10 6 km)",
+    "value": 0.3844
+   },
+   "sidereal_rotation_h": {
+    "label": "Sidereal rotation period (hrs)",
+    "value": 655.72
+   }
+  }
+ }
+}

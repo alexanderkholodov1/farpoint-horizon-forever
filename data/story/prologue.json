@@ -1,0 +1,28 @@
+{
+ "doc": "The prologue (issue #66): who the cuyes are and why they go to space, before mission 1. Our own fiction; the one fact (Apollo 13's planned landing) is NASA's (S-apollo13-nasa). Same format as the chapters.",
+ "order": ["origin", "journey"],
+ "intro": ["origin", "journey"],
+ "outro": [],
+ "scenes": {
+"origin": [
+   {"set": "andes", "title": "Prologue", "sub": "The cuyes who were there", "shot": "behind", "wait": 3.0},
+   {"title": "Ecuador, April 1970", "sub": "A farm on the slopes of Cotopaxi", "shot": "behind", "wait": 4.0},
+   {"who": "narrator", "shot": "wide", "text": "High in the Andes lived four cuyes who were not like the others."},
+   {"who": "narrator", "shot": "wide", "acts": {"wayra": "work"}, "text": "Every night they climbed the hill with an old radio, to listen to the astronauts."},
+   {"who": "wayra", "mood": "sleepy", "act": "work", "text": "Houston, this is... static. Hold on. There. They are talking about the Moon again."},
+   {"who": "killa", "mood": "dreamy", "act": "point", "shot": "moon", "text": "Next week, three astronauts fly there. Apollo 13.", "fact": "Apollo 13 was supposed to land in the Fra Mauro area of the Moon.", "source": "S-apollo13-nasa"},
+   {"who": "inti", "mood": "proud", "act": "hips", "shot": "low", "moves": {"inti": [0.2, 0.15, -10]}, "text": "Then we fly too. Somebody has to keep an eye on them."},
+   {"who": "rumi", "mood": "flat", "act": "shrug", "text": "We are guinea pigs."},
+   {"who": "inti", "mood": "determined", "act": "point", "shot": "two", "text": "Exactly. Guinea pigs go first."},
+   {"who": "wayra", "mood": "calm", "act": "talk", "acts": {"rumi": "idle", "inti": "idle"}, "text": "I will go to Houston and sit by the radio. Someone has to answer when you call."},
+   {"who": "killa", "mood": "happy", "all": "happy", "act": "cheer", "acts": {"inti": "cheer"}, "shot": "wide", "text": "Florida, here we come!"},
+   {"who": "narrator", "shot": "moon", "acts": {"killa": "idle", "inti": "idle"}, "text": "They were small. Nobody would notice four stowaways."}
+  ],
+  "journey": [
+   {"set": "pad", "title": "A few days later", "sub": "Kennedy Space Center, Florida", "shot": "pad_wide", "wait": 4.0},
+   {"who": "narrator", "shot": "pad_wide", "cast": [], "text": "A banana boat carried them from Guayaquil to Florida. Wayra got off early and took a bus to Houston."},
+   {"who": "narrator", "shot": "wide", "cast": ["rumi", "killa", "inti"], "text": "At the launch pad, crates of supplies were going up to the spacecraft. Nobody counts the crates."},
+   {"who": "killa", "mood": "happy", "act": "point", "text": "That one. It says \"fragile\". Perfect for us."}
+  ]
+ }
+}

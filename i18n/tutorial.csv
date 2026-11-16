@@ -1,0 +1,32 @@
+keys,es
+Welcome aboard,Bienvenido a bordo
+"Your first mission: land at the Moon's south pole, where the Sun never climbs high and ice may hide in the dark of the craters. First, the extra goals: keep the ones you want to go for and press Continue. Then the orbit, where your craft will fly: lunar orbit, 100 km up, is the one. Click it.","Tu primera misión: aterrizar en el polo sur de la Luna, donde el Sol nunca sube alto y puede haber hielo escondido en la oscuridad de los cráteres. Primero, los objetivos extra: deja los que quieras buscar y pulsa Continuar. Luego la órbita, donde volará tu nave: la órbita lunar, a 100 km, es la indicada. Haz clic en ella."
+The body of the craft,El cuerpo de la nave
+"The platform is the craft's body: structure, computer, room for instruments. A small one is cheap but fills up fast. Take the medium platform: room for three instruments, and strong enough to carry fuel to the Moon.","La plataforma es el cuerpo de la nave: estructura, computadora y espacio para instrumentos. Una pequeña es barata pero se llena rápido. Elige la plataforma mediana: cabe en ella tres instrumentos y aguanta el combustible para llegar a la Luna."
+What we came to see,Lo que vinimos a ver
+"The goal needs two things: look for ice in the shadows, and photograph the landing site. A gamma-ray spectrometer reads what the ground is made of; a multispectral camera sees the site in many colours; a radar altimeter measures the ground's height. Every instrument costs mass, power and data: watch the board on the right.","El objetivo pide dos cosas: buscar hielo en las sombras y fotografiar el sitio de aterrizaje. Un espectrómetro de rayos gamma lee de qué está hecho el suelo; una cámara multiespectral ve el sitio en muchos colores; un altímetro de radar mide la altura del terreno. Cada instrumento cuesta masa, energía y datos: mira el tablero de la derecha."
+Power,Energía
+"Instruments need watts. Large solar wings make enough, and the 1 kWh battery covers the hours in shadow. If the wings glow amber on the craft, power falls short: that is the craft telling you.","Los instrumentos necesitan vatios. Las alas solares grandes generan suficiente, y la batería de 1 kWh cubre las horas en sombra. Si las alas brillan en ámbar en la nave, falta energía: es la nave avisándote."
+Bringing the data home,Traer los datos a casa
+"Every photo has to come home. Ka band is the fastest antenna: it sends all of today's data, today. A slower radio loses science, and its antenna would glow amber.","Cada foto tiene que volver a casa. La banda Ka es la antena más rápida: envía hoy todos los datos de hoy. Una radio más lenta pierde ciencia, y su antena brillaría en ámbar."
+Pointing and pushing,Apuntar y empujar
+"Sharp photos need precise pointing: reaction wheels and a star tracker. To brake into lunar orbit and land you need delta-v, a change of speed. Chemical propulsion gives 1,500 m/s.","Las fotos nítidas necesitan apuntar con precisión: ruedas de reacción y un buscador de estrellas. Para frenar en órbita lunar y aterrizar necesitas delta-v, un cambio de velocidad. La propulsión química da 1.500 m/s."
+The ride up,El viaje de subida
+"The farther the destination, the less a rocket can carry. The medium launcher lifts your craft toward the Moon: click it. Feeling brave? Build your own rocket instead, from the engines up.","Cuanto más lejos el destino, menos puede cargar un cohete. El lanzador mediano lleva tu nave hacia la Luna: haz clic en él. ¿Te sientes valiente? Construye tu propio cohete, desde los motores hacia arriba."
+The review,La revisión
+"Real NASA teams check a design like this before it flies. Blue is fine, amber costs science, red stops the launch. Nothing red? Then it is yours to fly. Press LAUNCH!","Los equipos reales de la NASA revisan así un diseño antes de que vuele. Azul está bien, ámbar cuesta ciencia, rojo detiene el lanzamiento. ¿Nada en rojo? Entonces es tuyo para volar. ¡Pulsa LANZAR!"
+You fly it,Tú lo vuelas
+"Keep the needle on the green marker with the arrow keys. When a stage runs dry, press Space to drop it: the rocket gets lighter and goes faster. Time runs for real; speed it up with the time controls.","Mantén la aguja sobre la marca verde con las flechas. Cuando una etapa se vacíe, pulsa Espacio para soltarla: el cohete se aligera y va más rápido. El tiempo corre de verdad; acelera con los controles de tiempo."
+Toward the Moon,Rumbo a la Luna
+"In orbit around the Earth. To head for the Moon, burn about 3,200 m/s at the right moment, then coast for about three days, as Apollo 11 did. Press BURN, and CUT when the gauge reaches the mark.","En órbita alrededor de la Tierra. Para ir a la Luna, enciende el motor unos 3.200 m/s en el momento justo y luego planea unos tres días, como el Apolo 11. Pulsa ENCENDER y CORTA cuando el indicador llegue a la marca."
+Touchdown,Alunizaje
+"Shackleton's rim, near the south pole. More throttle slows the fall; touch down slower than 3 m/s. If alarm 1202 rings, keep calm: Apollo 11's computer raised it too, and they landed.","El borde del Shackleton, cerca del polo sur. Más potencia frena la caída; toca el suelo a menos de 3 m/s. Si suena la alarma 1202, calma: la computadora del Apolo 11 también la dio, y alunizaron."
+Now it works,Ahora trabaja
+"You made it. Now the mission does its job: months go by, data comes home, surprises happen. A good design rides them out.","Lo lograste. Ahora la misión hace su trabajo: pasan los meses, llegan los datos, hay sorpresas. Un buen diseño las aguanta."
+What you found,Lo que encontraste
+"Your report: the science, the real NASA photos a mission like yours sends home, and the real missions like it. There is no perfect design. Try another, and beat your score.","Tu informe: la ciencia, las fotos reales de la NASA que envía una misión como la tuya y las misiones reales parecidas. No existe el diseño perfecto. Prueba otro y supera tu puntaje."
+Got it,Entendido
+End the guided mission,Terminar la misión guiada
+First mission · guided by the crew,Primera misión · guiada por la tripulación
+Your own rocket,Tu propio cohete
+"We build it from the ground up, one choice at a time: engines, tank, an upper stage, the fairing. In a hurry? Take the ready Falcon 9-type. When the three answers on the right are ticked, fly it.","Lo construimos desde el suelo, una elección a la vez: motores, tanque, una etapa superior, la cofia. ¿Con prisa? Toma el Tipo Falcon 9 ya listo. Cuando las tres respuestas de la derecha estén marcadas, vuélalo."

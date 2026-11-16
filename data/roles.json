@@ -1,0 +1,55 @@
+{
+ "doc": "The four stations of the crew. Players take them, bots take the free ones. Each design step belongs to one station (data/steps.json).",
+ "entries": {
+  "engineer": {
+   "name": "Engineer",
+   "color": [1.0, 0.62, 0.3],
+   "goal": "Mass margin ≥ 10 %, power margin ≥ 15 % and a budget reserve ≥ 10 %",
+   "why": "Designs grow as they get built, and margins soak up the surprises; real missions almost always cost more than planned.",
+   "source": [
+    "S5",
+    "S-gsfc-std-1000"
+   ],
+   "simplified": "The goals use one margin for every phase, where the standard gives different margins at each review. The four stations are our own split of the roles in NASA's Mission Design Lab."
+  },
+  "scientist": {
+   "name": "Scientist",
+   "color": [0.47, 0.72, 1.0],
+   "goal": "Cover every science objective and reach ≥ 80 % of the science target",
+   "why": "Without useful science, a mission can't justify its cost.",
+   "source": [
+    "S5",
+    "S-gsfc-std-1000"
+   ],
+   "simplified": "The goals use one margin for every phase, where the standard gives different margins at each review. The 80 % science target is game balance, not a value from these sources. The four stations are our own split of the roles in NASA's Mission Design Lab."
+  },
+  "pilot": {
+   "name": "Pilot",
+   "color": [1.0, 0.84, 0.56],
+   "goal": "Reach the orbit with the fuel on board, on a rocket that can carry the craft",
+   "why": "A route that does not close on paper will not close in flight: the burns and the rocket have to add up.",
+   "source": [
+    "S5",
+    "S-gsfc-std-1000"
+   ],
+   "simplified": "The goals use one margin for every phase, where the standard gives different margins at each review. This goal is our own game rule. The four stations are our own split of the roles in NASA's Mission Design Lab."
+  },
+  "ground": {
+   "name": "Ground control",
+   "color": [0.62, 0.84, 1.0],
+   "goal": "Download 100 % of the data and keep the craft alive for its whole design life",
+   "why": "Data that never reaches Earth is data lost.",
+   "source": [
+    "S5",
+    "S-gsfc-std-1000"
+   ],
+   "simplified": "The goals use one margin for every phase, where the standard gives different margins at each review. The four stations are our own split of the roles in NASA's Mission Design Lab."
+  }
+ },
+ "order": [
+  "engineer",
+  "scientist",
+  "pilot",
+  "ground"
+ ]
+}

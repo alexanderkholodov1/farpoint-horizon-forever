@@ -1,0 +1,138 @@
+{
+ "doc": "Chapter 3, Mars Pathfinder (July 1997) (issue #47; story: docs/design/story-v0.3.0.md). Every fact from NASA pages (S-mpf-nasa, S-mpf-nssdc, S-mpf-jpl). Inti, inside the airbags, counts the bounces (the story's line). Same format as apollo13.json.",
+ "order": [
+  "intro",
+  "mission",
+  "outro"
+ ],
+ "intro": [
+  "intro"
+ ],
+ "mission": "Between intro and outro the player plays the mission: the descent (steady, rockets, cut), the bounces, Sojourner down the ramp (scripts/screens/pathfinder.gd).",
+ "outro": [
+  "outro"
+ ],
+ "scenes": {
+  "intro": [
+   {
+    "set": "mars_approach",
+    "title": "Mission 3: Mars Pathfinder",
+    "sub": "July 4, 1997 · Ares Vallis, Mars",
+    "shot": "approach",
+    "wait": 5.0
+   },
+   {
+    "who": "narrator",
+    "shot": "behind",
+    "text": "Four years after Hubble, the cuyes went farther than ever: seven months to Mars, inside a lander wrapped in airbags.",
+    "fact": "Mars Pathfinder launched on December 4, 1996, and landed on Mars on July 4, 1997.",
+    "source": "S-mpf-nasa"
+   },
+   {
+    "set": "houston",
+    "who": "wayra",
+    "mood": "alert",
+    "act": "talk",
+    "shot": "close",
+    "text": "No rockets all the way down this time. A parachute, three little rockets, then airbags. You land by bouncing.",
+    "fact": "Rockets fired at 98 m; the bridle was cut 21.5 m above the ground, releasing the airbag-encased lander.",
+    "source": "S-mpf-nssdc"
+   },
+   {
+    "who": "killa",
+    "mood": "happy",
+    "act": "point",
+    "text": "A flood plain! Old water made all these rocks. I want to see every one.",
+    "shot": "close",
+    "set": "mars_approach"
+   },
+   {
+    "who": "rumi",
+    "mood": "flat",
+    "act": "shrug",
+    "text": "Then we bounce over every one.",
+    "shot": "close"
+   },
+   {
+    "who": "inti",
+    "mood": "scared",
+    "act": "scared",
+    "shot": "close",
+    "text": "Calm at the stick, they said. Nobody said anything about airbags.",
+    "fx": "heat",
+    "all": "scared"
+   },
+   {
+    "set": "mars_approach",
+    "shot": "entry",
+    "cut": true,
+    "fx": "fireball",
+    "wait": 4.0
+   },
+   {
+    "set": "houston",
+    "who": "wayra",
+    "mood": "determined",
+    "act": "talk",
+    "text": "Steady the lander, fire the rockets, cut the bridle. Then hold on.",
+    "fact": "The parachute slowed the craft to about 70 m/s; the radar found the ground at about 1.6 km.",
+    "source": "S-mpf-nssdc",
+    "shot": "close"
+   }
+  ],
+  "mission": [
+   {
+    "set": "mars_approach",
+    "title": "Your turn",
+    "shot": "entry",
+    "wait": 2.5,
+    "play": "pathfinder",
+    "fx": "fireball"
+   }
+  ],
+  "outro": [
+   {
+    "set": "mars",
+    "shot": "wide",
+    "wait": 0.5
+   },
+   {
+    "who": "inti",
+    "mood": "tired",
+    "act": "idle",
+    "shot": "close",
+    "text": "Fourteen... fifteen... sixteen... I stopped counting. The ground keeps moving.",
+    "fact": "The lander bounced about 12 meters up, then at least another 15 times, and came to rest about 2.5 minutes later, 1 km away.",
+    "source": "S-mpf-nssdc"
+   },
+   {
+    "who": "killa",
+    "mood": "happy",
+    "act": "cheer",
+    "text": "Six wheels on Mars! The first wheels on another planet!",
+    "fact": "Sojourner was the first wheeled vehicle to be used on any other planet in the solar system.",
+    "source": "S-mpf-jpl"
+   },
+   {
+    "who": "rumi",
+    "mood": "pleased",
+    "text": "Planned for seven days. It drove for eighty-three. Classic.",
+    "fact": "Sojourner spent 83 days of a planned seven-day mission exploring the Martian terrain.",
+    "source": "S-mpf-jpl"
+   },
+   {
+    "set": "houston",
+    "who": "wayra",
+    "mood": "curious",
+    "act": "talk",
+    "shot": "close",
+    "text": "Next mission is strange. Killa, they want you to crash into the Moon. On purpose."
+   },
+   {
+    "title": "To be continued",
+    "sub": "Next: the plan is to crash?, 2009",
+    "wait": 4.0
+   }
+  ]
+ }
+}

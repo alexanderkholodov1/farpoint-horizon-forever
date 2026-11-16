@@ -1,0 +1,100 @@
+{
+ "doc": "Mission 1, Apollo 13: 'Square peg, round hole' (issue #45). Inside the powered-down lunar module the carbon dioxide climbs; the player builds the adapter that lets the command module's square canisters clean the air through the lunar module's system, picking each part, in order, as Mission Control (Wayra) reads the steps; at the top of the scale the air runs out and it is tried again. NASA facts: the materials (plastic bags, cardboard and tape, all carried on board), square canisters against round openings, the CO2 warning after a day and a half in the LM, and the LM made for two men for two days and asked to keep three for about four days [S-apollo13-nasa]; the real adapter in the photo AS13-62-9004 [S-apollo13-mailbox]. No NASA page we could read gives the build steps or CO2 numbers: the order of the steps and the gauge's pace are our simplification, said on screen.",
+ "gauge": {
+  "start": 0.42,
+  "warning": 0.7,
+  "rise_per_s": 0.0048,
+  "wrong_pick": 0.03,
+  "fall_per_s": 0.03,
+  "clean": 0.3,
+  "note": "Our simplification: a gauge from clean air (0) to the top of the scale (1), the warning light at 0.7, about two minutes from the start to the top, where the air runs out and the game is tried again. Its pace is set for play (the real work took the crew hours), not measured."
+ },
+ "parts": [
+  {
+   "id": "canister",
+   "name": "Square canister",
+   "line": "From the command module. It cleans the air, but it does not fit here.",
+   "given": true
+  },
+  {
+   "id": "cardboard",
+   "name": "Cardboard",
+   "line": "Stiff enough to hold a shape."
+  },
+  {
+   "id": "bag",
+   "name": "Plastic bag",
+   "line": "Air-tight, if it is sealed."
+  },
+  {
+   "id": "tape",
+   "name": "Tape",
+   "line": "Sticks to almost anything."
+  },
+  {
+   "id": "hose",
+   "name": "Air hose",
+   "line": "The lunar module's own air line, round at the end."
+  },
+  {
+   "id": "food",
+   "name": "Food packet",
+   "line": "Lunch. Not an air filter."
+  },
+  {
+   "id": "checklist",
+   "name": "Checklist",
+   "line": "Rules for a normal day. Today is not one."
+  }
+ ],
+ "steps": [
+  {
+   "part": "cardboard",
+   "houston": "Aquarius, Houston. Take the cardboard and fold it into a frame around the open end of the square canister.",
+   "done": "The frame holds its shape."
+  },
+  {
+   "part": "bag",
+   "houston": "Now pull the plastic bag over the canister and its frame.",
+   "done": "The bag is on."
+  },
+  {
+   "part": "tape",
+   "houston": "Tape the bag down tight, all the way around. No leaks.",
+   "done": "Sealed tight.",
+   "presses": 3
+  },
+  {
+   "part": "hose",
+   "houston": "Last one: push the air hose into the bag and tape it in. Then switch on the fans.",
+   "done": "The air flows through the canister."
+  }
+ ],
+ "wrong": "Negative, that will not help with this step.",
+ "win": "The CO2 reading turns around!",
+ "win_sub": "The square canister cleans the air of the round-hole spacecraft.",
+ "photo": {
+  "file": "res://assets/photos/apollo13/as13-62-9004.jpg",
+  "caption": "The real one: the crew installing the \"Mail Box\" to purge carbon dioxide from the lunar module, April 14, 1970.",
+  "credit": "NASA, AS13-62-9004",
+  "source": "S-apollo13-mailbox"
+ },
+ "facts": [
+  {
+   "text": "The lunar module was designed to support two men for two days; it had to keep three men alive for about four.",
+   "source": "S-apollo13-nasa"
+  },
+  {
+   "text": "Mission Control worked out an adapter from plastic bags, cardboard and tape, all carried on board.",
+   "source": "S-apollo13-nasa"
+  }
+ ],
+ "urgent": {
+  "60": "Aquarius, Houston. We are watching your numbers. Keep going, you are doing fine.",
+  "30": "Thirty seconds of margin. Steady hands, Aquarius.",
+  "10": "Ten seconds. Finish it!"
+ },
+ "saved": "Saved!",
+ "lost": "The air ran out.",
+ "lost_sub": "That is not how it went: the crew made it. Try again."
+}

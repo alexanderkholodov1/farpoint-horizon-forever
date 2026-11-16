@@ -1,0 +1,53 @@
+{
+ "doc": "Propulsion systems.",
+ "entries": {
+  "none": {
+   "name": "No propulsion",
+   "dv": 0.0,
+   "mass_pct": 0.0,
+   "cost_pct": 0.0,
+   "electric": false,
+   "desc": "Lighter and cheaper, but the craft can't change orbit or dodge debris.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The delta-v is the total the craft carries, simplified to one value per technology. Mass and cost are percentages of the dry craft, our own simplification."
+  },
+  "cold": {
+   "name": "Cold gas",
+   "dv": 40.0,
+   "mass_pct": 0.08,
+   "cost_pct": 0.05,
+   "electric": false,
+   "desc": "Lets out pressurized gas. Good for small tweaks and dodging debris.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The delta-v is the total the craft carries, simplified to one value per technology. Mass and cost are percentages of the dry craft, our own simplification."
+  },
+  "chem": {
+   "name": "Chemical rocket engine (bipropellant)",
+   "dv": 1500.0,
+   "mass_pct": 0.6,
+   "cost_pct": 0.15,
+   "electric": false,
+   "desc": "Lots of thrust, ideal for entering lunar orbit or climbing to GEO. The fuel is heavy.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The delta-v is the total the craft carries, simplified to one value per technology. Mass and cost are percentages of the dry craft, our own simplification."
+  },
+  "ion": {
+   "name": "Electric engine (ion): gentle but thrifty",
+   "dv": 4000.0,
+   "mass_pct": 0.15,
+   "cost_pct": 0.25,
+   "electric": true,
+   "desc": "Speeds up ions with electricity. Very efficient and light on fuel, but power hungry.",
+   "source": [
+    "S-nasa-soa"
+   ],
+   "simplified": "The delta-v is the total the craft carries, simplified to one value per technology. Mass and cost are percentages of the dry craft, our own simplification."
+  }
+ }
+}
