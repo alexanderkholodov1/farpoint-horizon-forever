@@ -19,7 +19,7 @@ TOP = ("docs/", "tools/", "kb/", "scripts/", "data/", "assets/", "tests/", "i18n
 ROOT_FILES = ("README.md", "AGENTS.md", "CLAUDE.md", "LICENSE", "project.godot", "export_presets.cfg", "icon.svg",
               "firebase.json", "database.rules.json", ".gitignore", ".gitattributes")
 # Records of a past moment name what existed then: the plans of shipped versions, the decision log, dated research.
-HISTORY = ("docs/versions/v0.1.0.md", "docs/versions/v0.2.0.md", "kb/decisions.md", "kb/tech/")
+HISTORY = ("docs/versions/v0.1.0.md", "docs/versions/v0.2.0.md", "docs/versions/v0.3.0.md", "kb/decisions.md", "kb/tech/")
 SKIP_PREFIX = ("build/", "shots/", ".godot/", "user://", "res://")
 problems = []
 

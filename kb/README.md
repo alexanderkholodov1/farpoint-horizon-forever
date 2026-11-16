@@ -27,4 +27,4 @@ anything inferred is labeled "(inference)".
 ## Keeping it current
 - A new decision goes to `decisions.md` with its date and who took it.
 - A fact that turns out wrong is corrected where it lives, with the correct source.
-- The game's vision and design criteria live in `docs/design/`; the project's state in `docs/state/` and `docs/versions/`.
+- The game's vision and design criteria live in `docs/design/`; what each part of the game does in `docs/areas/`; what is in progress lives in the issues and pull requests.

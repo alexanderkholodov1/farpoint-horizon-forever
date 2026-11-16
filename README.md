@@ -11,7 +11,7 @@ It lets anyone, alone or with up to three friends, live a space mission from the
 comes home: build the spacecraft, launch it, fly it, land it and keep it working. On the way, a small crew of Andean
 guinea pigs, the *cuyes*, takes you through some of the most dramatic moments in NASA's history.
 
-**▶ Play this repository's version: https://farpoint-horizon-forever.web.app** (published from v0.4.0 on): nothing to
+**▶ Play this repository's version: https://farpoint-horizon-forever.web.app** (from this repository's first release on): nothing to
 install, in English or Spanish.
 **▶ The hackathon version, as submitted: https://farpoint-horizon.web.app**, and its 30-second video: https://youtu.be/3xZdPJr71bg
 

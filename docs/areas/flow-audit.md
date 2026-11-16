@@ -5,7 +5,7 @@ on the desktop (no state set by hand). Two missions from the menu to the report:
 sun-synchronous orbit) and Ice at the Moon's South Pole (Falcon 9 type, the design's own best fits, opened with
 Settings > All open), then the Moon trip a second time with time speeds picked by hand. A probe logged the screen, the
 phase, how fast time ran and the mission clock every half second of real time; the numbers below come from that log.
-Screenshots: `docs/state/flow-audit/`. The computed durations are checked in `tests/ci/flowaudit.gd`.
+Screenshots: `docs/areas/flow-audit/`. The computed durations are checked in `tests/ci/flowaudit.gd`.
 
 ## Phase by phase
 

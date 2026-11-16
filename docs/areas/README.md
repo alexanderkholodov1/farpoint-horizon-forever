@@ -1,11 +1,8 @@
-# State notes
+# Areas of the game
 
-Short notes that hold what a GitHub issue does not: values that were measured and checked, decisions taken inside a
-piece, known limits. One note per topic, kept by the piece that owns it, deleted when it stops being true.
-
-`tools/dev/state.sh` prints these notes together with the steps integrated on the version branch and the open issues
-with who holds each: an agent that starts work reads it to know where the project is. Plans live in
-`docs/versions/`; work to do lives in the issues.
+What each part of the game does and what was measured and checked about it: real values, decisions taken inside
+a piece, known limits. One note per area, changed in the same pull request as the code it describes, so it never
+drifts. It holds knowledge, never status: what is in progress lives in the issues and pull requests.
 
 | Note | Topic |
 |---|---|

@@ -20,14 +20,15 @@ longer exists.
 
 | Where | What it is for | Updated |
 |---|---|---|
-| `AGENTS.md` | The one rulebook for every agent and person | when the team changes a rule |
+| `AGENTS.md` | The one rulebook for every agent and person: criteria, never state | when the team changes a rule |
+| `changes/` | One change note per piece of the release in preparation | by each piece; emptied at release |
 | [guides/](guides/) | How the game is built and how to work on it: architecture, testing, leading a piece | with the code they describe |
 | [design/](design/) | What the game is and how it must feel: vision, criteria, the story, the crew | when the team decides |
-| [versions/](versions/) | One page per version: the plan, what shipped, the lines open now | when a version opens or ships |
-| [state/](state/) | Short notes of what an issue does not hold: values checked, decisions taken inside a piece | by the piece that owns the note |
+| [versions/](versions/) | The versions made at the hackathon (a record; releases from v0.3.0 on are GitHub releases) | never |
+| [areas/](areas/) | What each part of the game does and what was checked about it (knowledge, never status) | in the pull request that changes that part |
 | [sources.md](sources.md) | The bibliography: every outside number, image, model and dataset, once, with an ID | grows with every source; the credits and the submission links are made from it |
 | `kb/` | Research gathered for the game: the domain, NASA data, techniques, decisions | when research is added |
-| `tools/` | Scripts for people and agents: `dev/` to build, test and integrate, `content/` to make data, credits, art and the deck | with the work they serve |
+| `tools/` | Scripts for people and agents: `dev/` to build and check, `content/` to make data, credits and art | with the work they serve |
 
 ## Where the game comes from
 
