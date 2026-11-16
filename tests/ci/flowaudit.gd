@@ -66,12 +66,14 @@ func _periods() -> void:
 	_check(lap_min >= LUNAR_LAP_MIN[0] and lap_min <= LUNAR_LAP_MIN[1], "a lap of the lunar orbit takes about two hours")
 	var orbits: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/orbits.json")).entries
 	var rx := RegEx.new()
-	rx.compile(r"\(([0-9,]+) km\)")
+	rx.compile(r"([0-9][0-9,]*) km")
+	var checked := 0
 	for id in orbits:
 		var o: Dictionary = orbits[id]
 		var found := rx.search(str(o.name))
-		if found == null:
+		if found == null or "million" in str(o.name):
 			continue   # a point (L2), not a circular orbit
+		checked += 1
 		var h := float(found.get_string(1).replace(",", "")) * 1000.0
 		var on_moon := str(o.get("body", "")) == "luna"
 		var mu := mu_m if on_moon else FlightData.gm("earth")
@@ -80,3 +82,4 @@ func _periods() -> void:
 		var shown := float(o.period_min)
 		print("orbit ", id, ": shows ", shown, " min, Kepler ", snappedf(real_min, 0.1), " min")
 		_check(absf(shown - real_min) / real_min < 0.03, "the %s period on screen is within 3 %% of the real one" % id)
+	_check(checked >= 4, "the circular orbits of data/orbits.json were found by their names (%d of them)" % checked)

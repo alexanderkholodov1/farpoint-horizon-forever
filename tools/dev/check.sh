@@ -16,7 +16,7 @@
 set -uo pipefail
 cd "$(dirname "$0")/../.."
 G=tools/dev/godot.sh
-LIMIT=180   # seconds a single test may run
+LIMIT=${CHECK_TIMEOUT:-180}   # seconds a single test may run (CHECK_TIMEOUT only to try the limit out)
 log=$(mktemp)
 trap 'rm -f "$log"' EXIT
 
