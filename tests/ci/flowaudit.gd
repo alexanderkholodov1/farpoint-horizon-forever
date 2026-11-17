@@ -2,7 +2,7 @@ extends SceneTree
 ## The flow audit's numbers (issue #57): the durations the game computes, checked against the real ones a player may
 ## know. The climb to orbit [S-nasa-crew10], a lap of a low lunar orbit and the
 ## periods the design and the operation screens show (Kepler's third law with the NSSDC constants [S-nssdc-planets]).
-## The trip to the Moon is checked in flight.gd. The audit itself, played screen by screen, is docs/state/flow-audit.md.
+## The trip to the Moon is checked in flight.gd. The audit itself, played screen by screen, is docs/areas/flow-audit.md.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/flowaudit.gd
 ## check: flow audit: 0 failure
 
