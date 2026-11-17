@@ -14,4 +14,7 @@ issue: 6
 On a phone, the chapter cards are readable and the hints name the buttons on screen instead of keys.
 ```
 
+A piece that changes nothing a player sees or does (the repository, its checks, its tools) writes no note: the
+notes become what players read about the release, and its pull request already records the work.
+
 The kinds help the team decide the release number; they do not decide it.
