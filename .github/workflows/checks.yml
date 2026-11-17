@@ -1,0 +1,50 @@
+name: Checks
+
+# The automatic checks of every pull request into next or main (AGENTS.md "How work flows"). They are the part of a
+# review that a machine does reliably; playing the game is the reviewer's (docs/guides/testing.md says what these
+# checks prove and what they do not). GitHub Free counts minutes on a private repository, so this runs only for pull
+# requests, cancels a run made stale by a newer push, and starts Godot only when the pull request touches the game.
+on:
+  pull_request:
+    branches: [next, main]
+
+concurrency:
+  group: checks-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    name: Documents and change notes
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every document points at files that exist; every folder says what it holds
+        run: python3 tools/dev/check_docs.py
+      - name: The change notes are well formed
+        run: python3 tools/dev/release-notes.py --check
+
+  game:
+    name: Game checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Does this pull request touch the game?
+        id: touched
+        run: |
+          set -euo pipefail
+          files=$(git diff --name-only "${{ github.event.pull_request.base.sha }}...HEAD")
+          if echo "$files" | grep -qE '^(scripts|scenes|data|assets|i18n|tests|web|\.github/actions/godot)/|^(project\.godot|export_presets\.cfg|tools/dev/check\.sh|tools/dev/godot\.sh|docs/sources\.md)$'; then
+            echo "game=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "game=false" >> "$GITHUB_OUTPUT"
+            echo "No game file changed: the game checks are not needed." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: ./.github/actions/godot
+        if: steps.touched.outputs.game == 'true'
+      - name: Run the checks (tools/dev/check.sh)
+        if: steps.touched.outputs.game == 'true'
+        run: bash tools/dev/check.sh

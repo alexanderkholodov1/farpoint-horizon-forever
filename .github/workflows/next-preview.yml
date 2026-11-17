@@ -1,0 +1,37 @@
+name: Next on Firebase
+
+# Every time a piece is merged into next, the integrated game is published to a Firebase preview channel named
+# "next", so the team can play the release in preparation at any time. Pieces are reviewed on the reviewer's own
+# machine instead (AGENTS.md "Review"): each load of the hosted game counts against Firebase's free daily transfer.
+on:
+  push:
+    branches: [next]
+    paths-ignore: ["docs/**", "kb/**", "changes/**", "*.md"]
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: next-preview
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/godot
+      - name: Build the web game with its version
+        run: bash tools/dev/export-web.sh
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.WIF_SERVICE_ACCOUNT }}
+      - name: Publish to the channel "next"
+        run: |
+          npx --yes firebase-tools@15 hosting:channel:deploy next --project aklabs-dev --expires 30d --non-interactive | tee deploy.log
+          grep -oE 'https://[^ ]+--next-[^ ]+\.web\.app' deploy.log | head -1 | sed 's/^/Play next: /' >> "$GITHUB_STEP_SUMMARY" || true
