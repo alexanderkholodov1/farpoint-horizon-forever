@@ -5598,7 +5598,7 @@
    "notes": "URL is the NTRS home page; exact record URL not captured (local text file only). CML 1-4 also described on Ames MDC page.",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/concept-maturity-levels.pdf (Wessen et al., JPL, 2013)",
+     "url": "local: kb/challenge/nasa-resources/concept-maturity-levels.pdf (Wessen et al., JPL, 2013)",
      "page": "PDF p.1-4",
      "note": "CML definitions"
     }
@@ -6121,7 +6121,7 @@
    "notes": "Minimum 9 months, typically 18-24 months; delivery to launch a few months to a few years; LV needs delivery 4 weeks to 6 months before launch.",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
+     "url": "local: kb/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
      "page": "PDF p.17 (printed p.9)",
      "note": "chapter 2 intro"
     }
@@ -6160,7 +6160,7 @@
    "notes": "Mission readiness review half day; dispenser integration 2 days; LV integration 1 day; launch 1 day; operations up to 20 years. Stages overlap (Fig 8, Appendix E).",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
+     "url": "local: kb/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
      "page": "PDF p.17-18 (printed p.9-10); Appendix E PDF p.93",
      "note": "stage list"
     }
@@ -6182,7 +6182,7 @@
    "notes": "FCC needs a minimum of 90 days from application; NOAA approval about 120 days for Earth-only imagers; apply preferably within 30 days after manifesting. Missing licence before dispenser integration = CubeSat does not fly.",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
+     "url": "local: kb/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
      "page": "PDF p.57-60 (printed p.49-52)",
      "note": "chapter 5"
     }
@@ -6200,7 +6200,7 @@
    "notes": "Project reserves of at least 10% recommended.",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
+     "url": "local: kb/challenge/nasa-resources/cubesat-101.pdf (NASA CubeSat Launch Initiative, Oct 2017)",
      "page": "PDF p.21 (printed p.13)",
      "note": "section 2.2"
     }
@@ -6222,7 +6222,7 @@
    "notes": "A concept is at a CML if about 80% of the column attributes are complete (judgment required). CML matrix 24 rows (2 science, 13 technical, 5 management, 1 cost, 3 other).",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/concept-maturity-levels.pdf (Wessen et al., JPL, 2013)",
+     "url": "local: kb/challenge/nasa-resources/concept-maturity-levels.pdf (Wessen et al., JPL, 2013)",
      "page": "PDF p.2, p.4, p.11",
      "note": "definitions and checklist rule"
     }
@@ -6242,7 +6242,7 @@
    "notes": "Usually 3 collaborative sessions over a week; over 1000 studies by 2013; created 1995.",
    "source": [
     {
-     "url": "local: spaceapps/challenge/nasa-resources/concept-maturity-levels.pdf (Wessen et al., JPL, 2013)",
+     "url": "local: kb/challenge/nasa-resources/concept-maturity-levels.pdf (Wessen et al., JPL, 2013)",
      "page": "PDF p.15",
      "note": "section VI"
     }

@@ -1,0 +1,55 @@
+name: A piece of work
+description: One piece, written so any agent or person can take it, knowing what to read, what to deliver and what done means
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rules behind every field: AGENTS.md ("Leading and briefing", "Done"). An agent that takes this opens a draft
+        pull request into `next` from the branch `from-<release it starts from>/<short-name>`, with `Closes #<issue>` in its body.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What the player gets, or what is wrong today and how it shows. What comes after this piece and what it expects from it.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context to read
+      description: Exact paths, issues and pull requests to read, and what the agent does not need to read.
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files it owns / must not touch
+      description: The only files this piece writes, and the shared ones it must not change (a change to a shared piece is its own issue).
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Deliverable
+      description: Exactly what exists when this is done, and its shape (an interface, a data format, a screen, a report).
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Observable checks. What to play, at which speeds of time, on which device sizes, in which language; the real values to match with their source IDs.
+    validations:
+      required: true
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify
+      description: The commands to run and the steps to play to check each item above.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Where it can fail
+      description: The uses and situations to think through in this area (many players, phone and computer in one room, an old phone, a lost connection, Firebase's free limits, empty or long inputs...).

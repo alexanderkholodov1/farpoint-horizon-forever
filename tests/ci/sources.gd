@@ -2,7 +2,7 @@ extends SceneTree
 ## Citations check (issue #32): every source ID the code or the data cites ([S-lola], "S-horizons", [S10]) must be
 ## listed in docs/sources.md, so pieces built in parallel never leave a citation the judges cannot follow.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/sources.gd
-## check: ^ok sources
+## check: ok sources
 
 const ROOTS := ["res://scripts", "res://data", "res://tests", "res://tools"]
 const KINDS := [".gd", ".json", ".py", ".sh"]

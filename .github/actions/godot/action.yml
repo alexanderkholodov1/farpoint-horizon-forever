@@ -1,0 +1,32 @@
+name: Godot
+description: Installs Godot and its single-threaded web export template (cached), and sets GODOT for tools/dev/godot.sh
+inputs:
+  version:
+    description: Godot version
+    default: "4.7.2"
+runs:
+  using: composite
+  steps:
+    - name: Cache Godot
+      id: cache
+      uses: actions/cache@v4
+      with:
+        path: ~/godot
+        key: godot-${{ inputs.version }}-web-nothreads
+    - name: Download Godot and the web template
+      if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        set -euo pipefail
+        mkdir -p ~/godot && cd ~/godot
+        base="https://github.com/godotengine/godot/releases/download/${{ inputs.version }}-stable"
+        curl -sSLfo godot.zip "$base/Godot_v${{ inputs.version }}-stable_linux.x86_64.zip"
+        unzip -q godot.zip && mv "Godot_v${{ inputs.version }}-stable_linux.x86_64" godot && rm godot.zip
+        curl -sSLfo templates.tpz "$base/Godot_v${{ inputs.version }}-stable_export_templates.tpz"
+        unzip -q templates.tpz "templates/web_nothreads_release.zip" "templates/version.txt" && rm templates.tpz
+    - name: Install the web template
+      shell: bash
+      run: |
+        dest="$HOME/.local/share/godot/export_templates/${{ inputs.version }}.stable"
+        mkdir -p "$dest" && cp ~/godot/templates/* "$dest/"
+        echo "GODOT=$HOME/godot/godot" >> "$GITHUB_ENV"

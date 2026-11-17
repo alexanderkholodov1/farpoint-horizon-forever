@@ -1,10 +1,9 @@
 extends SceneTree
 ## Mission 1, Apollo 13 (issue #45): the adapter game's rules played through. A clean run finishes with three stars
 ## and turns the CO2 around; a part out of order costs air and a star; at the top of the scale the air runs out (lost,
-## tried again) and no part is taken any more; the data's facts name sources listed in docs/sources.md, and every text
-## has its Spanish version in i18n/apollo13.csv.
+## tried again) and no part is taken any more. Its sources, Spanish texts and references are data.gd's.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/apollo13.gd
-## check: ^ok apollo13
+## check: ok apollo13
 
 var bad := 0
 
@@ -59,29 +58,5 @@ func _initialize() -> void:
 				C.press("late")
 	if not C.done or C.stars() != 1:
 		fail("slow run: done=%s stars=%d" % [C.done, C.stars()])
-	# sources and Spanish
-	var md := FileAccess.get_file_as_string("res://docs/sources.md")
-	var D: Dictionary = A.D
-	for F in D.facts + [D.photo]:
-		if ("- **%s**" % F.source) not in md:
-			fail("source not listed: " + F.source)
-	if not FileAccess.file_exists(D.photo.file):
-		fail("no photo")
-	var es := {}
-	var f := FileAccess.open("res://i18n/apollo13.csv", FileAccess.READ)
-	while not f.eof_reached():
-		var row := f.get_csv_line()
-		if row.size() >= 2:
-			es[row[0]] = row[1]
-	var texts: Array = [D.wrong, D.lost, D.lost_sub, D.win, D.win_sub, D.photo.caption] + D.urgent.values()
-	for P in D.parts:
-		texts += [P.name, P.line]
-	for St in D.steps:
-		texts += [St.houston, St.done]
-	for F in D.facts:
-		texts.append(F.text)
-	for t in texts:
-		if not es.has(t):
-			fail("no Spanish for: " + t)
 	print("ok apollo13 %d steps, stars clean %d, slow %d" % [order.size(), A.stars(), C.stars()] if bad == 0 else "FAILED apollo13 %d" % bad)
-	quit()
+	quit(1 if bad > 0 else 0)

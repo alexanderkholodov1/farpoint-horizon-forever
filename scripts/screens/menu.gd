@@ -5,7 +5,7 @@ extends "res://scripts/screens/screen.gd"
 
 const Horizon := preload("res://scripts/ui/horizon.gd")
 const Music := preload("res://scripts/ui/music.gd")
-## The version the menu shows: application/config/version in project.godot, set when a version branch opens.
+## The version the menu shows: application/config/version, written from git by tools/dev/export-web.sh at build time ("dev" when run from the editor).
 var VERSION: String = "v" + str(ProjectSettings.get_setting("application/config/version", "?"))
 const Coach := preload("res://scripts/tutorial/coach.gd")
 const Progress := preload("res://scripts/core/progress.gd")

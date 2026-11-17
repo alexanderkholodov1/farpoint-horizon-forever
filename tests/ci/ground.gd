@@ -1,7 +1,7 @@
 extends SceneTree
 ## Ground control (issue #9): the Deep Space Network's numbers and both mini-games, played through their own steps.
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/ground.gd
-## check: ^ok ground
+## check: ok ground
 
 const Dsn := preload("res://scripts/minigames/dsn.gd")
 const Carrier := preload("res://scripts/minigames/carrier.gd")
@@ -84,7 +84,7 @@ func _initialize() -> void:
 		g.click(g.tray.size() - 1)
 	_ok(g.shed == Triage.SHED_FOR_GO, "radar jobs shed")
 	g.call_go()
-	_ok(res.get("go", false) and res.get("by", "") == "player" and int(res.bonus) == 90, "go called by the player: %s" % str(res))
+	_ok(res.get("go", false) and res.get("by", "") == "player" and int(res.bonus) == 100 - 10 * g.slips, "go called by the player, one slip costs 10 of 100: %s" % str(res))
 	# a full tray restarts and keeps only the landing's jobs
 	var g2 = Triage.new()
 	g2.setup({"code": "1202"})
@@ -164,7 +164,7 @@ func _initialize() -> void:
 	_ok(r3h.get("by", "") == "bot", "Wayra hands it over when nobody plays")
 	h3.free()
 
-	# Read the squiggles (#63): every case is found from its log titles, and solving it right pays the full bonus
+	# Read the squiggles (#63): every case is found from its log titles, and a fix after two slips pays less than the full bonus
 	var chans: Dictionary = Telemetry.channels()
 	var cases: Array = JSON.parse_string(FileAccess.get_file_as_string(Telemetry.DATA)).cases
 	_ok(not Telemetry.fallback().is_empty(), "a fallback case")

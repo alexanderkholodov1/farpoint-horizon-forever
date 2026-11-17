@@ -1,7 +1,7 @@
 extends SceneTree
 ## Crew test: the bots play every scenario from the defaults, step by step as the game does, and the result has to
 ## launch (nothing red) with every line readable. Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/crew.gd
-## check: ^ok crew
+## check: ok crew
 const GD := preload("res://scripts/core/game_data.gd")
 
 

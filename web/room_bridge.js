@@ -5,13 +5,13 @@
 // Godot's web export only copies index.html, so web/build_head.py puts this file inside export_presets.cfg (html/head_include).
 (function () {
   const config = {
-    apiKey: "AIzaSyA8DthUXcFcxJQTUbBj40LEI-bR6inBjKY",
-    authDomain: "farpoint-horizon.firebaseapp.com",
-    databaseURL: "https://farpoint-horizon-default-rtdb.firebaseio.com",
-    projectId: "farpoint-horizon",
-    storageBucket: "farpoint-horizon.firebasestorage.app",
-    messagingSenderId: "895638984261",
-    appId: "1:895638984261:web:e69ecdcf61ed975d49752c"
+    apiKey: "AIzaSyDLuFBV-zwBZNhrXWR_QjhHSC1pU-ZaP38",
+    authDomain: "aklabs-dev.firebaseapp.com",
+    databaseURL: "https://aklabs-dev-default-rtdb.firebaseio.com",
+    projectId: "aklabs-dev",
+    storageBucket: "aklabs-dev.firebasestorage.app",
+    messagingSenderId: "11340527725",
+    appId: "1:11340527725:web:fbce772041e1731c37e764"
   };
   const queue = [];
   let db = null;

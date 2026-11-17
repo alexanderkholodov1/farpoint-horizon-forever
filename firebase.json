@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "farpoint-horizon-forever",
     "public": "build/web",
     "ignore": ["**/*.import", "**/.*"],
     "headers": [

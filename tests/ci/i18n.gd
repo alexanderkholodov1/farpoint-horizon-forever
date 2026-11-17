@@ -3,11 +3,12 @@ extends SceneTree
 ## is the same in both languages, which means it has no Spanish translation (names and numbers aside).
 ## Run: tools/dev/godot.sh --headless --path . -s res://tests/ci/i18n.gd
 ## It also reports the data texts of GameData and the texts of the mission checks and events found by 300 random designs.
-## check: 0 texts without a Spanish version
+## check: i18n ok: 0 texts without a Spanish version
 
 const GD := preload("res://scripts/core/game_data.gd")
-## Texts that must appear in the Spanish run and in the English run (proof that each language was really played).
-const PROBES := {"en": "Choose your mission's goal", "es": "Elige el objetivo de tu misión"}
+## Texts that must appear in the English run and in the Spanish run (proof that each language was really played): one
+## on the missions screen and one on the team screen, each as the screen shows it.
+const PROBES := {"en": ["Choose your mission", "Pick your station"], "es": ["Elige tu misión", "Elige tu estación"]}
 ## Loaded when it runs: a script started with -s is compiled before the autoloads exist, and these use them.
 var MainScene: PackedScene
 var Mission: GDScript
@@ -45,13 +46,20 @@ func _initialize() -> void:
 			missing.append(t)
 	TranslationServer.set_locale("en")
 	missing.sort()
+	var probes_ok := true
 	for lang in PROBES:
-		print("probe ", lang, ": ", seen[lang].has(PROBES[lang]))
+		for p in PROBES[lang]:
+			var found: bool = seen[lang].has(p)
+			print("probe ", lang, " ", p, ": ", found)
+			probes_ok = probes_ok and found
 	print("texts seen: en ", seen["en"].size(), ", es ", seen["es"].size())
 	for t in missing:
 		print("UNTRANSLATED: ", t.replace("\n", "\\n"))
-	print("i18n check: ", missing.size(), " texts without a Spanish version")
-	quit(1 if missing.size() > 0 else 0)
+	if not probes_ok:
+		print("i18n FAILED: a probe text was not on screen, so a language was not really played")
+	var ok := probes_ok and missing.is_empty()
+	print("i18n ", "ok" if ok else "FAILED", ": ", missing.size(), " texts without a Spanish version")
+	quit(0 if ok else 1)
 
 
 ## The literal texts of every tr("...") in scripts/, escapes read as GDScript reads them.

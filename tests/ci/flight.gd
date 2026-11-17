@@ -65,6 +65,7 @@ func _ascent_cases() -> void:
 	var idle := func(_a): return 0.0
 	var s3 := _fly("medium", idle, 3.0)
 	print("idle ", s3)
+	_check(s3.orbit and not s3.broken and float(s3.own_share) == 0.0, "a pilot who does nothing still reaches orbit: the flight computer flies it")
 	# someone who holds the stick hard over at max-Q on purpose
 	var wild := func(a): return 1.0 if a.h > 6000.0 else 0.0
 	var s4 := _fly("medium", wild)
