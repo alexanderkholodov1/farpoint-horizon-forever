@@ -3,23 +3,30 @@
 Two kinds of tests live in `tests/`: the checks in `tests/ci/` and the look harnesses in `tests/look/`. A piece is
 done only after both, plus a person's (or an agent's) judgment as a player (`AGENTS.md`, "Done means you judged it").
 
-## The checks (CI, every push)
+## The checks (CI, every pull request)
 
-`bash tools/dev/check.sh` runs what CI runs: the import, a short headless run of the main scene, the fuzz test, every
-check below, the documentation check and the web export. A check is a `tests/ci/<name>.gd` script with a line
-`## check: <pattern>`: `check.sh` finds it by folder, runs it headless and passes when the output matches the
-pattern. A new check is only a new file.
+`bash tools/dev/check.sh` runs what CI runs: the documentation check, one headless import, and every test in
+`tests/ci/`; `tools/dev/check.sh <name>` runs one test while you work on it. A test is a `tests/ci/<name>.gd` script
+with a line `## check: <pattern>`: it passes only when Godot exits with code 0 within the time limit and the output
+has a line that begins with the pattern; a test without that line, a non-zero exit or a timeout fails the run, by
+name. A new test is only a new file, and it must call `quit(1)` when a check fails.
 
-| Check | What it proves |
+**What a pass proves:** the documents name files that exist, the project imports, and each test's rules, numbers and
+data hold. **What it does not prove:** that anything looks or sounds right (headless runs draw nothing and play no
+audio), or that the web build loads in a browser. That is the reviewer's, by playing (`AGENTS.md`, "Review"). Before
+you trust a test, read what it asserts; a test that compares a value with a copy of itself proves nothing, and each
+test here was broken once on purpose to see it fail (issue #2).
+
+| Test | What it proves |
 |---|---|
-| `flight.gd` | The climb, the trip to the Moon and the landing against real values (orbit 87.7 min, Apollo 11's burns, LOLA ground) |
-| `crew.gd`, `room.gd` | The bots play every scenario; the room's protocol on one screen and online |
-| `apollo13.gd`, `sts61.gd`, `pathfinder.gd`, `lcross.gd`, `dart.gd` | Each story mission's rules against NASA's numbers |
-| `story.gd` | Every scene of `data/story/` plays through |
-| `ground.gd`, `space_weather.gd` | Ground control's mini-games; the solar storms on 400 random designs |
-| `sources.gd`, `credits.gd` | Every cited source exists in `docs/sources.md`, and every source is in the credits |
-| `i18n.gd` | No text the player can meet is left without Spanish |
-| `fuzz.gd` (run by `check.sh` directly) | 600 random designs simulate without errors |
+| `flight.gd`, `flowaudit.gd` | The climb, the trip to the Moon and the landing against real values; a pilot who does nothing still reaches orbit; each circular orbit's period against Kepler's law |
+| `crew.gd`, `room.gd` | The bots' designs launch in every scenario; the room's protocol and who may edit each station |
+| `apollo13.gd`, `artemis1.gd`, `sts61.gd`, `pathfinder.gd`, `lcross.gd`, `dart.gd`, `reentry.gd` | Each story mission's rules, and the cross-checks of NASA's numbers that do not just repeat the data |
+| `story.gd` | Every scene of `data/story/` plays through and its speakers are in the cast |
+| `data.gd` | Every cited source exists, every player-facing text has a real Spanish version, every reference between catalogs exists |
+| `ground.gd`, `space_weather.gd` | Ground control's astronomy and mini-games; the solar storms on 400 random designs |
+| `sources.gd`, `credits.gd` | Every source cited in code or data is listed in `docs/sources.md`, and every source is in the credits |
+| `i18n.gd` | Both languages are really played, and no text the player can meet is left without Spanish |
 
 ## The look harnesses (by hand, need a window)
 
