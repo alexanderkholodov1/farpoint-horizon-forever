@@ -70,7 +70,7 @@ def main():
         if not body:
             print("there are no change notes to release", file=sys.stderr)
             return 1
-        if CHANGELOG.exists() and re.search(rf"^## {re.escape(v)}", CHANGELOG.read_text(encoding="utf-8"), flags=re.M):
+        if CHANGELOG.exists() and re.search(rf"^## {re.escape(v)}(?![\w.])", CHANGELOG.read_text(encoding="utf-8"), flags=re.M):
             print(f"CHANGELOG.md already has a heading for {v} (fill or remove it by hand)", file=sys.stderr)
             return 1
         old = CHANGELOG.read_text(encoding="utf-8") if CHANGELOG.exists() else HEADER
