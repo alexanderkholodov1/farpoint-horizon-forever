@@ -23,3 +23,5 @@ private/
 # Python caches
 __pycache__/
 *.pyc
+# Firebase CLI deploy cache
+.firebase/
