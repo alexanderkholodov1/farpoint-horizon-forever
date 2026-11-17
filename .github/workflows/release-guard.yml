@@ -1,0 +1,61 @@
+name: Release guard
+
+# The release pull request (next → main) is checked before a person merges it, where a mistake costs nothing to fix
+# (AGENTS.md "How work flows"). After the merge it would cost a fixing commit on main.
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  guard:
+    name: From next, a new version, nothing left open
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HEAD: ${{ github.event.pull_request.head.ref }}
+          TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          set -euo pipefail
+          fail=0
+          [ "$HEAD" = "next" ] || { echo "::error::A release comes only from next; this comes from '$HEAD'."; fail=1; }
+          if [[ "$TITLE" =~ ^v([0-9]+\.[0-9]+\.[0-9]+):\ .+ ]]; then
+            v="v${BASH_REMATCH[1]}"
+            last=$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)
+            if [ -n "$last" ] && [ "$(printf '%s\n%s\n' "$last" "$v" | sort -V | tail -1)" != "$v" -o "$last" = "$v" ]; then
+              echo "::error::$v is not above the last release, $last."; fail=1
+            fi
+          else
+            echo "::error::The title must be 'vX.Y.Z: <what a player gets>'. Got: $TITLE"; fail=1
+          fi
+          ms=$(gh api "repos/$REPO/milestones?state=open" --jq '[.[] | select(.title | endswith("→ next"))]')
+          count=$(echo "$ms" | jq length)
+          if [ "$count" != "1" ]; then
+            echo "::error::There must be exactly one open milestone named 'vX.Y.Z → next'; found $count."; fail=1
+          else
+            title=$(echo "$ms" | jq -r '.[0].title'); num=$(echo "$ms" | jq -r '.[0].number')
+            open=$(gh api "repos/$REPO/issues?milestone=$num&state=open&per_page=100" --jq '[.[] | select(.pull_request == null)] | map("#\(.number) \(.title)") | .[]')
+            if [ -n "$open" ]; then
+              echo "::error::The milestone '$title' still has open issues. Each one is done, or closed as not planned, or moved to the next milestone, with the reason written in it:"
+              echo "$open"; fail=1
+            fi
+          fi
+          if [ -n "${v:-}" ]; then
+            if ! python3 tools/dev/release-notes.py --section "$v" > notes.md; then
+              echo "::error::CHANGELOG.md has no section for $v: run 'python tools/dev/release-notes.py --release $v' in a pull request into next first (docs/guides/releasing.md)."; fail=1
+            else
+              { echo "## $v"; cat notes.md; } >> "$GITHUB_STEP_SUMMARY"
+            fi
+          fi
+          left=$(find changes -name '*.md' ! -name README.md | head -5)
+          if [ -n "$left" ]; then
+            echo "::error::Change notes not yet written into CHANGELOG.md: $left"; fail=1
+          fi
+          exit $fail

@@ -1,7 +1,7 @@
 # Map of the repository
 
-Farpoint HORIZON, by team SK-Horizons. Three parts live side by side: the game, the team's work on it, and what we
-hand in to the event. Each area and each of its main folders starts with a README that says what is in it, who uses
+Farpoint HORIZON (project name Farpoint HORIZON Forever until the final one), by team SK-Horizons. Two parts live
+side by side: the game and the team's work on it. Each area and each of its main folders starts with a README that says what is in it, who uses
 it and when it changes; `tools/dev/check.sh` fails when one is missing or when a document points at a file that no
 longer exists.
 
@@ -20,25 +20,26 @@ longer exists.
 
 | Where | What it is for | Updated |
 |---|---|---|
-| `AGENTS.md` | The one rulebook for every agent and person | when the team changes a rule |
+| `AGENTS.md` | The one rulebook for every agent and person: criteria, never state | when the team changes a rule |
+| `changes/` | One change note per piece of the release in preparation | by each piece; emptied at release |
 | [guides/](guides/) | How the game is built and how to work on it: architecture, testing, leading a piece | with the code they describe |
 | [design/](design/) | What the game is and how it must feel: vision, criteria, the story, the crew | when the team decides |
-| [versions/](versions/) | One page per version: the plan, what shipped, the lines open now | when a version opens or ships |
-| [state/](state/) | Short notes of what an issue does not hold: values checked, decisions taken inside a piece | by the piece that owns the note |
+| [versions/](versions/) | The versions made at the hackathon (a record; releases from v0.3.0 on are GitHub releases) | never |
+| [areas/](areas/) | What each part of the game does and what was checked about it (knowledge, never status) | in the pull request that changes that part |
 | [sources.md](sources.md) | The bibliography: every outside number, image, model and dataset, once, with an ID | grows with every source; the credits and the submission links are made from it |
 | `kb/` | Research gathered for the game: the domain, NASA data, techniques, decisions | when research is added |
-| `tools/` | Scripts for people and agents: `dev/` to build, test and integrate, `content/` to make data, credits, art and the deck | with the work they serve |
+| `tools/` | Scripts for people and agents: `dev/` to build and check, `content/` to make data, credits and art | with the work they serve |
 
-## 3. The event: `spaceapps/`
+## Where the game comes from
 
-Everything about the NASA Space Apps Challenge 2026: the challenge and its rules, the team's notes, what we presented
-at the local event in Sangolquí, and what we send to NASA. Start at `spaceapps/README.md`.
+The game was born at the NASA Space Apps Challenge 2026. The challenge it answers is kept in `kb/challenge/`;
+everything about the event (its rules, the team's notes, the decks, the submission) stays in the frozen hackathon
+repository, https://github.com/alexanderkholodov1/farpoint-horizon, which nobody changes.
 
 ## Conventions
 
-- English for the repository; Spanish only in `i18n/`, in the deliverables the venue asked for in Spanish, and in the
-  team's own notes.
+- English for the repository; Spanish only in `i18n/`, in the README's Spanish section and in the team's own notes.
 - Documents and folders: lowercase words joined by hyphens (`event-and-judging.md`). Code follows its language
-  (`snake_case.gd`, `snake_case.py`). Delivered files keep the name the venue asked for (`EN_17_SK-Horizons.pdf`).
+  (`snake_case.gd`, `snake_case.py`).
 - One fact in one place: a document links to another instead of repeating it, and what can be generated is
   generated (`tools/content/credits.py`, `tools/dev/map.sh`).

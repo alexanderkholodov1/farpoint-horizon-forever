@@ -14,7 +14,7 @@ branches add entries at the same place (`.gitattributes`).
 
 ## Challenge and NASA resources
 - **S1** NASA Space Apps Challenge. *Space Mission Design Game* (challenge statement and resources). 2026.
-  https://www.spaceappschallenge.org/2026/challenges/space-mission-design-game/ (copy in `spaceapps/challenge/`). The brief.
+  https://www.spaceappschallenge.org/2026/challenges/space-mission-design-game/ (copy in `kb/challenge/`). The brief.
 - **S2** NASA. *Design and Develop Science Missions*. 2025.
   https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf. The four mission
   segments (launch, space, ground, user) and the path from need to mission.

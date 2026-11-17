@@ -1,180 +1,187 @@
 # Agent guide: Farpoint HORIZON
 
 The one rulebook for every agent in this repository, whoever runs it (Claude Code, Codex, Cursor, Gemini or any
-other) and whichever team member it works for. `CLAUDE.md` only imports this file.
+other), on any machine, for either team member. `CLAUDE.md` only imports this file. It holds criteria that do not
+change from one day to the next; it never holds the state of the work (what is in progress, which version is next,
+who holds what). That state lives in GitHub and git, and you read it there each time (see "Start of every session").
 
-The game: **Farpoint HORIZON** (always written this way), a 3D space-mission game in Godot 4.7 for the 2026 NASA Space
-Apps Challenge, challenge "Space Mission Design Game", by team **SK-Horizons** (Quito, Ecuador; always written this way, with the hyphen and the final s, never "SK Horizon"). Alone or with up to three friends, players build a craft, plan its
-route, launch it, fly it to its target, land it or keep it talking to Earth, and enjoy what they achieved.
+## The project
+**Farpoint HORIZON** (always written this way) is a 3D space-mission game in Godot 4.7, played in the browser, by team
+**SK-Horizons** (Quito, Ecuador; always with the hyphen and the final s). Alone or with up to three friends, players
+build a craft, plan its route, launch it, fly it, land it or keep it talking to Earth, and enjoy what they achieved;
+a story campaign with a crew of Andean guinea pigs (the *cuyes*) lives six real NASA missions. The project is called
+**Farpoint HORIZON Forever** until the team picks its final name.
 
-## Read first
-1. `tools/dev/state.sh`: where the project is today and what comes next, assembled from one note per topic
-   (`docs/state/`), the steps on the version branch and the open issues.
-2. `docs/design/vision.md`: what the game will be and what it will have. Every change serves it.
-3. `kb/README.md`, then `spaceapps/challenge/requirements.md` (the challenge as IDs) and `kb/decisions.md` (what the team
-   decided; open items are theirs to decide).
-4. `docs/guides/architecture.md` before touching code; `docs/design/criteria.md` before touching anything players see.
-5. If you lead a piece of work (you plan it, brief other agents and integrate their results), `docs/guides/leading.md`.
+It was born in 39 hours at the NASA Space Apps Challenge 2026. That submission is frozen, exactly as judged, at
+https://github.com/alexanderkholodov1/farpoint-horizon and in its Firebase project `farpoint-horizon`: **nobody
+changes either, ever** (no commit, branch, issue, comment, setting or deploy). This repository starts from a
+byte-identical copy of it (tag `v0.3.0`).
+
+The road: polish the web game, released on Firebase, up to `v1.0.0`. Other platforms (Steam, itch.io, mobile) come
+only after that and are not part of the work here.
 
 ## Who decides
-- **The two team members decide**: the idea, the design, scope, accounts, anything public. Agents bring evidence,
-  alternatives and a recommendation, and are free to propose anything, concepts included.
-- **Only a person merges into `main`**, either team member, never an agent. Lead agents integrate finished work
-  branches into the version branch themselves, with no need to ask, once the checks are green; the complete version
-  branch goes to `main` only through one pull request that a team member reviews and merges.
-- Agents talk with their person in that person's language. The repository and the game are in English by default; the
-  game also offers Spanish, and the project description and deliverables for the platform exist in Spanish too
-  (the local venue requires both; the live pitch in Sangolquí is in Spanish).
+- **The two team members decide**: the idea, the design, scope, what goes in a release, accounts, anything public.
+  Agents bring evidence, alternatives and a recommendation, and are free to propose anything.
+- **Only a person merges into `main`.** Agents merge reviewed pieces into `next` (below).
+- Talk with your person in their language. The repository is in English; the game is in English with Spanish as an
+  option.
 
-## How we work
+## Start of every session
+Before you build anything:
+1. Read this file. Then read the current state, never a copy of it:
+   `gh issue list --milestone "<the open milestone>"`, `gh pr list --base next`, the open milestone's description
+   (`gh api repos/{owner}/{repo}/milestones`), and the latest comments of the issues and pull requests near your
+   work. Other agents announce what they are doing there before they push.
+2. Choose with judgment:
+   - First, a pull request labeled `needs-review` that you did not build: a waiting review blocks someone else.
+   - Then an issue of the open milestone that nobody holds (no open pull request says `Closes #N`), whose
+     dependencies are done. Taking work whose input is not ready ("play the release" before the release is complete)
+     wastes the work twice.
+   - Issues without a milestone are the backlog: take one only when your person asks.
+3. Tell your person what you will take, why, what you understood it asks, what you will deliver and how you will
+   verify it. If the issue is not enough to start, improve it or ask; do not guess.
+
+## How work flows
+- **One release is prepared at a time**, on the branch `next`. Its GitHub milestone is named `vX.Y.Z → next`: built
+  on release `vX.Y.Z`, not yet numbered. When it is released, the milestone is renamed `vX.Y.Z → vA.B.C` and closed.
+- **A piece of work is an issue** (written with the issue form). Big work is a parent issue with sub-issues and an
+  `area:` label; that is how two efforts with the same kind of name stay apart.
+- **Claim it by opening a draft pull request** into `next` as soon as you start, from a branch named
+  `from-<release it starts from>/<short-name>` (`from-v0.3.0/rocket-builder`: work on top of v0.3.0, for the release
+  in preparation; the short name says what it is, and the issue is linked by `Closes #12` in the body), with your plan
+  as a checklist, and who you are (tool, model, machine, for which person). The assignee field cannot tell
+  agents of one account apart; the draft pull request can. A check warns if another open pull request already closes
+  the same issue: the older one keeps it.
+- **Push your progress as you go.** Each push is a checkpoint: if your session ends, the next agent continues from your
+  branch, not from zero. Keep the checklist true.
+- **A claim only goes stale when someone needs it.** If you need an issue that someone holds, look at its last push
+  and comments against what the team did since; if it is unclear, ask your person, who knows whether their session is
+  alive or can ask the other team member. Never take over a claim on a guess, and never release one by a timer.
+- **Stay current by merging** `origin/next` into your branch; never rebase or force-push a pushed branch.
+- **When it is done** (see "Done"), mark the pull request ready for review; it gets the `needs-review` label.
+- **The review** is done by someone who did not build it, ideally another vendor's model, by playing it (see "Review").
+  When it passes, the reviewer sets the approval on the exact commit and merges into `next` with a merge commit (the
+  piece's history stays). A new commit after the approval needs a new approval.
+- **The release**: when the milestone has no open issue (each one closed as done, or closed as not planned or moved to
+  the next milestone, always with the reason written in it), the change notes are written into `CHANGELOG.md` under
+  the chosen number (a pull request into `next`), and someone opens the pull request `next → main` titled
+  `vA.B.C: <what a player gets>` (`docs/guides/releasing.md`). The team decides the number from what the release contains: a patch (`0.3.1`) when
+  it is the same game made better, however many fixes and improvements that is; a minor (`0.4.0`) when the game is in
+  a clearly different state; `1.0.0` when the team calls the web game impeccable. A person merges it with a merge
+  commit (`git log --first-parent main` lists the releases; every piece's history stays); the release workflow tags
+  it, builds it, publishes it to Firebase, writes the GitHub release, renames the milestone and opens the next one,
+  `vA.B.C → next`.
+
+## Done
+"It runs and the tests pass" is never done. Before you mark a piece ready:
+- **Play it as a player would**, in the web build (`tools/dev/export-web.sh`, then open it), at each speed of time, in
+  both languages, at desktop and phone size, both appearances. Play it wrong too: idle, fast clicks, wrong choices,
+  Esc at every step. Look at every screenshot and write down what a player sees.
+- **Ask the questions of your area**: where can this fail, and under what use? Many players at once, a room mixing a
+  phone and a computer, a phone 5 to 10 years old, a slow connection, a lost connection, an empty or very long name,
+  the free limits of Firebase. Measure what you can; label a guess as a guess.
+- **Fix what you see**, inside the files your piece owns, at its cause. Never stack a workaround on top of something
+  broken (a retry around a crash, a delay around a race, a special case around a wrong value): find why and fix that.
+  What is outside your piece becomes an issue.
+- **Write your change note** in `changes/<short-name>.md` (see `changes/README.md`).
+- Say in the pull request what you played and checked, with screenshots.
+
+## Review
+- Check out the branch, build it (`tools/dev/export-web.sh`), and play it in a real browser on your machine, against
+  the issue's "Done when" and against "Done" above. A script passing is evidence about what that script checks, no
+  more: read what a check really asserts before trusting it.
+- Each finding goes in the pull request with its evidence: what you did, what you expected, what you saw, a screenshot
+  or a recording, the device size. Reproduce a finding before anyone fixes it.
+- Fix it yourself when it is mechanical, unambiguous and inside the piece's files (a cut text, a wrong key, an
+  overflow), then re-check. Send it back to the author when it is about design or logic: they hold the context to fix
+  it at its cause. If the same findings come back round after round, tell your person.
+- What only people can judge (whether the music is good, whether it is fun) goes to the team in the pull request.
+- To approve, set the status on the commit you reviewed, then merge:
+  `gh api repos/{owner}/{repo}/statuses/<sha> -f state=success -f context=review -f description="<who reviewed>"`
+  then `gh pr merge <n> --merge`.
+
+## What the game must be (applies to every piece)
 - **Fun and satisfaction first.** The player should feel the pride of watching their own craft lift off, deploy,
-  arrive and land. Missing something is never a failure screen; achieving more is rewarded. Kerbal Space Program is
-  the main inspiration (the builder, route and orbit planning, the whole journey, freedom to invent, humor, the
-  spectacle of launch and landing); its difficulty and its fail-and-retry loop are not.
-- **Nothing that looks AI-made.** `docs/design/criteria.md` holds the team's design criteria; they apply to models,
-  UI, motion, sound and copy.
-- **Real data at the core, and everything cited.** The judges score how much NASA data is part of the game, and they
-  will read our sources. Every number, formula, fact, dataset, image, model or sound that comes from outside carries
-  its source where it is used (a data field, a code comment, a document line) and is listed once in
-  `docs/sources.md` with an ID, in a form fit to show the judges. Our own simplifications say so and cite what they
-  simplify. The README and the game's credits are built from that list. Research notes in `kb/` keep their URLs.
-- **Data apart from code.** Missions, parts, launchers, orbits, events and texts live in data (today
-  `scripts/core/game_data.gd`), so content and balance change without touching logic.
-- **Measure before you claim.** Run it, read the log, look at the screenshot; cite the file and line or the command.
-  A guess is labeled as a guess.
-- **Real behavior, never a drawing of it.** Everything that moves behaves as in real life: launch, orbits, transfers,
-  landings. Paths come from the physics (the gravity of every body involved, with real constants and ephemerides),
-  never from a hand-drawn curve or a straight dash. Speeds, orbital periods, burn lengths, trip times and distances
-  are the real ones or follow from real physics, and the code cites where each comes from. A trip to another body is
-  planned as a real one: the departure is timed so the craft meets the body where it will be (phasing), with the
-  corrections real missions make. Where we simplify, the code says what and why.
-- **Real time, said on screen.** Every simulation runs in real time by default. Faster time is a visible control
-  (×1, ×10, ×100 ... as in `scripts/flight/flight_hud.gd`, keys `,` and `.`), the screen always says how fast time
-  runs, and a clock shows the true mission time. Never compress time silently, and never make the player wait: time
-  runs by itself to the next moment that needs the player and slows for it (a countdown in real time). With an
-  engine on, at most ×100; near the ground, real time only.
-- **True scale, made readable.** Sizes and distances keep their true proportions. What is too small to see gets a
-  marker of constant screen size and a label; it is never scaled up (a craft is never drawn half a planet's size).
-  What the player must act on (the orbit, the path, the target, where the target will be) is in view.
-- **Mechanics before content.** The core mechanics (time, building, launch, orbit, transfer, landing, ground control)
-  are made right and real before new missions or content are added on top. A new mission waits until every
-  mechanic it uses has passed the rule below.
-- **Done means you judged it, as a player.** Before integrating, play it yourself at each speed of time, look at every
-  screenshot and write down what a player sees and what is wrong (sizes, what is visible, whether motion and timing
-  look and feel real), check the numbers against real values, and iterate until it is right. "It runs and the tests
-  pass" is not done; neither is a screenshot you did not judge. Then integrate it yourself, with no need to wait for
-  a person, and say in the issue what you checked. Never integrate what you have not judged this way.
-- **Proven by playing.** A feature is done when someone played it as a player would and looked at the screen;
-  say what you checked.
-- **Plain explanations.** Every concept a player meets is explained in simple words inside the game (challenge E1-E4).
+  arrive and land. Missing something is never a failure screen; achieving more is rewarded. Kerbal Space Program
+  inspires the builder, route and orbit planning, the whole journey, freedom to invent, humor and the spectacle of
+  launch and landing; not its difficulty or its fail-and-retry loop.
+- **Clear and friendly.** A player never gets lost and never wonders what to do next. No wall of text: say the
+  essential in a few words and put the rest behind a hover, a click or a "more". Every concept a player meets is
+  explained in simple words inside the game. Works with a mouse, keys and touch.
+- **Real behavior, never a drawing of it.** Launch, orbits, transfers and landings follow real physics with real
+  constants and ephemerides; paths come from the physics, never from a hand-drawn curve. Speeds, periods, burn
+  lengths, trip times and distances are the real ones or follow from real physics. Where we simplify, the code says
+  what and why.
+- **Real time, said on screen.** Simulations run in real time by default; faster time is a visible control and the
+  screen always says how fast time runs, with a clock of the true mission time. Time never compresses silently and
+  the player never waits for nothing: it runs by itself to the next moment that needs the player and slows for it.
+  With an engine on, at most ×100; near the ground, real time only.
+- **True scale, made readable.** Sizes and distances keep their true proportions; what is too small to see gets a
+  marker of constant screen size and a label, never a larger drawing. What the player must act on is in view.
+- **Mechanics before content.** A new mission waits until every mechanic it uses is right and real.
+- **Nothing that looks AI-made.** `docs/design/criteria.md` holds the team's design criteria for models, UI, motion,
+  sound and copy.
 
-## The cycle of a version
-1. The version branch collects finished pieces. Its pull request into `main` opens only when the version is complete.
-   More than one line can run at once (`docs/versions/README.md` says which, today `v0.2.3` for fixes and
-   `v0.3.0` for the story); pick the branch by your issue's milestone. `tools/dev/pr-when-green.sh` and `tools/dev/state.sh` default
-   to the newest version branch, so for a fix pass the fix line's branch to them.
-2. Every piece of work is a GitHub issue, written with `.github/ISSUE_TEMPLATE/piece.md` (what the player gets, the
-   files it owns, the real values to check, the done-when list). Claim it by assigning it to your person before starting.
-3. Build it on a branch of your own, made from the version branch and named after the issue:
-   `git fetch origin && git switch -c work/12-rockets origin/v0.3.0`. Commit small working steps in English, with no
-   version numbers, and push often (CI runs on every push and must stay green; a red check is fixed first).
-4. Stay current by merging, never by rewriting: `git fetch origin && git merge origin/v0.3.0`. When your piece needs
-   another piece that is not integrated yet, merge that branch into yours (`git merge origin/work/6-builder`), or
-   propose yours into it with a pull request. Never rebase or force-push a pushed branch: others may have merged it.
-5. When the piece works (CI green, played as a player, screenshots in the issue, every outside value cited), say so
-   in its issue. A pull request into the version branch is optional (`tools/dev/pr-when-green.sh "<what it adds>"
-   <body-file>`), for example to ask for a review.
-6. A lead agent (or a team member) integrates it, with no need to ask: `tools/dev/integrate.sh <branch> "<what it adds>"`.
-   It checks the branch's CI, merges the branch into the version branch in a scratch copy, runs `tools/dev/check.sh` on
-   the result and only then pushes, as one commit named with the next step number (`0.1.6: <what it adds>`). If
-   someone integrated first, it starts again on top, so numbers never collide. It comments on the branch's open pull
-   request (GitHub then shows it merged into the version branch) or on its issue. It never touches `main` and never
-   deletes a branch, so the piece can keep growing and be integrated again.
-7. Someone who did not build a piece reviews it; findings are verified before they are fixed, and fixed at their
-   cause.
-8. When the version is complete and verified, its pull request into `main` opens with `tools/dev/pr-when-green.sh`. Only a
-   team member merges it, never an agent. The release workflow tags it and publishes it; then someone checks the live
-   game.
-
-## Versions
-- `v0.1.0` is the first playable sketch with this base, `v0.2.x` the whole mission the vision asks for, `v0.3.0` the
-  story campaign. The line stays `v0.X.Y` until the team calls the game impeccable; only then `v1.0.0`.
-- Only the version branch carries version numbers. Each integrated piece is one commit whose message starts with its
-  step number, the patch numbers of the current line (`0.1.5`, `0.1.6`, ...), never a `-1`/`-2` suffix. The number
-  is given at integration, so pieces built in parallel never collide on one. Work branches carry no numbers.
-- The version itself comes from the branch name, never from memory: `tools/dev/pr-when-green.sh` puts it at the head of
-  the pull request title into `main`, and the release workflow tags the merge with it.
-
-## Pull requests
-- **Into `main`: only the version pull request**, from the version branch, one per functional version, never one per
-  fix. It opens only when CI is green (`tools/dev/pr-when-green.sh "<what it delivers>" <body-file>`); its title leads
-  with the version (`v0.2.0: <what a player can now do>`). Only a team member merges it. CI fails any other pull
-  request into `main`.
-- **Into any other branch** (the version branch, someone's work branch): allowed and optional, titled with what it
-  adds and no number. Lead agents integrate into the version branch with `tools/dev/integrate.sh`, never into `main`.
-- Bodies follow `.github/pull_request_template.md`. Commits and pull requests carry no AI co-author lines or
-  generated-by signatures (`.claude/settings.json` turns them off for Claude Code; set the same in other tools). AI
-  use is disclosed in the README instead.
+## Sources and rights
+- **Everything from outside is cited.** Every number, formula, fact, dataset, image, model or sound that comes from
+  outside carries its source where it is used (a data field, a code comment) and is listed once in `docs/sources.md`
+  with a short unique ID (`S-gibs-viirs`); entries are added at the end of their section, never renumbered. Our own
+  simplifications say so and cite what they simplify. The credits are generated from that list.
+- **No NASA logos, insignia, flags or mission identifiers**, and nothing implying NASA endorses us
+  (https://www.nasa.gov/nasa-brand-center/brand-guidelines); crediting NASA data in text is expected.
+- **No AI-generated images**; models come from our scripts, textures and imagery from cited sources. AI use is
+  disclosed in the README. No image, voice or likeness of anyone under 18.
+- Every outside asset (code, fonts, images, sounds, models, data) is listed with its source and license.
 
 ## Working beside other agents
-- Nobody owns a part: both team members work side by side. Each piece is claimed through its issue and built on its
-  own branch, so two agents never write the same branch; several agents on one machine use separate git worktrees.
-- Each piece owns the files its issue lists. If your piece must change files that another open issue is
-  changing, say so in both issues and agree who goes first. A change to something everyone uses (data formats, the
-  mission model, `GameState`, `project.godot`, this file) is its own small piece, agreed by both team members and
-  integrated first, so the others build on it.
-- Files every piece touches: none by hand. The state is one note per topic in `docs/state/` (keep the notes of your
-  own pieces, delete them when they stop being true) and `tools/dev/state.sh` assembles it with the steps and the open
-  issues; describe your piece in its issue. `docs/sources.md` only grows: add entries at the end of the right section
-  with a short unique word as ID (`S-gibs-viirs`), never a new number; git keeps both sides when two branches add
-  entries at the same place.
-- No shared lists or files: a piece adds its own files and never edits a list or file every piece edits, so three or
-  more agents work at once without conflicts (issues #26, #28); a new thing every piece would have to register is
-  found by folder instead. Its Spanish texts go in its own `i18n/<piece>.csv` (`keys,es`; `translations.csv` is the old
-  base and takes no new lines); a new screen is only `scripts/screens/<id>.gd`; a new check is only `tests/ci/<name>.gd`
-  with a `## check: <pattern>` line. The game and `tools/dev/check.sh` find them by folder.
-- Never rewrite, reformat or revert someone else's work, and never push to someone else's branch; ask in the issue,
-  or propose your change with a pull request into their branch.
-- Leave every branch better than you found it: the game runs and the checks pass.
+- Each piece owns the files its issue lists. If you must change a file another open pull request is changing, say so
+  in both and agree who goes first. A change to something everyone uses (data formats, the mission model,
+  `GameState`, `project.godot`, this file) is its own small issue, agreed by both team members and merged first.
+- No shared lists: a piece adds its own files and never edits a list every piece edits. Its Spanish texts go in its
+  own `i18n/<piece>.csv` (`keys,es`); a new screen is only `scripts/screens/<id>.gd`; a new check is only
+  `tests/ci/<name>.gd` with a `## check: <pattern>` line; change notes are one file per piece. The game and the tools
+  find them by folder.
+- Never rewrite, reformat or revert someone else's work, and never push to someone else's branch: comment, or propose
+  a pull request into their branch.
 
-## Godot
-- Godot 4.7.2, renderer GL Compatibility (it runs in browsers and on integrated GPUs). The web build is the
-  single-threaded export (`export_presets.cfg`, preset "Web"), so any static host works.
-- `tools/dev/godot.sh` finds the Godot binary (or set `GODOT`); `tools/dev/check.sh` runs what CI runs: import, a short
-  headless run of the main scene, the fuzz test, every check in `tests/ci/`, the documentation check and the web export
-  (`docs/guides/testing.md`). `tools/dev/shots.sh` plays the scripted walkthrough with
-  a window and saves screenshots to `shots/` (headless runs draw nothing).
-- Every pull request gets its own temporary page on Firebase Hosting, linked on the pull request by CI (it expires
-  after 7 days); production (https://farpoint-horizon.web.app) is deployed only when the version pull request is
-  merged into `main`.
-- Commit the `.import` and `.uid` files Godot creates beside the files you add (run `tools/dev/check.sh` first: its import
-  step creates them). They carry random IDs, so a file left for someone else to import collides between branches.
-- One UI standard: every screen builds its interface only from `scripts/ui/kit.gd`: its type scale (`Kit.T_*`),
-  spacing (`Kit.MARGIN`, `Kit.PAD`, `Kit.GAP`, `Kit.BTN_H`), colours (`Kit.C_*`, readable in both appearances) and
-  components (`panel_box`, `caps`, `rule`, `segmented`/`choice`, `stat`, `readout`, `hint_box`, `btn`, `card`...).
-  No loose font sizes, paddings or colours in a screen, and no need to copy another screen from a screenshot; a
-  piece the kit lacks is added to the kit, for everyone.
-- GDScript is Godot 4 syntax (`await`, `@onready`, `@export`, typed signals); the project's own pitfalls are in
-  `docs/guides/architecture.md`. Tools that let agents drive Godot, Blender and the browser: `kb/tech/godot-agent-tooling.md`.
+## Leading and briefing
+When you split work for other agents, the brief is the work: an incomplete brief produces work fit only to be thrown
+away. Each brief, usually an issue, gives the agent:
+- who it is in this piece and why the piece exists (what the player gets, what comes after it and expects from it);
+- exactly what to read, by path, and what it does not need to read;
+- the files it owns and the ones it must not touch;
+- the exact deliverable and its shape;
+- "Done when" as observable checks, including what to play and on which devices, and how to verify each;
+- the criteria to apply (this file) and where to ask (the issue's comments, its person).
+Parallel workers get files that do not overlap. Match the model to the task: strong models for design and judgment,
+cheaper ones for mechanical work. Verify every result yourself before it is merged.
 
-## What the event requires (sources: `spaceapps/rules/event-and-judging.md`, global; `spaceapps/rules/local-event.md`, the venue)
-- AI tools are allowed and their use is disclosed: the README names the agents used and cites every source.
-- No NASA logos, insignia, flags or mission identifiers in anything generated, and nothing implying NASA endorses us;
-  crediting NASA data in text is expected.
-- No image, video, voice or likeness of anyone under 18.
-- No AI-generated images: models come from our scripts, textures and imagery from cited sources, so no watermark is
-  needed (the venue deducts a point for an AI image without one).
-- Every outside asset (code, fonts, images, sounds, models, data) is listed with its source and license.
-- English by default; Spanish versions of the description and deliverables for the venue. At most 7 slides; a demo
-  video of at most 30 s; every link opens in a private window.
+## Engineering
+- Godot 4.7.2, renderer GL Compatibility (browsers and integrated GPUs); the web build is the single-threaded export
+  (`export_presets.cfg`, preset "Web"). `tools/dev/godot.sh` finds the Godot binary (or set `GODOT`).
+- `tools/dev/check.sh` runs the automatic checks (`docs/guides/testing.md` says what they prove and what they do not);
+  CI runs them on every pull request into `next`. `tools/dev/export-web.sh` builds the web game into `build/web/` with
+  its version from git. `tools/dev/shots.sh` plays the scripted walkthrough with a window and saves screenshots.
+- The version is never written by hand: it comes from the git tag at build time (`v0.3.1` for a release,
+  `v0.3.1-7-g1a2b3c4` for any other build: 7 commits after v0.3.1).
+- Data apart from code: missions, parts, launchers, orbits, events and texts live in `data/` and the catalogs, so
+  content and balance change without touching logic.
+- One UI standard: every screen builds its interface only from `scripts/ui/kit.gd` (type scale, spacing, colours,
+  components); a piece the kit lacks is added to the kit, for everyone.
+- Commit the `.import` and `.uid` files Godot creates beside the files you add (they carry random IDs).
+- GDScript is Godot 4 syntax; the project's pitfalls are in `docs/guides/architecture.md`.
+- The web build lives on Firebase project `aklabs-dev`, hosting site `farpoint-horizon-forever`; the online room uses
+  that project's Realtime Database with the rules in `database.rules.json`. Firebase's free plan has daily and monthly
+  limits; anything that loads the game or uses the room counts against them, so review on your machine, not on the
+  hosted site.
+- Commits and pull requests in English, small and working, with no AI co-author lines and no version numbers (the
+  release pull request's title is the one place a version is written).
 
 ## Layout
-The map is `docs/README.md`. Three areas, each with a README that says what it holds, who uses it and when it changes;
-`tools/dev/check.sh` fails when a README is missing or a document names a path that does not exist.
-- **The game** (what Godot loads): `project.godot`, `scenes/`, `scripts/` (one folder per area),
-  `data/`, `i18n/`, `assets/` (everything seen and heard), `tests/` (`ci/` and `look/`).
-- **The team's work**: `docs/` (`guides/` how to work, `design/` what the game is, `versions/` one page per version,
-  `state/` notes a piece keeps, `sources.md` the bibliography), `kb/` (research), `tools/` (`dev/` to build, test and
-  integrate; `content/` to make data, credits, art and the deck), `.github/` (CI, release, templates).
-- **The event**: `spaceapps/` (the challenge, the rules, the team's notes, the local pitch, the global submission).
-- Names: documents and folders in lowercase words joined by hyphens; code by its language's convention.
+The map is `docs/README.md`. The game: `project.godot`, `scenes/`, `scripts/` (one folder per area), `data/`, `i18n/`,
+`assets/`, `tests/` (`ci/` automatic checks, `look/` screenshot harnesses). The team's work: `docs/` (`guides/` how
+to work on it, `design/` what the game is, `areas/` what each part of the game does and what was checked about it,
+`sources.md`), `kb/` (research; `kb/challenge/` is the challenge the game was born from), `tools/` (`dev/` to build
+and check, `content/` to make data, credits and art), `changes/` (change notes of the release in preparation),
+`.github/`. Names: lowercase words joined by hyphens; code by its language's convention.

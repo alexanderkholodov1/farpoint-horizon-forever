@@ -1,0 +1,60 @@
+name: Pieces
+
+# Two things that must happen on GitHub's events, whoever opened the pull request (AGENTS.md "How work flows"):
+# - a claim is a draft pull request that closes an issue; if another open pull request already closes the same issue,
+#   the newer one is told so (the older keeps the claim);
+# - a pull request ready for review carries the label needs-review; a draft or a closed one does not.
+# Nothing here runs on a timer: a claim is judged only when someone needs it. No checkout, no Godot: seconds.
+on:
+  pull_request:
+    branches: [next]
+    types: [opened, reopened, edited, ready_for_review, converted_to_draft, closed]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  pieces:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Only one open pull request per issue
+        if: github.event.action != 'closed'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          set -euo pipefail
+          issues=$(printf '%s' "$BODY" | grep -oiE '(close[sd]?|fix(e[sd])?|resolve[sd]?) #[0-9]+' | grep -oE '[0-9]+' | sort -u || true)
+          if [ -z "$issues" ]; then
+            echo "This pull request closes no issue: write 'Closes #<issue>' in its body (AGENTS.md)." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          for n in $issues; do
+            other=$(gh pr list -R "$REPO" --base next --state open --json number,body,createdAt \
+              --jq "[.[] | select(.number != $NUMBER) | select(.body | test(\"(?i)(close[sd]?|fix(e[sd])?|resolve[sd]?) #$n\\\\b\"))] | sort_by(.createdAt) | .[0].number // empty")
+            if [ -n "$other" ] && [ "$other" -lt "$NUMBER" ]; then
+              marker="claim-of-$n"
+              if ! gh pr view "$NUMBER" -R "$REPO" --json comments --jq '.comments[].body' | grep -q "$marker"; then
+                gh pr comment "$NUMBER" -R "$REPO" --body "Issue #$n is already claimed by #$other, opened earlier. Stop here and talk in #$other or #$n before going on (AGENTS.md, \"How work flows\"). <!-- $marker -->"
+              fi
+            fi
+          done
+
+      - name: The review queue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          DRAFT: ${{ github.event.pull_request.draft }}
+          ACTION: ${{ github.event.action }}
+        run: |
+          set -euo pipefail
+          if [ "$ACTION" = "closed" ] || [ "$DRAFT" = "true" ]; then
+            gh pr edit "$NUMBER" -R "$REPO" --remove-label needs-review >/dev/null 2>&1 || true
+          else
+            gh pr edit "$NUMBER" -R "$REPO" --add-label needs-review >/dev/null
+          fi

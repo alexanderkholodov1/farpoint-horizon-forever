@@ -1,87 +1,98 @@
 name: Release
 
-# When a version branch (vX.Y.Z) is merged into main, tag the merge with that version and publish a release with the
-# web build. Nobody types a version by hand.
+# When a person merges the release pull request (next → main, titled "vA.B.C: ...", merged with a merge commit),
+# this tags main with that version, builds the web game once with that version, publishes it to Firebase, writes the
+# GitHub release from CHANGELOG.md's section for that version, renames the milestone "vX.Y.Z → next" to
+# "vX.Y.Z → vA.B.C" and closes it, and opens "vA.B.C → next". next needs nothing afterwards: a merge commit keeps it
+# an ancestor of main. Nobody types a version by hand outside the release pull request's title.
+#
+# Publishing uses Workload Identity Federation: GitHub proves who it is to Google on each run, so no key is stored.
+# It needs the repository variables WIF_PROVIDER and WIF_SERVICE_ACCOUNT (set once; docs/guides/releasing.md).
 on:
   push:
     branches: [main]
 
 permissions:
   contents: write
+  issues: write
   pull-requests: read
+  id-token: write
 
-env:
-  GODOT_VERSION: "4.7.2"
+concurrency:
+  group: release
+  cancel-in-progress: false
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Find the version this push delivers
+      - name: Which release is this?
         id: version
         env:
           GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
-          branch=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" --jq '[.[] | select(.merged_at != null)][0].head.ref // ""')
-          if [[ "$branch" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            if gh api "repos/${{ github.repository }}/git/ref/tags/$branch" >/dev/null 2>&1; then
-              echo "Tag $branch already exists; nothing to release"; echo "version=" >> "$GITHUB_OUTPUT"
-            else
-              echo "version=$branch" >> "$GITHUB_OUTPUT"
-            fi
-          else
-            echo "This push is not the merge of a version branch ('$branch'); nothing to release"
-            echo "version=" >> "$GITHUB_OUTPUT"
+          pr=$(gh api "repos/$REPO/commits/${{ github.sha }}/pulls" --jq '[.[] | select(.merged_at != null and .base.ref == "main")][0] // empty')
+          head=$(echo "$pr" | jq -r '.head.ref // ""'); title=$(echo "$pr" | jq -r '.title // ""')
+          if [ "$head" != "next" ] || ! [[ "$title" =~ ^(v[0-9]+\.[0-9]+\.[0-9]+):\ .+ ]]; then
+            echo "::error::main moved without a release pull request from next ('$head', '$title'). Only the release pull request goes into main."
+            exit 1
           fi
+          v="${BASH_REMATCH[1]}"
+          if git rev-parse -q --verify "refs/tags/$v" >/dev/null; then echo "::error::$v already exists."; exit 1; fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          echo "title=${title#*: }" >> "$GITHUB_OUTPUT"
 
-      - name: Cache Godot and its web template
-        if: steps.version.outputs.version != ''
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: ~/godot
-          key: godot-${{ env.GODOT_VERSION }}-web-nothreads
-
-      - name: Download Godot and the web template
-        if: steps.version.outputs.version != '' && steps.cache.outputs.cache-hit != 'true'
-        run: |
-          set -euo pipefail
-          mkdir -p ~/godot && cd ~/godot
-          base="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable"
-          curl -sSLfo godot.zip "$base/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
-          unzip -q godot.zip && mv "Godot_v${GODOT_VERSION}-stable_linux.x86_64" godot && rm godot.zip
-          curl -sSLfo templates.tpz "$base/Godot_v${GODOT_VERSION}-stable_export_templates.tpz"
-          unzip -q templates.tpz "templates/web_nothreads_release.zip" "templates/version.txt" && rm templates.tpz
-
-      - name: Build and check
-        if: steps.version.outputs.version != ''
+      - name: Tag main (pushed only once it is published)
         env:
-          GODOT: /home/runner/godot/godot
+          V: ${{ steps.version.outputs.version }}
+          T: ${{ steps.version.outputs.title }}
         run: |
-          dest="$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
-          mkdir -p "$dest" && cp ~/godot/templates/* "$dest/"
-          bash tools/dev/check.sh
-          (cd build/web && zip -qr "../../web-build-${{ steps.version.outputs.version }}.zip" .)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$V" -m "$V: $T"
 
-      - name: Tag and publish the release
-        if: steps.version.outputs.version != ''
+      - uses: ./.github/actions/godot
+
+      - name: Build the web game with its version
+        run: bash tools/dev/export-web.sh
+
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.WIF_SERVICE_ACCOUNT }}
+
+      - name: Publish to Firebase Hosting
+        run: npx --yes firebase-tools@15 deploy --only hosting --project aklabs-dev --non-interactive -m "${{ steps.version.outputs.version }}"
+
+      - name: Push the tag
+        run: git push origin "${{ steps.version.outputs.version }}"
+
+      - name: Write the GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
+          V: ${{ steps.version.outputs.version }}
+          T: ${{ steps.version.outputs.title }}
         run: |
-          v="${{ steps.version.outputs.version }}"
-          notes="docs/changelog/$v.md"
-          [ -f "$notes" ] || notes=/dev/null
-          gh release create "$v" --target "${{ github.sha }}" --title "$v" --notes-file "$notes" "web-build-$v.zip"
+          set -euo pipefail
+          { echo "$T"; echo; python3 tools/dev/release-notes.py --section "$V"; } > notes.md
+          gh release create "$V" --title "$V: $T" --notes-file notes.md
 
-      - name: Deploy to production on Firebase Hosting
-        if: steps.version.outputs.version != ''
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FARPOINT_HORIZON }}
-          projectId: farpoint-horizon
-          channelId: live
+      - name: Close the milestone and open the next one
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          V: ${{ steps.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          m=$(gh api "repos/$REPO/milestones?state=open" --jq '[.[] | select(.title | endswith("→ next"))][0]')
+          num=$(echo "$m" | jq -r .number); base=$(echo "$m" | jq -r '.title | split(" → ")[0]')
+          gh api -X PATCH "repos/$REPO/milestones/$num" -f title="$base → $V" -f state=closed >/dev/null
+          gh api -X POST "repos/$REPO/milestones" -f title="$V → next" -f description="Built on $V. Its purpose and its version are decided by the team (AGENTS.md)." >/dev/null
+
