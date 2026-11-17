@@ -42,3 +42,10 @@ textures/default_filters/anisotropic_filtering_level=3
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 
+
+[editor]
+
+; Godot 4.7 imports the three fonts on parallel threads, and a race in the engine (ClassDB default-value cache,
+; godotengine/godot#111039, fixed for 4.8) crashes the import about half the time (4 of 7 fresh imports, 0 of 6 with
+; this off). Remove this when the project moves to Godot 4.8. It only affects the import, not the game.
+import/use_multiple_threads=false
