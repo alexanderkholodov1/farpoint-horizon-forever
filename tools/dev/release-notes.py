@@ -44,7 +44,8 @@ def section(version):
     if not CHANGELOG.exists():
         return None
     m = re.search(rf"^## {re.escape(version)}\b.*?$(.*?)(?=^## |\Z)", CHANGELOG.read_text(encoding="utf-8"), flags=re.S | re.M)
-    return m.group(1).strip() if m else None
+    text = m.group(1).strip() if m else ""
+    return text or None  # a heading with nothing under it is not a section
 
 
 def main():

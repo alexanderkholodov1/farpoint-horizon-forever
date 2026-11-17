@@ -175,7 +175,8 @@ cheaper ones for mechanical work. Verify every result yourself before it is merg
   that project's Realtime Database with the rules in `database.rules.json`. Firebase's free plan has daily and monthly
   limits; anything that loads the game or uses the room counts against them, so review on your machine, not on the
   hosted site.
-- Commits and pull requests in English, small and working, with no version numbers and no AI co-author lines.
+- Commits and pull requests in English, small and working, with no AI co-author lines and no version numbers (the
+  release pull request's title is the one place a version is written).
 
 ## Layout
 The map is `docs/README.md`. The game: `project.godot`, `scenes/`, `scripts/` (one folder per area), `data/`, `i18n/`,
