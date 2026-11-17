@@ -5,13 +5,17 @@ How a release is made and what has to exist for it. The flow itself is in `AGENT
 ## The release pull request
 1. The open milestone `vX.Y.Z → next` has no open issue: each one is done, or closed as not planned, or moved to the
    next milestone, with the reason written in it.
-2. The team decides the number from what the release contains (`AGENTS.md`), and someone opens the pull request
-   from `next` into `main` titled `vA.B.C: <what a player gets>`, with the notes `python tools/dev/release-notes.py`
-   prints as its body.
-3. `release-guard.yml` checks it: from `next`, a version above the last tag, nothing open in the milestone, the change
-   notes well formed. A person merges it.
+2. The team decides the number from what the release contains (`AGENTS.md`). Then, on a branch
+   `from-vX.Y.Z/release-notes`, `python tools/dev/release-notes.py --release vA.B.C` writes the change notes into
+   `CHANGELOG.md` as that version's section and removes them; that goes into `next` as a pull request, reviewed like
+   any piece (the notes are what players will read).
+3. Someone opens the pull request from `next` into `main` titled `vA.B.C: <what a player gets>`, with the
+   `CHANGELOG.md` section as its body. `release-guard.yml` checks it: from `next`, a version above the last tag,
+   nothing open in the milestone, the section written and no note left behind. A person merges it **with a merge
+   commit** (the only method `main` allows): `next` stays an ancestor of `main`, so it needs no catching up afterwards,
+   every piece's history stays, and `git log --first-parent main` lists one line per release.
 4. `release.yml` then tags it, builds the web game with that version, publishes it to Firebase Hosting, writes the
-   GitHub release, closes the milestone as `vX.Y.Z → vA.B.C`, opens `vA.B.C → next`, and brings `next` up to date.
+   GitHub release from the section, closes the milestone as `vX.Y.Z → vA.B.C` and opens `vA.B.C → next`.
 
 ## Publishing without a stored key (set once)
 GitHub publishes to Firebase through Workload Identity Federation: on each run GitHub hands Google a short-lived,

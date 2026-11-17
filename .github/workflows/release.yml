@@ -1,10 +1,10 @@
 name: Release
 
-# When a person merges the release pull request (next → main, titled "vA.B.C: ..."), this tags main with that
-# version, builds the web game once with that version, publishes it to Firebase, writes the GitHub release from the
-# change notes, renames the milestone "vX.Y.Z → next" to "vX.Y.Z → vA.B.C" and closes it, opens "vA.B.C → next",
-# and brings next up to date with main (with the released change notes removed). Nobody types a version by hand
-# outside the release pull request's title.
+# When a person merges the release pull request (next → main, titled "vA.B.C: ...", merged with a merge commit),
+# this tags main with that version, builds the web game once with that version, publishes it to Firebase, writes the
+# GitHub release from CHANGELOG.md's section for that version, renames the milestone "vX.Y.Z → next" to
+# "vX.Y.Z → vA.B.C" and closes it, and opens "vA.B.C → next". next needs nothing afterwards: a merge commit keeps it
+# an ancestor of main. Nobody types a version by hand outside the release pull request's title.
 #
 # Publishing uses Workload Identity Federation: GitHub proves who it is to Google on each run, so no key is stored.
 # It needs the repository variables WIF_PROVIDER and WIF_SERVICE_ACCOUNT (set once; docs/guides/releasing.md).
@@ -81,7 +81,7 @@ jobs:
           T: ${{ steps.version.outputs.title }}
         run: |
           set -euo pipefail
-          { echo "$T"; echo; python3 tools/dev/release-notes.py; } > notes.md
+          { echo "$T"; echo; python3 tools/dev/release-notes.py --section "$V"; } > notes.md
           gh release create "$V" --title "$V: $T" --notes-file notes.md
 
       - name: Close the milestone and open the next one
@@ -96,14 +96,3 @@ jobs:
           gh api -X PATCH "repos/$REPO/milestones/$num" -f title="$base → $V" -f state=closed >/dev/null
           gh api -X POST "repos/$REPO/milestones" -f title="$V → next" -f description="Built on $V. Its purpose and its version are decided by the team (AGENTS.md)." >/dev/null
 
-      - name: Bring next up to date and clear the released change notes
-        env:
-          V: ${{ steps.version.outputs.version }}
-        run: |
-          set -euo pipefail
-          git fetch origin next
-          git switch -c next-update origin/next
-          git merge --no-edit -m "Bring next up to date with $V" origin/main
-          find changes -name '*.md' ! -name README.md -print0 | xargs -0 -r git rm -q
-          git diff --cached --quiet || git commit -m "Clear the change notes released in $V"
-          git push origin HEAD:next

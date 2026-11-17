@@ -64,12 +64,14 @@ Before you build anything:
   When it passes, the reviewer sets the approval on the exact commit and merges into `next` with a merge commit (the
   piece's history stays). A new commit after the approval needs a new approval.
 - **The release**: when the milestone has no open issue (each one closed as done, or closed as not planned or moved to
-  the next milestone, always with the reason written in it), someone opens the pull request `next → main` titled
-  `vA.B.C: <what a player gets>`. The team decides the number from what the release contains: a patch (`0.3.1`) when
+  the next milestone, always with the reason written in it), the change notes are written into `CHANGELOG.md` under
+  the chosen number (a pull request into `next`), and someone opens the pull request `next → main` titled
+  `vA.B.C: <what a player gets>` (`docs/guides/releasing.md`). The team decides the number from what the release contains: a patch (`0.3.1`) when
   it is the same game made better, however many fixes and improvements that is; a minor (`0.4.0`) when the game is in
-  a clearly different state; `1.0.0` when the team calls the web game impeccable. A person merges it; the release
-  workflow tags it, builds it, publishes it to Firebase and renames the milestone; then `main` is merged into `next`
-  and the next milestone `vA.B.C → next` opens.
+  a clearly different state; `1.0.0` when the team calls the web game impeccable. A person merges it with a merge
+  commit (`git log --first-parent main` lists the releases; every piece's history stays); the release workflow tags
+  it, builds it, publishes it to Firebase, writes the GitHub release, renames the milestone and opens the next one,
+  `vA.B.C → next`.
 
 ## Done
 "It runs and the tests pass" is never done. Before you mark a piece ready:

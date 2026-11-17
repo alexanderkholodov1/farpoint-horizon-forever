@@ -1,7 +1,8 @@
 # Change notes
 
-One file per piece, written by the piece itself, so pieces built in parallel never edit the same file. When the
-release is made, `tools/dev/release-notes.py` joins them into the release's notes, and the release removes them.
+One file per piece, written by the piece itself, so pieces built in parallel never edit the same file. When the team
+has chosen the release's number, `python tools/dev/release-notes.py --release vA.B.C` writes them into
+`CHANGELOG.md` as that version's section and removes them (`docs/guides/releasing.md`).
 
 - Name: `<short-name>.md`, the short name of the piece's branch (`from-v0.3.0/phone-layout` → `phone-layout.md`).
 - First lines: `kind: new`, `kind: improvement` or `kind: fix`, then `issue: <number>`. Then one or two sentences for

@@ -47,6 +47,15 @@ jobs:
               echo "$open"; fail=1
             fi
           fi
-          python3 tools/dev/release-notes.py --check || { echo "::error::A change note is malformed (changes/README.md)."; fail=1; }
-          { echo "## Notes of this release"; python3 tools/dev/release-notes.py || true; } >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "${v:-}" ]; then
+            if ! python3 tools/dev/release-notes.py --section "$v" > notes.md; then
+              echo "::error::CHANGELOG.md has no section for $v: run 'python tools/dev/release-notes.py --release $v' in a pull request into next first (docs/guides/releasing.md)."; fail=1
+            else
+              { echo "## $v"; cat notes.md; } >> "$GITHUB_STEP_SUMMARY"
+            fi
+          fi
+          left=$(find changes -name '*.md' ! -name README.md | head -5)
+          if [ -n "$left" ]; then
+            echo "::error::Change notes not yet written into CHANGELOG.md: $left"; fail=1
+          fi
           exit $fail
