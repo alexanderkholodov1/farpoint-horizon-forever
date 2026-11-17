@@ -11,8 +11,9 @@ It lets anyone, alone or with up to three friends, live a space mission from the
 comes home: build the spacecraft, launch it, fly it, land it and keep it working. On the way, a small crew of Andean
 guinea pigs, the *cuyes*, takes you through some of the most dramatic moments in NASA's history.
 
-**▶ Play this repository's version: https://farpoint-horizon-forever.web.app** (from this repository's first release on): nothing to
-install, in English or Spanish.
+**▶ Play the version in preparation: https://farpoint-horizon-forever--next-jpaql0t2.web.app**: nothing to install, in English or Spanish. It is updated every time a
+piece is merged into `next`. The released game will live at https://farpoint-horizon-forever.web.app, which opens
+with this repository's first release (until then it shows "Site Not Found").
 **▶ The hackathon version, as submitted: https://farpoint-horizon.web.app**, and its 30-second video: https://youtu.be/3xZdPJr71bg
 
 ---
@@ -122,7 +123,8 @@ Every number, fact, image and model that comes from outside is listed with its l
 
 ## Play it
 
-- **In your browser:** https://farpoint-horizon-forever.web.app
+- **In your browser:** the version in preparation at https://farpoint-horizon-forever--next-jpaql0t2.web.app; the released game at
+  https://farpoint-horizon-forever.web.app from the first release on.
 - **On your own computer:** install [Godot 4.7](https://godotengine.org), open `project.godot` and press F5.
 
 The game is made with the free Godot engine. Our 3D models are built with Blender, and the sounds are created by the
@@ -194,4 +196,5 @@ los datos vuelven a casa: construir la nave, lanzarla, volarla, aterrizarla y ma
 una tripulación de cuyes astronautas te lleva por seis momentos históricos de la NASA: Apollo 13, la primera
 reparación del Hubble, Mars Pathfinder, LCROSS, DART y Artemis I, contados tal como la NASA los cuenta. Todo se mueve
 como en la realidad, sobre datos de la NASA, y equivocarse nunca es perder: entiendes por qué, cambias algo y vuelves
-a intentarlo. Juega en https://farpoint-horizon-forever.web.app.
+a intentarlo. Juega la versión en preparación en https://farpoint-horizon-forever--next-jpaql0t2.web.app (la versión publicada estará en
+https://farpoint-horizon-forever.web.app desde el primer release).
